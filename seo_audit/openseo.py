@@ -60,6 +60,9 @@ def _cached(out_dir, name, reuse, fn):
             return json.load(fh)
     try:
         data = fn()
+    except AttributeError:
+        log.warning("OpenSEO %s: no endpoint configured and no cached file at %s", name, path)
+        return {"error": "no OpenSEO endpoint configured"}
     except Exception as e:
         log.warning("OpenSEO %s failed: %s", name, str(e)[:160])
         data = {"error": str(e)[:300]}

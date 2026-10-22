@@ -10,6 +10,42 @@ import time
 from urllib.parse import urlparse
 
 from seo_audit.crawl import Crawler, norm_host
+
+
+def load_dotenv(path=".env"):
+    """Read KEY=VALUE lines from .env next to this script. Real environment variables win."""
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), path)
+    if not os.path.exists(path):
+        return
+    with open(path) as fh:
+        for line in fh:
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            k, v = line.split("=", 1)
+            os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+
+
+def doctor():
+    """Print what is configured and what will run."""
+    import requests
+    print(f"python {sys.version.split()[0]}")
+    url, pid = os.environ.get("OPENSEO_MCP_URL", ""), os.environ.get("OPENSEO_PROJECT_ID", "")
+    if url and pid:
+        try:
+            r = requests.post(url, json={"jsonrpc": "2.0", "id": 1, "method": "tools/call",
+                                         "params": {"name": "list_projects", "arguments": {}}},
+                              headers={"Accept": "application/json, text/event-stream"}, timeout=15)
+            names = [p["id"] for p in r.json()["result"]["structuredContent"]["projects"]]
+            print(f"OpenSEO      OK  {url}  project {'found' if pid in names else 'NOT found: ' + pid}")
+        except Exception as e:
+            print(f"OpenSEO      unreachable ({e.__class__.__name__}) at {url}. Market-data checks will be skipped unless --reuse finds cached data.")
+    else:
+        print("OpenSEO      not configured (OPENSEO_MCP_URL / OPENSEO_PROJECT_ID). Crawler checks only, or --reuse on cached data.")
+    print(f"PageSpeed    {'key set' if os.environ.get('PSI_API_KEY') else 'no key: a few free calls per day, then 429. Use --no-psi or set PSI_API_KEY'}")
+    print(f"Perplexity   {'key set: script runs the AI queries' if os.environ.get('PERPLEXITY_API_KEY') else 'no key: run the AI queries by hand and pass --ai-results file.json'}")
+    cached = [d for d in (os.listdir("out") if os.path.isdir("out") else []) if os.path.exists(os.path.join("out", d, "crawl.pkl"))]
+    print(f"Cached runs  {', '.join(cached) if cached else 'none'}  (re-score with --reuse, no keys or credits needed)")
 from seo_audit.checks import ALL_CHECKS
 from seo_audit.ai_visibility import check_ai_visibility
 from seo_audit.pagespeed import run_all as run_psi, check_pagespeed
@@ -18,7 +54,8 @@ from seo_audit.report import rank, write_outputs
 
 def main():
     ap = argparse.ArgumentParser(description="Audit a treatment-center website for the SEO problems that cost calls and admissions.")
-    ap.add_argument("url", help="Start URL, e.g. https://www.example.org")
+    ap.add_argument("url", nargs="?", help="Start URL, e.g. https://www.example.org")
+    ap.add_argument("--doctor", action="store_true", help="Show what is configured (keys, OpenSEO reachability, cached runs) and exit")
     ap.add_argument("--max-pages", type=int, default=150)
     ap.add_argument("--workers", type=int, default=6)
     ap.add_argument("--out", default="out", help="Output root; results go to <out>/<host>/")
@@ -32,6 +69,13 @@ def main():
     ap.add_argument("--openseo-project", default=os.environ.get("OPENSEO_PROJECT_ID", ""), help="OpenSEO project id (or env OPENSEO_PROJECT_ID)")
     ap.add_argument("--no-openseo", action="store_true", help="Skip the OpenSEO market-data pulls")
     args = ap.parse_args()
+    load_dotenv()
+    if args.doctor:
+        return doctor()
+    if not args.url:
+        ap.error("a start URL is required (or use --doctor)")
+    args.openseo_url = args.openseo_url or os.environ.get("OPENSEO_MCP_URL", "")
+    args.openseo_project = args.openseo_project or os.environ.get("OPENSEO_PROJECT_ID", "")
 
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s", datefmt="%H:%M:%S")
     t0 = time.time()
@@ -69,18 +113,23 @@ def main():
     ai_findings, access, ai_results = check_ai_visibility(site, brand=brand, ai_results=ai_results, out_dir=out_dir)
     findings.extend(ai_findings)
 
-    if args.openseo_url and args.openseo_project and not args.no_openseo:
+    have_endpoint = bool(args.openseo_url and args.openseo_project)
+    have_cache = args.reuse and os.path.isdir(os.path.join(out_dir, "openseo"))
+    if (have_endpoint or have_cache) and not args.no_openseo:
         from seo_audit.openseo import OpenSEO, fetch_all, ALL_OPENSEO_CHECKS, write_market_summary
         from seo_audit.ai_visibility import site_city_state
         city, state = site_city_state(site)
         logging.info("OpenSEO market data for %s (%s, %s)%s", site["host"], city, state, " [cached]" if args.reuse else "")
-        market = fetch_all(OpenSEO(args.openseo_url, args.openseo_project), site["host"], brand, city, state, out_dir, reuse=args.reuse)
+        client = OpenSEO(args.openseo_url, args.openseo_project) if have_endpoint else None
+        market = fetch_all(client, site["host"], brand, city, state, out_dir, reuse=args.reuse)
         for check in ALL_OPENSEO_CHECKS:
             try:
                 findings.extend(check(site, market))
             except Exception as e:
                 logging.exception("openseo check %s failed: %s", check.__name__, e)
         write_market_summary(market, out_dir)
+    elif not args.no_openseo:
+        logging.warning("OpenSEO not configured: skipping market-data checks (set OPENSEO_MCP_URL and OPENSEO_PROJECT_ID in .env, or use --reuse on a cached run)")
 
     psi_results = []
     if not args.no_psi:

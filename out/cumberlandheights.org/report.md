@@ -204,8 +204,8 @@ Check first: Compare against GBP listing and top citations (Psychology Today, SA
 ### 6 different phone numbers in tel: links
 Impact 10.7 · severity 2 · intent 3 · pages 6 · confidence low
 
-- 800-646-9998: on 65 pages (e.g. https://www.cumberlandheights.org/treatment/extended-care/)
-- 615-314-3856: on 52 pages (e.g. https://www.cumberlandheights.org/treatment/extended-care/)
+- 800-646-9998: on 65 pages (e.g. https://www.cumberlandheights.org/treatment/family-care/)
+- 615-314-3856: on 52 pages (e.g. https://www.cumberlandheights.org/treatment/family-care/)
 - 620-416-2213: on 1 pages (e.g. https://www.cumberlandheights.org/admissions/faqs/)
 - 615-257-9608: on 1 pages (e.g. https://www.cumberlandheights.org/resources/location/nashville-music-row/)
 - 931-288-5549: on 1 pages (e.g. https://www.cumberlandheights.org/resources/location/clarksville/)

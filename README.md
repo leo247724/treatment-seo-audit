@@ -6,6 +6,31 @@ Written in Python with Claude Code for the elev8 Product Performance Lead exerci
 
 Example run: `memo.md` / `memo.pdf` (Cumberland Heights, Nashville) and the raw outputs in `out/cumberlandheights.org/`.
 
+## Quick start
+
+```bash
+./setup.sh                                   # venv, dependencies, .env, config check
+.venv/bin/python audit.py https://www.example.org --city "City, ST" --brand "Facility Name"
+```
+
+No keys at all? You can still reproduce the Cumberland Heights report from the data committed in this repo, in about 20 seconds, spending nothing:
+
+```bash
+.venv/bin/python audit.py https://www.cumberlandheights.org --reuse --no-psi --city "Nashville, TN" --brand "Cumberland Heights" --ai-results out/cumberlandheights.org/ai_answers_manual.json
+```
+
+`audit.py --doctor` tells you which data sources are configured before you run.
+
+## What OpenMarketing and OpenSEO are
+
+The audit has two halves. The **crawler half** looks at the site itself and needs no account or key. The **market-data half** needs rankings, search results, Google Maps results and backlinks, which only a data vendor has. Commercial tools for that are Ahrefs or Semrush at a few hundred dollars a month.
+
+I run my own stack instead. **OpenMarketing** is a set of open-source marketing tools (SEO, analytics, outreach, CRM, automation) that I self-host on one server and reach over a private network. The only piece this audit uses is **OpenSEO**, an open-source, self-hosted equivalent of Ahrefs (source: github.com/every-app/open-seo). OpenSEO does not have its own index; it buys the data per request from **DataForSEO**, a pay-as-you-go API that sells Google rankings, SERP snapshots, Maps results and backlink data. A full audit of one site costs a few hundred DataForSEO credits, roughly a dollar or two.
+
+OpenSEO exposes its tools through an **MCP server**. MCP (Model Context Protocol) is a small HTTP JSON-RPC interface that AI agents such as Claude Code call to use external tools. This script talks to it like any HTTP API: one POST per tool call, no SDK, see `seo_audit/openseo.py`. That is also how I used it during the exercise: Claude Code called OpenSEO's tools directly to pull the data that is now cached in `out/cumberlandheights.org/openseo/`.
+
+To run the market-data half yourself you need an OpenSEO instance you can reach. The endpoint in `.env.example` is mine and lives on a private network, so it will not answer from outside. Options: self-host OpenSEO with a DataForSEO account (its README covers it), or read the cached JSON already in this repo with `--reuse`.
+
 ## What it does
 
 1. Crawls the site: robots.txt, sitemap(s), up to 200 HTML pages, highest-intent URLs first. Records status, title, meta, H1, canonical, noindex, word count, JSON-LD types, `tel:` links, header phone, addresses, maps, forms, FAQ blocks, accreditation / insurer / medical-review mentions.
@@ -15,18 +40,9 @@ Example run: `memo.md` / `memo.pdf` (Cumberland Heights, Nashville) and the raw 
 5. Optionally runs Google PageSpeed Insights on four high-intent pages.
 6. Scores and ranks everything, writes the report.
 
-## Requirements
-
-- Python 3.11+ and `uv` (or plain `venv` + `pip`)
-- Network access to the site
-- For market data: an OpenSEO instance (see keys below). Without it the crawler-only checks still run.
-
-```bash
-uv venv .venv
-uv pip install -p .venv/bin/python -r requirements.txt
-```
-
 ## Keys and credentials
+
+Python 3.11+ is the only requirement to run the crawler half. The table lists every variable the script reads. Put them in `.env` (copy `.env.example`); `audit.py` reads that file itself, nothing to export or source.
 
 | Variable | Needed for | Cost | Where to get it |
 |---|---|---|---|
@@ -37,27 +53,15 @@ uv pip install -p .venv/bin/python -r requirements.txt
 
 Nothing else needs a key. The crawler identifies itself as `TreatmentSEOAudit/0.1` and respects robots.txt. Geocoding the city for the Maps check uses OpenStreetMap Nominatim, one request, no key.
 
-Put the values in `.env` (there is a `.env.example`) and load them before running:
-
-```bash
-cp .env.example .env
-set -a; source .env; set +a
-```
-
-## Run
-
-```bash
-.venv/bin/python audit.py https://www.example.org --brand "Example Recovery" --city "Nashville, TN"
-```
-
-Flags:
+## Flags
 
 - `--max-pages N` crawl cap, default 150
 - `--city "City, ST"` the facility's city for the market queries; otherwise taken from the first street address found, which only works for one-word city names
 - `--brand "Name"` brand for the AI queries; default is the first part of the homepage title
 - `--ai-results file.json` hand-checked AI answers to ingest (format below)
 - `--no-psi` skip PageSpeed, `--no-openseo` skip market data
-- `--reuse` re-score from the cached crawl, PSI and OpenSEO data of the previous run. Seconds instead of minutes, spends no credits. Use this for demos.
+- `--reuse` re-score from the cached crawl, PSI and OpenSEO data of the previous run. Seconds instead of minutes, spends no credits, needs no keys. Use this for demos and for reproducing the committed report.
+- `--doctor` print which keys are set, whether OpenSEO answers, and which cached runs exist
 
 A full run takes 3-8 minutes depending on how fast the site responds. The run behind the memo:
 
@@ -107,6 +111,7 @@ A JSON list. `type` is `brand` or `non-brand`; `cited` means the site's own doma
 ## Layout
 
 ```
+setup.sh                 one-time install + config check
 audit.py                 CLI
 seo_audit/crawl.py       crawler and page extraction
 seo_audit/classify.py    page type and intent weight from URL/title
