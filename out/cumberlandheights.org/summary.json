@@ -1,11 +1,11 @@
 {
   "site": "cumberlandheights.org",
   "date": "2026-10-21",
-  "pages_crawled": 150,
-  "pages_html_200": 37,
-  "pages_indexable": 37,
-  "sitemap_urls": 3234,
-  "uncrawled_queue": 3084,
+  "pages_crawled": 200,
+  "pages_html_200": 52,
+  "pages_indexable": 52,
+  "sitemap_urls": 2137,
+  "uncrawled_queue": 1937,
   "robots_status": 200,
   "llms_txt_status": 200,
   "ai_bot_access": {
@@ -26,29 +26,12 @@
     "Bytespider": true,
     "meta-externalagent": true
   },
-  "psi": [
-    {
-      "url": "https://www.cumberlandheights.org/resources/blog/sunday-sermon-liberation-is-costly",
-      "error": "429 Client Error: Too Many Requests for url: https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https%3A%2F%"
-    },
-    {
-      "url": "https://www.cumberlandheights.org/",
-      "error": "429 Client Error: Too Many Requests for url: https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https%3A%2F%"
-    },
-    {
-      "url": "https://www.cumberlandheights.org/resources/blog/introducing-arch-academys-ridgeview-campus",
-      "error": "429 Client Error: Too Many Requests for url: https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https%3A%2F%"
-    },
-    {
-      "url": "https://www.cumberlandheights.org/giving/endowment-2",
-      "error": "429 Client Error: Too Many Requests for url: https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https%3A%2F%"
-    }
-  ],
+  "psi": [],
   "top_findings": [
-    "broken_links",
-    "sitemap_bad_urls",
-    "ai_answers_unverified",
-    "thin_high_intent",
-    "no_medical_review"
+    "os_local_pack",
+    "os_commercial_on_home",
+    "ai_answers_absent",
+    "no_medical_review",
+    "no_answer_blocks"
   ]
 }

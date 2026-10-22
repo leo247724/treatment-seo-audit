@@ -1,0 +1,2898 @@
+{
+ "results": [
+  {
+   "type": "maps_search",
+   "rank_group": 1,
+   "rank_absolute": 1,
+   "domain": "nashvilletreatmentsolutions.com",
+   "title": "Nashville Treatment Solutions",
+   "url": "https://nashvilletreatmentsolutions.com/",
+   "rating": {
+    "rating_type": "Max5",
+    "value": 4.7,
+    "votes_count": 104,
+    "rating_max": null
+   },
+   "rating_distribution": {
+    "1": 5,
+    "2": 1,
+    "3": 0,
+    "4": 9,
+    "5": 89
+   },
+   "original_title": null,
+   "contact_url": null,
+   "contributor_url": "https://maps.google.com/maps/contrib/115786361456113544687",
+   "book_online_url": null,
+   "hotel_rating": null,
+   "price_level": null,
+   "snippet": "1037 Jefferson St, Nashville, TN 37208",
+   "address": "1037 Jefferson St, Nashville, TN 37208",
+   "address_info": {
+    "borough": "Hope Gardens",
+    "address": "1037 Jefferson St",
+    "city": "Nashville",
+    "zip": "37208",
+    "region": "Tennessee",
+    "country_code": "US"
+   },
+   "place_id": "ChIJBYgkG7hnZIgRPqKUNT-31js",
+   "phone": "+1615-234-9425",
+   "main_image": "https://lh3.googleusercontent.com/grass-cs/AABkmLfLj_GCDcddu4a3NPw3CTYJfw6KTAkIDrlLa2AfoI6sMsXj9h_UOKC7PDCdKXL1woRsFKW2rVzgv_d8_gFc_i2QOCdtXP1qrRNURv5NIz1UYJ1x81kNaF4eL6VkMD7jCg-A3lELeIA4kxdZ=w844-h1125-k-no",
+   "total_photos": 5,
+   "category": "Addiction treatment center",
+   "additional_categories": [
+    "Alcoholism treatment program",
+    "Counselor",
+    "Halfway house",
+    "Mental health clinic",
+    "Mental health service",
+    "Rehabilitation center"
+   ],
+   "category_ids": [
+    "addiction_treatment_center",
+    "alcoholism_treatment_program",
+    "counselor",
+    "halfway_house",
+    "mental_health_clinic",
+    "mental_health_service",
+    "rehabilitation_center"
+   ],
+   "work_hours": {
+    "timetable": {
+     "sunday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "monday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "tuesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "wednesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "thursday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "friday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "saturday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ]
+    },
+    "current_status": "open"
+   },
+   "feature_id": "0x886467b81b248805:0x3bd6b73f3594a23e",
+   "cid": "4311835175363584574",
+   "latitude": 36.1717465,
+   "longitude": -86.7964338,
+   "is_claimed": true,
+   "local_justifications": [
+    {
+     "type": "user_review",
+     "text": "\"Great staff, doing great work for the recovery community.\""
+    }
+   ],
+   "is_directory_item": false
+  },
+  {
+   "type": "maps_search",
+   "rank_group": 2,
+   "rank_absolute": 2,
+   "domain": "www.liveagaindetox.com",
+   "title": "Live Again Detox - Alcohol & Drug Detox Center in Nashville",
+   "url": "http://www.liveagaindetox.com/",
+   "rating": {
+    "rating_type": "Max5",
+    "value": 4.9,
+    "votes_count": 148,
+    "rating_max": null
+   },
+   "rating_distribution": {
+    "1": 4,
+    "2": 1,
+    "3": 0,
+    "4": 0,
+    "5": 143
+   },
+   "original_title": null,
+   "contact_url": null,
+   "contributor_url": "https://maps.google.com/maps/contrib/103356884850182705193",
+   "book_online_url": null,
+   "hotel_rating": null,
+   "price_level": null,
+   "snippet": "1618 17th Ave S, Nashville, TN 37212",
+   "address": "1618 17th Ave S, Nashville, TN 37212",
+   "address_info": {
+    "borough": null,
+    "address": "1618 17th Ave S",
+    "city": "Nashville",
+    "zip": "37212",
+    "region": "Tennessee",
+    "country_code": "US"
+   },
+   "place_id": "ChIJG7pff1tnZIgRLJEjNK4tdOk",
+   "phone": "+1629-465-4277",
+   "main_image": "https://lh3.googleusercontent.com/grass-cs/AABkmLeUF7snaFRhqFKOAYUJOIMZ3DtXhxxY-sc8YtK62_hc5bnGbl0JWewgk_y5jNcyNPcnK7SPPawVYwqgUosuRJZLWoxk7wD-327iS-0zwFpTyHiyeepBHMfezT0PrJJupPRwB1Bt=w844-h562-k-no",
+   "total_photos": 66,
+   "category": "Addiction treatment center",
+   "additional_categories": [
+    "Alcoholism treatment program",
+    "Mental health clinic",
+    "Mental health service",
+    "Rehabilitation center"
+   ],
+   "category_ids": [
+    "addiction_treatment_center",
+    "alcoholism_treatment_program",
+    "mental_health_clinic",
+    "mental_health_service",
+    "rehabilitation_center"
+   ],
+   "work_hours": {
+    "timetable": {
+     "sunday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "monday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "tuesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "wednesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "thursday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "friday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "saturday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ]
+    },
+    "current_status": "open"
+   },
+   "feature_id": "0x8864675b7f5fba1b:0xe9742dae3423912c",
+   "cid": "16822120734357950764",
+   "latitude": 36.1375083,
+   "longitude": -86.7952172,
+   "is_claimed": true,
+   "local_justifications": [
+    {
+     "type": "user_review",
+     "text": "\"The staff truly cares about your well being and journey in recovery.\""
+    }
+   ],
+   "is_directory_item": false
+  },
+  {
+   "type": "maps_search",
+   "rank_group": 3,
+   "rank_absolute": 3,
+   "domain": "southeastaddictiontn.com",
+   "title": "Southeast Addiction Center - Nashville Drug & Alcohol Rehab Center",
+   "url": "https://southeastaddictiontn.com/?utm_source=google&utm_medium=gmb&utm_campaign=gmb",
+   "rating": {
+    "rating_type": "Max5",
+    "value": 4.9,
+    "votes_count": 104,
+    "rating_max": null
+   },
+   "rating_distribution": {
+    "1": 2,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 102
+   },
+   "original_title": null,
+   "contact_url": null,
+   "contributor_url": "https://maps.google.com/maps/contrib/113836239782920847176",
+   "book_online_url": null,
+   "hotel_rating": null,
+   "price_level": null,
+   "snippet": "3507 Charlotte Ave, Nashville, TN 37209",
+   "address": "3507 Charlotte Ave, Nashville, TN 37209",
+   "address_info": {
+    "borough": "Sylvan Heights",
+    "address": "3507 Charlotte Ave",
+    "city": "Nashville",
+    "zip": "37209",
+    "region": "Tennessee",
+    "country_code": "US"
+   },
+   "place_id": "ChIJ3Tv7ZkphZIgR1J2P7yBgqRw",
+   "phone": "+1615-326-6750",
+   "main_image": "https://lh3.googleusercontent.com/grass-cs/AABkmLcm7s5paha0zyhwu_XQm1qOUdV5ov0wJfzfUsUtQ-lDO4oJ_ExATp0njSrEsgsj4pDBp12TP_EqG4iBztJiLlTnpCjfHAw9JLgq6hEbYeBm5YeZZVVUJd7mlBUCdj3b43gfctZ1=w844-h562-k-no",
+   "total_photos": 44,
+   "category": "Addiction treatment center",
+   "additional_categories": [
+    "Alcoholism treatment program",
+    "Counselor",
+    "Family counselor",
+    "Mental health clinic",
+    "Mental health service",
+    "Psychiatrist",
+    "Psychologist",
+    "Psychotherapist",
+    "Rehabilitation center"
+   ],
+   "category_ids": [
+    "addiction_treatment_center",
+    "alcoholism_treatment_program",
+    "counselor",
+    "family_counselor",
+    "mental_health_clinic",
+    "mental_health_service",
+    "psychiatrist",
+    "psychologist",
+    "psychotherapist",
+    "rehabilitation_center"
+   ],
+   "work_hours": {
+    "timetable": {
+     "sunday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "monday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "tuesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "wednesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "thursday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "friday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "saturday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ]
+    },
+    "current_status": "open"
+   },
+   "feature_id": "0x8864614a66fb3bdd:0x1ca96020ef8f9dd4",
+   "cid": "2065287598700469716",
+   "latitude": 36.1523493,
+   "longitude": -86.8266077,
+   "is_claimed": true,
+   "local_justifications": [
+    {
+     "type": "user_review",
+     "text": "\"The staff truly cares about your well being and journey in recovery.\""
+    }
+   ],
+   "is_directory_item": false
+  },
+  {
+   "type": "maps_search",
+   "rank_group": 4,
+   "rank_absolute": 4,
+   "domain": "www.thenextdoor.org",
+   "title": "The Next Door Recovery",
+   "url": "http://www.thenextdoor.org/",
+   "rating": {
+    "rating_type": "Max5",
+    "value": 4.1,
+    "votes_count": 107,
+    "rating_max": null
+   },
+   "rating_distribution": {
+    "1": 21,
+    "2": 1,
+    "3": 3,
+    "4": 4,
+    "5": 78
+   },
+   "original_title": null,
+   "contact_url": null,
+   "contributor_url": "https://maps.google.com/maps/contrib/109302310532408364168",
+   "book_online_url": null,
+   "hotel_rating": null,
+   "price_level": null,
+   "snippet": "402 22nd Ave N, Nashville, TN 37203",
+   "address": "402 22nd Ave N, Nashville, TN 37203",
+   "address_info": {
+    "borough": null,
+    "address": "402 22nd Ave N",
+    "city": "Nashville",
+    "zip": "37203",
+    "region": "Tennessee",
+    "country_code": "US"
+   },
+   "place_id": "ChIJfxYHn19mZIgRvXMDCccXc3Y",
+   "phone": "+1615-251-8805",
+   "main_image": "https://lh3.googleusercontent.com/grass-cs/AABkmLdPYlR0nIBU4zY9pGzLcMj1JibzIxHjNSb7KK2jEc8EJCXnK8t3BUrC3yd4YrIsx9gak7eooqDrDcG_J-qdKab-2vz5oqxa6ROqoXcXNZEJSocTa65uHGwl6pWkVjZg6Zko8Ck-=w844-h675-k-no",
+   "total_photos": 17,
+   "category": "Addiction treatment center",
+   "additional_categories": null,
+   "category_ids": [
+    "addiction_treatment_center"
+   ],
+   "work_hours": {
+    "timetable": {
+     "sunday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "monday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "tuesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "wednesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "thursday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "friday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "saturday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ]
+    },
+    "current_status": "open"
+   },
+   "feature_id": "0x8864665f9f07167f:0x767317c7090373bd",
+   "cid": "8535191862414373821",
+   "latitude": 36.1574327,
+   "longitude": -86.8071497,
+   "is_claimed": true,
+   "local_justifications": [
+    {
+     "type": "user_review",
+     "text": "\"The staff truely care about the clients and helping you get/stay sober!\""
+    }
+   ],
+   "is_directory_item": false
+  },
+  {
+   "type": "maps_search",
+   "rank_group": 5,
+   "rank_absolute": 5,
+   "domain": "samctr.org",
+   "title": "Samaritan Recovery Community",
+   "url": "http://samctr.org/",
+   "rating": {
+    "rating_type": "Max5",
+    "value": 4.6,
+    "votes_count": 52,
+    "rating_max": null
+   },
+   "rating_distribution": {
+    "1": 3,
+    "2": 1,
+    "3": 2,
+    "4": 4,
+    "5": 42
+   },
+   "original_title": null,
+   "contact_url": null,
+   "contributor_url": "https://maps.google.com/maps/contrib/117833980731681304400",
+   "book_online_url": null,
+   "hotel_rating": null,
+   "price_level": null,
+   "snippet": "410 S 5th St, Nashville, TN 37206",
+   "address": "410 S 5th St, Nashville, TN 37206",
+   "address_info": {
+    "borough": "East Nashville",
+    "address": "410 S 5th St",
+    "city": "Nashville",
+    "zip": "37206",
+    "region": "Tennessee",
+    "country_code": "US"
+   },
+   "place_id": "ChIJAXCVBUlmZIgRUA7OKkgzwCQ",
+   "phone": "+1615-244-4802",
+   "main_image": "https://lh3.googleusercontent.com/grass-cs/AABkmLf7yJE8TVX_RSgB9or_yPfdRyVAbgAA88N4qk999uaGipIe1-nFWBRUMQWBzLjzG7YzzNH22rACxAaQrNE2g2o7pHrManY7qHtB2XVm-0l0XrS5MgTP6gN_xJ8ydrlZCN034lF5=w844-h562-k-no",
+   "total_photos": 17,
+   "category": "Addiction treatment center",
+   "additional_categories": [
+    "Business center",
+    "Non-profit organization",
+    "Rehabilitation center"
+   ],
+   "category_ids": [
+    "addiction_treatment_center",
+    "business_center",
+    "non_profit_organization",
+    "rehabilitation_center"
+   ],
+   "work_hours": {
+    "timetable": {
+     "sunday": null,
+     "monday": [
+      {
+       "open": {
+        "hour": 8,
+        "minute": 0
+       },
+       "close": {
+        "hour": 16,
+        "minute": 30
+       }
+      }
+     ],
+     "tuesday": [
+      {
+       "open": {
+        "hour": 8,
+        "minute": 0
+       },
+       "close": {
+        "hour": 16,
+        "minute": 30
+       }
+      }
+     ],
+     "wednesday": [
+      {
+       "open": {
+        "hour": 8,
+        "minute": 0
+       },
+       "close": {
+        "hour": 16,
+        "minute": 30
+       }
+      }
+     ],
+     "thursday": [
+      {
+       "open": {
+        "hour": 8,
+        "minute": 0
+       },
+       "close": {
+        "hour": 16,
+        "minute": 30
+       }
+      }
+     ],
+     "friday": [
+      {
+       "open": {
+        "hour": 8,
+        "minute": 0
+       },
+       "close": {
+        "hour": 16,
+        "minute": 30
+       }
+      }
+     ],
+     "saturday": null
+    },
+    "current_status": "close"
+   },
+   "feature_id": "0x8864664905957001:0x24c033482ace0e50",
+   "cid": "2648172965942660688",
+   "latitude": 36.1680005,
+   "longitude": -86.7629341,
+   "is_claimed": true,
+   "local_justifications": [
+    {
+     "type": "user_review",
+     "text": "\"The counselors are top notch and so is the environment and food.\""
+    }
+   ],
+   "is_directory_item": false
+  },
+  {
+   "type": "maps_search",
+   "rank_group": 6,
+   "rank_absolute": 6,
+   "domain": "www.nashvilleaddictionrecovery.com",
+   "title": "Nashville Addiction Recovery",
+   "url": "https://www.nashvilleaddictionrecovery.com/",
+   "rating": {
+    "rating_type": "Max5",
+    "value": 4.9,
+    "votes_count": 71,
+    "rating_max": null
+   },
+   "rating_distribution": {
+    "1": 1,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 70
+   },
+   "original_title": null,
+   "contact_url": null,
+   "contributor_url": "https://maps.google.com/maps/contrib/118129654271279030331",
+   "book_online_url": null,
+   "hotel_rating": null,
+   "price_level": null,
+   "snippet": "4515 Harding Pike #325, Nashville, TN 37205",
+   "address": "4515 Harding Pike #325, Nashville, TN 37205",
+   "address_info": {
+    "borough": null,
+    "address": "4515 Harding Pike #325",
+    "city": "Nashville",
+    "zip": "37205",
+    "region": "Tennessee",
+    "country_code": "US"
+   },
+   "place_id": "ChIJ-4Hy3r1jZIgRUCYJvDZe78E",
+   "phone": "+1615-695-1167",
+   "main_image": "https://lh3.googleusercontent.com/grass-cs/AABkmLeHutewGQPpgfj9huL-6fyq9qLeHriwcBrC2EBM5grIorOss9Inja98U0rCckBMpUULKqMtqq_uu6KxxzbuyBCCUOMxxiarPnPoetZdwhSsHF1uUItwQE1a_vlefRjb4qHOCECItw=w844-h633-k-no",
+   "total_photos": 12,
+   "category": "Addiction treatment center",
+   "additional_categories": [
+    "Alcoholism treatment program",
+    "Rehabilitation center"
+   ],
+   "category_ids": [
+    "addiction_treatment_center",
+    "alcoholism_treatment_program",
+    "rehabilitation_center"
+   ],
+   "work_hours": {
+    "timetable": {
+     "sunday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "monday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "tuesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "wednesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "thursday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "friday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "saturday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ]
+    },
+    "current_status": "open"
+   },
+   "feature_id": "0x886463bddef281fb:0xc1ef5e36bc092650",
+   "cid": "13974491757929899600",
+   "latitude": 36.123611,
+   "longitude": -86.84821099999999,
+   "is_claimed": true,
+   "local_justifications": [
+    {
+     "type": "user_review",
+     "text": "\"This place providers luxury detox services and responds immediately!\""
+    }
+   ],
+   "is_directory_item": false
+  },
+  {
+   "type": "maps_search",
+   "rank_group": 7,
+   "rank_absolute": 7,
+   "domain": "cumberlandheights.org",
+   "title": "Cumberland Heights Outpatient Addiction Treatment (Nashville | Music Row)",
+   "url": "https://cumberlandheights.org/resources/location/nashville-music-row/",
+   "rating": {
+    "rating_type": "Max5",
+    "value": 4.6,
+    "votes_count": 9,
+    "rating_max": null
+   },
+   "rating_distribution": {
+    "1": 1,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 8
+   },
+   "original_title": null,
+   "contact_url": null,
+   "contributor_url": "https://maps.google.com/maps/contrib/112582763853135752158",
+   "book_online_url": null,
+   "hotel_rating": null,
+   "price_level": null,
+   "snippet": "1619 17th Ave S, Nashville, TN 37212",
+   "address": "1619 17th Ave S, Nashville, TN 37212",
+   "address_info": {
+    "borough": null,
+    "address": "1619 17th Ave S",
+    "city": "Nashville",
+    "zip": "37212",
+    "region": "Tennessee",
+    "country_code": "US"
+   },
+   "place_id": "ChIJI_5fPpxmZIgR-3cC5zd6eec",
+   "phone": "+1615-257-9608",
+   "main_image": "https://lh3.googleusercontent.com/grass-cs/AABkmLcWUxSxls614CFe-v8-ndwArCUPyWJDPSLlWoiAvQxFdf4GW9Y7nmIujNrebxtguVPC-bsgY85NhUaWgZp9G76uG1Zd-plBgfFMgkxAMi7UIzDIipIdgezmk5v5HJ6uGEHjnmaJDUkzQlZa=w844-h844-k-no",
+   "total_photos": 22,
+   "category": "Addiction treatment center",
+   "additional_categories": [
+    "Alcoholism treatment program",
+    "Mental health clinic",
+    "Mental health service"
+   ],
+   "category_ids": [
+    "addiction_treatment_center",
+    "alcoholism_treatment_program",
+    "mental_health_clinic",
+    "mental_health_service"
+   ],
+   "work_hours": {
+    "timetable": {
+     "sunday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "monday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "tuesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "wednesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "thursday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "friday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "saturday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ]
+    },
+    "current_status": "open"
+   },
+   "feature_id": "0x8864669c3e5ffe23:0xe7797a37e70277fb",
+   "cid": "16679497075460831227",
+   "latitude": 36.1374821,
+   "longitude": -86.795869,
+   "is_claimed": true,
+   "local_justifications": [
+    {
+     "type": "user_review",
+     "text": "\"They worked with me to find solutions tailored to my personal challenges.\""
+    }
+   ],
+   "is_directory_item": false
+  },
+  {
+   "type": "maps_search",
+   "rank_group": 8,
+   "rank_absolute": 8,
+   "domain": "mariongatleyassociation.com",
+   "title": "MGA Crisis Intervention",
+   "url": "https://mariongatleyassociation.com/our-locations/tennessee/intervention-drug-rehab-association-511-union-street-nashville-tn-37219/",
+   "rating": {
+    "rating_type": "Max5",
+    "value": 5,
+    "votes_count": 1,
+    "rating_max": null
+   },
+   "rating_distribution": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 1
+   },
+   "original_title": null,
+   "contact_url": null,
+   "contributor_url": "https://maps.google.com/maps/contrib/100471244924590233681",
+   "book_online_url": null,
+   "hotel_rating": null,
+   "price_level": null,
+   "snippet": "Union St #627, Nashville, TN 37219",
+   "address": "Union St #627, Nashville, TN 37219",
+   "address_info": {
+    "borough": "Arts District",
+    "address": "Union St #627",
+    "city": "Nashville",
+    "zip": "37219",
+    "region": "Tennessee",
+    "country_code": "US"
+   },
+   "place_id": "ChIJPeH4dlhmZIgR6A5hM72TEeA",
+   "phone": "+1629-401-2776",
+   "main_image": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=j99Ems1NfUF6fqEnyXhkJQ&cb_client=search.gws-prod.grass&w=844&h=78&yaw=66.64628&pitch=0&thumbfov=100",
+   "total_photos": 1,
+   "category": "Addiction treatment center",
+   "additional_categories": [
+    "Mental health clinic",
+    "Rehabilitation center"
+   ],
+   "category_ids": [
+    "addiction_treatment_center",
+    "mental_health_clinic",
+    "rehabilitation_center"
+   ],
+   "work_hours": {
+    "timetable": {
+     "sunday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "monday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "tuesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "wednesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "thursday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "friday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "saturday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ]
+    },
+    "current_status": "open"
+   },
+   "feature_id": "0x8864665876f8e13d:0xe01193bd33610ee8",
+   "cid": "16145848579920039656",
+   "latitude": 36.1642508,
+   "longitude": -86.781657,
+   "is_claimed": true,
+   "local_justifications": null,
+   "is_directory_item": false
+  },
+  {
+   "type": "maps_search",
+   "rank_group": 9,
+   "rank_absolute": 9,
+   "domain": "gracerc.com",
+   "title": "Mental Health Treatment IOP at Grace Recovery Center",
+   "url": "https://gracerc.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+   "rating": {
+    "rating_type": "Max5",
+    "value": 4.8,
+    "votes_count": 66,
+    "rating_max": null
+   },
+   "rating_distribution": {
+    "1": 3,
+    "2": 1,
+    "3": 0,
+    "4": 1,
+    "5": 61
+   },
+   "original_title": null,
+   "contact_url": null,
+   "contributor_url": "https://maps.google.com/maps/contrib/103633400407702198115",
+   "book_online_url": null,
+   "hotel_rating": null,
+   "price_level": null,
+   "snippet": "1001 Gallatin Ave, Nashville, TN 37206",
+   "address": "1001 Gallatin Ave, Nashville, TN 37206",
+   "address_info": {
+    "borough": "East Nashville",
+    "address": "1001 Gallatin Ave",
+    "city": "Nashville",
+    "zip": "37206",
+    "region": "Tennessee",
+    "country_code": "US"
+   },
+   "place_id": "ChIJifUm56ZnZIgRgZa6LRU0i9I",
+   "phone": "+1423-831-4649",
+   "main_image": "https://lh3.googleusercontent.com/grass-cs/AABkmLeDOWzj9OexLTuAahKBznCESbps03FbsCBpuBnRHccfzjnu0rinORWlv7c0G7DobNcY-f92XJ68W-GALGifkWh9-qeCyjHc400jpUQf2ogXAaOrCKQrDWH0l60YN4AShbR157ChM1jttFm2=w844-h562-k-no",
+   "total_photos": 34,
+   "category": "Addiction treatment center",
+   "additional_categories": [
+    "Alcoholism treatment program",
+    "Mental health clinic",
+    "Mental health service",
+    "Rehabilitation center"
+   ],
+   "category_ids": [
+    "addiction_treatment_center",
+    "alcoholism_treatment_program",
+    "mental_health_clinic",
+    "mental_health_service",
+    "rehabilitation_center"
+   ],
+   "work_hours": {
+    "timetable": {
+     "sunday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "monday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "tuesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "wednesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "thursday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "friday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "saturday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ]
+    },
+    "current_status": "open"
+   },
+   "feature_id": "0x886467a6e726f589:0xd28b34152dba9681",
+   "cid": "15171277035293808257",
+   "latitude": 36.1883675,
+   "longitude": -86.7459763,
+   "is_claimed": true,
+   "local_justifications": [
+    {
+     "type": "user_review",
+     "text": "\"Wonderful recovery program with amazing staff!\""
+    }
+   ],
+   "is_directory_item": false
+  },
+  {
+   "type": "maps_search",
+   "rank_group": 10,
+   "rank_absolute": 10,
+   "domain": "www.renaissancerecovery.com",
+   "title": "Renaissance Recovery - Nashville Outpatient Drug & Alcohol Rehab",
+   "url": "https://www.renaissancerecovery.com/drug/rehab/tennessee/nashville/?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=nashville",
+   "rating": {
+    "rating_type": "Max5",
+    "value": 5,
+    "votes_count": 49,
+    "rating_max": null
+   },
+   "rating_distribution": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 1,
+    "5": 48
+   },
+   "original_title": null,
+   "contact_url": null,
+   "contributor_url": "https://maps.google.com/maps/contrib/111532528729556301403",
+   "book_online_url": null,
+   "hotel_rating": null,
+   "price_level": null,
+   "snippet": "2200 8th Ave S, Nashville, TN 37204",
+   "address": "2200 8th Ave S, Nashville, TN 37204",
+   "address_info": {
+    "borough": "Woodland in Waverly",
+    "address": "2200 8th Ave S",
+    "city": "Nashville",
+    "zip": "37204",
+    "region": "Tennessee",
+    "country_code": "US"
+   },
+   "place_id": "ChIJtwiPh3llZIgRdTpUZrJtGXQ",
+   "phone": "+1629-249-5399",
+   "main_image": "https://lh3.googleusercontent.com/grass-cs/AABkmLdVFcA9JgJkA-kCm8z14EVl0ZBEZvU69SYM2TB_TEuOdauqGlkO2LzgEqYekBD3ZKjQYXdizaGk1RH5A9HUHZ3_eCxYBlhbWpGWsEwIDOrGJ5S7volhS0M5TpPZVZQTYrncBVrJNiIxBVqX=w844-h562-k-no",
+   "total_photos": 27,
+   "category": "Addiction treatment center",
+   "additional_categories": [
+    "Alcoholism treatment program",
+    "Mental health service"
+   ],
+   "category_ids": [
+    "addiction_treatment_center",
+    "alcoholism_treatment_program",
+    "mental_health_service"
+   ],
+   "work_hours": {
+    "timetable": {
+     "sunday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "monday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "tuesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "wednesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "thursday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "friday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "saturday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ]
+    },
+    "current_status": "open"
+   },
+   "feature_id": "0x88646579878f08b7:0x74196db266543a75",
+   "cid": "8365838395805809269",
+   "latitude": 36.1304161,
+   "longitude": -86.77812279999999,
+   "is_claimed": true,
+   "local_justifications": [
+    {
+     "type": "user_review",
+     "text": "\"Awesome staff, very very supportive & reasonable of my recovery.\""
+    }
+   ],
+   "is_directory_item": false
+  },
+  {
+   "type": "maps_search",
+   "rank_group": 11,
+   "rank_absolute": 11,
+   "domain": "treehouserecoverytn.com",
+   "title": "Tree House Recovery TN",
+   "url": "https://treehouserecoverytn.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=nashville",
+   "rating": {
+    "rating_type": "Max5",
+    "value": 4.9,
+    "votes_count": 57,
+    "rating_max": null
+   },
+   "rating_distribution": {
+    "1": 0,
+    "2": 1,
+    "3": 0,
+    "4": 1,
+    "5": 55
+   },
+   "original_title": null,
+   "contact_url": null,
+   "contributor_url": "https://maps.google.com/maps/contrib/118237901064726927721",
+   "book_online_url": null,
+   "hotel_rating": null,
+   "price_level": null,
+   "snippet": "6030 Neighborly Ave, Nashville, TN 37209",
+   "address": "6030 Neighborly Ave, Nashville, TN 37209",
+   "address_info": {
+    "borough": null,
+    "address": "6030 Neighborly Ave",
+    "city": "Nashville",
+    "zip": "37209",
+    "region": "Tennessee",
+    "country_code": "US"
+   },
+   "place_id": "ChIJ77pS761nZIgRNHT2l7SKR4Q",
+   "phone": "+1615-314-8310",
+   "main_image": "https://lh3.googleusercontent.com/grass-cs/AABkmLf0ZyBdxKV440qFFxmkbs-Yi0NcPJc_aE7OapJZ1dTMEfSfrNMpYgji9rAyORy1k-5tthGAnH3XvR9rdpgrpw3Y7cKjZmnf23woseoE0ETYNlURwe7RNyU8KSz5dINieMwerBbELlQ_r04=w844-h844-k-no",
+   "total_photos": 12,
+   "category": "Addiction treatment center",
+   "additional_categories": [
+    "Alcoholism treatment program",
+    "Counselor",
+    "Mental health clinic",
+    "Rehabilitation center"
+   ],
+   "category_ids": [
+    "addiction_treatment_center",
+    "alcoholism_treatment_program",
+    "counselor",
+    "mental_health_clinic",
+    "rehabilitation_center"
+   ],
+   "work_hours": {
+    "timetable": {
+     "sunday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "monday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "tuesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "wednesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "thursday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "friday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "saturday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ]
+    },
+    "current_status": "open"
+   },
+   "feature_id": "0x886467adef52baef:0x84478ab497f67434",
+   "cid": "9531739644601201716",
+   "latitude": 36.146310199999995,
+   "longitude": -86.8678573,
+   "is_claimed": true,
+   "local_justifications": [
+    {
+     "type": "user_review",
+     "text": "\"Excellent approach to recovery, excellent staff, and excellent resources.\""
+    }
+   ],
+   "is_directory_item": false
+  },
+  {
+   "type": "maps_search",
+   "rank_group": 12,
+   "rank_absolute": 12,
+   "domain": "www.recoveryunplugged.com",
+   "title": "Recovery Unplugged Tennessee Drug & Alcohol Rehab Nashville",
+   "url": "https://www.recoveryunplugged.com/location/drug-rehab-in-nashville/?utm_source=google&utm_medium=gmb&utm_campaign=nashville",
+   "rating": {
+    "rating_type": "Max5",
+    "value": 4.9,
+    "votes_count": 410,
+    "rating_max": null
+   },
+   "rating_distribution": {
+    "1": 12,
+    "2": 2,
+    "3": 0,
+    "4": 4,
+    "5": 392
+   },
+   "original_title": null,
+   "contact_url": null,
+   "contributor_url": "https://maps.google.com/maps/contrib/115853152477925080952",
+   "book_online_url": null,
+   "hotel_rating": null,
+   "price_level": null,
+   "snippet": "255 Wilson Pike Cir, Brentwood, TN 37027",
+   "address": "255 Wilson Pike Cir, Brentwood, TN 37027",
+   "address_info": {
+    "borough": null,
+    "address": "255 Wilson Pike Cir",
+    "city": "Brentwood",
+    "zip": "37027",
+    "region": "Tennessee",
+    "country_code": "US"
+   },
+   "place_id": "ChIJoXETQ1B7ZIgRjHergVvfM98",
+   "phone": "+1615-616-9685",
+   "main_image": "https://lh3.googleusercontent.com/grass-cs/AABkmLeErhkTVWwxz5RRl-cSF9bXqGDLjRLkRbVkqTh1-KUH3W8_yoZzkFeQeGD-dC2kGOBqjenXrhl0zQURqQOQ4u4OuMnr6zbysPo6vHgxTsXFFKr0JQT55oXvTBFb8VDKrO-gvNU=w844-h562-k-no",
+   "total_photos": 186,
+   "category": "Addiction treatment center",
+   "additional_categories": [
+    "Mental health clinic",
+    "Mental health service",
+    "Psychologist"
+   ],
+   "category_ids": [
+    "addiction_treatment_center",
+    "mental_health_clinic",
+    "mental_health_service",
+    "psychologist"
+   ],
+   "work_hours": {
+    "timetable": {
+     "sunday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "monday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "tuesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "wednesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "thursday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "friday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "saturday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ]
+    },
+    "current_status": "open"
+   },
+   "feature_id": "0x88647b50431371a1:0xdf33df5b81ab778c",
+   "cid": "16083444278380689292",
+   "latitude": 36.029181,
+   "longitude": -86.78506759999999,
+   "is_claimed": true,
+   "local_justifications": [
+    {
+     "type": "user_review",
+     "text": "\"The staff genuinely cares about your recovery and your personal wrll being.\""
+    }
+   ],
+   "is_directory_item": false
+  },
+  {
+   "type": "maps_search",
+   "rank_group": 13,
+   "rank_absolute": 13,
+   "domain": "brentwoodspringsdetox.com",
+   "title": "Brentwood Springs Detox",
+   "url": "https://brentwoodspringsdetox.com/?utm_source=google&utm_medium=gbp",
+   "rating": {
+    "rating_type": "Max5",
+    "value": 4.8,
+    "votes_count": 254,
+    "rating_max": null
+   },
+   "rating_distribution": {
+    "1": 9,
+    "2": 1,
+    "3": 0,
+    "4": 2,
+    "5": 242
+   },
+   "original_title": null,
+   "contact_url": null,
+   "contributor_url": "https://maps.google.com/maps/contrib/108401877700353928925",
+   "book_online_url": null,
+   "hotel_rating": null,
+   "price_level": null,
+   "snippet": "5935 Edmondson Pike, Nashville, TN 37211",
+   "address": "5935 Edmondson Pike, Nashville, TN 37211",
+   "address_info": {
+    "borough": null,
+    "address": "5935 Edmondson Pike",
+    "city": "Nashville",
+    "zip": "37211",
+    "region": "Tennessee",
+    "country_code": "US"
+   },
+   "place_id": "ChIJjVy6VkRlZIgRby_Lf4NYl_w",
+   "phone": "+1615-434-8157",
+   "main_image": "https://lh3.googleusercontent.com/grass-cs/AABkmLdL73biDMpRdKNPzS3XyQXXrjThxI8VbRzicCCBU3N30Zhwr5Oh49JJEPBhmQRDBDusvzolceZZ0HpftyBEwhUCnjoThIkVj_oTNF2xl3J_0ktfsIVkp5IQyGOwupFFvaUKz4diOQ=w844-h474-k-no",
+   "total_photos": 39,
+   "category": "Addiction treatment center",
+   "additional_categories": [
+    "Alcoholism treatment program",
+    "Counselor",
+    "Mental health clinic",
+    "Mental health service",
+    "Rehabilitation center"
+   ],
+   "category_ids": [
+    "addiction_treatment_center",
+    "alcoholism_treatment_program",
+    "counselor",
+    "mental_health_clinic",
+    "mental_health_service",
+    "rehabilitation_center"
+   ],
+   "work_hours": {
+    "timetable": {
+     "sunday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "monday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "tuesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "wednesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "thursday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "friday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "saturday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ]
+    },
+    "current_status": "open"
+   },
+   "feature_id": "0x8864654456ba5c8d:0xfc9758837fcb2f6f",
+   "cid": "18201113740849131375",
+   "latitude": 36.026492399999995,
+   "longitude": -86.7442732,
+   "is_claimed": true,
+   "local_justifications": [
+    {
+     "type": "user_review",
+     "text": "\"This place started the recovery process that saved my life.\""
+    }
+   ],
+   "is_directory_item": false
+  },
+  {
+   "type": "maps_search",
+   "rank_group": 14,
+   "rank_absolute": 14,
+   "domain": "socacrosstn.org",
+   "title": "System of Care Across Tennessee",
+   "url": "http://socacrosstn.org/",
+   "rating": {
+    "rating_type": "Max5",
+    "value": 5,
+    "votes_count": 2,
+    "rating_max": null
+   },
+   "rating_distribution": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 2
+   },
+   "original_title": null,
+   "contact_url": null,
+   "contributor_url": "https://maps.google.com/maps/contrib/113755256660647930416",
+   "book_online_url": null,
+   "hotel_rating": null,
+   "price_level": null,
+   "snippet": "500 Deaderick St, Nashville, TN 37243",
+   "address": "500 Deaderick St, Nashville, TN 37243",
+   "address_info": {
+    "borough": "Downtown",
+    "address": "500 Deaderick St",
+    "city": "Nashville",
+    "zip": "37243",
+    "region": "Tennessee",
+    "country_code": "US"
+   },
+   "place_id": "ChIJC-0k_fdmZIgRB0RnL4MWs7c",
+   "phone": "+1615-532-6700",
+   "main_image": "https://lh3.googleusercontent.com/grass-cs/AABkmLfz1cUb2l1ut0NwTGsIKoraNhKsu79U8Qb8CG2iqDaFL_ioIObZ48Pb40YrucO7d32GzjZOQtMsrTo8GT7hTIc7VgrHPXO3mSDNmi-dQEKE80hzMRkyLKiqOSd0bz5EdDwQOGQ2=w844-h474-k-no",
+   "total_photos": 18,
+   "category": "Addiction treatment center",
+   "additional_categories": [
+    "Community health center",
+    "Mental health clinic",
+    "Mental health service",
+    "Non-profit organization"
+   ],
+   "category_ids": [
+    "addiction_treatment_center",
+    "community_health_center",
+    "mental_health_clinic",
+    "mental_health_service",
+    "non_profit_organization"
+   ],
+   "work_hours": {
+    "timetable": {
+     "sunday": null,
+     "monday": [
+      {
+       "open": {
+        "hour": 8,
+        "minute": 0
+       },
+       "close": {
+        "hour": 16,
+        "minute": 30
+       }
+      }
+     ],
+     "tuesday": [
+      {
+       "open": {
+        "hour": 8,
+        "minute": 0
+       },
+       "close": {
+        "hour": 16,
+        "minute": 30
+       }
+      }
+     ],
+     "wednesday": [
+      {
+       "open": {
+        "hour": 8,
+        "minute": 0
+       },
+       "close": {
+        "hour": 16,
+        "minute": 30
+       }
+      }
+     ],
+     "thursday": [
+      {
+       "open": {
+        "hour": 8,
+        "minute": 0
+       },
+       "close": {
+        "hour": 16,
+        "minute": 30
+       }
+      }
+     ],
+     "friday": [
+      {
+       "open": {
+        "hour": 8,
+        "minute": 0
+       },
+       "close": {
+        "hour": 16,
+        "minute": 30
+       }
+      }
+     ],
+     "saturday": null
+    },
+    "current_status": "close"
+   },
+   "feature_id": "0x886466f7fd24ed0b:0xb7b316832f674407",
+   "cid": "13236948482463843335",
+   "latitude": 36.1654377,
+   "longitude": -86.7822233,
+   "is_claimed": true,
+   "local_justifications": null,
+   "is_directory_item": false
+  },
+  {
+   "type": "maps_search",
+   "rank_group": 15,
+   "rank_absolute": 15,
+   "domain": "integrativelifecenter.com",
+   "title": "Integrative Life Center",
+   "url": "https://integrativelifecenter.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+   "rating": {
+    "rating_type": "Max5",
+    "value": 4.1,
+    "votes_count": 74,
+    "rating_max": null
+   },
+   "rating_distribution": {
+    "1": 14,
+    "2": 2,
+    "3": 3,
+    "4": 1,
+    "5": 54
+   },
+   "original_title": null,
+   "contact_url": null,
+   "contributor_url": "https://maps.google.com/maps/contrib/100404924791653713312",
+   "book_online_url": null,
+   "hotel_rating": null,
+   "price_level": null,
+   "snippet": "1105 16th Ave S STE A, Nashville, TN 37212",
+   "address": "1105 16th Ave S STE A, Nashville, TN 37212",
+   "address_info": {
+    "borough": "Music Row",
+    "address": "1105 16th Ave S STE A",
+    "city": "Nashville",
+    "zip": "37212",
+    "region": "Tennessee",
+    "country_code": "US"
+   },
+   "place_id": "ChIJJ23NpZpmZIgRmk5m4I40IpE",
+   "phone": "+1615-455-3903",
+   "main_image": "https://lh3.googleusercontent.com/grass-cs/AABkmLcul55vhljGId8lrx2S_SR3LUOrKshKK6WHboljYseJ64e9x5YlJK-XYcrCTi1RRbUbKGLoP5obxxh678JLpjL5G1NNJp7PtUL8InmfFyz55VBCJPAYd5Yp4yFHYklg16_W2L8a=w844-h562-k-no",
+   "total_photos": 64,
+   "category": "Addiction treatment center",
+   "additional_categories": [
+    "Mental health clinic",
+    "Mental health service",
+    "Rehabilitation center"
+   ],
+   "category_ids": [
+    "addiction_treatment_center",
+    "mental_health_clinic",
+    "mental_health_service",
+    "rehabilitation_center"
+   ],
+   "work_hours": {
+    "timetable": {
+     "sunday": [
+      {
+       "open": {
+        "hour": 8,
+        "minute": 0
+       },
+       "close": {
+        "hour": 18,
+        "minute": 0
+       }
+      }
+     ],
+     "monday": [
+      {
+       "open": {
+        "hour": 8,
+        "minute": 0
+       },
+       "close": {
+        "hour": 18,
+        "minute": 0
+       }
+      }
+     ],
+     "tuesday": [
+      {
+       "open": {
+        "hour": 8,
+        "minute": 0
+       },
+       "close": {
+        "hour": 18,
+        "minute": 0
+       }
+      }
+     ],
+     "wednesday": [
+      {
+       "open": {
+        "hour": 8,
+        "minute": 0
+       },
+       "close": {
+        "hour": 18,
+        "minute": 0
+       }
+      }
+     ],
+     "thursday": [
+      {
+       "open": {
+        "hour": 8,
+        "minute": 0
+       },
+       "close": {
+        "hour": 18,
+        "minute": 0
+       }
+      }
+     ],
+     "friday": [
+      {
+       "open": {
+        "hour": 8,
+        "minute": 0
+       },
+       "close": {
+        "hour": 18,
+        "minute": 0
+       }
+      }
+     ],
+     "saturday": [
+      {
+       "open": {
+        "hour": 8,
+        "minute": 0
+       },
+       "close": {
+        "hour": 18,
+        "minute": 0
+       }
+      }
+     ]
+    },
+    "current_status": "close"
+   },
+   "feature_id": "0x8864669aa5cd6d27:0x9122348ee0664e9a",
+   "cid": "10457979072962514586",
+   "latitude": 36.1440842,
+   "longitude": -86.7932957,
+   "is_claimed": true,
+   "local_justifications": [
+    {
+     "type": "user_review",
+     "text": "\"From the program, therapists, staff they are truly saving lives!\""
+    }
+   ],
+   "is_directory_item": false
+  },
+  {
+   "type": "maps_search",
+   "rank_group": 16,
+   "rank_absolute": 16,
+   "domain": null,
+   "title": "Support Foundation Nashville",
+   "url": null,
+   "rating": {
+    "rating_type": "Max5",
+    "value": 5,
+    "votes_count": 1,
+    "rating_max": null
+   },
+   "rating_distribution": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 1
+   },
+   "original_title": null,
+   "contact_url": null,
+   "contributor_url": null,
+   "book_online_url": null,
+   "hotel_rating": null,
+   "price_level": null,
+   "snippet": "Young Executive Building, 1300 Division St Unit 107, Nashville, TN 37203",
+   "address": "Young Executive Building, 1300 Division St Unit 107, Nashville, TN 37203",
+   "address_info": {
+    "borough": "Midtown",
+    "address": "Young Executive Building, 1300 Division St Unit 107",
+    "city": "Nashville",
+    "zip": "37203",
+    "region": "Tennessee",
+    "country_code": "US"
+   },
+   "place_id": "ChIJnUKCeoxmZIgRdzgk_fi20Kg",
+   "phone": "+1615-313-8480",
+   "main_image": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=nMoYBgbR6HXnnMCjmPpA-Q&cb_client=search.gws-prod.grass&w=844&h=78&yaw=79.942635&pitch=0&thumbfov=100",
+   "total_photos": 2,
+   "category": "Addiction treatment center",
+   "additional_categories": null,
+   "category_ids": [
+    "addiction_treatment_center"
+   ],
+   "feature_id": "0x8864668c7a82429d:0xa8d0b6f8fd243877",
+   "cid": "12164423774042863735",
+   "latitude": 36.151744199999996,
+   "longitude": -86.7874301,
+   "is_claimed": false,
+   "local_justifications": null,
+   "is_directory_item": false
+  },
+  {
+   "type": "maps_search",
+   "rank_group": 17,
+   "rank_absolute": 17,
+   "domain": "www.renaissancerecovery.com",
+   "title": "Renaissance Recovery - Nashville Sober Living HQ",
+   "url": "https://www.renaissancerecovery.com/drug/rehab/tennessee/?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=tennessee",
+   "rating": {
+    "rating_type": "Max5",
+    "value": 5,
+    "votes_count": 6,
+    "rating_max": null
+   },
+   "rating_distribution": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 6
+   },
+   "original_title": null,
+   "contact_url": null,
+   "contributor_url": "https://maps.google.com/maps/contrib/111488006649109161103",
+   "book_online_url": null,
+   "hotel_rating": null,
+   "price_level": null,
+   "snippet": "1108 McKennie Ave, Nashville, TN 37206",
+   "address": "1108 McKennie Ave, Nashville, TN 37206",
+   "address_info": {
+    "borough": "East Nashville",
+    "address": "1108 McKennie Ave",
+    "city": "Nashville",
+    "zip": "37206",
+    "region": "Tennessee",
+    "country_code": "US"
+   },
+   "place_id": "ChIJi_RQCuJpZIgRYI6OSCdQEA4",
+   "phone": "+1615-703-7260",
+   "main_image": "https://lh3.googleusercontent.com/grass-cs/AABkmLefdXo4Zn3oguc8ZZsHEcO9tV_CFH312DXqhPTtTl_Wn07Zo08aWRk0qwK_GZLyb3vh6fElqqG8nCNEvnvqH3AIvQDMLLXjHdy2gJ-pY43BXX_vdQx51z9v3v-dnSiIhLQfUQyJd7ieFury=w844-h562-k-no",
+   "total_photos": 31,
+   "category": "Addiction treatment center",
+   "additional_categories": null,
+   "category_ids": [
+    "addiction_treatment_center"
+   ],
+   "work_hours": {
+    "timetable": {
+     "sunday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "monday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "tuesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "wednesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "thursday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "friday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "saturday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ]
+    },
+    "current_status": "open"
+   },
+   "feature_id": "0x886469e20a50f48b:0xe105027488e8e60",
+   "cid": "1013398045809610336",
+   "latitude": 36.191559999999996,
+   "longitude": -86.7442791,
+   "is_claimed": true,
+   "local_justifications": [
+    {
+     "type": "user_review",
+     "text": "\"The sober living here is nicer than anyplace I have ever been by far.\""
+    }
+   ],
+   "is_directory_item": false
+  },
+  {
+   "type": "maps_search",
+   "rank_group": 18,
+   "rank_absolute": 18,
+   "domain": "cornerstoneofrecovery.com",
+   "title": "Cornerstone Outpatient - Nashville (A Bradford Recovery Community)",
+   "url": "https://cornerstoneofrecovery.com/intensive-outpatient/?utm_source=google&utm_medium=google_my_business",
+   "rating": {
+    "rating_type": "Max5",
+    "value": 3.5,
+    "votes_count": 15,
+    "rating_max": null
+   },
+   "rating_distribution": {
+    "1": 5,
+    "2": 0,
+    "3": 1,
+    "4": 1,
+    "5": 8
+   },
+   "original_title": null,
+   "contact_url": null,
+   "contributor_url": "https://maps.google.com/maps/contrib/105192732341708679678",
+   "book_online_url": null,
+   "hotel_rating": null,
+   "price_level": null,
+   "snippet": "1410 Donelson Pike Ste A7, Nashville, TN 37217",
+   "address": "1410 Donelson Pike Ste A7, Nashville, TN 37217",
+   "address_info": {
+    "borough": null,
+    "address": "1410 Donelson Pike Ste A7",
+    "city": "Nashville",
+    "zip": "37217",
+    "region": "Tennessee",
+    "country_code": "US"
+   },
+   "place_id": "ChIJ50Q6IDZnZIgRQPCLt0LGck8",
+   "phone": "+1865-390-5248",
+   "main_image": "https://lh3.googleusercontent.com/grass-cs/AABkmLeHhc6IwKXloVhPQl5-znIruZ28IBjnU4wTiFYwvcNJbXSNUMNfuAVRSDQTY-cgFaaIF8kbVH_iKhLk57B0ZQHde7x3n_ttNslTAELMXs6YhtEc6fsXbOjJn_CQVWUEYb7sW9_j=w844-h1500-k-no",
+   "total_photos": 4,
+   "category": "Addiction treatment center",
+   "additional_categories": [
+    "Alcoholism treatment program",
+    "Rehabilitation center"
+   ],
+   "category_ids": [
+    "addiction_treatment_center",
+    "alcoholism_treatment_program",
+    "rehabilitation_center"
+   ],
+   "work_hours": {
+    "timetable": {
+     "sunday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "monday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "tuesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "wednesday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "thursday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "friday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ],
+     "saturday": [
+      {
+       "open": {
+        "hour": 0,
+        "minute": 0
+       },
+       "close": {
+        "hour": 24,
+        "minute": 0
+       }
+      }
+     ]
+    },
+    "current_status": "open"
+   },
+   "feature_id": "0x88646736203a44e7:0x4f72c642b78bf040",
+   "cid": "5724856066190864448",
+   "latitude": 36.0959532,
+   "longitude": -86.6785436,
+   "is_claimed": true,
+   "local_justifications": [
+    {
+     "type": "user_review",
+     "text": "\"They have our trust--thanks, Bradford!\""
+    }
+   ],
+   "is_directory_item": false
+  },
+  {
+   "type": "maps_search",
+   "rank_group": 19,
+   "rank_absolute": 19,
+   "domain": "nashvilleaddictionclinic.com",
+   "title": "Nashville Addiction Clinic",
+   "url": "https://nashvilleaddictionclinic.com/?utm_source=google&utm_medium=organic&utm_campaign=googlemybusiness",
+   "rating": {
+    "rating_type": "Max5",
+    "value": 4.9,
+    "votes_count": 301,
+    "rating_max": null
+   },
+   "rating_distribution": {
+    "1": 8,
+    "2": 1,
+    "3": 0,
+    "4": 6,
+    "5": 286
+   },
+   "original_title": null,
+   "contact_url": null,
+   "contributor_url": "https://maps.google.com/maps/contrib/111276090346990132122",
+   "book_online_url": null,
+   "hotel_rating": null,
+   "price_level": null,
+   "snippet": "5515 Edmondson Pike Unit 118, Nashville, TN 37211",
+   "address": "5515 Edmondson Pike Unit 118, Nashville, TN 37211",
+   "address_info": {
+    "borough": null,
+    "address": "5515 Edmondson Pike Unit 118",
+    "city": "Nashville",
+    "zip": "37211",
+    "region": "Tennessee",
+    "country_code": "US"
+   },
+   "place_id": "ChIJ5bElj8h7ZIgRIm3T1LNkOr8",
+   "phone": "+1615-927-7802",
+   "main_image": "https://lh3.googleusercontent.com/grass-cs/AABkmLdxUr7tIbKx1XpVonS0YRCpSEuhpylG7v8I5UEzOUm3IAh5WYLUw37noMVu1KZLuldvXGWNy_KyTjchS9drxBRRYTxkCYlNJRkCW5oObUlz8pkT4YHiszriuLsA3jD_O1Bt78_dBQ=w844-h1125-k-no",
+   "total_photos": 34,
+   "category": "Addiction treatment center",
+   "additional_categories": null,
+   "category_ids": [
+    "addiction_treatment_center"
+   ],
+   "work_hours": {
+    "timetable": {
+     "sunday": null,
+     "monday": [
+      {
+       "open": {
+        "hour": 8,
+        "minute": 0
+       },
+       "close": {
+        "hour": 17,
+        "minute": 0
+       }
+      }
+     ],
+     "tuesday": [
+      {
+       "open": {
+        "hour": 8,
+        "minute": 0
+       },
+       "close": {
+        "hour": 17,
+        "minute": 0
+       }
+      }
+     ],
+     "wednesday": [
+      {
+       "open": {
+        "hour": 8,
+        "minute": 0
+       },
+       "close": {
+        "hour": 20,
+        "minute": 30
+       }
+      }
+     ],
+     "thursday": [
+      {
+       "open": {
+        "hour": 8,
+        "minute": 0
+       },
+       "close": {
+        "hour": 17,
+        "minute": 0
+       }
+      }
+     ],
+     "friday": [
+      {
+       "open": {
+        "hour": 8,
+        "minute": 0
+       },
+       "close": {
+        "hour": 17,
+        "minute": 0
+       }
+      }
+     ],
+     "saturday": null
+    },
+    "current_status": "open"
+   },
+   "feature_id": "0x88647bc88f25b1e5:0xbf3a64b3d4d36d22",
+   "cid": "13779436733426003234",
+   "latitude": 36.0435237,
+   "longitude": -86.7452058,
+   "is_claimed": true,
+   "local_justifications": [
+    {
+     "type": "user_review",
+     "text": "\"... are very nice, and are willing to help if you have an addiction!\""
+    }
+   ],
+   "is_directory_item": false
+  },
+  {
+   "type": "maps_search",
+   "rank_group": 20,
+   "rank_absolute": 20,
+   "domain": "havenhouserecovery.com",
+   "title": "Haven House Addiction Recovery",
+   "url": "https://havenhouserecovery.com/recovery-center-nashville-tn/",
+   "rating": {
+    "rating_type": "Max5",
+    "value": 4.2,
+    "votes_count": 5,
+    "rating_max": null
+   },
+   "rating_distribution": {
+    "1": 1,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 4
+   },
+   "original_title": null,
+   "contact_url": null,
+   "contributor_url": "https://maps.google.com/maps/contrib/106498556922790184309",
+   "book_online_url": null,
+   "hotel_rating": null,
+   "price_level": null,
+   "snippet": "5016 Centennial Blvd Ste 200, Nashville, TN 37209",
+   "address": "5016 Centennial Blvd Ste 200, Nashville, TN 37209",
+   "address_info": {
+    "borough": "The Nations",
+    "address": "5016 Centennial Blvd Ste 200",
+    "city": "Nashville",
+    "zip": "37209",
+    "region": "Tennessee",
+    "country_code": "US"
+   },
+   "place_id": "ChIJcecLlnJhZIgR5LljkZQiRRs",
+   "phone": "+1888-622-3702",
+   "main_image": "https://lh3.googleusercontent.com/grass-cs/AABkmLcvLagu8YX-MKNeglSy44saYqL63yy3Q-yYt-Hqh5hoDYPayqNRtY2t4XBpiKyz6yuy8lKcEDS_LuPT1ZPJj5JnR0u4MsZl9fkp4aUxPtPbsVcILh3Zk1K9FFV7Rxh8ScQmeN87Ew=w844-h1125-k-no",
+   "total_photos": 17,
+   "category": "Addiction treatment center",
+   "additional_categories": [
+    "Mental health service"
+   ],
+   "category_ids": [
+    "addiction_treatment_center",
+    "mental_health_service"
+   ],
+   "work_hours": {
+    "timetable": {
+     "sunday": null,
+     "monday": [
+      {
+       "open": {
+        "hour": 9,
+        "minute": 0
+       },
+       "close": {
+        "hour": 18,
+        "minute": 0
+       }
+      }
+     ],
+     "tuesday": [
+      {
+       "open": {
+        "hour": 9,
+        "minute": 0
+       },
+       "close": {
+        "hour": 18,
+        "minute": 0
+       }
+      }
+     ],
+     "wednesday": [
+      {
+       "open": {
+        "hour": 9,
+        "minute": 0
+       },
+       "close": {
+        "hour": 18,
+        "minute": 0
+       }
+      }
+     ],
+     "thursday": [
+      {
+       "open": {
+        "hour": 9,
+        "minute": 0
+       },
+       "close": {
+        "hour": 18,
+        "minute": 0
+       }
+      }
+     ],
+     "friday": [
+      {
+       "open": {
+        "hour": 9,
+        "minute": 0
+       },
+       "close": {
+        "hour": 18,
+        "minute": 0
+       }
+      }
+     ],
+     "saturday": [
+      {
+       "open": {
+        "hour": 9,
+        "minute": 0
+       },
+       "close": {
+        "hour": 18,
+        "minute": 0
+       }
+      }
+     ]
+    },
+    "current_status": "close"
+   },
+   "feature_id": "0x88646172960be771:0x1b4522949163b9e4",
+   "cid": "1965014833906825700",
+   "latitude": 36.1626203,
+   "longitude": -86.84813419999999,
+   "is_claimed": true,
+   "local_justifications": [
+    {
+     "type": "user_review",
+     "text": "\"Yesterday was 14 months sober for me all thanks given to the Haven House.\""
+    }
+   ],
+   "is_directory_item": false
+  }
+ ],
+ "meta": {
+  "organizationId": "delegated-local-admin",
+  "projectId": "a3d9d079-1489-4593-90f3-6cf31d0eb441",
+  "url": "https://agi-tools.tailec481c.ts.net/p/a3d9d079-1489-4593-90f3-6cf31d0eb441"
+ }
+}

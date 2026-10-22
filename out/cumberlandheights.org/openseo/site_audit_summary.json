@@ -1,0 +1,7 @@
+{"auditId": "79a69085-53fc-4cbe-97f6-2afda6c1c0ca", "tool": "OpenSEO run_site_audit (maxPages 120, Lighthouse on 20 sample pages)",
+ "completedAt": "2026-10-22T00:10:21Z", "pagesCrawled": 120, "lighthouseCompleted": 12, "lighthouseFailed": 8,
+ "critical": [], "warnings": {"missing-h1": 8, "images-missing-alt": 7, "duplicate-title": 4},
+ "notes": ["No critical issues (no broken pages, server errors, redirect loops, noindex or canonical conflicts in the 120-page sample).",
+           "Duplicate titles are 4 'On the Wagon sober open mic night' event pages; missing H1s are event/fundraising pages plus /young-mens-summit/.",
+           "Homepage: 17 of 69 images lack alt text; /treatment/ 17 of 43.",
+           "8 of 20 Lighthouse runs failed (site responded slowly during the audit window); per-page scores were not exposed through get_audit_issues, so Core Web Vitals remain unmeasured."]}

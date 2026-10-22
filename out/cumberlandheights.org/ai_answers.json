@@ -1,0 +1,131 @@
+[
+  {
+    "engine": "perplexity",
+    "type": "non-brand",
+    "query": "What are the best alcohol rehab centers in Nashville, TN?",
+    "cited": false,
+    "brand_mentioned": true,
+    "cited_domains": [
+      "freemanrecoverycenter.com",
+      "startyourrecovery.org",
+      "alcohol.org",
+      "bbb.org",
+      "rehabnet.com",
+      "rehab.com",
+      "recovered.org",
+      "psychologytoday.com"
+    ],
+    "note": "Cumberland Heights listed first, but sourced from startyourrecovery.org and rehab.com, not cumberlandheights.org"
+  },
+  {
+    "engine": "perplexity",
+    "type": "non-brand",
+    "query": "Which drug rehabs in Nashville, TN accept insurance like BlueCross BlueShield or Aetna?",
+    "cited": false,
+    "brand_mentioned": true,
+    "cited_domains": [
+      "rehabseekers.com",
+      "startyourrecovery.org",
+      "recovery.com",
+      "rehabnet.com",
+      "drugrehab.com",
+      "psychologytoday.com",
+      "rehabs.org",
+      "therecoveryvillage.com"
+    ],
+    "note": "Brand named with address and payers, all from directories; the site's own insurance page was not cited"
+  },
+  {
+    "engine": "perplexity",
+    "type": "non-brand",
+    "query": "Residential addiction treatment near Nashville, Tennessee: what are my options?",
+    "cited": false,
+    "brand_mentioned": false,
+    "cited_domains": [
+      "freemanrecoverycenter.com",
+      "tuliphillrecovery.com",
+      "renaissancerecovery.com",
+      "apex.rehab",
+      "tndetoxcenter.com"
+    ],
+    "note": "Cumberland Heights (177-acre residential campus 15 min from downtown) absent entirely; competitors cited from their own /residential-treatment and /tennessee/nashville pages"
+  },
+  {
+    "engine": "perplexity",
+    "type": "brand",
+    "query": "Cumberland Heights reviews",
+    "cited": false,
+    "brand_mentioned": true,
+    "cited_domains": [
+      "drugabuse.com",
+      "rehabseekers.com",
+      "bbb.org",
+      "indeed.com",
+      "startyourrecovery.org",
+      "yelp.com",
+      "rehab.com",
+      "recovered.org"
+    ],
+    "note": "Answer leads with mixed reviews: Yelp 3.0/5 (24 reviews), 'billing or collections' concerns. Nothing from the site itself (no outcomes/alumni/testimonials page cited)"
+  },
+  {
+    "engine": "perplexity",
+    "type": "brand",
+    "query": "Is Cumberland Heights a good rehab, and what insurance does it take?",
+    "cited": true,
+    "brand_mentioned": true,
+    "cited_domains": [
+      "cumberlandheights.com",
+      "cumberlandheights.org",
+      "rehab.com",
+      "rehabs.org",
+      "detox.com",
+      "startyourrecovery.org"
+    ],
+    "note": "Site cited (admissions/insurance-and-finances, admissions/faqs, treatment/residential-care). Also cited a separate cumberlandheights.COM domain"
+  },
+  {
+    "engine": "google-serp (DataForSEO via OpenSEO)",
+    "type": "non-brand",
+    "query": "alcohol rehab nashville tn",
+    "cited": false,
+    "brand_mentioned": true,
+    "cited_domains": [
+      "recoveryunplugged.com (local pack)",
+      "southeastaddictiontn.com (local pack)",
+      "treehouserecoverytn.com (local pack)",
+      "recoveryranch.com"
+    ],
+    "note": "No AI Overview shown. Cumberland Heights NOT in the 3-pack; organic #6 with the homepage titled 'Cumberland Heights: Home'"
+  },
+  {
+    "engine": "google-serp (DataForSEO via OpenSEO)",
+    "type": "non-brand",
+    "query": "drug rehab nashville",
+    "cited": false,
+    "brand_mentioned": true,
+    "cited_domains": [
+      "southeastaddictiontn.com (local pack)",
+      "recoveryunplugged.com (local pack)",
+      "nashvilleaddictionrecovery.com (local pack)",
+      "addictioncenter.com"
+    ],
+    "note": "No AI Overview shown. Not in the 3-pack; organic #5 with the homepage"
+  },
+  {
+    "engine": "google-serp (DataForSEO via OpenSEO)",
+    "type": "brand",
+    "query": "cumberland heights",
+    "cited": true,
+    "brand_mentioned": true,
+    "cited_domains": [
+      "cumberlandheights.org",
+      "facebook.com",
+      "psychologytoday.com",
+      "recovery.com",
+      "naatp.org",
+      "yelp.com"
+    ],
+    "note": "AI Overview + knowledge panel present. Third-party listings show different phone numbers: 615-492-8649 (Facebook/Instagram), 615-356-2700 (NAATP), 866-929-3078 (Yelp), 844-816-0795 (recovery.com)"
+  }
+]
