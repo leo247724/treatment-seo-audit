@@ -76,8 +76,8 @@ Method: OpenSEO `get_backlinks_profile` (DataForSEO; one link per domain, dofoll
 | tennesseebehavioralhealth.com | 1 | health system | no | 0 | Propose a referral-partner listing (detox/residential step-down) on their partner page |
 | integrativelifecenter.com | 1 | directory | no | 0 | Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews |
 | bradfordhealth.com | 1 | health system | no | 0 | Propose a referral-partner listing (detox/residential step-down) on their partner page |
-| cedarrecovery.com | 1 | directory | no | 0 | Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews |
 | tn.gov | 1 | government | no | 0 | Ask to be added to the county/city behavioral-health resource list |
+| drugrehabus.org | 1 | directory | no | 0 | Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews |
 
 ## Patterns
 

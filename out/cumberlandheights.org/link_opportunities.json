@@ -8730,36 +8730,12 @@
    "action": "Propose a referral-partner listing (detox/residential step-down) on their partner page"
   },
   {
-   "domain": "cedarrecovery.com",
-   "answers_citing": 1,
-   "type": "directory",
-   "site_has_link": false,
-   "competitors_with_link": 0,
-   "action": "Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews"
-  },
-  {
    "domain": "tn.gov",
    "answers_citing": 1,
    "type": "government",
    "site_has_link": false,
    "competitors_with_link": 0,
    "action": "Ask to be added to the county/city behavioral-health resource list"
-  },
-  {
-   "domain": "wdef.com",
-   "answers_citing": 1,
-   "type": "news/media",
-   "site_has_link": false,
-   "competitors_with_link": 0,
-   "action": "Pitch an outcomes or alumni-recovery story (local angle, data from the alumni program)"
-  },
-  {
-   "domain": "choosehelp.com",
-   "answers_citing": 1,
-   "type": "blog/other",
-   "site_has_link": false,
-   "competitors_with_link": 1,
-   "action": "Offer an expert quote or guest resource on family/relapse topics"
   },
   {
    "domain": "drugrehabus.org",
@@ -8770,7 +8746,31 @@
    "action": "Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews"
   },
   {
-   "domain": "drugrehab.com",
+   "domain": "cedarrecovery.com",
+   "answers_citing": 1,
+   "type": "directory",
+   "site_has_link": false,
+   "competitors_with_link": 0,
+   "action": "Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews"
+  },
+  {
+   "domain": "choosehelp.com",
+   "answers_citing": 1,
+   "type": "blog/other",
+   "site_has_link": false,
+   "competitors_with_link": 1,
+   "action": "Offer an expert quote or guest resource on family/relapse topics"
+  },
+  {
+   "domain": "wdef.com",
+   "answers_citing": 1,
+   "type": "news/media",
+   "site_has_link": false,
+   "competitors_with_link": 0,
+   "action": "Pitch an outcomes or alumni-recovery story (local angle, data from the alumni program)"
+  },
+  {
+   "domain": "therecoveryvillage.com",
    "answers_citing": 1,
    "type": "directory",
    "site_has_link": false,
@@ -8778,7 +8778,7 @@
    "action": "Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews"
   },
   {
-   "domain": "therecoveryvillage.com",
+   "domain": "drugrehab.com",
    "answers_citing": 1,
    "type": "directory",
    "site_has_link": false,
@@ -8834,20 +8834,20 @@
    "action": "Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews"
   },
   {
-   "domain": "facebook.com",
-   "answers_citing": 1,
-   "type": "blog/other",
-   "site_has_link": false,
-   "competitors_with_link": 0,
-   "action": "Offer an expert quote or guest resource on family/relapse topics"
-  },
-  {
    "domain": "naatp.org",
    "answers_citing": 1,
    "type": "association",
    "site_has_link": true,
    "competitors_with_link": 0,
    "action": "Join or renew membership and request the member-directory listing"
+  },
+  {
+   "domain": "facebook.com",
+   "answers_citing": 1,
+   "type": "blog/other",
+   "site_has_link": false,
+   "competitors_with_link": 0,
+   "action": "Offer an expert quote or guest resource on family/relapse topics"
   }
  ],
  "answers": 18

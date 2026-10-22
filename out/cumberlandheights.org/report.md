@@ -1,6 +1,6 @@
 # SEO audit: cumberlandheights.org
 
-Date: 2026-10-21 · Pages crawled: 150 · HTML 200: 113 · Indexable: 113 · Sitemap URLs: 2137 · Left in queue: 1987
+Date: 2026-10-21 · Pages crawled: 150 · HTML 200: 150 · Indexable: 150 · Sitemap URLs: 2137 · Left in queue: 1987
 
 Impact = severity (1-5) × intent weight of affected pages (1-5) × reach (1-2, log of pages hit). Intent weight: home/admissions/insurance = 5, location/program = 4, about = 2, blog = 1. Confidence says how much to trust the automated check before a human looks.
 
@@ -12,12 +12,12 @@ Impact 42.5 · severity 5/5 · intent 5/5 · pages hit 5 · confidence high · c
 Evidence:
 - 'alcohol rehab Nashville TN': 3-pack = recoveryunplugged.com, southeastaddictiontn.com, nashvilleaddictionrecovery.com -> NOT in pack; organic position 6
 - 'drug rehab Nashville': 3-pack = southeastaddictiontn.com, nashvilleaddictionrecovery.com, recoveryunplugged.com -> NOT in pack; organic position 4
-- 'detox Nashville TN': 3-pack = brentwoodspringsdetox.com, liveagaindetox.com, detox-nashville.com, google.com -> NOT in pack; organic position 15
+- 'detox Nashville TN': 3-pack = brentwoodspringsdetox.com, liveagaindetox.com, detox-nashville.com -> NOT in pack; organic position 14
 - 'inpatient rehab Nashville TN': 3-pack = recoveryunplugged.com, southeastaddictiontn.com, epiphanywellnesscenters.org -> NOT in pack; organic position 8
 - 'rehab centers Nashville': 3-pack = southeastaddictiontn.com, cumberlandheights.org, treehouserecoverytn.com -> IN pack; organic position 6
 - Google Maps 'alcohol rehab' from city centre: Cumberland Heights Outpatient Addiction Treatment (Nashville | Music Row) at #7, rating 4.6 (9 reviews)
 -   top 3 there: Southeast Addiction Center - Nashville Drug & Alcohol Rehab Center 4.9★ (104); Live Again Detox - Alcohol & Drug Detox Center in Nashville 4.9★ (148); Nashville Treatment Solutions 4.7★ (104)
-- Google Maps 'drug rehab' from city centre: Cumberland Heights Outpatient Addiction Treatment (Nashville | Music Row) at #12, rating 4.6 (9 reviews)
+- Google Maps 'drug rehab' from city centre: Cumberland Heights Outpatient Addiction Treatment (Nashville | Music Row) at #7, rating 4.6 (9 reviews)
 
 Why it costs admissions: The 3-pack sits above the #1 organic result on mobile and has a tap-to-call button, so it takes the largest share of calls for '<city> rehab' queries. Rating and review count are the two visible ranking and conversion levers; a 4.0 next to three 4.9s loses the tap even when it appears.
 
@@ -45,20 +45,20 @@ Fix: Rewrite the homepage title/H1 to say what and where ('<Brand> | Alcohol & D
 Check first (GSC / call tracking): GSC Performance, homepage, queries containing the city: impressions, CTR and position. Compare CTR to the 5-8% typical at position 1-3; the gap is the title problem. Then check which program URLs get impressions for '<city> detox' etc.
 
 ### 3. Cumberland Heights trails competitors in AI answers for treatment searches
-Impact 38.1 · severity 4/5 · intent 5/5 · pages hit 8 · confidence medium · category ai_visibility
+Impact 35.6 · severity 4/5 · intent 5/5 · pages hit 6 · confidence medium · category ai_visibility
 
 Evidence:
 - Perplexity run 2026-10-21: 8 non-brand queries, 2 brand queries
-- Cumberland Heights: mentioned in 0/8 (0%), cited from  in 0/8 (0%), mean first-mention position never mentioned
-- Rank among 10 brands: #1 mentions, #1 citations, #1 first-mention position
-- Brands ahead on mentions: none; on citations: none
-- Share of voice (mentioned/cited): Cumberland Heights 0%/0%; Recovery Unplugged 0%/0%; Southeast Addiction Center 0%/0%; Live Again Detox 0%/0%; The Ranch Tennessee / Recovery Ranch 0%/0%; The Next Door Recovery 0%/0%; APEX Recovery 0%/0%; Brentwood Springs Detox 0%/0%; Freeman Recovery Center 0%/0%; Tulip Hill 0%/0%
-- Absent from 8/8 answers: "best alcohol rehab in Nashville TN"; "best drug rehab near Nashville Tennessee"; "inpatient addiction treatment Nashville"; "medical detox Nashville TN"; "rehab in Nashville that takes Blue Cross Blue Shield"
-- Most-cited third-party domains: freemanrecoverycenter.com (7), psychologytoday.com (6), apex.rehab (5), recovery.com (3), tuliphillrecovery.com (2)
+- Cumberland Heights: mentioned in 2/8 (25%), cited from cumberlandheights.org in 0/8 (0%), mean first-mention position 1.0
+- Rank among 10 brands: #4 mentions, #6 citations, #1 first-mention position
+- Brands ahead on mentions: Freeman Recovery Center, APEX Recovery, Live Again Detox; on citations: Freeman Recovery Center, APEX Recovery, Live Again Detox, Tulip Hill, Southeast Addiction Center
+- Share of voice (mentioned/cited): Freeman Recovery Center 75%/88%; APEX Recovery 38%/62%; Live Again Detox 38%/25%; Cumberland Heights 25%/0%; The Next Door Recovery 25%/0%; Tulip Hill 12%/38%; Southeast Addiction Center 12%/12%; Recovery Unplugged 0%/0%; The Ranch Tennessee / Recovery Ranch 0%/0%; Brentwood Springs Detox 0%/0%
+- Absent from 6/8 answers: "best drug rehab near Nashville Tennessee"; "inpatient addiction treatment Nashville"; "medical detox Nashville TN"; "outpatient addiction treatment IOP Nashville"; "residential addiction treatment near Nashville, Tennessee"
+- Most-cited third-party domains: psychologytoday.com (6), recovery.com (3), recovered.org (1), alcohol.org (1), bbb.org (1)
 
 Why it costs admissions: Families searching for treatment increasingly ask an AI assistant which centers to call, and they phone the names it gives and the sites it links. A center that is not named or cited in those answers never gets the call; the directories cited instead route callers to paid listings and competitors.
 
-Fix: Publish answer-ready pages that answer the absent queries in the first two or three sentences (levels of care, insurance, cost, length of stay, location); add Organization/MedicalOrganization entity schema with sameAs links to every directory profile; claim and complete listings on the directories AI cites (freemanrecoverycenter.com, psychologytoday.com, apex.rehab); publish an outcomes page (accreditation, completion and alumni follow-up data) that answers can quote.
+Fix: Publish answer-ready pages that answer the absent queries in the first two or three sentences (levels of care, insurance, cost, length of stay, location); add Organization/MedicalOrganization entity schema with sameAs links to every directory profile; claim and complete listings on the directories AI cites (psychologytoday.com, recovery.com, recovered.org); publish an outcomes page (accreditation, completion and alumni follow-up data) that answers can quote.
 
 Check first (GSC / call tracking): GSC Performance filtered to brand queries (16-month impressions/clicks trend) to see whether AI exposure is already moving branded demand, and add a 'How did you hear about us?' tag in call tracking with an 'AI assistant (ChatGPT/Perplexity)' option so AI-sourced calls are counted before and after the fix.
 
@@ -101,25 +101,25 @@ Check first (GSC / call tracking): Search Console > Links > 'Top linking sites' 
 |---|---|---|---|---|---|---|---|
 | 1 | 42.5 | 5 | 5 | 5 | high | local | Missing from the Google 3-pack for core '<city> rehab' searches; GBP rating trails every competitor in the pack |
 | 2 | 40.0 | 4 | 5 | 13 | high | content | Every commercial '<city> rehab' keyword ranks through the homepage; no program or location page ranks for them |
-| 3 | 38.1 | 4 | 5 | 8 | medium | ai_visibility | Cumberland Heights trails competitors in AI answers for treatment searches |
+| 3 | 35.6 | 4 | 5 | 6 | medium | ai_visibility | Cumberland Heights trails competitors in AI answers for treatment searches |
 | 4 | 34.0 | 4 | 5 | 5 | high | ai_visibility | Site is absent from AI answers for local treatment queries |
 | 5 | 32.0 | 4 | 4 | 567 | medium | trust | 567 referring domains link to Nashville competitors but not to cumberlandheights.org |
 | 6 | 30.0 | 3 | 5 | 30 | high | content | 30 of 30 high-intent page titles miss the service + Nashville terms people search |
-| 7 | 26.0 | 4 | 5 | 2 | medium | ai_visibility | AI answers about Cumberland Heights are sourced mostly from other sites |
-| 8 | 24.0 | 3 | 4 | 29 | medium | ai_visibility | Program pages have no FAQ / direct-answer sections |
-| 9 | 24.0 | 3 | 4 | 27 | medium | content | 27 program/admissions pages lack FAQ, medical schema or depth to rank for Nashville treatment terms |
-| 10 | 24.0 | 3 | 4 | 20 | high | content | Organic traffic is mostly informational blog visits, not local treatment seekers |
-| 11 | 24.0 | 3 | 4 | 10 | medium | trust | 10 of the domains AI engines cite most give cumberlandheights.org no backlink |
-| 12 | 24.0 | 3 | 5 | 4 | medium | content | Nashville SERP winners target the city and structure content more explicitly than our money pages |
-| 13 | 24.0 | 3 | 5 | 4 | medium | content | Nashville SERP winners show more availability, insurance and proof signals on-page |
-| 14 | 24.0 | 3 | 5 | 4 | medium | content | Our money pages score 34/100 on entity signals vs 50/100 for Nashville SERP competitors |
-| 15 | 22.1 | 3 | 4 | 7 | medium | content | Thin program/location/admissions pages (under 300 words) |
-| 16 | 21.3 | 3 | 4 | 6 | medium | content | Missing or duplicate title tags |
-| 17 | 20.0 | 2 | 5 | 30 | medium | content | 30 of 30 high-intent meta descriptions are truncated or carry no call to action |
-| 18 | 16.0 | 2 | 4 | 100 | high | ai_visibility | Google AI Overviews cite the site only for blog posts, never for a program, location or admissions page |
-| 19 | 16.0 | 2 | 4 | 18 | medium | content | Missing or multiple H1 headings |
-| 20 | 16.0 | 2 | 4 | 10 | low | local | Same address written in different ways across the site |
-| 21 | 13.6 | 2 | 4 | 5 | medium | trust | 4 of 5 local SERP competitors have more referring domains despite a lower DataForSEO rank |
+| 7 | 24.0 | 3 | 4 | 29 | medium | ai_visibility | Program pages have no FAQ / direct-answer sections |
+| 8 | 24.0 | 3 | 4 | 27 | medium | content | 27 program/admissions pages lack FAQ, medical schema or depth to rank for Nashville treatment terms |
+| 9 | 24.0 | 3 | 4 | 20 | high | content | Organic traffic is mostly informational blog visits, not local treatment seekers |
+| 10 | 24.0 | 3 | 4 | 10 | medium | trust | 10 of the domains AI engines cite most give cumberlandheights.org no backlink |
+| 11 | 24.0 | 3 | 5 | 4 | medium | content | Nashville SERP winners target the city and structure content more explicitly than our money pages |
+| 12 | 24.0 | 3 | 5 | 4 | medium | content | Nashville SERP winners show more availability, insurance and proof signals on-page |
+| 13 | 24.0 | 3 | 5 | 4 | medium | content | Our money pages score 34/100 on entity signals vs 50/100 for Nashville SERP competitors |
+| 14 | 22.1 | 3 | 4 | 7 | medium | content | Thin program/location/admissions pages (under 300 words) |
+| 15 | 21.3 | 3 | 4 | 6 | medium | content | Missing or duplicate title tags |
+| 16 | 20.0 | 2 | 5 | 30 | medium | content | 30 of 30 high-intent meta descriptions are truncated or carry no call to action |
+| 17 | 16.0 | 2 | 4 | 100 | high | ai_visibility | Google AI Overviews cite the site only for blog posts, never for a program, location or admissions page |
+| 18 | 16.0 | 2 | 4 | 19 | medium | content | Missing or multiple H1 headings |
+| 19 | 16.0 | 2 | 4 | 10 | low | local | Same address written in different ways across the site |
+| 20 | 13.6 | 2 | 4 | 5 | medium | trust | 4 of 5 local SERP competitors have more referring domains despite a lower DataForSEO rank |
+| 21 | 13.0 | 2 | 5 | 2 | medium | ai_visibility | AI answers about Cumberland Heights cite cumberlandheights.org |
 | 22 | 12.0 | 3 | 4 | 0 | medium | content | Topical authority trails competitors on Detox, Alcohol, Mental health & dual diagnosis |
 | 23 | 12.0 | 3 | 4 | 0 | medium | content | 5 keywords (2,750 searches/mo) rank top 20 for 2+ competitors but not for cumberlandheights.org |
 | 24 | 12.0 | 2 | 3 | 39 | medium | trust | Top referring domains are dominated by rehab directories and lead-gen listing sites |
@@ -128,10 +128,7 @@ Check first (GSC / call tracking): Search Console > Links > 'Top linking sites' 
 | 27 | 10.2 | 2 | 3 | 5 | medium | trust | Link profile is shrinking and leans on low-quality rehab directories |
 | 28 | 10.0 | 2 | 5 | 1 | high | ai_visibility | Homepage lacks a complete Organization/MedicalOrganization schema |
 | 29 | 10.0 | 2 | 5 | 1 | high | trust | Accreditation mentioned on the site but not on the homepage |
-| 30 | 10.0 | 1 | 5 | 25 | medium | content | Title tags too long or too short |
-| 31 | 8.0 | 2 | 2 | 11 | medium | technical | Internal links to broken (4xx/5xx) pages |
-| 32 | 8.0 | 2 | 4 | 1 | medium | trust | No LegitScript certification mentioned |
-| 33 | 6.0 | 3 | 1 | 11 | medium | technical | Sitemap lists URLs that do not return 200 |
+| 30 | 10.0 | 1 | 5 | 50 | medium | content | Title tags too long or too short |
 
 ## Finding details
 
@@ -152,18 +149,6 @@ Why: Searchers type 'rehab nashville' / 'detox nashville'; titles like 'Home - C
 Fix: Rewrite titles to '<Program> in Nashville, TN | Cumberland Heights' (30-60 chars), starting with the homepage and program pages; keep the H1 aligned with the same service term.
 
 Check first: GSC Performance > Pages, sorted by impressions: compare CTR by page for these URLs against site average and position; pages ranking 4-15 with below-average CTR are the first rewrites.
-
-### AI answers about Cumberland Heights are sourced mostly from other sites
-Impact 26.0 · severity 4 · intent 5 · pages 2 · confidence medium
-
--  cited in 0/2 brand-query answers (0%)
-- Other domains shaping the brand answer: rehab.com (2), startyourrecovery.org (2), cumberlandheights.org (2), recovery.com (1), yelp.com (1)
-
-Why: Families searching for treatment increasingly ask an AI assistant which centers to call, and they phone the names it gives and the sites it links. A center that is not named or cited in those answers never gets the call; the directories cited instead route callers to paid listings and competitors.
-
-Fix: Publish answer-ready pages that answer the absent queries in the first two or three sentences (levels of care, insurance, cost, length of stay, location); add Organization/MedicalOrganization entity schema with sameAs links to every directory profile; claim and complete listings on the directories AI cites (freemanrecoverycenter.com, psychologytoday.com, apex.rehab); publish an outcomes page (accreditation, completion and alumni follow-up data) that answers can quote.
-
-Check first: GSC Performance filtered to brand queries (16-month impressions/clicks trend) to see whether AI exposure is already moving branded demand, and add a 'How did you hear about us?' tag in call tracking with an 'AI assistant (ChatGPT/Perplexity)' option so AI-sourced calls are counted before and after the fix.
 
 ### Program pages have no FAQ / direct-answer sections
 Impact 24.0 · severity 3 · intent 4 · pages 29 · confidence medium
@@ -337,9 +322,9 @@ Fix: Turn program and admissions pages into citable answers: a direct 40-80 word
 Check first: GSC: filter queries starting with 'how', 'does', 'what', 'cost' where the site ranks 4-15; those are the AI Overview candidates. Track brand searches as the AI exposure proxy.
 
 ### Missing or multiple H1 headings
-Impact 16.0 · severity 2 · intent 4 · pages 18 · confidence medium
+Impact 16.0 · severity 2 · intent 4 · pages 19 · confidence medium
 
-- 17 pages with no H1, 1 with more than one
+- 18 pages with no H1, 1 with more than one
 - Example pages: https://www.cumberlandheights.org/third-annual-camp-recovery-retreat/, https://www.cumberlandheights.org/nashville-fourth-of-july-sober-space/, https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night-2/, https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night-3/, https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night/
 
 Why: Weak topical signal for program/location pages.
@@ -351,7 +336,7 @@ Check first: None needed; template fix.
 ### Same address written in different ways across the site
 Impact 16.0 · severity 2 · intent 4 · pages 10 · confidence low
 
-- '8283 River Rd Pike Nashville, TN 37209' (112 pages) | '8283 River Road Pike Nashville, TN 37209' (4 pages) | '8283 River Road Pike, Nashville, TN 37209' (1 pages)
+- '8283 River Rd Pike Nashville, TN 37209' (149 pages) | '8283 River Road Pike Nashville, TN 37209' (4 pages) | '8283 River Road Pike, Nashville, TN 37209' (1 pages)
 - '6650 East Brainerd Rd Suite 102 Chattanooga, TN 37421' (1 pages) | '6650 East Brainerd Road, Suite 102 Chattanooga, TN 37421' (1 pages)
 - '219 B Dunbar Cave Rd Clarksville, TN 37043' (1 pages) | '219 B Dunbar Cave Road Clarksville, TN 37043' (1 pages)
 - '3441 Lebanon Pike Suite 108 Hermitage TN 37076' (1 pages) | '3441 Lebanon Pike, Suite 108 Hermitage, TN 37076' (1 pages)
@@ -377,6 +362,19 @@ Why: Once titles and program pages are fixed, link authority decides who holds t
 Fix: Close the gap with links competitors cannot buy: hospital/health-system referral partners, university and court/EAP programs, local news on outcomes, alumni and family-program events, and Tennessee state/county resource listings.
 
 Check first: Search Console > Links report: 'Top linking sites' and 'Top linked pages' (export both); compare the linking-site count with the DataForSEO numbers here and note which pages the links actually point at.
+
+### AI answers about Cumberland Heights cite cumberlandheights.org
+Impact 13.0 · severity 2 · intent 5 · pages 2 · confidence medium
+
+- cumberlandheights.org cited in 2/2 brand-query answers (100%)
+- Other domains shaping the brand answer: startyourrecovery.org (2), rehab.com (2), recovery.com (1), yelp.com (1), rehabs.com (1)
+- Example pages: https://www.cumberlandheights.org/, https://www.cumberlandheights.org/category/tennessee/feed/, https://www.cumberlandheights.org/locations/, https://www.cumberlandheights.org/locations/river-road/, https://www.cumberlandheights.org/treatment/
+
+Why: Families searching for treatment increasingly ask an AI assistant which centers to call, and they phone the names it gives and the sites it links. A center that is not named or cited in those answers never gets the call; the directories cited instead route callers to paid listings and competitors.
+
+Fix: Publish answer-ready pages that answer the absent queries in the first two or three sentences (levels of care, insurance, cost, length of stay, location); add Organization/MedicalOrganization entity schema with sameAs links to every directory profile; claim and complete listings on the directories AI cites (psychologytoday.com, recovery.com, recovered.org); publish an outcomes page (accreditation, completion and alumni follow-up data) that answers can quote.
+
+Check first: GSC Performance filtered to brand queries (16-month impressions/clicks trend) to see whether AI exposure is already moving branded demand, and add a 'How did you hear about us?' tag in call tracking with an 'AI assistant (ChatGPT/Perplexity)' option so AI-sourced calls are counted before and after the fix.
 
 ### Topical authority trails competitors on Detox, Alcohol, Mental health & dual diagnosis
 Impact 12.0 · severity 3 · intent 4 · pages 0 · confidence medium
@@ -440,10 +438,10 @@ Check first: Search Console > Links report: 'Top linking sites' and 'Top linked 
 ### 16 different phone numbers in tel: links
 Impact 12.0 · severity 2 · intent 3 · pages 16 · confidence low
 
-- 800-646-9998: on 125 pages (e.g. https://www.cumberlandheights.org/resources/blog/how-long-does-paws-last/)
-- 615-314-3856: on 113 pages (e.g. https://www.cumberlandheights.org/resources/blog/how-long-does-paws-last/)
-- 865-213-9003: on 2 pages (e.g. https://www.cumberlandheights.org/resources/location/knoxville-farragut/)
-- 615-432-3215: on 2 pages (e.g. https://www.cumberlandheights.org/website-privacy-policy/)
+- 800-646-9998: on 167 pages (e.g. https://www.cumberlandheights.org/research-chart-test/)
+- 615-314-3856: on 150 pages (e.g. https://www.cumberlandheights.org/research-chart-test/)
+- 865-213-9003: on 2 pages (e.g. https://www.cumberlandheights.org/resources/location/knoxville-papermill/)
+- 615-432-3215: on 2 pages (e.g. https://www.cumberlandheights.org/privacy-policy/)
 - 620-416-2213: on 1 pages (e.g. https://www.cumberlandheights.org/admissions/faqs/)
 - 615-257-9608: on 1 pages (e.g. https://www.cumberlandheights.org/resources/location/nashville-music-row/)
 - 931-288-5549: on 1 pages (e.g. https://www.cumberlandheights.org/resources/location/clarksville/)
@@ -488,7 +486,7 @@ Check first: GSC: Enhancements/Rich results reports; search the brand name and s
 ### Accreditation mentioned on the site but not on the homepage
 Impact 10.0 · severity 2 · intent 5 · pages 1 · confidence high
 
-- Mentioned on 7 pages, e.g. https://www.cumberlandheights.org/admissions/faqs/
+- Mentioned on 9 pages, e.g. https://www.cumberlandheights.org/admissions/faqs/
 - Example pages: https://www.cumberlandheights.org/
 
 Why: Most first visits land on the homepage; the seal belongs there and in the footer.
@@ -498,69 +496,19 @@ Fix: Add the seal and a one-line statement to the footer template.
 Check first: None.
 
 ### Title tags too long or too short
-Impact 10.0 · severity 1 · intent 5 · pages 25 · confidence medium
+Impact 10.0 · severity 1 · intent 5 · pages 50 · confidence medium
 
-- 25 over 65 chars, 0 under 25 chars
+- 50 over 65 chars, 0 under 25 chars
 - 84 chars: Introduction to AA Meetings: What to Expect on Your First Visit - Cumberland Hei
+- 70 chars: What to Expect During Detox: A Step-by-Step Guide - Cumberland Heights
 - 94 chars: The Many Benefits You Can Find Through Sober Living Homes: What to Expect - Cumb
-- 93 chars: People can change: Justin Furstenfeld’s unique approach to his book tour - Cumbe
-- Example pages: https://www.cumberlandheights.org/resources/blog/introduction-to-aa-meetings-what-to-expect-on-your-first-visit/, https://www.cumberlandheights.org/resources/blog/the-many-benefits-you-can-find-through-sober-living-homes-what-to-expect/, https://www.cumberlandheights.org/resources/news-article/people-can-change-justin-furstenfelds-unique-approach-book-tour/, https://www.cumberlandheights.org/resources/news-article/behavioral-healthcare-chattanooga-facility-opens/, https://www.cumberlandheights.org/resources/news-article/cumberland-heights-day-declared-in-honor-of-new-intensive-outpatient-treatment-facility-iop-in-chattanooga/
+- Example pages: https://www.cumberlandheights.org/resources/blog/introduction-to-aa-meetings-what-to-expect-on-your-first-visit/, https://www.cumberlandheights.org/resources/blog/what-to-expect-during-detox-a-step-by-step-guide/, https://www.cumberlandheights.org/resources/blog/the-many-benefits-you-can-find-through-sober-living-homes-what-to-expect/, https://www.cumberlandheights.org/resources/news-article/people-can-change-justin-furstenfelds-unique-approach-book-tour/, https://www.cumberlandheights.org/resources/podcast/pathways-to-healing-the-admissions-journey-with-robin-todd/
 
 Why: Truncated titles hide the location or program name in results.
 
 Fix: Keep the program + city in the first 55 characters.
 
 Check first: GSC CTR by page vs. position.
-
-### Internal links to broken (4xx/5xx) pages
-Impact 8.0 · severity 2 · intent 2 · pages 11 · confidence medium
-
-- https://www.cumberlandheights.org/resources/blog/cumberland-heights-among-the-few-centers-approved-for-google-adwords/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)
-- https://www.cumberlandheights.org/resources/blog/these-3-types-of-gifts-would-be-amazing-for-those-in-recovery-this-holiday-season/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)
-- https://www.cumberlandheights.org/resources/blog/women-in-recovery-these-connections-could-increase-your-risk-for-relapse/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)
-- https://www.cumberlandheights.org/resources/blog/why-your-teen-should-never-try-to-detox-at-home/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)
-- https://www.cumberlandheights.org/resources/blog/why-structure-is-important-in-recovery/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)
-- https://www.cumberlandheights.org/resources/blog/why-activities-are-critical-for-adolescents-in-addiction-recovery/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)
-- https://www.cumberlandheights.org/resources/blog/what-motivates-young-people-to-abuse-prescription-drugs/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)
-- https://www.cumberlandheights.org/resources/blog/what-are-the-benefits-of-exercise-for-treatment-of-youth-substance-use-disorders/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)
-- Example pages: https://www.cumberlandheights.org/resources/blog/cumberland-heights-among-the-few-centers-approved-for-google-adwords/, https://www.cumberlandheights.org/resources/blog/these-3-types-of-gifts-would-be-amazing-for-those-in-recovery-this-holiday-season/, https://www.cumberlandheights.org/resources/blog/women-in-recovery-these-connections-could-increase-your-risk-for-relapse/, https://www.cumberlandheights.org/resources/blog/why-your-teen-should-never-try-to-detox-at-home/, https://www.cumberlandheights.org/resources/blog/why-structure-is-important-in-recovery/
-
-Why: A prospect clicking a dead 'Admissions' or program link leaves; link equity is lost.
-
-Fix: Redirect or fix the targets, then update the source links.
-
-Check first: GSC > Pages > Not found (404): which have impressions? Call tracking: calls from these landing URLs before they broke.
-
-### No LegitScript certification mentioned
-Impact 8.0 · severity 2 · intent 4 · pages 1 · confidence medium
-
-- No page mentions LegitScript
-- Example pages: https://www.cumberlandheights.org/
-
-Why: LegitScript certification is required to run Google/Meta ads for addiction treatment and is a visible trust badge; its absence may also mean paid search is unavailable.
-
-Fix: Get certified (if not) and show the badge in the footer.
-
-Check first: Check legitscript.com certified list for the facility.
-
-### Sitemap lists URLs that do not return 200
-Impact 6.0 · severity 3 · intent 1 · pages 11 · confidence medium
-
-- https://www.cumberlandheights.org/resources/blog/cumberland-heights-among-the-few-centers-approved-for-google-adwords/ -> HTTP 503
-- https://www.cumberlandheights.org/resources/blog/these-3-types-of-gifts-would-be-amazing-for-those-in-recovery-this-holiday-season/ -> HTTP 503
-- https://www.cumberlandheights.org/resources/blog/women-in-recovery-these-connections-could-increase-your-risk-for-relapse/ -> HTTP 503
-- https://www.cumberlandheights.org/resources/blog/why-your-teen-should-never-try-to-detox-at-home/ -> HTTP 503
-- https://www.cumberlandheights.org/resources/blog/why-structure-is-important-in-recovery/ -> HTTP 503
-- https://www.cumberlandheights.org/resources/blog/why-activities-are-critical-for-adolescents-in-addiction-recovery/ -> HTTP 503
-- https://www.cumberlandheights.org/resources/blog/what-motivates-young-people-to-abuse-prescription-drugs/ -> HTTP 503
-- https://www.cumberlandheights.org/resources/blog/what-are-the-benefits-of-exercise-for-treatment-of-youth-substance-use-disorders/ -> HTTP 503
-- Example pages: https://www.cumberlandheights.org/resources/blog/cumberland-heights-among-the-few-centers-approved-for-google-adwords/, https://www.cumberlandheights.org/resources/blog/these-3-types-of-gifts-would-be-amazing-for-those-in-recovery-this-holiday-season/, https://www.cumberlandheights.org/resources/blog/women-in-recovery-these-connections-could-increase-your-risk-for-relapse/, https://www.cumberlandheights.org/resources/blog/why-your-teen-should-never-try-to-detox-at-home/, https://www.cumberlandheights.org/resources/blog/why-structure-is-important-in-recovery/
-
-Why: Google trusts the sitemap less and wastes crawl budget on dead URLs.
-
-Fix: Regenerate the sitemap from live, indexable URLs only.
-
-Check first: GSC > Pages > 'Not found (404)' and 'Redirect error' filtered to sitemap URLs.
 
 ## What passed
 
@@ -585,16 +533,16 @@ Check first: GSC > Pages > 'Not found (404)' and 'Redirect error' filtered to si
 
 | Brand | Mentioned in answer | Cited | Mean first-mention position |
 |---|---|---|---|
-| Cumberland Heights | 0/8 (0%) | 0/8 (0%) | - |
+| Freeman Recovery Center | 6/8 (75%) | 7/8 (88%) | 2.3 |
+| APEX Recovery | 3/8 (38%) | 5/8 (62%) | 2.0 |
+| Live Again Detox | 3/8 (38%) | 2/8 (25%) | 2.0 |
+| Cumberland Heights | 2/8 (25%) | 0/8 (0%) | 1.0 |
+| The Next Door Recovery | 2/8 (25%) | 0/8 (0%) | 2.5 |
+| Tulip Hill | 1/8 (12%) | 3/8 (38%) | 4.0 |
+| Southeast Addiction Center | 1/8 (12%) | 1/8 (12%) | 1.0 |
 | Recovery Unplugged | 0/8 (0%) | 0/8 (0%) | - |
-| Southeast Addiction Center | 0/8 (0%) | 0/8 (0%) | - |
-| Live Again Detox | 0/8 (0%) | 0/8 (0%) | - |
 | The Ranch Tennessee / Recovery Ranch | 0/8 (0%) | 0/8 (0%) | - |
-| The Next Door Recovery | 0/8 (0%) | 0/8 (0%) | - |
-| APEX Recovery | 0/8 (0%) | 0/8 (0%) | - |
 | Brentwood Springs Detox | 0/8 (0%) | 0/8 (0%) | - |
-| Freeman Recovery Center | 0/8 (0%) | 0/8 (0%) | - |
-| Tulip Hill | 0/8 (0%) | 0/8 (0%) | - |
 
 ## AI crawler access (robots.txt)
 

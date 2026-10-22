@@ -1,0 +1,33 @@
+20:00:32 INFO robots.txt + sitemaps for cumberlandheights.org
+20:00:36 INFO sitemap urls: 2137, crawling up to 150 pages
+20:00:38 INFO crawled 18 pages, 2119 queued
+20:00:40 INFO crawled 36 pages, 2101 queued
+20:00:42 INFO crawled 54 pages, 2083 queued
+20:00:44 INFO crawled 72 pages, 2065 queued
+20:00:46 INFO crawled 90 pages, 2047 queued
+20:00:48 INFO crawled 108 pages, 2029 queued
+20:00:50 INFO crawled 126 pages, 2011 queued
+20:01:15 INFO crawled 144 pages, 1993 queued
+20:01:26 INFO crawled 150 pages, 1987 queued
+20:01:26 INFO brand assumed: 'Cumberland Heights' (override with --brand)
+20:01:26 INFO OpenSEO market data for cumberlandheights.org (Nashville, TN)
+20:02:04 INFO running backlinks
+20:02:04 INFO running link_opportunities
+20:02:04 INFO running onpage
+20:02:04 INFO running competitor_pages
+20:02:04 INFO running topical_authority
+20:02:04 INFO running geo_mentions
+20:02:04 INFO done in 92s -> out/cumberlandheights.org/report.md
+
+Top findings for cumberlandheights.org:
+ 1. [ 42.5] sev 5 intent 5 pages 5    Missing from the Google 3-pack for core '<city> rehab' searches; GBP rating trails every competitor in the pack
+ 2. [ 40.0] sev 4 intent 5 pages 13   Every commercial '<city> rehab' keyword ranks through the homepage; no program or location page ranks for them
+ 3. [ 38.1] sev 4 intent 5 pages 8    Cumberland Heights trails competitors in AI answers for treatment searches
+ 4. [ 34.0] sev 4 intent 5 pages 5    Site is absent from AI answers for local treatment queries
+ 5. [ 32.0] sev 4 intent 4 pages 567  567 referring domains link to Nashville competitors but not to cumberlandheights.org
+ 6. [ 30.0] sev 3 intent 5 pages 30   30 of 30 high-intent page titles miss the service + Nashville terms people search
+ 7. [ 26.0] sev 4 intent 5 pages 2    AI answers about Cumberland Heights are sourced mostly from other sites
+ 8. [ 24.0] sev 3 intent 4 pages 29   Program pages have no FAQ / direct-answer sections
+
+Full report: out/cumberlandheights.org/report.md
+exit 0

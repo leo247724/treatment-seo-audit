@@ -17,15 +17,15 @@
     "evidence": [
       "'alcohol rehab Nashville TN': 3-pack = recoveryunplugged.com, southeastaddictiontn.com, nashvilleaddictionrecovery.com -> NOT in pack; organic position 6",
       "'drug rehab Nashville': 3-pack = southeastaddictiontn.com, nashvilleaddictionrecovery.com, recoveryunplugged.com -> NOT in pack; organic position 4",
-      "'detox Nashville TN': 3-pack = brentwoodspringsdetox.com, liveagaindetox.com, detox-nashville.com, google.com -> NOT in pack; organic position 15",
+      "'detox Nashville TN': 3-pack = brentwoodspringsdetox.com, liveagaindetox.com, detox-nashville.com -> NOT in pack; organic position 14",
       "'inpatient rehab Nashville TN': 3-pack = recoveryunplugged.com, southeastaddictiontn.com, epiphanywellnesscenters.org -> NOT in pack; organic position 8",
       "'rehab centers Nashville': 3-pack = southeastaddictiontn.com, cumberlandheights.org, treehouserecoverytn.com -> IN pack; organic position 6",
       "Google Maps 'alcohol rehab' from city centre: Cumberland Heights Outpatient Addiction Treatment (Nashville | Music Row) at #7, rating 4.6 (9 reviews)",
       "  top 3 there: Southeast Addiction Center - Nashville Drug & Alcohol Rehab Center 4.9\u2605 (104); Live Again Detox - Alcohol & Drug Detox Center in Nashville 4.9\u2605 (148); Nashville Treatment Solutions 4.7\u2605 (104)",
-      "Google Maps 'drug rehab' from city centre: Cumberland Heights Outpatient Addiction Treatment (Nashville | Music Row) at #12, rating 4.6 (9 reviews)",
-      "  top 3 there: Southeast Addiction Center - Nashville Drug & Alcohol Rehab Center 4.9\u2605 (104); Nashville Treatment Solutions 4.7\u2605 (104); The Next Door Recovery 4.1\u2605 (107)",
+      "Google Maps 'drug rehab' from city centre: Cumberland Heights Outpatient Addiction Treatment (Nashville | Music Row) at #7, rating 4.6 (9 reviews)",
+      "  top 3 there: Nashville Treatment Solutions 4.7\u2605 (104); Live Again Detox - Alcohol & Drug Detox Center in Nashville 4.9\u2605 (148); Southeast Addiction Center - Nashville Drug & Alcohol Rehab Center 4.9\u2605 (104)",
       "Own GBP listings seen in local packs: Cumberland Heights Treatment Center 4\u2605 (239); Cumberland Heights Treatment Center 4\u2605 (234); Cumberland Heights Treatment Center 4\u2605 (230); Cumberland Heights Treatment Center 4\u2605 (229)",
-      "Rating gap: main listing 4\u2605 vs 4.7\u2605 average for the top-3 Maps results"
+      "Rating gap: main listing 4\u2605 vs 4.8\u2605 average for the top-3 Maps results"
     ],
     "why_it_matters": "The 3-pack sits above the #1 organic result on mobile and has a tap-to-call button, so it takes the largest share of calls for '<city> rehab' queries. Rating and review count are the two visible ranking and conversion levers; a 4.0 next to three 4.9s loses the tap even when it appears.",
     "fix": "A review program (ask at discharge and from alumni, respond to every review, address the 1-star themes); align GBP name, categories, services, hours, photos and phone with the site; link each GBP to its own location page with UTM tags; add Joint Commission and insurance in the GBP description.",
@@ -70,21 +70,21 @@
     "severity": 4,
     "intent_weight": 5,
     "pages": [],
-    "page_count": 8,
+    "page_count": 6,
     "evidence": [
       "Perplexity run 2026-10-21: 8 non-brand queries, 2 brand queries",
-      "Cumberland Heights: mentioned in 0/8 (0%), cited from  in 0/8 (0%), mean first-mention position never mentioned",
-      "Rank among 10 brands: #1 mentions, #1 citations, #1 first-mention position",
-      "Brands ahead on mentions: none; on citations: none",
-      "Share of voice (mentioned/cited): Cumberland Heights 0%/0%; Recovery Unplugged 0%/0%; Southeast Addiction Center 0%/0%; Live Again Detox 0%/0%; The Ranch Tennessee / Recovery Ranch 0%/0%; The Next Door Recovery 0%/0%; APEX Recovery 0%/0%; Brentwood Springs Detox 0%/0%; Freeman Recovery Center 0%/0%; Tulip Hill 0%/0%",
-      "Absent from 8/8 answers: \"best alcohol rehab in Nashville TN\"; \"best drug rehab near Nashville Tennessee\"; \"inpatient addiction treatment Nashville\"; \"medical detox Nashville TN\"; \"rehab in Nashville that takes Blue Cross Blue Shield\"",
-      "Most-cited third-party domains: freemanrecoverycenter.com (7), psychologytoday.com (6), apex.rehab (5), recovery.com (3), tuliphillrecovery.com (2)"
+      "Cumberland Heights: mentioned in 2/8 (25%), cited from cumberlandheights.org in 0/8 (0%), mean first-mention position 1.0",
+      "Rank among 10 brands: #4 mentions, #6 citations, #1 first-mention position",
+      "Brands ahead on mentions: Freeman Recovery Center, APEX Recovery, Live Again Detox; on citations: Freeman Recovery Center, APEX Recovery, Live Again Detox, Tulip Hill, Southeast Addiction Center",
+      "Share of voice (mentioned/cited): Freeman Recovery Center 75%/88%; APEX Recovery 38%/62%; Live Again Detox 38%/25%; Cumberland Heights 25%/0%; The Next Door Recovery 25%/0%; Tulip Hill 12%/38%; Southeast Addiction Center 12%/12%; Recovery Unplugged 0%/0%; The Ranch Tennessee / Recovery Ranch 0%/0%; Brentwood Springs Detox 0%/0%",
+      "Absent from 6/8 answers: \"best drug rehab near Nashville Tennessee\"; \"inpatient addiction treatment Nashville\"; \"medical detox Nashville TN\"; \"outpatient addiction treatment IOP Nashville\"; \"residential addiction treatment near Nashville, Tennessee\"",
+      "Most-cited third-party domains: psychologytoday.com (6), recovery.com (3), recovered.org (1), alcohol.org (1), bbb.org (1)"
     ],
     "why_it_matters": "Families searching for treatment increasingly ask an AI assistant which centers to call, and they phone the names it gives and the sites it links. A center that is not named or cited in those answers never gets the call; the directories cited instead route callers to paid listings and competitors.",
-    "fix": "Publish answer-ready pages that answer the absent queries in the first two or three sentences (levels of care, insurance, cost, length of stay, location); add Organization/MedicalOrganization entity schema with sameAs links to every directory profile; claim and complete listings on the directories AI cites (freemanrecoverycenter.com, psychologytoday.com, apex.rehab); publish an outcomes page (accreditation, completion and alumni follow-up data) that answers can quote.",
+    "fix": "Publish answer-ready pages that answer the absent queries in the first two or three sentences (levels of care, insurance, cost, length of stay, location); add Organization/MedicalOrganization entity schema with sameAs links to every directory profile; claim and complete listings on the directories AI cites (psychologytoday.com, recovery.com, recovered.org); publish an outcomes page (accreditation, completion and alumni follow-up data) that answers can quote.",
     "check_first": "GSC Performance filtered to brand queries (16-month impressions/clicks trend) to see whether AI exposure is already moving branded demand, and add a 'How did you hear about us?' tag in call tracking with an 'AI assistant (ChatGPT/Perplexity)' option so AI-sourced calls are counted before and after the fix.",
     "confidence": "medium",
-    "impact": 38.1
+    "impact": 35.6
   },
   {
     "id": "ai_answers_absent",
@@ -174,24 +174,6 @@
     "check_first": "GSC Performance > Pages, sorted by impressions: compare CTR by page for these URLs against site average and position; pages ranking 4-15 with below-average CTR are the first rewrites.",
     "confidence": "high",
     "impact": 30.0
-  },
-  {
-    "id": "ai_brand_answer_sources",
-    "category": "ai_visibility",
-    "title": "AI answers about Cumberland Heights are sourced mostly from other sites",
-    "severity": 4,
-    "intent_weight": 5,
-    "pages": [],
-    "page_count": 2,
-    "evidence": [
-      " cited in 0/2 brand-query answers (0%)",
-      "Other domains shaping the brand answer: rehab.com (2), startyourrecovery.org (2), cumberlandheights.org (2), recovery.com (1), yelp.com (1)"
-    ],
-    "why_it_matters": "Families searching for treatment increasingly ask an AI assistant which centers to call, and they phone the names it gives and the sites it links. A center that is not named or cited in those answers never gets the call; the directories cited instead route callers to paid listings and competitors.",
-    "fix": "Publish answer-ready pages that answer the absent queries in the first two or three sentences (levels of care, insurance, cost, length of stay, location); add Organization/MedicalOrganization entity schema with sameAs links to every directory profile; claim and complete listings on the directories AI cites (freemanrecoverycenter.com, psychologytoday.com, apex.rehab); publish an outcomes page (accreditation, completion and alumni follow-up data) that answers can quote.",
-    "check_first": "GSC Performance filtered to brand queries (16-month impressions/clicks trend) to see whether AI exposure is already moving branded demand, and add a 'How did you hear about us?' tag in call tracking with an 'AI assistant (ChatGPT/Perplexity)' option so AI-sourced calls are counted before and after the fix.",
-    "confidence": "medium",
-    "impact": 26.0
   },
   {
     "id": "no_answer_blocks",
@@ -509,9 +491,9 @@
       "https://www.cumberlandheights.org/young-mens-summit/",
       "https://www.cumberlandheights.org/concert-for-cumberland-heights/"
     ],
-    "page_count": 18,
+    "page_count": 19,
     "evidence": [
-      "17 pages with no H1, 1 with more than one"
+      "18 pages with no H1, 1 with more than one"
     ],
     "why_it_matters": "Weak topical signal for program/location pages.",
     "fix": "One H1 per page naming the service and place.",
@@ -528,7 +510,7 @@
     "pages": [],
     "page_count": 10,
     "evidence": [
-      "'8283 River Rd Pike Nashville, TN 37209' (112 pages) | '8283 River Road Pike Nashville, TN 37209' (4 pages) | '8283 River Road Pike, Nashville, TN 37209' (1 pages)",
+      "'8283 River Rd Pike Nashville, TN 37209' (149 pages) | '8283 River Road Pike Nashville, TN 37209' (4 pages) | '8283 River Road Pike, Nashville, TN 37209' (1 pages)",
       "'6650 East Brainerd Rd Suite 102 Chattanooga, TN 37421' (1 pages) | '6650 East Brainerd Road, Suite 102 Chattanooga, TN 37421' (1 pages)",
       "'219 B Dunbar Cave Rd Clarksville, TN 37043' (1 pages) | '219 B Dunbar Cave Road Clarksville, TN 37043' (1 pages)",
       "'3441 Lebanon Pike Suite 108 Hermitage TN 37076' (1 pages) | '3441 Lebanon Pike, Suite 108 Hermitage, TN 37076' (1 pages)"
@@ -560,6 +542,30 @@
     "check_first": "Search Console > Links report: 'Top linking sites' and 'Top linked pages' (export both); compare the linking-site count with the DataForSEO numbers here and note which pages the links actually point at.",
     "confidence": "medium",
     "impact": 13.6
+  },
+  {
+    "id": "ai_brand_answer_sources",
+    "category": "ai_visibility",
+    "title": "AI answers about Cumberland Heights cite cumberlandheights.org",
+    "severity": 2,
+    "intent_weight": 5,
+    "pages": [
+      "https://www.cumberlandheights.org/",
+      "https://www.cumberlandheights.org/category/tennessee/feed/",
+      "https://www.cumberlandheights.org/locations/",
+      "https://www.cumberlandheights.org/locations/river-road/",
+      "https://www.cumberlandheights.org/treatment/"
+    ],
+    "page_count": 2,
+    "evidence": [
+      "cumberlandheights.org cited in 2/2 brand-query answers (100%)",
+      "Other domains shaping the brand answer: startyourrecovery.org (2), rehab.com (2), recovery.com (1), yelp.com (1), rehabs.com (1)"
+    ],
+    "why_it_matters": "Families searching for treatment increasingly ask an AI assistant which centers to call, and they phone the names it gives and the sites it links. A center that is not named or cited in those answers never gets the call; the directories cited instead route callers to paid listings and competitors.",
+    "fix": "Publish answer-ready pages that answer the absent queries in the first two or three sentences (levels of care, insurance, cost, length of stay, location); add Organization/MedicalOrganization entity schema with sameAs links to every directory profile; claim and complete listings on the directories AI cites (psychologytoday.com, recovery.com, recovered.org); publish an outcomes page (accreditation, completion and alumni follow-up data) that answers can quote.",
+    "check_first": "GSC Performance filtered to brand queries (16-month impressions/clicks trend) to see whether AI exposure is already moving branded demand, and add a 'How did you hear about us?' tag in call tracking with an 'AI assistant (ChatGPT/Perplexity)' option so AI-sourced calls are counted before and after the fix.",
+    "confidence": "medium",
+    "impact": 13.0
   },
   {
     "id": "topical_authority_matrix",
@@ -653,10 +659,10 @@
     "pages": [],
     "page_count": 16,
     "evidence": [
-      "800-646-9998: on 125 pages (e.g. https://www.cumberlandheights.org/resources/blog/how-long-does-paws-last/)",
-      "615-314-3856: on 113 pages (e.g. https://www.cumberlandheights.org/resources/blog/how-long-does-paws-last/)",
-      "865-213-9003: on 2 pages (e.g. https://www.cumberlandheights.org/resources/location/knoxville-farragut/)",
-      "615-432-3215: on 2 pages (e.g. https://www.cumberlandheights.org/website-privacy-policy/)",
+      "800-646-9998: on 167 pages (e.g. https://www.cumberlandheights.org/research-chart-test/)",
+      "615-314-3856: on 150 pages (e.g. https://www.cumberlandheights.org/research-chart-test/)",
+      "865-213-9003: on 2 pages (e.g. https://www.cumberlandheights.org/resources/location/knoxville-papermill/)",
+      "615-432-3215: on 2 pages (e.g. https://www.cumberlandheights.org/privacy-policy/)",
       "620-416-2213: on 1 pages (e.g. https://www.cumberlandheights.org/admissions/faqs/)",
       "615-257-9608: on 1 pages (e.g. https://www.cumberlandheights.org/resources/location/nashville-music-row/)",
       "931-288-5549: on 1 pages (e.g. https://www.cumberlandheights.org/resources/location/clarksville/)",
@@ -722,7 +728,7 @@
     ],
     "page_count": 1,
     "evidence": [
-      "Mentioned on 7 pages, e.g. https://www.cumberlandheights.org/admissions/faqs/"
+      "Mentioned on 9 pages, e.g. https://www.cumberlandheights.org/admissions/faqs/"
     ],
     "why_it_matters": "Most first visits land on the homepage; the seal belongs there and in the footer.",
     "fix": "Add the seal and a one-line statement to the footer template.",
@@ -738,110 +744,25 @@
     "intent_weight": 5,
     "pages": [
       "https://www.cumberlandheights.org/resources/blog/introduction-to-aa-meetings-what-to-expect-on-your-first-visit/",
+      "https://www.cumberlandheights.org/resources/blog/what-to-expect-during-detox-a-step-by-step-guide/",
       "https://www.cumberlandheights.org/resources/blog/the-many-benefits-you-can-find-through-sober-living-homes-what-to-expect/",
       "https://www.cumberlandheights.org/resources/news-article/people-can-change-justin-furstenfelds-unique-approach-book-tour/",
+      "https://www.cumberlandheights.org/resources/podcast/pathways-to-healing-the-admissions-journey-with-robin-todd/",
+      "https://www.cumberlandheights.org/resources/blog/drug-treatment-centers-in-nashville-what-to-look-for-in-an-addiction-treatment-facility/",
       "https://www.cumberlandheights.org/resources/news-article/behavioral-healthcare-chattanooga-facility-opens/",
-      "https://www.cumberlandheights.org/resources/news-article/cumberland-heights-day-declared-in-honor-of-new-intensive-outpatient-treatment-facility-iop-in-chattanooga/",
-      "https://www.cumberlandheights.org/resources/news-article/cumberland-heights-open-music-row-location-celebrates-50-years/",
-      "https://www.cumberlandheights.org/resources/blog/anxious-for-no-reason-symptoms-of-generalized-anxiety-disorder/",
-      "https://www.cumberlandheights.org/resources/blog/self-forgiveness-in-recovery/"
+      "https://www.cumberlandheights.org/resources/news-article/cumberland-heights-day-declared-in-honor-of-new-intensive-outpatient-treatment-facility-iop-in-chattanooga/"
     ],
-    "page_count": 25,
+    "page_count": 50,
     "evidence": [
-      "25 over 65 chars, 0 under 25 chars",
+      "50 over 65 chars, 0 under 25 chars",
       "84 chars: Introduction to AA Meetings: What to Expect on Your First Visit - Cumberland Hei",
-      "94 chars: The Many Benefits You Can Find Through Sober Living Homes: What to Expect - Cumb",
-      "93 chars: People can change: Justin Furstenfeld\u2019s unique approach to his book tour - Cumbe"
+      "70 chars: What to Expect During Detox: A Step-by-Step Guide - Cumberland Heights",
+      "94 chars: The Many Benefits You Can Find Through Sober Living Homes: What to Expect - Cumb"
     ],
     "why_it_matters": "Truncated titles hide the location or program name in results.",
     "fix": "Keep the program + city in the first 55 characters.",
     "check_first": "GSC CTR by page vs. position.",
     "confidence": "medium",
     "impact": 10.0
-  },
-  {
-    "id": "broken_links",
-    "category": "technical",
-    "title": "Internal links to broken (4xx/5xx) pages",
-    "severity": 2,
-    "intent_weight": 2,
-    "pages": [
-      "https://www.cumberlandheights.org/resources/blog/cumberland-heights-among-the-few-centers-approved-for-google-adwords/",
-      "https://www.cumberlandheights.org/resources/blog/these-3-types-of-gifts-would-be-amazing-for-those-in-recovery-this-holiday-season/",
-      "https://www.cumberlandheights.org/resources/blog/women-in-recovery-these-connections-could-increase-your-risk-for-relapse/",
-      "https://www.cumberlandheights.org/resources/blog/why-your-teen-should-never-try-to-detox-at-home/",
-      "https://www.cumberlandheights.org/resources/blog/why-structure-is-important-in-recovery/",
-      "https://www.cumberlandheights.org/resources/blog/why-activities-are-critical-for-adolescents-in-addiction-recovery/",
-      "https://www.cumberlandheights.org/resources/blog/what-motivates-young-people-to-abuse-prescription-drugs/",
-      "https://www.cumberlandheights.org/resources/blog/what-are-the-benefits-of-exercise-for-treatment-of-youth-substance-use-disorders/"
-    ],
-    "page_count": 11,
-    "evidence": [
-      "https://www.cumberlandheights.org/resources/blog/cumberland-heights-among-the-few-centers-approved-for-google-adwords/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)",
-      "https://www.cumberlandheights.org/resources/blog/these-3-types-of-gifts-would-be-amazing-for-those-in-recovery-this-holiday-season/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)",
-      "https://www.cumberlandheights.org/resources/blog/women-in-recovery-these-connections-could-increase-your-risk-for-relapse/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)",
-      "https://www.cumberlandheights.org/resources/blog/why-your-teen-should-never-try-to-detox-at-home/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)",
-      "https://www.cumberlandheights.org/resources/blog/why-structure-is-important-in-recovery/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)",
-      "https://www.cumberlandheights.org/resources/blog/why-activities-are-critical-for-adolescents-in-addiction-recovery/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)",
-      "https://www.cumberlandheights.org/resources/blog/what-motivates-young-people-to-abuse-prescription-drugs/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)",
-      "https://www.cumberlandheights.org/resources/blog/what-are-the-benefits-of-exercise-for-treatment-of-youth-substance-use-disorders/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)"
-    ],
-    "why_it_matters": "A prospect clicking a dead 'Admissions' or program link leaves; link equity is lost.",
-    "fix": "Redirect or fix the targets, then update the source links.",
-    "check_first": "GSC > Pages > Not found (404): which have impressions? Call tracking: calls from these landing URLs before they broke.",
-    "confidence": "medium",
-    "impact": 8.0
-  },
-  {
-    "id": "no_legitscript",
-    "category": "trust",
-    "title": "No LegitScript certification mentioned",
-    "severity": 2,
-    "intent_weight": 4,
-    "pages": [
-      "https://www.cumberlandheights.org/"
-    ],
-    "page_count": 1,
-    "evidence": [
-      "No page mentions LegitScript"
-    ],
-    "why_it_matters": "LegitScript certification is required to run Google/Meta ads for addiction treatment and is a visible trust badge; its absence may also mean paid search is unavailable.",
-    "fix": "Get certified (if not) and show the badge in the footer.",
-    "check_first": "Check legitscript.com certified list for the facility.",
-    "confidence": "medium",
-    "impact": 8.0
-  },
-  {
-    "id": "sitemap_bad_urls",
-    "category": "technical",
-    "title": "Sitemap lists URLs that do not return 200",
-    "severity": 3,
-    "intent_weight": 1,
-    "pages": [
-      "https://www.cumberlandheights.org/resources/blog/cumberland-heights-among-the-few-centers-approved-for-google-adwords/",
-      "https://www.cumberlandheights.org/resources/blog/these-3-types-of-gifts-would-be-amazing-for-those-in-recovery-this-holiday-season/",
-      "https://www.cumberlandheights.org/resources/blog/women-in-recovery-these-connections-could-increase-your-risk-for-relapse/",
-      "https://www.cumberlandheights.org/resources/blog/why-your-teen-should-never-try-to-detox-at-home/",
-      "https://www.cumberlandheights.org/resources/blog/why-structure-is-important-in-recovery/",
-      "https://www.cumberlandheights.org/resources/blog/why-activities-are-critical-for-adolescents-in-addiction-recovery/",
-      "https://www.cumberlandheights.org/resources/blog/what-motivates-young-people-to-abuse-prescription-drugs/",
-      "https://www.cumberlandheights.org/resources/blog/what-are-the-benefits-of-exercise-for-treatment-of-youth-substance-use-disorders/"
-    ],
-    "page_count": 11,
-    "evidence": [
-      "https://www.cumberlandheights.org/resources/blog/cumberland-heights-among-the-few-centers-approved-for-google-adwords/ -> HTTP 503",
-      "https://www.cumberlandheights.org/resources/blog/these-3-types-of-gifts-would-be-amazing-for-those-in-recovery-this-holiday-season/ -> HTTP 503",
-      "https://www.cumberlandheights.org/resources/blog/women-in-recovery-these-connections-could-increase-your-risk-for-relapse/ -> HTTP 503",
-      "https://www.cumberlandheights.org/resources/blog/why-your-teen-should-never-try-to-detox-at-home/ -> HTTP 503",
-      "https://www.cumberlandheights.org/resources/blog/why-structure-is-important-in-recovery/ -> HTTP 503",
-      "https://www.cumberlandheights.org/resources/blog/why-activities-are-critical-for-adolescents-in-addiction-recovery/ -> HTTP 503",
-      "https://www.cumberlandheights.org/resources/blog/what-motivates-young-people-to-abuse-prescription-drugs/ -> HTTP 503",
-      "https://www.cumberlandheights.org/resources/blog/what-are-the-benefits-of-exercise-for-treatment-of-youth-substance-use-disorders/ -> HTTP 503"
-    ],
-    "why_it_matters": "Google trusts the sitemap less and wastes crawl budget on dead URLs.",
-    "fix": "Regenerate the sitemap from live, indexable URLs only.",
-    "check_first": "GSC > Pages > 'Not found (404)' and 'Redirect error' filtered to sitemap URLs.",
-    "confidence": "medium",
-    "impact": 6.0
   }
 ]

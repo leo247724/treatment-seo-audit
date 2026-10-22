@@ -59,6 +59,7 @@ def _rank(sov, name, key):
 
 
 def share_of_voice_table(data, host=None) -> str:
+    data = _normalize(data)
     """Markdown table of AI-answer share of voice across non-brand queries; audited brand in bold."""
     try:
         sov = share_of_voice(data)
@@ -99,10 +100,56 @@ def run(site: dict, market: dict | None, out_dir: str, client=None) -> list[Find
             log.warning("geo_mentions: %s not found, skipping AI share-of-voice check", path)
             return []
         with open(path, encoding="utf-8") as fh:
-            return _findings(site or {}, json.load(fh))
+            data = _normalize(json.load(fh))
+        findings = _findings(site or {}, data)
+        try:
+            _write_md(site or {}, data, out_dir)
+        except Exception as e:
+            log.warning("geo_mentions: could not write geo_mentions.md: %s", e)
+        return findings
     except Exception as e:
         log.warning("geo_mentions: check failed: %s", e)
         return []
+
+
+def _normalize(data):
+    """Accept both dataset shapes: brands with `domain` or `domains[]`; per-query `brands` dict or `brand_mentions` list."""
+    for b in data.get("brands") or []:
+        if not b.get("domain") and b.get("domains"):
+            b["domain"] = b["domains"][0]
+    for q in data.get("queries") or []:
+        if not q.get("brands") and isinstance(q.get("brand_mentions"), list):
+            q["brands"] = {m.get("brand") or m.get("name"): {"mentioned_in_answer": bool(m.get("mentioned_in_answer", m.get("mentioned"))),
+                                                           "cited": bool(m.get("cited")),
+                                                           "position_of_first_mention": m.get("position_of_first_mention")}
+                           for m in q["brand_mentions"] if (m.get("brand") or m.get("name"))}
+        if not q.get("third_party_cited") and q.get("directory_domains_cited"):
+            q["third_party_cited"] = q["directory_domains_cited"]
+    return data
+
+
+def _write_md(site, data, out_dir):
+    """geo_mentions.md: share-of-voice table, per-query citations, absent queries, most-cited third parties."""
+    host = site.get("host", "")
+    me = _audited(data, host)
+    nb, bq = _split(data)
+    brands = data.get("brands") or []
+    L = [f"# AI answer share of voice: {host}\n",
+         f"Engine: {data.get('engine', '?')} · run {data.get('run_date', '?')} · {len(nb)} non-brand queries, {len(bq)} brand queries. "
+         "Mentioned = brand named in the answer text; cited = the brand's own domain among the answer's sources.\n",
+         "## Share of voice (non-brand queries)\n", share_of_voice_table(data, host) or "_no data_", ""]
+    if me:
+        absent = [q.get("query", "") for q in nb if not ((q.get("brands") or {}).get(me["name"]) or {}).get("mentioned_in_answer") and not _cited(q, me)]
+        L += [f"## Queries where {me['name']} is absent ({len(absent)} of {len(nb)})\n"] + [f"- {q}" for q in absent] + [""]
+    tp = _third_party(nb, brands).most_common(10)
+    L += ["## Most-cited third-party domains (non-brand queries)\n", "| Domain | Answers citing it |", "|---|---|"] + [f"| {d} | {k} |" for d, k in tp] + [""]
+    L += ["## Per query\n", "| Type | Query | Brands mentioned | Domains cited |", "|---|---|---|---|"]
+    for q in (nb + bq):
+        mentioned = [b for b, v in (q.get("brands") or {}).items() if (v or {}).get("mentioned_in_answer")]
+        hosts = sorted({_host(u) for u in q.get("citations") or []})
+        L.append(f"| {q.get('type', '')} | {q.get('query', '')} | {', '.join(mentioned) or 'none'} | {', '.join(hosts[:8])} |")
+    with open(os.path.join(out_dir, "geo_mentions.md"), "w", encoding="utf-8") as fh:
+        fh.write("\n".join(L) + "\n")
 
 
 def _findings(site, data) -> list[Finding]:
