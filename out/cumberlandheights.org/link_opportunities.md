@@ -68,16 +68,16 @@ Method: OpenSEO `get_backlinks_profile` (DataForSEO; one link per domain, dofoll
 | addictioncenter.com | 2 | directory | no | 1 | Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews |
 | rehabnet.com | 2 | directory | no | 0 | Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews |
 | rehabs.org | 2 | directory | no | 0 | Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews |
-| recoveryunplugged.com (local pack) | 2 | directory | no | 0 | Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews |
 | southeastaddictiontn.com (local pack) | 2 | directory | no | 0 | Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews |
+| recoveryunplugged.com (local pack) | 2 | directory | no | 0 | Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews |
 | addictionresource.net | 1 | directory | no | 0 | Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews |
 | tristarhealth.com | 1 | health system | no | 0 | Propose a referral-partner listing (detox/residential step-down) on their partner page |
 | vanderbilthealth.com | 1 | health system | no | 0 | Propose a referral-partner listing (detox/residential step-down) on their partner page |
 | tennesseebehavioralhealth.com | 1 | health system | no | 0 | Propose a referral-partner listing (detox/residential step-down) on their partner page |
-| integrativelifecenter.com | 1 | directory | no | 0 | Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews |
 | bradfordhealth.com | 1 | health system | no | 0 | Propose a referral-partner listing (detox/residential step-down) on their partner page |
-| tn.gov | 1 | government | no | 0 | Ask to be added to the county/city behavioral-health resource list |
-| drugrehabus.org | 1 | directory | no | 0 | Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews |
+| integrativelifecenter.com | 1 | directory | no | 0 | Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews |
+| wdef.com | 1 | news/media | no | 0 | Pitch an outcomes or alumni-recovery story (local angle, data from the alumni program) |
+| choosehelp.com | 1 | blog/other | no | 1 | Offer an expert quote or guest resource on family/relapse topics |
 
 ## Patterns
 

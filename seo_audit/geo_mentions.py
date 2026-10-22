@@ -59,9 +59,9 @@ def _rank(sov, name, key):
 
 
 def share_of_voice_table(data, host=None) -> str:
-    data = _normalize(data)
     """Markdown table of AI-answer share of voice across non-brand queries; audited brand in bold."""
     try:
+        data = _normalize(data)
         sov = share_of_voice(data)
         if not sov:
             return ""

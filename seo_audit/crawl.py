@@ -1,4 +1,5 @@
 """Polite same-host crawler: robots.txt, sitemaps, page extraction."""
+import gzip
 import json
 import re
 import time
@@ -18,7 +19,8 @@ log = logging.getLogger("audit")
 UA = "Mozilla/5.0 (compatible; TreatmentSEOAudit/0.1; SEO audit, contact via repo)"
 SKIP_EXT = (".pdf", ".jpg", ".jpeg", ".png", ".gif", ".svg", ".webp", ".mp4", ".mp3", ".zip",
             ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".css", ".js", ".ico", ".woff", ".woff2",
-            ".xml", ".json", ".txt")
+            ".xml", ".json", ".txt", ".avif", ".heic", ".bmp", ".tif", ".tiff", ".mov", ".webm",
+            ".m4a", ".wav", ".ogg", ".csv", ".gz", ".rar", ".7z", ".ttf", ".otf", ".eot", ".rtf")
 
 PHONE_RE = re.compile(r"(?<!\d)(?:\+?1[\s.\-]?)?\(?([2-9]\d{2})\)?[\s.\-]?(\d{3})[\s.\-]?(\d{4})(?!\d)")
 ADDR_RE = re.compile(
@@ -53,6 +55,9 @@ HEADER_CLASS_RE = re.compile(r"header|navbar|topbar|top-bar|masthead|site-nav|ma
 
 def norm_host(host: str) -> str:
     host = (host or "").lower()
+    for port in (":80", ":443"):  # default ports are the same site
+        if host.endswith(port):
+            host = host[: -len(port)]
     return host[4:] if host.startswith("www.") else host
 
 
@@ -66,7 +71,10 @@ def normalize_url(url: str) -> str:
     p = urlparse(url)
     path = p.path or "/"
     query = ""  # drop query strings: treatment sites rarely need them for indexable pages
-    return f"{p.scheme}://{p.netloc}{path}{query}"
+    scheme, netloc = p.scheme.lower(), p.netloc.lower()
+    if (scheme, netloc.rpartition(":")[2]) in (("http", "80"), ("https", "443")):
+        netloc = netloc.rpartition(":")[0]
+    return f"{scheme}://{netloc}{path}{query}"
 
 
 class Crawler:
@@ -112,7 +120,7 @@ class Crawler:
 
     def fetch_sitemaps(self):
         candidates = [m.split(":", 1)[1].strip() for m in self.robots_txt.splitlines()
-                      if m.lower().startswith("sitemap:")]
+                      if m.strip().lower().startswith("sitemap:")]
         if not candidates:
             candidates = [urljoin(self.start_url, p) for p in ("/sitemap.xml", "/sitemap_index.xml", "/wp-sitemap.xml")]
         seen = set()
@@ -130,10 +138,17 @@ class Crawler:
             if r.status_code != 200:
                 self.sitemap_errors.append(f"{sm}: HTTP {r.status_code}")
                 continue
+            body = r.content
+            if body[:2] == b"\x1f\x8b":  # .xml.gz served without Content-Encoding
+                try:
+                    body = gzip.decompress(body)
+                except (OSError, EOFError) as e:
+                    self.sitemap_errors.append(f"{sm}: {e.__class__.__name__}")
+                    continue
             try:
-                soup = BeautifulSoup(r.content, "xml")
+                soup = BeautifulSoup(body, "xml")
             except Exception:
-                soup = BeautifulSoup(r.content, "lxml")
+                soup = BeautifulSoup(body, "lxml")
             self.sitemap_sources.append(sm)
             if soup.find("sitemapindex"):
                 queue.extend(loc.get_text(strip=True) for loc in soup.find_all("loc"))
@@ -171,6 +186,13 @@ class Crawler:
         page.x_robots = r.headers.get("X-Robots-Tag", "")
         page.html_bytes = len(r.content)
         if page.is_html and r.status_code == 200:
+            if "charset" not in page.content_type.lower():
+                # requests falls back to ISO-8859-1 for text/* without a charset; most pages are UTF-8
+                try:
+                    r.content.decode("utf-8")
+                    r.encoding = "utf-8"
+                except UnicodeDecodeError:
+                    pass
             try:
                 self.extract(page, r.text)
             except Exception as e:  # never let one page kill the crawl
@@ -293,6 +315,10 @@ class Crawler:
                 for page in ex.map(self.fetch_page, batch):
                     page.in_sitemap = page.url in sitemap_set or page.final_url in sitemap_set
                     self.pages[page.url] = page
+                    # a redirect target is the same document: don't fetch it again later
+                    if page.final_url and page.final_url not in seen:
+                        seen.add(page.final_url)
+                        queue = [u for u in queue if u != page.final_url]
                     if page.url == start:
                         self.home_final_url = page.final_url
                     for link in page.internal_links:

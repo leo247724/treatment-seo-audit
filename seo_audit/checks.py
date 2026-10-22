@@ -37,7 +37,7 @@ def _f(**kw) -> Finding:
 def check_robots_sitemap(site):
     out = []
     pages = site["pages"]
-    home = pages.get(next(iter(pages)))
+    home = pages.get(site.get("start_url")) or next((p for p in pages.values() if p.page_type == "home"), None)
     if site["robots_status"] != 200:
         out.append(_f(id="robots_missing", category="technical", title="robots.txt missing or unreachable",
                       severity=2, intent_weight=2, pages=[site["start_url"] + "robots.txt"],
@@ -101,7 +101,7 @@ def check_links_and_redirects(site):
                       evidence=ev, why_it_matters="A prospect clicking a dead 'Admissions' or program link leaves; link equity is lost.",
                       fix="Redirect or fix the targets, then update the source links.",
                       check_first="GSC > Pages > Not found (404): which have impressions? Call tracking: calls from these landing URLs before they broke."))
-    chains = [p for p in pages.values() if p.redirects >= 2]
+    chains = [p for p in pages.values() if p.redirects >= 2 and p.url != site.get("start_url")]
     redirected_links = [u for u, src in sources.items() if u in pages and pages[u].redirects >= 1 and pages[u].status == 200]
     if chains or redirected_links:
         ev = [f"{p.url} -> {p.redirects} hops -> {p.final_url}" for p in chains[:5]]
@@ -147,8 +147,8 @@ def check_titles_meta(site):
     out = []
     idx = indexable(site)
     missing_t = [p for p in idx if not p.title.strip()]
-    titles = Counter(p.title.strip() for p in idx if p.title.strip())
-    dup_t = [p for p in idx if titles[p.title.strip()] > 1]
+    titles = Counter(p.title.strip().lower() for p in idx if p.title.strip())
+    dup_t = [p for p in idx if titles[p.title.strip().lower()] > 1]
     if missing_t or dup_t:
         out.append(_f(id="titles_missing_dup", category="content", title="Missing or duplicate title tags",
                       severity=3, intent_weight=max_weight(missing_t + dup_t), pages=urls(missing_t + dup_t),
@@ -275,7 +275,8 @@ def check_admissions_path(site):
     out = []
     idx = indexable(site)
     def find(*keys):
-        return [p for p in idx if any(k in (p.final_url + " " + p.title).lower() for k in keys)]
+        return [p for p in idx if p.page_type not in ("content", "archive")
+                and any(k in (p.final_url + " " + p.title).lower() for k in keys)]
     insurance = find("insurance", "verify", "coverage", "payment", "cost", "pricing", "financ")
     admissions = find("admission", "get-help", "get-started", "intake", "what-to-expect")
     contact = find("contact")
@@ -399,7 +400,7 @@ def check_nap(site):
     # group by street number + first word to find formatting variants of the same address
     groups = defaultdict(list)
     for a in addrs:
-        groups[" ".join(a.lower().split()[:2])].append(a)
+        groups[" ".join(re.sub(r"[^\w\s]", " ", a.lower()).split()[:2])].append(a)
     variants = {k: v for k, v in groups.items() if len(v) > 1}
     if not variants:
         return []

@@ -23,11 +23,16 @@ def load_dotenv(path=".env"):
             line = line.strip()
             if not line or line.startswith("#") or "=" not in line:
                 continue
+            if line.startswith("export "):
+                line = line[len("export "):]
             k, v = line.split("=", 1)
-            os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+            v = v.strip()
+            if len(v) >= 2 and v[0] == v[-1] and v[0] in "\"'":
+                v = v[1:-1]  # strip one matching pair of quotes only
+            os.environ.setdefault(k.strip(), v)
 
 
-def doctor():
+def doctor(out_root="out"):
     """Print what is configured and what will run."""
     import requests
     print(f"python {sys.version.split()[0]}")
@@ -45,7 +50,7 @@ def doctor():
         print("OpenSEO      not configured (OPENSEO_MCP_URL / OPENSEO_PROJECT_ID). Crawler checks only, or --reuse on cached data.")
     print(f"PageSpeed    {'key set' if os.environ.get('PSI_API_KEY') else 'no key: a few free calls per day, then 429. Use --no-psi or set PSI_API_KEY'}")
     print(f"Perplexity   {'key set: script runs the AI queries' if os.environ.get('PERPLEXITY_API_KEY') else 'no key: run the AI queries by hand and pass --ai-results file.json'}")
-    cached = [d for d in (os.listdir("out") if os.path.isdir("out") else []) if os.path.exists(os.path.join("out", d, "crawl.pkl"))]
+    cached = sorted(d for d in (os.listdir(out_root) if os.path.isdir(out_root) else []) if os.path.isfile(os.path.join(out_root, d, "crawl.pkl")))
     print(f"Cached runs  {', '.join(cached) if cached else 'none'}  (re-score with --reuse, no keys or credits needed)")
 from seo_audit.checks import ALL_CHECKS
 from seo_audit.ai_visibility import check_ai_visibility
@@ -56,6 +61,54 @@ from seo_audit.report import rank, write_outputs
 # writes its own markdown file into out_dir and handles its own caching for --reuse.
 DEEP_MODULES = ("backlinks", "link_opportunities", "onpage", "competitor_pages", "topical_authority", "geo_mentions")
 SKIPPABLE = DEEP_MODULES + ("openseo", "psi")
+
+
+def site_dir_name(url):
+    """Output folder name for a start URL: lowercase host, no port/userinfo, no www."""
+    return norm_host(urlparse(url).hostname or "")
+
+
+def normalize_city(city):
+    """site_city_state() splits on the last comma; a bare "Nashville" would become state="Nashville"."""
+    city = (city or "").strip()
+    return city if not city or "," in city else city + ","
+
+
+def upgrade_cached_site(site):
+    """Fill keys that older crawl.pkl files do not have, so --reuse works across versions."""
+    site.setdefault("llms_txt_status", 0)
+    site.setdefault("sitemap_sources", [])
+    site.setdefault("sitemap_urls", [])
+    site.setdefault("sitemap_errors", [])
+    site.setdefault("robots_txt", "")
+    site.setdefault("robots_status", 0)
+    site.setdefault("uncrawled", 0)
+    site.setdefault("home_final_url", site.get("start_url", ""))
+    site.setdefault("city_override", "")
+    return site
+
+
+def derive_brand(site):
+    """Brand from the homepage title: the title part that matches the domain, else the first part, else the host."""
+    import re
+    pages = site.get("pages") or {}
+    home = None
+    for key in (site.get("home_final_url"), site.get("start_url")):
+        if key and key in pages:
+            home = pages[key]
+            break
+    if home is None and pages:
+        home = next(iter(pages.values()))
+    title = (getattr(home, "title", "") or "").strip()
+    parts = [p.strip() for p in re.split(r"\s+[|\-\u2013\u2014:\u00b7]\s+|\s*\|\s*", title) if p.strip()]
+    if not parts:
+        return site["host"]
+    host_key = re.sub(r"[^a-z0-9]", "", site["host"].split(".")[0].lower())
+    for p in parts:
+        key = re.sub(r"[^a-z0-9]", "", p.lower())
+        if key and host_key and (key in host_key or host_key in key):
+            return p
+    return parts[0]
 
 
 def run_deep_modules(site, market, out_dir, client, skip):
@@ -99,7 +152,7 @@ def main():
     ap.add_argument("--no-openseo", action="store_true", help="Skip the OpenSEO market-data pulls")
     ap.add_argument("--skip", default="", help="Comma list of pieces to skip: " + ",".join(SKIPPABLE))
     args = ap.parse_args()
-    skip = {s.strip() for s in args.skip.split(",") if s.strip()}
+    skip = {s.strip().lower() for s in args.skip.split(",") if s.strip()}
     unknown = skip - set(SKIPPABLE)
     if unknown:
         ap.error(f"--skip: unknown name(s) {', '.join(sorted(unknown))}; choose from {','.join(SKIPPABLE)}")
@@ -109,7 +162,8 @@ def main():
         args.no_psi = True
     load_dotenv()
     if args.doctor:
-        return doctor()
+        doctor(args.out)
+        return 0
     if not args.url:
         ap.error("a start URL is required (or use --doctor)")
     args.openseo_url = args.openseo_url or os.environ.get("OPENSEO_MCP_URL", "")
@@ -117,8 +171,8 @@ def main():
 
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s", datefmt="%H:%M:%S")
     t0 = time.time()
-    url = args.url if args.url.startswith("http") else "https://" + args.url
-    out_dir = os.path.join(args.out, norm_host(urlparse(url).netloc))
+    url = args.url if "://" in args.url else "https://" + args.url
+    out_dir = os.path.join(args.out, site_dir_name(url))
     os.makedirs(out_dir, exist_ok=True)
     cache = os.path.join(out_dir, "crawl.pkl")
     psi_cache = os.path.join(out_dir, "psi.json")
@@ -127,14 +181,14 @@ def main():
         logging.info("reusing cached crawl %s", cache)
         with open(cache, "rb") as fh:
             site = pickle.load(fh)
+        upgrade_cached_site(site)
     else:
         site = Crawler(url, max_pages=args.max_pages, workers=args.workers).run()
         with open(cache, "wb") as fh:
             pickle.dump(site, fh)
 
-    site["city_override"] = args.city
-    home = site["pages"].get(next(iter(site["pages"])))
-    brand = args.brand or (home.title.split("|")[0].split("-")[0].split(":")[0].strip() if home and home.title else site["host"])
+    site["city_override"] = normalize_city(args.city)
+    brand = args.brand or derive_brand(site)
     logging.info("brand assumed: %r (override with --brand)", brand)
 
     findings = []
@@ -174,9 +228,14 @@ def main():
 
     psi_results = []
     if not args.no_psi:
+        cached = None
         if args.reuse and os.path.exists(psi_cache):
             with open(psi_cache) as fh:
-                psi_results = json.load(fh)
+                cached = json.load(fh)
+            if len(cached) < args.psi_pages:  # --psi-pages grew since the cached run: re-measure
+                cached = None
+        if cached is not None:
+            psi_results = cached[:max(args.psi_pages, 0)]
         else:
             psi_results = run_psi(site, key=os.environ.get("PSI_API_KEY"), n=args.psi_pages)
             with open(psi_cache, "w") as fh:
@@ -190,6 +249,7 @@ def main():
     for i, f in enumerate(findings[:8], 1):
         print(f"{i:>2}. [{f.impact:>5}] sev {f.severity} intent {f.intent_weight} pages {f.page_count:<4} {f.title}")
     print(f"\nFull report: {path}")
+    return 0
 
 
 if __name__ == "__main__":

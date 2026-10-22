@@ -26,6 +26,9 @@ INSURERS_EXT = {**INSURERS, "anthem": r"\banthem\b", "ambetter": r"\bambetter\b"
                 "compsych": r"\bcompsych\b", "geha": r"\bgeha\b", "first_health": r"\bfirst\s+health\b",
                 "evernorth": r"\bevernorth\b", "meritain": r"\bmeritain\b", "umr": r"\bumr\b"}
 ACCRED = {"joint_commission": r"joint\s+commission", "carf": r"\bcarf\b", "legitscript": r"legitscript"}
+H247_RE = re.compile(r"24\s*/\s*7|24[\s-]hours?\s+a\s+day|24[\s-]hours?,?\s+(7|seven)\s+days|around[\s-]the[\s-]clock|"
+                     r"24[\s-]hour\s+(admissions?|support|care|help|hotline|helpline|access|availability|staff|nurs|medical|"
+                     r"supervision|monitoring|line)")
 REVIEW_RE = re.compile(r"testimonial|review|stars?\b|rated\s+\d|\d\.\d\s*(out of|/)\s*5", re.I)
 
 # --- entity score + on-page strategy ---------------------------------------------------------------
@@ -87,8 +90,9 @@ def extract(url, html, role):
         except Exception:
             jsonld.append("INVALID_JSON")
     tels = [a for a in soup.find_all("a", href=True) if a["href"].lower().startswith("tel:")]
-    header, imgs = soup.find("header"), soup.find_all("img")
-    header_tel = bool(header and header.find("a", href=re.compile(r"^tel:", re.I)))
+    imgs = soup.find_all("img")
+    headers = soup.find_all("header") + soup.find_all(attrs={"role": "banner"})
+    header_tel = any(h.find("a", href=re.compile(r"^tel:", re.I)) for h in headers)
     title = soup.title.get_text(" ", strip=True) if soup.title else ""
     h1s = [h.get_text(" ", strip=True) for h in soup.find_all("h1")]
     heads = [h.get_text(" ", strip=True) for h in soup.find_all(["h2", "h3", "h4", "summary", "button"])]
@@ -112,7 +116,7 @@ def extract(url, html, role):
         "faq": q_heads >= 3 or "FAQPage" in jsonld, "jsonld_types": sorted(set(jsonld)),
         "tel_links": len(tels), "header_tel": header_tel, "forms": len(soup.find_all("form")),
         "insurers": [k for k, rx in INSURERS.items() if re.search(rx, low)],
-        "mentions_24_7": bool(re.search(r"24\s*/\s*7|24\s+hours", low)),
+        "mentions_24_7": bool(H247_RE.search(low)),
         "accreditations": [k for k, rx in ACCRED.items() if re.search(rx, low)],
         "verify_insurance": bool(re.search(r"verify\s+(your\s+)?insurance|insurance\s+verification", low)),
         "review_hints": review_hints + len(re.findall(r"testimonial|google reviews?|\b\d\.\d\s*stars?", low)),
@@ -198,8 +202,8 @@ def analyze(url, html):
     hrefs_low = " ".join(a["href"].lower() for a in soup.find_all("a", href=True))
     forms = len(soup.find_all("form"))
     form_embed = bool(FORM_EMBED_RE.search(script_blob))
-    insurer_logos = sum(1 for i in soup.find_all("img")
-                        if any(re.search(rx, (i.get("alt") or "").lower()) for rx in INSURERS_EXT.values()))
+    insurer_logos = len({k for i in soup.find_all("img") for k, rx in INSURERS_EXT.items()
+                         if re.search(rx, (i.get("alt") or "").lower())})
     def _testi(tag):
         v = " ".join(tag.get("class") or []) + " " + (tag.get("id") or "")
         return bool(TESTI_ATTR_RE.search(v))
@@ -241,7 +245,7 @@ def analyze(url, html):
         "insurer_names": insurers, "insurer_count": len(insurers), "insurer_logos": insurer_logos,
         "cta_types": cta, "tel_links": len(tels), "forms": forms, "form_embed": form_embed, "chat_vendors": chat,
         "rating_value": rating_value, "rating_count": rating_count,
-        "testimonial_sections": len(top) + testi_heads, "mentions_24_7": bool(re.search(r"24\s*/\s*7|24[\s-]hours?", low)),
+        "testimonial_sections": len(top) + testi_heads, "mentions_24_7": bool(H247_RE.search(low)),
         "video_embeds": video_embeds, "video_hosts": video_hosts, "h2_count": len(h2s), "h2s": h2s[:10],
         "city_mentions": city_n, "meta_description_len": len(meta_desc), "schema_types": sorted(types)}
     return {"entity_signals": sig, "entity_score": score, "entity_failed": failed, "entity_source": "fetch",
@@ -270,13 +274,16 @@ def _fallback_entity(r):
 
 
 def _competitor_urls(market):
-    urls = []
+    urls, seen = [], set()
     try:
         for r in (market or {}).get("serps", {}).get("results", []) or []:
             for it in [i for i in (r.get("items") or []) if i.get("type") in ("local_pack", "organic")]:
                 u = it.get("url") or it.get("domain") or ""
                 u = u if u.startswith("http") else ("https://" + u if u else "")
-                if urlparse(u).netloc and u not in urls:
+                p = urlparse(u)
+                key = (p.netloc.lower().removeprefix("www."), p.path.rstrip("/"))
+                if p.netloc and key not in seen:
+                    seen.add(key)
                     urls.append(u)
     except Exception:
         return []
@@ -473,9 +480,13 @@ def _md_extra(rows, copy_items):
 
 def _atomic_write(path, text):
     tmp = path + ".tmp"
-    with open(tmp, "w") as fh:
-        fh.write(text)
-    os.replace(tmp, path)
+    try:
+        with open(tmp, "w") as fh:
+            fh.write(text)
+        os.replace(tmp, path)
+    finally:
+        if os.path.exists(tmp):
+            os.remove(tmp)
 
 
 LOCAL_TYPES = {"LocalBusiness", "MedicalClinic", "MedicalBusiness", "Place", "City", "PostalAddress"}

@@ -29,6 +29,11 @@ def classify(url: str, title: str = "") -> tuple[str, int]:
     s = path + " " + (title or "").lower()
     for name, keys in (("conversion", CONVERSION), ("local", LOCAL), ("content", CONTENT),
                        ("program", PROGRAM), ("about", ABOUT)):
-        if any(k in s for k in keys):
+        if name == "content":
+            # word-start match so "depression", "prevention", "history" are not content pages
+            hit = any(re.search(r"(?<![a-z])" + re.escape(k), s) if k[0].isalpha() else k in s for k in keys)
+        else:
+            hit = any(k in s for k in keys)
+        if hit:
             return name, WEIGHTS[name]
     return "other", WEIGHTS["other"]

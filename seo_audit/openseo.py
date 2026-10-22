@@ -5,7 +5,7 @@ import logging
 import os
 import re
 from collections import Counter, defaultdict
-from urllib.parse import urlparse, urlunparse
+from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
 import requests
 
@@ -53,11 +53,22 @@ def geocode(place):
         return None
 
 
+def _read_cache(path):
+    """Cached JSON, or None when the file is missing, unreadable or an old {"error": ...} stub (never data)."""
+    try:
+        with open(path) as fh:
+            d = json.load(fh)
+    except (OSError, ValueError):
+        return None
+    return None if isinstance(d, dict) and "error" in d else d
+
+
 def _cached(out_dir, name, reuse, fn):
     path = os.path.join(out_dir, "openseo", f"{name}.json")
-    if reuse and os.path.exists(path):
-        with open(path) as fh:
-            return json.load(fh)
+    if reuse:
+        d = _read_cache(path)
+        if d is not None:
+            return d
     try:
         data = fn()
     except AttributeError:
@@ -65,7 +76,7 @@ def _cached(out_dir, name, reuse, fn):
         return {"error": "no OpenSEO endpoint configured"}
     except Exception as e:
         log.warning("OpenSEO %s failed: %s", name, str(e)[:160])
-        data = {"error": str(e)[:300]}
+        return {"error": str(e)[:300]}  # in-memory only: never cache a failure over good (or future) data
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w") as fh:
         json.dump(data, fh, indent=1)
@@ -94,11 +105,14 @@ def fetch_all(client, host, brand, city, state, out_dir, reuse=False):
             "get_serp_results", {"queries": [{"keyword": k} for k in q + [brand]]}))
         data["competitors"] = _cached(out_dir, "serp_competitors", reuse, lambda: client.call(
             "find_serp_competitors", {"keywords": comp_kw, "limit": 15}))
-        ll = geocode(place)
-        if ll:
+        maps_names = {kw: f"maps_{kw.replace(' ', '_')}" for kw in ("alcohol rehab", "drug rehab")}
+        all_cached = reuse and all(_read_cache(os.path.join(out_dir, "openseo", f"{n}.json")) is not None
+                                   for n in maps_names.values())
+        ll = None if all_cached else geocode(place)  # no network round-trip when the maps cache is complete
+        if ll or all_cached:
             data["maps"] = {}
-            for kw in ("alcohol rehab", "drug rehab"):
-                data["maps"][kw] = _cached(out_dir, f"maps_{kw.replace(' ', '_')}", reuse, lambda kw=kw: client.call(
+            for kw, name in maps_names.items():
+                data["maps"][kw] = _cached(out_dir, name, reuse, lambda kw=kw: client.call(
                     "get_local_serp_results", {"keyword": kw, "near": {"latitude": ll[0], "longitude": ll[1], "zoom": 11},
                                                "depth": 20, "device": "mobile"}))
     return data
@@ -110,10 +124,11 @@ def _rows(block):
 
 
 def _kw(row):
-    kd = row.get("keyword_data", {})
-    se = row.get("ranked_serp_element", {}).get("serp_item", {})
-    return {"keyword": kd.get("keyword", ""), "volume": kd.get("keyword_info", {}).get("search_volume") or 0,
-            "cpc": kd.get("keyword_info", {}).get("cpc") or 0, "intent": (kd.get("search_intent_info") or {}).get("main_intent"),
+    kd = row.get("keyword_data") or {}
+    se = (row.get("ranked_serp_element") or {}).get("serp_item") or {}
+    ki = kd.get("keyword_info") or {}
+    return {"keyword": kd.get("keyword") or "", "volume": ki.get("search_volume") or 0,
+            "cpc": ki.get("cpc") or 0, "intent": (kd.get("search_intent_info") or {}).get("main_intent"),
             "rank": se.get("rank_group"), "abs": se.get("rank_absolute"), "etv": se.get("etv") or 0,
             "url": se.get("url") or "", "type": se.get("type"), "title": se.get("title"), "phone": se.get("phone"),
             "rating": (se.get("rating") or {}).get("value"), "votes": (se.get("rating") or {}).get("votes_count")}
@@ -124,8 +139,10 @@ def _page_type(url):
 
 
 def _strip_utm(url):
-    p = urlparse(url)
-    return urlunparse(p._replace(query="", fragment=""))
+    """Drop utm_* tracking parameters (and the fragment) but keep meaningful query parameters such as ?page_id=."""
+    p = urlparse(url or "")
+    q = [(k, v) for k, v in parse_qsl(p.query, keep_blank_values=True) if not k.lower().startswith("utm_")]
+    return urlunparse(p._replace(query=urlencode(q), fragment=""))
 
 
 # ------------------------------------------------------------------ checks
@@ -160,9 +177,10 @@ def check_intent_mix(site, data):
 def check_commercial_on_home(site, data):
     rows = [_kw(r) for r in _rows(data.get("ranked_organic"))]
     brand_words = {w.lower() for w in (data.get("brand") or "").split() if len(w) > 3}
+    city, state = (data.get("city") or "").lower(), (data.get("state") or "").lower()  # "" must not match every keyword
     local = [r for r in rows if re.search(r"rehab|treatment|detox|recovery|iop|outpatient|inpatient|residential", r["keyword"], re.I)
              and not any(b in r["keyword"].lower() for b in brand_words)
-             and (data.get("city", "").lower() in r["keyword"].lower() or data.get("state", "").lower() in r["keyword"].lower().split() or "tennessee" in r["keyword"].lower())]
+             and ((city and city in r["keyword"].lower()) or (state and state in r["keyword"].lower().split()) or "tennessee" in r["keyword"].lower())]
     if not local:
         return []
     home = [r for r in local if urlparse(r["url"]).path in ("", "/")]
@@ -200,7 +218,10 @@ def check_local_pack(site, data):
     ratings = []
     link_problems = []
     for kw, m in (data.get("maps") or {}).items():
-        rows = [_kw({"keyword_data": {}, "ranked_serp_element": {"serp_item": r}}) | {"domain": r.get("domain"), "url": r.get("url") or ""} for r in (m or {}).get("results", [])]
+        res = (m.get("results") if isinstance(m, dict) else None) or []
+        if not res:  # error stub or empty Maps response: no evidence either way
+            continue
+        rows = [_kw({"keyword_data": {}, "ranked_serp_element": {"serp_item": r}}) | {"domain": r.get("domain"), "url": r.get("url") or ""} for r in res]
         mine = [r for r in rows if norm_host(r["domain"] or "") == host]
         top3 = [r for r in rows[:3]]
         ratings += [(r["rating"], r["votes"]) for r in top3 if r["rating"]]
@@ -296,12 +317,12 @@ def write_market_summary(data, out_dir):
     L = [f"# Market data for {data['host']} (OpenSEO / DataForSEO)\n",
          f"Estimated organic traffic: {ov.get('organicTraffic')} visits/mo · ranking keywords: {ov.get('organicKeywords')} · "
          f"referring domains: {bl.get('referringDomains')} · domain rank: {bl.get('rank')}\n"]
-    comps = (data.get("competitors") or {}).get("competitors", [])
+    comps = (data.get("competitors") or {}).get("competitors") or []
     if comps:
         L.append("## Who wins the local SERPs (visibility across the query set)\n")
         L.append("| Domain | Visibility | Avg pos | Est. traffic |")
         L.append("|---|---|---|---|")
-        L += [f"| {c['domain']} | {c['visibility']:.2f} | {c['avg_position']:.1f} | {c['etv']:.0f} |" for c in comps[:12]]
+        L += [f"| {c.get('domain')} | {c.get('visibility') or 0:.2f} | {c.get('avg_position') or 0:.1f} | {c.get('etv') or 0:.0f} |" for c in comps[:12]]
     serps = (data.get("serps") or {}).get("results", [])
     if serps:
         L.append("\n## Live SERPs\n")

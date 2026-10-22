@@ -233,7 +233,7 @@ def _findings(R, market):
              "average position for the gap keywords first; a page already sitting at 11-40 needs consolidation, not a new URL.")
     out = [_f(id="topical_authority_matrix", category="content", severity=3, intent_weight=4, pages=[], page_count=0,
               title=f"Topical authority trails competitors on {', '.join(LABEL[t] for t in R['weakest'])}",
-              evidence=ev, why_it_matters=why, fix=fix, check_first=check, confidence="medium")]
+              evidence=ev, why_it_matters=why, fix=fix, check_first=check, confidence="medium")] if R["weakest"] else []
     if g:
         vol = sum(x["volume"] for x in g)
         out.append(_f(id="keyword_gap_competitors", category="content", severity=4 if vol >= 20000 else 3, intent_weight=4,

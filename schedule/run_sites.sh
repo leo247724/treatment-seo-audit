@@ -11,7 +11,14 @@
 #   PYTHON            interpreter (default .venv/bin/python)
 set -euo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# Resolve symlinks (cron/launchd often call a link in ~/bin) so cd lands in the repo.
+SOURCE="${BASH_SOURCE[0]}"
+while [ -L "$SOURCE" ]; do
+  LINK_DIR="$(cd -P "$(dirname "$SOURCE")" && pwd)"
+  SOURCE="$(readlink "$SOURCE")"
+  case "$SOURCE" in /*) ;; *) SOURCE="$LINK_DIR/$SOURCE" ;; esac
+done
+SCRIPT_DIR="$(cd -P "$(dirname "$SOURCE")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 cd "$REPO_ROOT"
 
@@ -36,6 +43,7 @@ if ! mkdir "$LOCK_DIR" 2>/dev/null; then
 fi
 echo $$ > "$LOCK_DIR/pid"
 trap 'rm -rf "$LOCK_DIR"' EXIT
+trap 'exit 130' INT TERM HUP  # make the EXIT trap (lock removal) run on signals too
 
 TIMEOUT_CMD=()
 if command -v timeout >/dev/null 2>&1; then

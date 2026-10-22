@@ -43,7 +43,9 @@ def bot_access(site) -> dict:
 
 def site_city_state(site):
     if site.get("city_override"):
-        c, _, st = site["city_override"].rpartition(",")
+        c, sep, st = site["city_override"].rpartition(",")
+        if not sep:
+            return st.strip(), ""
         return c.strip(), st.strip()
     for p in html_pages(site):
         for a in p.addresses:
@@ -168,8 +170,10 @@ def check_ai_visibility(site, brand="", ai_results=None, out_dir=None):
             fh.write("Run each in ChatGPT (search on), Perplexity and Google (look for AI Overview). Record: cited? brand mentioned? who was cited.\n\n")
             fh.write("\n".join(q["query"] for q in queries) + "\n")
     if results:
-        nb = [r for r in results if r.get("type") == "non-brand" and "error" not in r]
-        br = [r for r in results if r.get("type") == "brand" and "error" not in r]
+        def _type(r):
+            return r.get("type") or ("brand" if brand and brand.lower() in r.get("query", "").lower() else "non-brand")
+        nb = [r for r in results if _type(r) == "non-brand" and "error" not in r]
+        br = [r for r in results if _type(r) == "brand" and "error" not in r]
         nb_cited = [r for r in nb if r.get("cited")]
         br_ok = [r for r in br if r.get("cited") or r.get("brand_mentioned")]
         engines = sorted({r.get("engine", "?") for r in results})

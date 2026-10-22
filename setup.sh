@@ -3,11 +3,14 @@
 set -e
 cd "$(dirname "$0")"
 if command -v uv >/dev/null 2>&1; then
-  uv venv -q .venv && uv pip install -q -p .venv/bin/python -r requirements.txt
+  # Re-running setup must not fail on (or wipe) an existing .venv.
+  [ -x .venv/bin/python ] || uv venv -q .venv
+  uv pip install -q -p .venv/bin/python -r requirements.txt
 else
-  python3 -m venv .venv && .venv/bin/pip install -q -r requirements.txt
+  [ -x .venv/bin/python ] || python3 -m venv .venv
+  .venv/bin/python -m pip install -q -r requirements.txt
 fi
-[ -f .env ] || cp .env.example .env
+[ -f .env ] || [ ! -f .env.example ] || cp .env.example .env
 echo "Installed. Config check:"
 .venv/bin/python audit.py --doctor
 echo

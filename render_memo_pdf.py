@@ -1,11 +1,25 @@
 #!/usr/bin/env python3
 """Render memo.md to memo.pdf with pandoc + headless Chrome. Usage: .venv/bin/python render_memo_pdf.py [memo.md] [memo.pdf]"""
 import os
+import shutil
 import subprocess
 import sys
 import tempfile
+from pathlib import Path
 
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+CHROME_CANDIDATES = (CHROME, "/Applications/Chromium.app/Contents/MacOS/Chromium",
+                     "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+                     "google-chrome", "google-chrome-stable", "chromium", "chromium-browser", "chrome")
+
+
+def find_chrome():
+    """$CHROME, then the usual macOS app paths, then Chrome/Chromium on PATH. None if nothing is found."""
+    for c in filter(None, (os.environ.get("CHROME"),) + CHROME_CANDIDATES):
+        path = c if os.path.isabs(c) else shutil.which(c)
+        if path and os.path.isfile(path) and os.access(path, os.X_OK):
+            return path
+    return None
 CSS = """
 @page { size: Letter; margin: 0.5in 0.55in; }
 html, body { font-family: Helvetica, Arial, sans-serif; color: #111; }
@@ -27,12 +41,17 @@ h2, h3 { page-break-after: avoid; }
 def main():
     src = sys.argv[1] if len(sys.argv) > 1 else "memo.md"
     dst = os.path.abspath(sys.argv[2] if len(sys.argv) > 2 else "memo.pdf")
+    if not shutil.which("pandoc"):
+        sys.exit("render_memo_pdf: pandoc not found on PATH (brew install pandoc)")
+    chrome = find_chrome()
+    if not chrome:
+        sys.exit("render_memo_pdf: Chrome/Chromium not found; install it or set CHROME=/path/to/chrome")
     body = subprocess.run(["pandoc", src, "-f", "gfm", "-t", "html5"], check=True, capture_output=True, text=True).stdout
     html = f"<!doctype html><html><head><meta charset='utf-8'><title>SEO memo</title><style>{CSS}</style></head><body>{body}</body></html>"
     with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False) as fh:
         fh.write(html)
         tmp = fh.name
-    subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--no-pdf-header-footer", f"--print-to-pdf={dst}", f"file://{tmp}"],
+    subprocess.run([chrome, "--headless=new", "--disable-gpu", "--no-pdf-header-footer", f"--print-to-pdf={dst}", Path(tmp).as_uri()],
                    check=True, capture_output=True)
     import re
     pages = len(re.findall(rb"/Type\s*/Page[^s]", open(dst, "rb").read()))

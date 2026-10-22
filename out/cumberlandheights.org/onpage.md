@@ -1,21 +1,21 @@
 # On-page scorecard (high-intent pages)
 
-- Pages scored: 30 (intent weight >= 4, HTTP 200, blog/resource and wp-content URLs excluded)
-- Average score: **56.9/100**
+- Pages scored: 43 (intent weight >= 4, HTTP 200, blog/resource and wp-content URLs excluded)
+- Average score: **62.3/100**
 
 ## Most common failed checks
 
 | Check | Pages failing |
 |---|---|
-| Title has service + place term | 30/30 |
-| Meta description 70-160 chars | 30/30 |
-| FAQ block present | 28/30 |
-| Medical/Local/FAQ schema beyond Organization/WebPage | 27/30 |
-| Meta description has CTA (call/verify/admissions/24/7) | 25/30 |
-| Exactly one H1 with a service term | 17/30 |
-| 80%+ images have alt text | 5/30 |
-| Title 30-60 chars | 3/30 |
-| Enough main content words | 1/30 |
+| Title has service + place term | 43/43 |
+| FAQ block present | 41/43 |
+| Meta description has CTA (call/verify/admissions/24/7) | 38/43 |
+| Meta description 70-160 chars | 30/43 |
+| Medical/Local/FAQ schema beyond Organization/WebPage | 27/43 |
+| Exactly one H1 with a service term | 17/43 |
+| 80%+ images have alt text | 5/43 |
+| Title 30-60 chars | 5/43 |
+| Enough main content words | 1/43 |
 
 ## 10 lowest-scoring pages
 
@@ -43,9 +43,9 @@
 
 ## Findings
 
-### 30 of 30 high-intent page titles miss the service + Nashville terms people search
+### 43 of 43 high-intent page titles miss the service + Nashville terms people search
 
-- 30/30 high-intent pages fail the title checks; 30/30 titles have no Nashville/Tennessee/TN term
+- 43/43 high-intent pages fail the title checks; 42/43 titles have no Nashville/Tennessee/TN term
 - "Home - Cumberland Heights" (25 chars) -> https://www.cumberlandheights.org/
 - "Admissions - Cumberland Heights" (31 chars) -> https://www.cumberlandheights.org/admissions/
 - "Insurance and Finances - Cumberland Heights" (43 chars) -> https://www.cumberlandheights.org/admissions/insurance-and-finances/
@@ -59,9 +59,9 @@
 
 **Check first:** GSC Performance > Pages, sorted by impressions: compare CTR by page for these URLs against site average and position; pages ranking 4-15 with below-average CTR are the first rewrites.
 
-### 30 of 30 high-intent meta descriptions are truncated or carry no call to action
+### 43 of 43 high-intent meta descriptions are truncated or carry no call to action
 
-- 30/30 pages have a meta description outside 70-160 chars or with no call/verify/admissions/24/7 wording (25 lack a CTA); median length 378 chars
+- 43/43 pages have a meta description outside 70-160 chars or with no call/verify/admissions/24/7 wording (38 lack a CTA); median length 359 chars
 - https://www.cumberlandheights.org/treatment/telehealth-services/: 408 chars, "Telehealth Services Telehealth for Addiction Treatment Patients can engage in our teleheal..."
 - https://www.cumberlandheights.org/locations/: 332 chars, "Our Locations Treatment Programs Across Tennessee Cumberland Heights is a non-profit drug ..."
 - https://www.cumberlandheights.org/about/approach/therapy-modalities/12-step-program/: 394 chars, "12-Step Facilitation (TSF) Evidence-Based 12-Step Programming The principles, practices, a..."
@@ -75,7 +75,7 @@
 
 ### 27 program/admissions pages lack FAQ, medical schema or depth to rank for Nashville treatment terms
 
-- 27/30 pages fail 2+ depth checks: FAQ block present x27, Medical/Local/FAQ schema beyond Organization/WebPage x27, Exactly one H1 with a service term x16, Enough main content words x1
+- 27/43 pages fail 2+ depth checks: FAQ block present x27, Medical/Local/FAQ schema beyond Organization/WebPage x27, Exactly one H1 with a service term x16, Enough main content words x1
 - https://www.cumberlandheights.org/treatment/telehealth-services/: score 43, 445 main words, H1 ['Telehealth Services']
 - https://www.cumberlandheights.org/locations/: score 48, 655 main words, H1 ['Our Locations']
 - https://www.cumberlandheights.org/about/approach/therapy-modalities/12-step-program/: score 52, 573 main words, H1 ['12-Step Facilitation (TSF)']
@@ -121,4 +121,17 @@
 | 62 | program | https://www.cumberlandheights.org/treatment/residential-care/ | Title has service + place term; Meta description 70-160 chars; Meta description has CTA (call/verify/admissions/24/7); FAQ block present; Medical/Local/FAQ schema beyond Organization/WebPage |
 | 62 | program | https://www.cumberlandheights.org/treatment/safe-start-program/ | Title has service + place term; Meta description 70-160 chars; Meta description has CTA (call/verify/admissions/24/7); FAQ block present; Medical/Local/FAQ schema beyond Organization/WebPage |
 | 64 | conversion | https://www.cumberlandheights.org/admissions/faqs/ | Title 30-60 chars; Title has service + place term; Meta description 70-160 chars; Exactly one H1 with a service term |
+| 67 | local | https://www.cumberlandheights.org/resources/location/jackson/ | Title 30-60 chars; Title has service + place term; Meta description has CTA (call/verify/admissions/24/7); FAQ block present |
+| 67 | local | https://www.cumberlandheights.org/resources/location/memphis/ | Title 30-60 chars; Title has service + place term; Meta description has CTA (call/verify/admissions/24/7); FAQ block present |
+| 76 | local | https://www.cumberlandheights.org/resources/location/chattanooga/ | Title has service + place term; Meta description has CTA (call/verify/admissions/24/7); FAQ block present |
+| 76 | local | https://www.cumberlandheights.org/resources/location/clarksville/ | Title has service + place term; Meta description has CTA (call/verify/admissions/24/7); FAQ block present |
+| 76 | local | https://www.cumberlandheights.org/resources/location/cookeville/ | Title has service + place term; Meta description has CTA (call/verify/admissions/24/7); FAQ block present |
+| 76 | local | https://www.cumberlandheights.org/resources/location/cool-springs/ | Title has service + place term; Meta description has CTA (call/verify/admissions/24/7); FAQ block present |
+| 76 | local | https://www.cumberlandheights.org/resources/location/gallatin-hendersonville/ | Title has service + place term; Meta description has CTA (call/verify/admissions/24/7); FAQ block present |
+| 76 | local | https://www.cumberlandheights.org/resources/location/hermitage/ | Title has service + place term; Meta description has CTA (call/verify/admissions/24/7); FAQ block present |
+| 76 | local | https://www.cumberlandheights.org/resources/location/knoxville-farragut/ | Title has service + place term; Meta description has CTA (call/verify/admissions/24/7); FAQ block present |
+| 76 | local | https://www.cumberlandheights.org/resources/location/knoxville-papermill/ | Title has service + place term; Meta description has CTA (call/verify/admissions/24/7); FAQ block present |
+| 76 | local | https://www.cumberlandheights.org/resources/location/murfreesboro/ | Title has service + place term; Meta description has CTA (call/verify/admissions/24/7); FAQ block present |
+| 76 | local | https://www.cumberlandheights.org/resources/location/nashville-music-row/ | Title has service + place term; Meta description has CTA (call/verify/admissions/24/7); FAQ block present |
+| 76 | local | https://www.cumberlandheights.org/resources/location/river-road/ | Title has service + place term; Meta description has CTA (call/verify/admissions/24/7); FAQ block present |
 | 81 | program | https://www.cumberlandheights.org/treatment/drug-and-alcohol-detox/ | Title has service + place term; Meta description 70-160 chars |

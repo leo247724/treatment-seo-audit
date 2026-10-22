@@ -8666,7 +8666,7 @@
    "action": "Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews"
   },
   {
-   "domain": "recoveryunplugged.com (local pack)",
+   "domain": "southeastaddictiontn.com (local pack)",
    "answers_citing": 2,
    "type": "directory",
    "site_has_link": false,
@@ -8674,7 +8674,7 @@
    "action": "Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews"
   },
   {
-   "domain": "southeastaddictiontn.com (local pack)",
+   "domain": "recoveryunplugged.com (local pack)",
    "answers_citing": 2,
    "type": "directory",
    "site_has_link": false,
@@ -8714,14 +8714,6 @@
    "action": "Propose a referral-partner listing (detox/residential step-down) on their partner page"
   },
   {
-   "domain": "integrativelifecenter.com",
-   "answers_citing": 1,
-   "type": "directory",
-   "site_has_link": false,
-   "competitors_with_link": 0,
-   "action": "Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews"
-  },
-  {
    "domain": "bradfordhealth.com",
    "answers_citing": 1,
    "type": "health system",
@@ -8730,36 +8722,12 @@
    "action": "Propose a referral-partner listing (detox/residential step-down) on their partner page"
   },
   {
-   "domain": "tn.gov",
-   "answers_citing": 1,
-   "type": "government",
-   "site_has_link": false,
-   "competitors_with_link": 0,
-   "action": "Ask to be added to the county/city behavioral-health resource list"
-  },
-  {
-   "domain": "drugrehabus.org",
+   "domain": "integrativelifecenter.com",
    "answers_citing": 1,
    "type": "directory",
    "site_has_link": false,
    "competitors_with_link": 0,
    "action": "Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews"
-  },
-  {
-   "domain": "cedarrecovery.com",
-   "answers_citing": 1,
-   "type": "directory",
-   "site_has_link": false,
-   "competitors_with_link": 0,
-   "action": "Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews"
-  },
-  {
-   "domain": "choosehelp.com",
-   "answers_citing": 1,
-   "type": "blog/other",
-   "site_has_link": false,
-   "competitors_with_link": 1,
-   "action": "Offer an expert quote or guest resource on family/relapse topics"
   },
   {
    "domain": "wdef.com",
@@ -8770,7 +8738,39 @@
    "action": "Pitch an outcomes or alumni-recovery story (local angle, data from the alumni program)"
   },
   {
-   "domain": "therecoveryvillage.com",
+   "domain": "choosehelp.com",
+   "answers_citing": 1,
+   "type": "blog/other",
+   "site_has_link": false,
+   "competitors_with_link": 1,
+   "action": "Offer an expert quote or guest resource on family/relapse topics"
+  },
+  {
+   "domain": "tn.gov",
+   "answers_citing": 1,
+   "type": "government",
+   "site_has_link": false,
+   "competitors_with_link": 0,
+   "action": "Ask to be added to the county/city behavioral-health resource list"
+  },
+  {
+   "domain": "cedarrecovery.com",
+   "answers_citing": 1,
+   "type": "directory",
+   "site_has_link": false,
+   "competitors_with_link": 0,
+   "action": "Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews"
+  },
+  {
+   "domain": "drugrehabus.org",
+   "answers_citing": 1,
+   "type": "directory",
+   "site_has_link": false,
+   "competitors_with_link": 0,
+   "action": "Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews"
+  },
+  {
+   "domain": "drugrehab.com",
    "answers_citing": 1,
    "type": "directory",
    "site_has_link": false,
@@ -8778,7 +8778,7 @@
    "action": "Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews"
   },
   {
-   "domain": "drugrehab.com",
+   "domain": "therecoveryvillage.com",
    "answers_citing": 1,
    "type": "directory",
    "site_has_link": false,
@@ -8794,20 +8794,20 @@
    "action": "Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews"
   },
   {
-   "domain": "drugabuse.com",
-   "answers_citing": 1,
-   "type": "directory",
-   "site_has_link": false,
-   "competitors_with_link": 0,
-   "action": "Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews"
-  },
-  {
    "domain": "indeed.com",
    "answers_citing": 1,
    "type": "directory",
    "site_has_link": false,
    "competitors_with_link": 0,
    "action": "Claim the employer page and answer reviews (AI engines quote it in 'reviews' answers)"
+  },
+  {
+   "domain": "drugabuse.com",
+   "answers_citing": 1,
+   "type": "directory",
+   "site_has_link": false,
+   "competitors_with_link": 0,
+   "action": "Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews"
   },
   {
    "domain": "cumberlandheights.com",
@@ -8834,20 +8834,20 @@
    "action": "Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews"
   },
   {
-   "domain": "naatp.org",
-   "answers_citing": 1,
-   "type": "association",
-   "site_has_link": true,
-   "competitors_with_link": 0,
-   "action": "Join or renew membership and request the member-directory listing"
-  },
-  {
    "domain": "facebook.com",
    "answers_citing": 1,
    "type": "blog/other",
    "site_has_link": false,
    "competitors_with_link": 0,
    "action": "Offer an expert quote or guest resource on family/relapse topics"
+  },
+  {
+   "domain": "naatp.org",
+   "answers_citing": 1,
+   "type": "association",
+   "site_has_link": true,
+   "competitors_with_link": 0,
+   "action": "Join or renew membership and request the member-directory listing"
   }
  ],
  "answers": 18

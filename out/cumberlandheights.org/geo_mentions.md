@@ -32,12 +32,12 @@ Engine: perplexity · run 2026-10-21 · 8 non-brand queries, 2 brand queries. Me
 |---|---|
 | psychologytoday.com | 6 |
 | recovery.com | 3 |
-| recovered.org | 1 |
 | alcohol.org | 1 |
-| bbb.org | 1 |
+| recovered.org | 1 |
 | addictionresource.net | 1 |
-| vanderbilthealth.com | 1 |
+| bbb.org | 1 |
 | tristarhealth.com | 1 |
+| vanderbilthealth.com | 1 |
 | tennesseebehavioralhealth.com | 1 |
 | detox.com | 1 |
 

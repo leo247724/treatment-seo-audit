@@ -196,13 +196,13 @@ def run(site, market, out_dir, client=None):
                        "gap": gap, "mentions": ments, "answers": answers}, fh, indent=1)
         with open(os.path.join(out_dir, "link_opportunities.md"), "w") as fh:
             fh.write(_md(host, gap, ments, answers, comp_rows, len(mine), mine_total))
-        return _findings(host, gap, ments, answers)
+        return _findings(host, gap, ments, answers, (market or {}).get("city") or "local")
     except Exception as e:
         log.warning("link_opportunities failed: %s", str(e)[:200])
         return []
 
 
-def _findings(host, gap, ments, answers):
+def _findings(host, gap, ments, answers, city="local"):
     out = []
     by = Counter(g["type"] for g in gap)
     earned = [g for g in gap if g["type"] != "directory"]
@@ -210,14 +210,14 @@ def _findings(host, gap, ments, answers):
         top10 = "; ".join(f"{g['domain']} ({g['type']}, rank {g['rank']}): {g['outreach_angle'].split(' (')[0]}"
                           for g in gap[:10])
         out.append(_f(id="link_gap_competitors", category="trust", severity=4 if len(earned) >= 50 else 3, intent_weight=4,
-                      title=f"{len(gap)} referring domains link to Nashville competitors but not to {host}",
+                      title=f"{len(gap)} referring domains link to {city} competitors but not to {host}",
                       pages=[g["example_url"] for g in gap[:5]],
                       page_count=len(gap),
                       evidence=[f"Gap domains: {len(gap)} ({', '.join(f'{t} {n}' for t, n in by.most_common())})",
                                 f"Linking to 2+ competitors: {sum(g['competitors_linked'] >= 2 for g in gap)}",
                                 "Top 5: " + ", ".join(f"{g['domain']} ({g['type']}, rank {g['rank']}, "
                                                       f"{g['competitors_linked']} comps)" for g in gap[:5])],
-                      why_it_matters=("Organic #1 for 'alcohol rehab Nashville' and the local pack both weigh prominence; "
+                      why_it_matters=(f"Organic #1 for 'alcohol rehab {city}' and the local pack both weigh prominence; "
                                       "these editorial, health-system and civic domains already vouch for competitors, "
                                       "so each one closed narrows the authority gap where it counts locally."),
                       fix="Work the first 10 targets in order: " + top10 + ". Full list in link_opportunities.md.",

@@ -27,15 +27,20 @@ def _host(u):
     return h[4:] if h.startswith("www.") else h
 
 
-def _load(out_dir, name, client, fn):
+def _load(out_dir, name, client, fn, quiet=False):
     """Cached JSON when present; live call only when a client is given (never writes error stubs offline)."""
     path = os.path.join(out_dir, "openseo", f"{name}.json")
     if client is None:
         if not os.path.exists(path):
-            log.warning("backlinks: no cached %s and no client", path)
+            if not quiet:
+                log.warning("backlinks: no cached %s and no client", path)
             return None
-        with open(path) as fh:
-            return json.load(fh)
+        try:
+            with open(path) as fh:
+                return json.load(fh)
+        except (OSError, ValueError) as e:
+            log.warning("backlinks: unreadable cache %s: %s", path, e)
+            return None
     return _cached(out_dir, name, True, fn)
 
 
@@ -48,14 +53,18 @@ def _summary(d):
 def _collect(site, market, out_dir, client):
     host = _host((site or {}).get("start_url") or (site or {}).get("host") or "")
     mine = _load(out_dir, "backlinks_overview", client, lambda: client.call("get_backlinks_overview", {"target": host}))
-    serp = _load(out_dir, "serp_competitors", None, None) or {}
-    vis = {_host(c.get("domain")): c for c in serp.get("competitors", [])}
+    serp = _load(out_dir, "serp_competitors", None, None, quiet=True) or {}
+    vis = {_host(c.get("domain")): c for c in (serp.get("competitors") or [] if isinstance(serp, dict) else [])
+           if isinstance(c, dict)}
     mc = (market or {}).get("competitors")
     if isinstance(mc, dict):  # raw find_serp_competitors response: {"competitors": [{"domain": ...}, ...]}
-        mc = [c.get("domain") for c in mc.get("competitors", []) if c.get("domain")]
-    mc = [c for c in (mc or []) if _host(c) != _host(site.get("host", ""))][:5] if mc else None
+        mc = mc.get("competitors") or []
+    if isinstance(mc, list):  # rows may be competitor dicts or bare domains
+        mc = [c.get("domain") if isinstance(c, dict) else c for c in mc]
+        mc = [c for c in mc if isinstance(c, str) and c]
+    mc = [c for c in (mc or []) if _host(c) not in (host, _host((site or {}).get("host", "")))][:5] if mc else None
     comps = [_host(c) for c in (mc or DEFAULT_COMPETITORS)]
-    comps = [c for c in comps if _load(out_dir, f"backlinks_{c}", None, None) or client] or [_host(c) for c in DEFAULT_COMPETITORS]
+    comps = [c for c in comps if _load(out_dir, f"backlinks_{c}", None, None, quiet=True) or client] or [_host(c) for c in DEFAULT_COMPETITORS]
     rows = []
     for dom in [host] + [c for c in comps if c != host]:
         d = mine if dom == host else _load(out_dir, f"backlinks_{dom}", client,
@@ -83,15 +92,16 @@ def _analyse(host, mine, rows):
     a["me"], a["comps"] = me, comps
     if len(trends) >= 2:
         f, l = trends[0], trends[-1]
-        a["trend"] = {"from": f["date"], "to": l["date"], "bl0": f["backlinks"], "bl1": l["backlinks"],
-                      "rd0": f["referringDomains"], "rd1": l["referringDomains"],
-                      "bl_pct": (l["backlinks"] - f["backlinks"]) / max(f["backlinks"], 1),
-                      "rd_pct": (l["referringDomains"] - f["referringDomains"]) / max(f["referringDomains"], 1)}
+        bl0, bl1 = f.get("backlinks") or 0, l.get("backlinks") or 0
+        rd0, rd1 = f.get("referringDomains") or 0, l.get("referringDomains") or 0
+        a["trend"] = {"from": f.get("date"), "to": l.get("date"), "bl0": bl0, "bl1": bl1, "rd0": rd0, "rd1": rd1,
+                      "bl_pct": (bl1 - bl0) / max(bl0, 1), "rd_pct": (rd1 - rd0) / max(rd0, 1)}
     if newlost:
         tot = {k: sum(m.get(k) or 0 for m in newlost) for k in
                ("newBacklinks", "lostBacklinks", "newReferringDomains", "lostReferringDomains")}
         a["newlost"] = tot | {"months": len(newlost),
                               "lost_months": sum((m.get("lostReferringDomains") or 0) > (m.get("newReferringDomains") or 0) for m in newlost)}
+    refs = [dict(r, domain=r.get("domain") or "", backlinks=r.get("backlinks") or 0) for r in refs if isinstance(r, dict)]
     if refs:
         spam = [r for r in refs if (r.get("spamScore") or 0) >= SPAM_CUTOFF]
         dirs = [r for r in refs if DIRECTORY_RE.search(r.get("domain") or "")]
@@ -129,7 +139,7 @@ def _findings(host, a):
         if a["ahead_rank"]:
             ev.append("Competitors with a higher DataForSEO rank: " + ", ".join(f"{r['domain']} ({r['rank']})" for r in a["ahead_rank"]))
         out.append(_f(id="bl_link_decay", category="trust", title=f"Link profile is shrinking: backlinks {t['bl_pct']:+.0%} and referring domains {t['rd_pct']:+.0%} over 12 months",
-                      severity=3 if t["rd_pct"] <= -0.05 else 2, intent_weight=3, pages=[], page_count=t["rd0"] - t["rd1"],
+                      severity=3 if t["rd_pct"] <= -0.05 else 2, intent_weight=3, pages=[], page_count=max(t["rd0"] - t["rd1"], 0),
                       evidence=ev,
                       why_it_matters="A steady net loss of linking sites erodes the authority behind program and location pages; rankings for '<city> rehab' slip months later, after calls and admissions have already dropped.",
                       fix="301 every broken-backlink URL to its closest live program page; reclaim lost links (ask referrers to update moved URLs); add one earned-link source per month (partners, local press, alumni).",

@@ -36,8 +36,9 @@ def run_psi(url, key=None, strategy="mobile", timeout=150):
         return m.get("percentile") if m else None
 
     cls_field = fm("CUMULATIVE_LAYOUT_SHIFT_SCORE")
+    score = lr.get("categories", {}).get("performance", {}).get("score")
     return {"url": url, "strategy": strategy,
-            "perf_score": round((lr.get("categories", {}).get("performance", {}).get("score") or 0) * 100),
+            "perf_score": round(score * 100) if score is not None else None,
             "lab_lcp_s": round((audits.get("largest-contentful-paint", {}).get("numericValue") or 0) / 1000, 1),
             "lab_cls": round(audits.get("cumulative-layout-shift", {}).get("numericValue") or 0, 3),
             "lab_tbt_ms": round(audits.get("total-blocking-time", {}).get("numericValue") or 0),
@@ -73,7 +74,7 @@ def check_pagespeed(site, results):
             fails.append(f"field INP {r['field_inp_ms']}ms")
         if r["field_cls"] is not None and r["field_cls"] > 0.1:
             fails.append(f"field CLS {r['field_cls']:.2f}")
-        if r["perf_score"] < 50:
+        if r["perf_score"] is not None and r["perf_score"] < 50:
             fails.append(f"lab performance score {r['perf_score']}/100 (LCP {r['lab_lcp_s']}s, TBT {r['lab_tbt_ms']}ms)")
         line = f"{r['url']}: score {r['perf_score']}, lab LCP {r['lab_lcp_s']}s, field LCP {r['field_lcp_ms']}ms, INP {r['field_inp_ms']}ms, CLS {r['field_cls']} ({r['field_overall'] or 'no field data'})"
         ev.append(line)
@@ -82,7 +83,7 @@ def check_pagespeed(site, results):
     if not bad:
         return []
     weight = max((pages[u].intent_weight for u, _ in bad if u in pages), default=4)
-    worst = min(r["perf_score"] for r in results if "error" not in r)
+    worst = min((r["perf_score"] for r in results if "error" not in r and r["perf_score"] is not None), default=100)
     sev = 4 if worst < 40 or any("field" in f for _, fs in bad for f in fs) else 3
     return [_f(id="core_web_vitals", category="technical", title="Slow mobile pages (Core Web Vitals / PageSpeed)",
                severity=sev, intent_weight=weight, pages=[u for u, _ in bad], page_count=len(bad), evidence=ev,

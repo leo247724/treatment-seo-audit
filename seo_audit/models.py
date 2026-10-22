@@ -1,6 +1,7 @@
 from dataclasses import dataclass, field, asdict
 from typing import Optional
 import math
+import re
 
 
 @dataclass
@@ -46,12 +47,13 @@ class Page:
 
     @property
     def is_html(self) -> bool:
-        return "text/html" in (self.content_type or "")
+        ct = (self.content_type or "").lower()
+        return "text/html" in ct or "application/xhtml+xml" in ct
 
     @property
     def noindex(self) -> bool:
         s = (self.meta_robots + " " + self.x_robots).lower()
-        return "noindex" in s
+        return "noindex" in s or "none" in re.split(r"[\s,:]+", s)  # "none" == noindex, nofollow
 
     @property
     def indexable(self) -> bool:

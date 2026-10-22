@@ -54,11 +54,11 @@ Evidence:
 - Brands ahead on mentions: Freeman Recovery Center, APEX Recovery, Live Again Detox; on citations: Freeman Recovery Center, APEX Recovery, Live Again Detox, Tulip Hill, Southeast Addiction Center
 - Share of voice (mentioned/cited): Freeman Recovery Center 75%/88%; APEX Recovery 38%/62%; Live Again Detox 38%/25%; Cumberland Heights 25%/0%; The Next Door Recovery 25%/0%; Tulip Hill 12%/38%; Southeast Addiction Center 12%/12%; Recovery Unplugged 0%/0%; The Ranch Tennessee / Recovery Ranch 0%/0%; Brentwood Springs Detox 0%/0%
 - Absent from 6/8 answers: "best drug rehab near Nashville Tennessee"; "inpatient addiction treatment Nashville"; "medical detox Nashville TN"; "outpatient addiction treatment IOP Nashville"; "residential addiction treatment near Nashville, Tennessee"
-- Most-cited third-party domains: psychologytoday.com (6), recovery.com (3), recovered.org (1), alcohol.org (1), bbb.org (1)
+- Most-cited third-party domains: psychologytoday.com (6), recovery.com (3), alcohol.org (1), recovered.org (1), addictionresource.net (1)
 
 Why it costs admissions: Families searching for treatment increasingly ask an AI assistant which centers to call, and they phone the names it gives and the sites it links. A center that is not named or cited in those answers never gets the call; the directories cited instead route callers to paid listings and competitors.
 
-Fix: Publish answer-ready pages that answer the absent queries in the first two or three sentences (levels of care, insurance, cost, length of stay, location); add Organization/MedicalOrganization entity schema with sameAs links to every directory profile; claim and complete listings on the directories AI cites (psychologytoday.com, recovery.com, recovered.org); publish an outcomes page (accreditation, completion and alumni follow-up data) that answers can quote.
+Fix: Publish answer-ready pages that answer the absent queries in the first two or three sentences (levels of care, insurance, cost, length of stay, location); add Organization/MedicalOrganization entity schema with sameAs links to every directory profile; claim and complete listings on the directories AI cites (psychologytoday.com, recovery.com, alcohol.org); publish an outcomes page (accreditation, completion and alumni follow-up data) that answers can quote.
 
 Check first (GSC / call tracking): GSC Performance filtered to brand queries (16-month impressions/clicks trend) to see whether AI exposure is already moving branded demand, and add a 'How did you hear about us?' tag in call tracking with an 'AI assistant (ChatGPT/Perplexity)' option so AI-sourced calls are counted before and after the fix.
 
@@ -104,7 +104,7 @@ Check first (GSC / call tracking): Search Console > Links > 'Top linking sites' 
 | 3 | 35.6 | 4 | 5 | 6 | medium | ai_visibility | Cumberland Heights trails competitors in AI answers for treatment searches |
 | 4 | 34.0 | 4 | 5 | 5 | high | ai_visibility | Site is absent from AI answers for local treatment queries |
 | 5 | 32.0 | 4 | 4 | 567 | medium | trust | 567 referring domains link to Nashville competitors but not to cumberlandheights.org |
-| 6 | 30.0 | 3 | 5 | 30 | high | content | 30 of 30 high-intent page titles miss the service + Nashville terms people search |
+| 6 | 30.0 | 3 | 5 | 43 | high | content | 43 of 43 high-intent page titles miss the service + Nashville terms people search |
 | 7 | 24.0 | 3 | 4 | 29 | medium | ai_visibility | Program pages have no FAQ / direct-answer sections |
 | 8 | 24.0 | 3 | 4 | 27 | medium | content | 27 program/admissions pages lack FAQ, medical schema or depth to rank for Nashville treatment terms |
 | 9 | 24.0 | 3 | 4 | 20 | high | content | Organic traffic is mostly informational blog visits, not local treatment seekers |
@@ -114,10 +114,10 @@ Check first (GSC / call tracking): Search Console > Links > 'Top linking sites' 
 | 13 | 24.0 | 3 | 5 | 4 | medium | content | Our money pages score 34/100 on entity signals vs 50/100 for Nashville SERP competitors |
 | 14 | 22.1 | 3 | 4 | 7 | medium | content | Thin program/location/admissions pages (under 300 words) |
 | 15 | 21.3 | 3 | 4 | 6 | medium | content | Missing or duplicate title tags |
-| 16 | 20.0 | 2 | 5 | 30 | medium | content | 30 of 30 high-intent meta descriptions are truncated or carry no call to action |
+| 16 | 20.0 | 2 | 5 | 43 | medium | content | 43 of 43 high-intent meta descriptions are truncated or carry no call to action |
 | 17 | 16.0 | 2 | 4 | 100 | high | ai_visibility | Google AI Overviews cite the site only for blog posts, never for a program, location or admissions page |
 | 18 | 16.0 | 2 | 4 | 19 | medium | content | Missing or multiple H1 headings |
-| 19 | 16.0 | 2 | 4 | 10 | low | local | Same address written in different ways across the site |
+| 19 | 16.0 | 2 | 4 | 12 | low | local | Same address written in different ways across the site |
 | 20 | 13.6 | 2 | 4 | 5 | medium | trust | 4 of 5 local SERP competitors have more referring domains despite a lower DataForSEO rank |
 | 21 | 13.0 | 2 | 5 | 2 | medium | ai_visibility | AI answers about Cumberland Heights cite cumberlandheights.org |
 | 22 | 12.0 | 3 | 4 | 0 | medium | content | Topical authority trails competitors on Detox, Alcohol, Mental health & dual diagnosis |
@@ -132,10 +132,10 @@ Check first (GSC / call tracking): Search Console > Links > 'Top linking sites' 
 
 ## Finding details
 
-### 30 of 30 high-intent page titles miss the service + Nashville terms people search
-Impact 30.0 · severity 3 · intent 5 · pages 30 · confidence high
+### 43 of 43 high-intent page titles miss the service + Nashville terms people search
+Impact 30.0 · severity 3 · intent 5 · pages 43 · confidence high
 
-- 30/30 high-intent pages fail the title checks; 30/30 titles have no Nashville/Tennessee/TN term
+- 43/43 high-intent pages fail the title checks; 42/43 titles have no Nashville/Tennessee/TN term
 - "Home - Cumberland Heights" (25 chars) -> https://www.cumberlandheights.org/
 - "Admissions - Cumberland Heights" (31 chars) -> https://www.cumberlandheights.org/admissions/
 - "Insurance and Finances - Cumberland Heights" (43 chars) -> https://www.cumberlandheights.org/admissions/insurance-and-finances/
@@ -166,7 +166,7 @@ Check first: GSC: question-style queries ('how long', 'does', 'what is') where t
 ### 27 program/admissions pages lack FAQ, medical schema or depth to rank for Nashville treatment terms
 Impact 24.0 · severity 3 · intent 4 · pages 27 · confidence medium
 
-- 27/30 pages fail 2+ depth checks: FAQ block present x27, Medical/Local/FAQ schema beyond Organization/WebPage x27, Exactly one H1 with a service term x16, Enough main content words x1
+- 27/43 pages fail 2+ depth checks: FAQ block present x27, Medical/Local/FAQ schema beyond Organization/WebPage x27, Exactly one H1 with a service term x16, Enough main content words x1
 - https://www.cumberlandheights.org/treatment/telehealth-services/: score 43, 445 main words, H1 ['Telehealth Services']
 - https://www.cumberlandheights.org/locations/: score 48, 655 main words, H1 ['Our Locations']
 - https://www.cumberlandheights.org/about/approach/therapy-modalities/12-step-program/: score 52, 573 main words, H1 ['12-Step Facilitation (TSF)']
@@ -281,8 +281,8 @@ Check first: GSC: impressions vs clicks per page; which program queries do these
 Impact 21.3 · severity 3 · intent 4 · pages 6 · confidence medium
 
 - 0 missing
-- 'On the Wagon: Sober Open Mic Night - Cumberland Heights' used on 4 pages
-- 'River Road - Cumberland Heights' used on 2 pages
+- 'on the wagon: sober open mic night - cumberland heights' used on 4 pages
+- 'river road - cumberland heights' used on 2 pages
 - Example pages: https://www.cumberlandheights.org/locations/river-road/, https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night-2/, https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night-3/, https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night/, https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night-4/
 
 Why: The title is the ad headline in search; duplicates make program pages compete with each other.
@@ -291,10 +291,10 @@ Fix: Unique titles: '<Program> in <City>, <ST> | <Brand>'.
 
 Check first: GSC Performance: pages with high impressions and CTR under 2%.
 
-### 30 of 30 high-intent meta descriptions are truncated or carry no call to action
-Impact 20.0 · severity 2 · intent 5 · pages 30 · confidence medium
+### 43 of 43 high-intent meta descriptions are truncated or carry no call to action
+Impact 20.0 · severity 2 · intent 5 · pages 43 · confidence medium
 
-- 30/30 pages have a meta description outside 70-160 chars or with no call/verify/admissions/24/7 wording (25 lack a CTA); median length 378 chars
+- 43/43 pages have a meta description outside 70-160 chars or with no call/verify/admissions/24/7 wording (38 lack a CTA); median length 359 chars
 - https://www.cumberlandheights.org/treatment/telehealth-services/: 408 chars, "Telehealth Services Telehealth for Addiction Treatment Patients can engage in our teleheal..."
 - https://www.cumberlandheights.org/locations/: 332 chars, "Our Locations Treatment Programs Across Tennessee Cumberland Heights is a non-profit drug ..."
 - https://www.cumberlandheights.org/about/approach/therapy-modalities/12-step-program/: 394 chars, "12-Step Facilitation (TSF) Evidence-Based 12-Step Programming The principles, practices, a..."
@@ -334,12 +334,12 @@ Fix: One H1 per page naming the service and place.
 Check first: None needed; template fix.
 
 ### Same address written in different ways across the site
-Impact 16.0 · severity 2 · intent 4 · pages 10 · confidence low
+Impact 16.0 · severity 2 · intent 4 · pages 12 · confidence low
 
 - '8283 River Rd Pike Nashville, TN 37209' (149 pages) | '8283 River Road Pike Nashville, TN 37209' (4 pages) | '8283 River Road Pike, Nashville, TN 37209' (1 pages)
 - '6650 East Brainerd Rd Suite 102 Chattanooga, TN 37421' (1 pages) | '6650 East Brainerd Road, Suite 102 Chattanooga, TN 37421' (1 pages)
 - '219 B Dunbar Cave Rd Clarksville, TN 37043' (1 pages) | '219 B Dunbar Cave Road Clarksville, TN 37043' (1 pages)
-- '3441 Lebanon Pike Suite 108 Hermitage TN 37076' (1 pages) | '3441 Lebanon Pike, Suite 108 Hermitage, TN 37076' (1 pages)
+- '315 N Washington Ave. Cookeville, TN 38501' (1 pages) | '315 N. Washington Avenue Cookeville, TN 38501' (1 pages)
 
 Why: NAP inconsistency between site, GBP and citations erodes local pack trust.
 
@@ -367,12 +367,12 @@ Check first: Search Console > Links report: 'Top linking sites' and 'Top linked 
 Impact 13.0 · severity 2 · intent 5 · pages 2 · confidence medium
 
 - cumberlandheights.org cited in 2/2 brand-query answers (100%)
-- Other domains shaping the brand answer: startyourrecovery.org (2), rehab.com (2), recovery.com (1), yelp.com (1), rehabs.com (1)
+- Other domains shaping the brand answer: startyourrecovery.org (2), rehab.com (2), recovery.com (1), rehabs.com (1), yelp.com (1)
 - Example pages: https://www.cumberlandheights.org/, https://www.cumberlandheights.org/category/tennessee/feed/, https://www.cumberlandheights.org/locations/, https://www.cumberlandheights.org/locations/river-road/, https://www.cumberlandheights.org/treatment/
 
 Why: Families searching for treatment increasingly ask an AI assistant which centers to call, and they phone the names it gives and the sites it links. A center that is not named or cited in those answers never gets the call; the directories cited instead route callers to paid listings and competitors.
 
-Fix: Publish answer-ready pages that answer the absent queries in the first two or three sentences (levels of care, insurance, cost, length of stay, location); add Organization/MedicalOrganization entity schema with sameAs links to every directory profile; claim and complete listings on the directories AI cites (psychologytoday.com, recovery.com, recovered.org); publish an outcomes page (accreditation, completion and alumni follow-up data) that answers can quote.
+Fix: Publish answer-ready pages that answer the absent queries in the first two or three sentences (levels of care, insurance, cost, length of stay, location); add Organization/MedicalOrganization entity schema with sameAs links to every directory profile; claim and complete listings on the directories AI cites (psychologytoday.com, recovery.com, alcohol.org); publish an outcomes page (accreditation, completion and alumni follow-up data) that answers can quote.
 
 Check first: GSC Performance filtered to brand queries (16-month impressions/clicks trend) to see whether AI exposure is already moving branded demand, and add a 'How did you hear about us?' tag in call tracking with an 'AI assistant (ChatGPT/Perplexity)' option so AI-sourced calls are counted before and after the fix.
 
@@ -438,8 +438,8 @@ Check first: Search Console > Links report: 'Top linking sites' and 'Top linked 
 ### 16 different phone numbers in tel: links
 Impact 12.0 · severity 2 · intent 3 · pages 16 · confidence low
 
-- 800-646-9998: on 167 pages (e.g. https://www.cumberlandheights.org/research-chart-test/)
-- 615-314-3856: on 150 pages (e.g. https://www.cumberlandheights.org/research-chart-test/)
+- 800-646-9998: on 167 pages (e.g. https://www.cumberlandheights.org/resources/blog/what-does-it-mean-to-be-in-recovery/)
+- 615-314-3856: on 150 pages (e.g. https://www.cumberlandheights.org/resources/blog/what-does-it-mean-to-be-in-recovery/)
 - 865-213-9003: on 2 pages (e.g. https://www.cumberlandheights.org/resources/location/knoxville-papermill/)
 - 615-432-3215: on 2 pages (e.g. https://www.cumberlandheights.org/privacy-policy/)
 - 620-416-2213: on 1 pages (e.g. https://www.cumberlandheights.org/admissions/faqs/)

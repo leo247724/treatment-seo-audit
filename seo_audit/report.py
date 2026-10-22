@@ -20,9 +20,9 @@ def passes(site, findings, access):
     idx = indexable(site)
     if "ai_bots_blocked" not in ids:
         out.append("robots.txt does not block any AI citation bot (OAI-SearchBot, ChatGPT-User, PerplexityBot, Claude-SearchBot, Googlebot, Bingbot)")
-    if site["sitemap_sources"]:
+    if site.get("sitemap_sources") and site.get("sitemap_urls"):
         out.append(f"XML sitemap found ({len(site['sitemap_urls'])} URLs) at {site['sitemap_sources'][0]}")
-    if "no_tel_link" not in ids:
+    if "no_tel_link" not in ids and idx:
         out.append("Every indexable page has a click-to-call tel: link")
     if "no_accreditation" not in ids:
         out.append("Joint Commission / CARF accreditation is mentioned on the site")
@@ -32,9 +32,14 @@ def passes(site, findings, access):
         out.append("All indexable pages have a mobile viewport tag")
     if "noindex_high_intent" not in ids:
         out.append("No program/location/admissions page is noindexed")
-    if "no_insurance_page" not in ids:
+    if "no_insurance_page" not in ids and idx:
         out.append("An insurance/cost page exists")
     return out
+
+
+def cell(value):
+    """A value made safe for one markdown table cell: no pipes or line breaks."""
+    return " ".join(str("" if value is None else value).split()).replace("|", "\\|")
 
 
 DEEPER_ANALYSES = [
@@ -72,7 +77,7 @@ def write_outputs(site, findings, psi_results, ai_results, access, out_dir, bran
     pages = list(site["pages"].values())
     idx = indexable(site)
     with open(os.path.join(out_dir, "findings.json"), "w") as fh:
-        json.dump([f.to_dict() for f in findings], fh, indent=2)
+        json.dump([f.to_dict() for f in findings], fh, indent=2, default=str)
     with open(os.path.join(out_dir, "pages.csv"), "w", newline="") as fh:
         w = csv.writer(fh)
         w.writerow(["url", "final_url", "status", "redirects", "page_type", "intent_weight", "indexable", "in_sitemap",
@@ -86,10 +91,10 @@ def write_outputs(site, findings, psi_results, ai_results, access, out_dir, bran
     summary = {"site": site["host"], "date": str(date.today()), "pages_crawled": len(pages),
                "pages_html_200": len(html_pages(site)), "pages_indexable": len(idx),
                "sitemap_urls": len(site["sitemap_urls"]), "uncrawled_queue": site["uncrawled"],
-               "robots_status": site["robots_status"], "llms_txt_status": site["llms_txt_status"],
+               "robots_status": site["robots_status"], "llms_txt_status": site.get("llms_txt_status"),
                "ai_bot_access": access, "psi": psi_results, "top_findings": [f.id for f in findings[:5]]}
     with open(os.path.join(out_dir, "summary.json"), "w") as fh:
-        json.dump(summary, fh, indent=2)
+        json.dump(summary, fh, indent=2, default=str)
 
     L = []
     L.append(f"# SEO audit: {site['host']}\n")
@@ -111,8 +116,9 @@ def write_outputs(site, findings, psi_results, ai_results, access, out_dir, bran
     L.append("| # | Impact | Sev | Intent | Pages | Conf | Category | Finding |")
     L.append("|---|---|---|---|---|---|---|---|")
     for i, f in enumerate(findings, 1):
-        L.append(f"| {i} | {f.impact} | {f.severity} | {f.intent_weight} | {f.page_count} | {f.confidence} | {f.category} | {f.title} |")
-    L.append("\n## Finding details\n")
+        L.append(f"| {i} | {f.impact} | {f.severity} | {f.intent_weight} | {f.page_count} | {f.confidence} | {cell(f.category)} | {cell(f.title)} |")
+    if len(findings) > 5:  # the top 5 already have full details above
+        L.append("\n## Finding details\n")
     for f in findings[5:]:
         L.append(f"### {f.title}")
         L.append(f"Impact {f.impact} · severity {f.severity} · intent {f.intent_weight} · pages {f.page_count} · confidence {f.confidence}\n")
@@ -131,22 +137,22 @@ def write_outputs(site, findings, psi_results, ai_results, access, out_dir, bran
     L.append("|---|---|---|")
     from .ai_visibility import AI_BOTS
     for b, ok in access.items():
-        L.append(f"| {b} | {'yes' if ok else 'NO'} | {AI_BOTS[b][0]} |")
+        L.append(f"| {b} | {'yes' if ok else 'NO'} | {AI_BOTS.get(b, ("",))[0]} |")
     if psi_results:
         L.append("\n## PageSpeed Insights (mobile)\n")
         L.append("| URL | Score | Lab LCP | Field LCP | Field INP | Field CLS | CrUX |")
         L.append("|---|---|---|---|---|---|---|")
         for r in psi_results:
             if "error" in r:
-                L.append(f"| {r['url']} | error | | | | | {r['error'][:40]} |")
+                L.append(f"| {cell(r.get('url'))} | error | | | | | {cell(str(r['error'])[:40])} |")
             else:
-                L.append(f"| {r['url']} | {r['perf_score']} | {r['lab_lcp_s']}s | {r['field_lcp_ms']} | {r['field_inp_ms']} | {r['field_cls']} | {r['field_overall'] or 'none'} |")
+                L.append(f"| {cell(r.get('url'))} | {r['perf_score']} | {r['lab_lcp_s']}s | {r['field_lcp_ms']} | {r['field_inp_ms']} | {r['field_cls']} | {r['field_overall'] or 'none'} |")
     if ai_results:
         L.append("\n## AI answer checks\n")
         L.append("| Engine | Query | Site cited | Brand mentioned | Who was cited |")
         L.append("|---|---|---|---|---|")
         for r in ai_results:
-            L.append(f"| {r.get('engine')} | {r['query']} | {r.get('cited', r.get('error', '?'))} | {r.get('brand_mentioned', '')} | {', '.join(r.get('cited_domains', [])[:6])} |")
+            L.append(f"| {cell(r.get('engine'))} | {cell(r.get('query'))} | {cell(r.get('cited', r.get('error', '?')))} | {cell(r.get('brand_mentioned', ''))} | {cell(', '.join(r.get('cited_domains', [])[:6]))} |")
     L.append("\n## Limitations\n")
     L.append("- Static HTML only: content injected by JavaScript (chat widgets, some forms, dynamic phone numbers) is not seen. Confirm 'no form' / 'no tel link' findings in a browser.")
     L.append("- No rankings, traffic or call data: impact is an estimate from page intent, not measured loss. Search Console and call tracking turn these into numbers.")

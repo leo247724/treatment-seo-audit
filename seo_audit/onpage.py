@@ -16,7 +16,7 @@ CTA = r"\bcall|verify|admission|24/7"
 RICH_SCHEMA = {"MedicalClinic", "MedicalBusiness", "FAQPage", "LocalBusiness"}
 # Blog/resource/event/fundraising URLs that classify.py tags as program/conversion via words like "sober" or
 # "what-to-expect"; they are not where a Nashville rehab search should land.
-SKIP_PATH = re.compile(r"/wp-content/|/resources/|/blog/|/news|/podcast|/event|/tag/|/category/|/author/|"
+SKIP_PATH = re.compile(r"/wp-content/|/resources/(?!location/)|/blog/|/news|/podcast|/event|/tag/|/category/|/author/|"
                        r"/giving/|/donate|open-mic|retreat|summit|sober-space|-\d+/?$")
 BRAND = "Cumberland Heights"
 
@@ -103,13 +103,18 @@ def _program_name(p: Page) -> str:
         name = slug[-1].replace("-", " ").title() if slug else "Addiction Treatment"
     name = re.sub(r"\s*\(.*?\)", "", name)
     name = re.sub(r"\b(Iop|Php)\b", lambda m: m.group(0).upper(), name)
-    return name
+    name = re.sub(r"\s*[-|–:]?\s*" + re.escape(BRAND) + r"\s*[-|–:]?\s*", " ", name, flags=re.I).strip()
+    return name or "Addiction Treatment"
 
 
 def suggest_title(p: Page) -> str:
     name = "Addiction Treatment" if p.page_type == "home" else _program_name(p)
     t = f"{name} in Nashville, TN | {BRAND}"
-    return t if len(t) <= 60 else f"{name} in Nashville | {BRAND}"
+    if len(t) > 60:
+        t = f"{name} in Nashville | {BRAND}"
+    if len(t) > 60:
+        t = f"{name[:60 - len(f' in Nashville | {BRAND}')].rstrip()} in Nashville | {BRAND}"
+    return t
 
 
 def _f(**kw) -> Finding:
