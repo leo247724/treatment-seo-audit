@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  macOS LaunchAgent: runs schedule/run_sites.sh daily at 03:15.
+  Replace /path/to/treatment-seo-audit with the absolute repo path (quote-free;
+  launchd takes the strings as-is, spaces and pipes included).
+
+  Install:
+    cp schedule/launchd/com.treatment-seo-audit.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.treatment-seo-audit.plist
+    launchctl start com.treatment-seo-audit        # run once now
+  Remove:
+    launchctl unload ~/Library/LaunchAgents/com.treatment-seo-audit.plist
+
+  The Mac must be awake at 03:15; a run missed while asleep fires on wake.
+  Newer macOS also accepts: launchctl bootstrap gui/$(id -u) <plist>
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.treatment-seo-audit</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/path/to/treatment-seo-audit/schedule/run_sites.sh</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/path/to/treatment-seo-audit</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+    <!-- <key>AUDIT_EXTRA_ARGS</key><string>--skip openseo</string> -->
+  </dict>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>3</integer>
+    <key>Minute</key>
+    <integer>15</integer>
+  </dict>
+  <key>StandardOutPath</key>
+  <string>/path/to/treatment-seo-audit/schedule/logs/launchd.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/path/to/treatment-seo-audit/schedule/logs/launchd.err.log</string>
+  <key>RunAtLoad</key>
+  <false/>
+</dict>
+</plist>

@@ -27,30 +27,30 @@ Estimated organic traffic: 47667 visits/mo · ranking keywords: 5107 · referrin
 - local_pack #3: www.nashvilleaddictionrecovery.com — Nashville Addiction Recovery
 - organic #4: www.recoveryranch.com — Drug & Alcohol Rehab Near Nashville, TN | The Ranch TN
 - organic #6: www.cumberlandheights.org — Cumberland Heights: Home
-- organic #7: gracerc.com — Alcohol and Drug Rehab Near Me In Nashville Tennessee TN
-- organic #8: startyourrecovery.org — 2026's Top Rehab Centers in Nashville, TN (7 Free)
+- organic #7: startyourrecovery.org — 2026's Top Rehab Centers in Nashville, TN (7 Free)
+- organic #8: gracerc.com — Alcohol and Drug Rehab Near Me In Nashville Tennessee TN
 - organic #9: thenextdoorrecovery.org — Safe Treatment Facility For Women • The Next Door ...
 - organic #10: southeastaddictiontn.com — Drug & Alcohol Rehab in Nashville, TN | Southeast Addiction
 ### drug rehab Nashville
 - local_pack #1: southeastaddictiontn.com — Southeast Addiction Center - Nashville Drug & Alcohol Rehab Center
 - local_pack #2: www.nashvilleaddictionrecovery.com — Nashville Addiction Recovery
 - local_pack #3: www.recoveryunplugged.com — Recovery Unplugged Tennessee Drug & Alcohol Rehab Nashville
-- organic #4: www.addictioncenter.com — Alcohol and Drug Rehab Centers in or Near Nashville, TN
-- organic #5: www.cumberlandheights.org — Cumberland Heights: Home
+- organic #4: www.cumberlandheights.org — Cumberland Heights: Home
+- organic #6: www.addictioncenter.com — Alcohol and Drug Rehab Centers in or Near Nashville, TN
 - organic #7: www.recoveryranch.com — Drug & Alcohol Rehab Near Nashville, TN | The Ranch TN
-- organic #8: www.liveagaindetox.com — Live Again Detox: Drug & Alcohol Detox in Nashville, TN
+- organic #8: www.addictions.com — Drug & alcohol rehab centers in Nashville, TN - Addictions
 - organic #9: thenextdoorrecovery.org — Safe Treatment Facility For Women • The Next Door ...
-- organic #10: startyourrecovery.org — 2026's Top Rehab Centers in Nashville, TN (7 Free)
+- organic #10: www.liveagaindetox.com — Live Again Detox: Drug & Alcohol Detox in Nashville, TN
 ### detox Nashville TN
 - local_pack #1: brentwoodspringsdetox.com — Brentwood Springs Detox
 - local_pack #2: www.liveagaindetox.com — Live Again Detox - Alcohol & Drug Detox Center in Nashville
 - local_pack #3: detox-nashville.com — Nashville Detox Center
-- organic #4: www.liveagaindetox.com — Live Again Detox: Drug & Alcohol Detox in Nashville, TN
-- organic #6: brentwoodspringsdetox.com — Brentwood Springs Detox: Drug Detox & Alcohol Detox in ...
-- organic #7: recovery.com — Best Detox Centers in Nashville
-- organic #8: www.cumberlandheights.org — Cumberland Heights: Home
-- organic #9: www.vanderbilthealth.com — Addictions Program - Nashville
-- organic #10: www.recoveryranch.com — Drug & Alcohol Rehab Near Nashville, TN | The Ranch TN
+- local_pack #4: google.com — Tennessee Detox Center        My Ad Center
+- organic #5: www.liveagaindetox.com — Live Again Detox: Drug & Alcohol Detox in Nashville, TN
+- organic #7: brentwoodspringsdetox.com — Brentwood Springs Detox: Drug Detox & Alcohol Detox in ...
+- organic #8: recovery.com — Best Detox Centers in Nashville
+- organic #9: www.recoveryranch.com — Drug & Alcohol Rehab Near Nashville, TN | The Ranch TN
+- organic #10: thenextdoorrecovery.org — Safe Treatment Facility For Women • The Next Door ...
 ### inpatient rehab Nashville TN
 - local_pack #1: www.recoveryunplugged.com — Recovery Unplugged Tennessee Drug & Alcohol Rehab Nashville
 - local_pack #2: southeastaddictiontn.com — Southeast Addiction Center - Nashville Drug & Alcohol Rehab Center
@@ -60,7 +60,7 @@ Estimated organic traffic: 47667 visits/mo · ranking keywords: 5107 · referrin
 - organic #7: health.usnews.com — Best Hospitals for Rehabilitation near Nashville, TN
 - organic #8: www.cumberlandheights.org — Cumberland Heights: Home
 - organic #9: www.encompasshealth.com — Vanderbilt Stallworth Rehabilitation Hospital
-- organic #10: startyourrecovery.org — 2026's Top Rehab Centers in Nashville, TN (7 Free)
+- organic #10: gracerc.com — Alcohol and Drug Rehab Near Me In Nashville Tennessee TN
 ### rehab centers Nashville
 - local_pack #1: southeastaddictiontn.com — Southeast Addiction Center - Nashville Drug & Alcohol Rehab Center
 - local_pack #2: www.cumberlandheights.org — Cumberland Heights Treatment Center
@@ -70,7 +70,7 @@ Estimated organic traffic: 47667 visits/mo · ranking keywords: 5107 · referrin
 - organic #7: nashvillecenterrehab.com — Nashville Center for Rehabilitation and Healing: Home
 - organic #8: startyourrecovery.org — 2026's Top Rehab Centers in Nashville, TN (7 Free)
 - organic #9: www.liveagaindetox.com — Live Again Detox: Drug & Alcohol Detox in Nashville, TN
-- organic #10: www.recoveryranch.com — Drug & Alcohol Rehab Near Nashville, TN | The Ranch TN
+- organic #10: thenextdoorrecovery.org — Safe Treatment Facility For Women • The Next Door ...
 ### Cumberland Heights
 - organic #1: www.cumberlandheights.org — Cumberland Heights: Home
 - organic #3: www.facebook.com — Cumberland Heights | Nashville TN

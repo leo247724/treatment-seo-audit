@@ -1,11 +1,11 @@
 {
   "site": "cumberlandheights.org",
   "date": "2026-10-21",
-  "pages_crawled": 200,
-  "pages_html_200": 52,
-  "pages_indexable": 52,
+  "pages_crawled": 150,
+  "pages_html_200": 113,
+  "pages_indexable": 113,
   "sitemap_urls": 2137,
-  "uncrawled_queue": 1937,
+  "uncrawled_queue": 1987,
   "robots_status": 200,
   "llms_txt_status": 200,
   "ai_bot_access": {
@@ -32,6 +32,6 @@
     "os_commercial_on_home",
     "ai_share_of_voice",
     "ai_answers_absent",
-    "onpage_titles_no_local_service"
+    "link_gap_competitors"
   ]
 }

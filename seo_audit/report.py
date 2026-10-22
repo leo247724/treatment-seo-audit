@@ -42,6 +42,8 @@ DEEPER_ANALYSES = [
     ("onpage.md", "Per-page on-page optimization scorecard for the high-intent pages."),
     ("competitor_pages.md", "What the pages ranking at the top of the SERPs do that this site's pages do not."),
     ("geo_mentions.md", "Share of voice in AI answers against the competitors."),
+    ("link_opportunities.md", "Link gap: domains that link to competitors but not to this site, classified and ranked, plus the directories AI engines cite."),
+    ("topical_authority.md", "Topical authority matrix vs competitors and the keyword gap by topic."),
 ]
 
 

@@ -1,0 +1,1434 @@
+{
+ "host": "cumberlandheights.org",
+ "competitors": [
+  "recoveryranch.com",
+  "southeastaddictiontn.com",
+  "nashvilleaddictionrecovery.com",
+  "liveagaindetox.com",
+  "apex.rehab",
+  "recoveryunplugged.com"
+ ],
+ "topics": {
+  "alcohol": "Alcohol",
+  "opioids": "Opioids / fentanyl / heroin",
+  "stimulants": "Stimulants (meth, cocaine, adderall)",
+  "benzos": "Benzos / barbiturates / sedatives",
+  "cannabis": "Cannabis",
+  "detox": "Detox",
+  "residential": "Residential / inpatient",
+  "outpatient": "Outpatient / IOP / PHP",
+  "mental": "Mental health & dual diagnosis",
+  "twelve": "12-step & recovery education",
+  "insurance": "Insurance & cost",
+  "family": "Family & loved ones",
+  "youth": "Adolescents & young adults",
+  "pros": "Professionals & veterans",
+  "local": "Local intent",
+  "brand": "Brand",
+  "other": "Other"
+ },
+ "regex": {
+  "alcohol": "alcohol\\w*|drinking|drunk|binge|liquor|beer|wine|hangover|delirium tremens",
+  "opioids": "opioids?|opiates?|fentanyl|heroin|oxy\\w*|percocet|hydrocodone|suboxone|methadone|kratom|vicodin|morphine|tramadol|naloxone|narcan|painkillers?",
+  "stimulants": "meth|methamphetamine|cocaine|crack|adderall|amphetamines?|stimulants?|ritalin|vyvanse",
+  "benzos": "benzo\\w*|xanax|valium|klonopin|ativan|barbiturates?|sedatives?|ambien|alprazolam|gabapentin",
+  "cannabis": "cannabis|marijuana|weed|thc|delta ?8|cbd",
+  "detox": "detox\\w*|withdrawals?|paws|post[- ]acute",
+  "residential": "residential|inpatient|in-patient|long[- ]term|28[- ]day|30[- ]day|90[- ]day",
+  "outpatient": "outpatient|iop|php|partial hospitali\\w*|day program",
+  "mental": "mental|anxiety|depress\\w*|bipolar|trauma\\w*|ptsd|mania|manic|dual diagnosis|co-?occurring|schizo\\w*|ocd|adhd|psychiatr\\w*|eating disorders?|dysthymia|mood|stress|emdr|dbt|cbt",
+  "twelve": "12[- ]?steps?|twelve steps?|aa|aas|a a|na|alcoholics anonymous|narcotics anonymous|sober\\w*|sobriety|relapse\\w*|sponsors?|serenity prayer|big book|recovery (?:quotes|prayers?)",
+  "insurance": "insurance|aetna|bcbs|blue cross|cigna|united ?healthcare|humana|cost|costs|price|prices|pricing|free|medicaid|medicare|tricare|tenncare|afford\\w*",
+  "family": "family|families|spouse|husband|wife|son|daughter|parents?|intervention\\w*|loved ones?|codependen\\w*|enabl\\w*|al-?anon",
+  "youth": "teens?|teenagers?|adolescents?|young adults?|college|youth|students?",
+  "pros": "professionals?|executives?|veterans?|military|first responders?|nurses?|doctors?|pilots?|lawyers?|attorneys?|physicians?",
+  "local": "nashville|tennessee|tn|memphis|knoxville|chattanooga|near me|close to me|franklin|murfreesboro|clarksville|brentwood|kingston springs|cookeville",
+  "brand": [
+   "cumberland",
+   "recovery ranch",
+   "southeast addiction",
+   "nashville addiction recovery",
+   "live again",
+   "apex",
+   "recovery unplugged"
+  ]
+ },
+ "stats": {
+  "cumberlandheights.org": {
+   "alcohol": {
+    "keywords": 8,
+    "volume": 195200,
+    "etv": 865.3,
+    "top3": 0,
+    "top10": 1,
+    "urls": 4
+   },
+   "opioids": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "stimulants": {
+    "keywords": 4,
+    "volume": 198000,
+    "etv": 821.7,
+    "top3": 0,
+    "top10": 0,
+    "urls": 1
+   },
+   "benzos": {
+    "keywords": 9,
+    "volume": 245700,
+    "etv": 2608.4,
+    "top3": 0,
+    "top10": 7,
+    "urls": 1
+   },
+   "cannabis": {
+    "keywords": 2,
+    "volume": 16200,
+    "etv": 44.5,
+    "top3": 0,
+    "top10": 0,
+    "urls": 1
+   },
+   "detox": {
+    "keywords": 13,
+    "volume": 362920,
+    "etv": 831.5,
+    "top3": 1,
+    "top10": 1,
+    "urls": 5
+   },
+   "residential": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "outpatient": {
+    "keywords": 1,
+    "volume": 18100,
+    "etv": 38.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 1
+   },
+   "mental": {
+    "keywords": 36,
+    "volume": 1198010,
+    "etv": 3294.0,
+    "top3": 2,
+    "top10": 4,
+    "urls": 9
+   },
+   "twelve": {
+    "keywords": 38,
+    "volume": 886680,
+    "etv": 21860.6,
+    "top3": 4,
+    "top10": 21,
+    "urls": 4
+   },
+   "insurance": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "family": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "youth": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "pros": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "local": {
+    "keywords": 20,
+    "volume": 247390,
+    "etv": 7360.3,
+    "top3": 13,
+    "top10": 16,
+    "urls": 1
+   },
+   "brand": {
+    "keywords": 6,
+    "volume": 15850,
+    "etv": 4591.2,
+    "top3": 6,
+    "top10": 6,
+    "urls": 2
+   },
+   "other": {
+    "keywords": 12,
+    "volume": 412900,
+    "etv": 2140.7,
+    "top3": 0,
+    "top10": 4,
+    "urls": 8
+   }
+  },
+  "recoveryranch.com": {
+   "alcohol": {
+    "keywords": 13,
+    "volume": 88900,
+    "etv": 1114.2,
+    "top3": 0,
+    "top10": 5,
+    "urls": 10
+   },
+   "opioids": {
+    "keywords": 1,
+    "volume": 6600,
+    "etv": 13.9,
+    "top3": 0,
+    "top10": 0,
+    "urls": 1
+   },
+   "stimulants": {
+    "keywords": 3,
+    "volume": 20680,
+    "etv": 99.6,
+    "top3": 0,
+    "top10": 1,
+    "urls": 2
+   },
+   "benzos": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "cannabis": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "detox": {
+    "keywords": 9,
+    "volume": 171240,
+    "etv": 588.3,
+    "top3": 3,
+    "top10": 4,
+    "urls": 3
+   },
+   "residential": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "outpatient": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "mental": {
+    "keywords": 32,
+    "volume": 241680,
+    "etv": 4936.7,
+    "top3": 11,
+    "top10": 18,
+    "urls": 7
+   },
+   "twelve": {
+    "keywords": 7,
+    "volume": 24410,
+    "etv": 511.9,
+    "top3": 2,
+    "top10": 6,
+    "urls": 4
+   },
+   "insurance": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "family": {
+    "keywords": 2,
+    "volume": 36200,
+    "etv": 246.2,
+    "top3": 0,
+    "top10": 1,
+    "urls": 1
+   },
+   "youth": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "pros": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "local": {
+    "keywords": 18,
+    "volume": 139870,
+    "etv": 3747.8,
+    "top3": 14,
+    "top10": 16,
+    "urls": 1
+   },
+   "brand": {
+    "keywords": 1,
+    "volume": 320,
+    "etv": 97.3,
+    "top3": 1,
+    "top10": 1,
+    "urls": 1
+   },
+   "other": {
+    "keywords": 78,
+    "volume": 998260,
+    "etv": 12082.5,
+    "top3": 7,
+    "top10": 31,
+    "urls": 26
+   }
+  },
+  "southeastaddictiontn.com": {
+   "alcohol": {
+    "keywords": 5,
+    "volume": 56100,
+    "etv": 171.0,
+    "top3": 0,
+    "top10": 2,
+    "urls": 3
+   },
+   "opioids": {
+    "keywords": 31,
+    "volume": 74990,
+    "etv": 561.1,
+    "top3": 6,
+    "top10": 13,
+    "urls": 4
+   },
+   "stimulants": {
+    "keywords": 4,
+    "volume": 6580,
+    "etv": 128.1,
+    "top3": 0,
+    "top10": 2,
+    "urls": 2
+   },
+   "benzos": {
+    "keywords": 13,
+    "volume": 48910,
+    "etv": 211.9,
+    "top3": 0,
+    "top10": 3,
+    "urls": 6
+   },
+   "cannabis": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "detox": {
+    "keywords": 4,
+    "volume": 4110,
+    "etv": 90.7,
+    "top3": 0,
+    "top10": 4,
+    "urls": 2
+   },
+   "residential": {
+    "keywords": 1,
+    "volume": 1600,
+    "etv": 3.4,
+    "top3": 0,
+    "top10": 0,
+    "urls": 1
+   },
+   "outpatient": {
+    "keywords": 2,
+    "volume": 3800,
+    "etv": 8.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 2
+   },
+   "mental": {
+    "keywords": 5,
+    "volume": 9700,
+    "etv": 20.4,
+    "top3": 0,
+    "top10": 0,
+    "urls": 3
+   },
+   "twelve": {
+    "keywords": 3,
+    "volume": 159500,
+    "etv": 334.9,
+    "top3": 0,
+    "top10": 0,
+    "urls": 1
+   },
+   "insurance": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "family": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "youth": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "pros": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "local": {
+    "keywords": 6,
+    "volume": 11200,
+    "etv": 181.8,
+    "top3": 0,
+    "top10": 4,
+    "urls": 2
+   },
+   "brand": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "other": {
+    "keywords": 79,
+    "volume": 257020,
+    "etv": 2002.7,
+    "top3": 5,
+    "top10": 31,
+    "urls": 14
+   }
+  },
+  "nashvilleaddictionrecovery.com": {
+   "alcohol": {
+    "keywords": 6,
+    "volume": 1010,
+    "etv": 14.5,
+    "top3": 1,
+    "top10": 1,
+    "urls": 2
+   },
+   "opioids": {
+    "keywords": 18,
+    "volume": 3010,
+    "etv": 6.6,
+    "top3": 0,
+    "top10": 0,
+    "urls": 2
+   },
+   "stimulants": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "benzos": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "cannabis": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "detox": {
+    "keywords": 19,
+    "volume": 5410,
+    "etv": 231.8,
+    "top3": 3,
+    "top10": 6,
+    "urls": 2
+   },
+   "residential": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "outpatient": {
+    "keywords": 1,
+    "volume": 90,
+    "etv": 0.2,
+    "top3": 0,
+    "top10": 0,
+    "urls": 1
+   },
+   "mental": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "twelve": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "insurance": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "family": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "youth": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "pros": {
+    "keywords": 1,
+    "volume": 50,
+    "etv": 0.1,
+    "top3": 0,
+    "top10": 0,
+    "urls": 1
+   },
+   "local": {
+    "keywords": 64,
+    "volume": 23500,
+    "etv": 1439.0,
+    "top3": 6,
+    "top10": 14,
+    "urls": 2
+   },
+   "brand": {
+    "keywords": 7,
+    "volume": 1260,
+    "etv": 16.9,
+    "top3": 1,
+    "top10": 1,
+    "urls": 1
+   },
+   "other": {
+    "keywords": 13,
+    "volume": 3910,
+    "etv": 8.2,
+    "top3": 0,
+    "top10": 0,
+    "urls": 4
+   }
+  },
+  "liveagaindetox.com": {
+   "alcohol": {
+    "keywords": 16,
+    "volume": 11440,
+    "etv": 37.8,
+    "top3": 0,
+    "top10": 8,
+    "urls": 6
+   },
+   "opioids": {
+    "keywords": 16,
+    "volume": 12880,
+    "etv": 86.0,
+    "top3": 1,
+    "top10": 7,
+    "urls": 6
+   },
+   "stimulants": {
+    "keywords": 2,
+    "volume": 580,
+    "etv": 1.2,
+    "top3": 0,
+    "top10": 0,
+    "urls": 2
+   },
+   "benzos": {
+    "keywords": 5,
+    "volume": 1410,
+    "etv": 4.3,
+    "top3": 0,
+    "top10": 1,
+    "urls": 4
+   },
+   "cannabis": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "detox": {
+    "keywords": 44,
+    "volume": 41750,
+    "etv": 754.4,
+    "top3": 3,
+    "top10": 21,
+    "urls": 16
+   },
+   "residential": {
+    "keywords": 5,
+    "volume": 1470,
+    "etv": 4.8,
+    "top3": 0,
+    "top10": 0,
+    "urls": 3
+   },
+   "outpatient": {
+    "keywords": 1,
+    "volume": 590,
+    "etv": 1.3,
+    "top3": 0,
+    "top10": 0,
+    "urls": 1
+   },
+   "mental": {
+    "keywords": 7,
+    "volume": 4020,
+    "etv": 11.6,
+    "top3": 0,
+    "top10": 1,
+    "urls": 3
+   },
+   "twelve": {
+    "keywords": 3,
+    "volume": 2640,
+    "etv": 5.5,
+    "top3": 0,
+    "top10": 0,
+    "urls": 1
+   },
+   "insurance": {
+    "keywords": 1,
+    "volume": 30,
+    "etv": 4.9,
+    "top3": 1,
+    "top10": 1,
+    "urls": 1
+   },
+   "family": {
+    "keywords": 8,
+    "volume": 1430,
+    "etv": 13.9,
+    "top3": 0,
+    "top10": 6,
+    "urls": 1
+   },
+   "youth": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "pros": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "local": {
+    "keywords": 66,
+    "volume": 72020,
+    "etv": 1000.9,
+    "top3": 4,
+    "top10": 30,
+    "urls": 17
+   },
+   "brand": {
+    "keywords": 3,
+    "volume": 990,
+    "etv": 3.0,
+    "top3": 0,
+    "top10": 1,
+    "urls": 1
+   },
+   "other": {
+    "keywords": 18,
+    "volume": 6690,
+    "etv": 69.7,
+    "top3": 2,
+    "top10": 5,
+    "urls": 10
+   }
+  },
+  "apex.rehab": {
+   "alcohol": {
+    "keywords": 16,
+    "volume": 51930,
+    "etv": 148.4,
+    "top3": 2,
+    "top10": 2,
+    "urls": 11
+   },
+   "opioids": {
+    "keywords": 2,
+    "volume": 14000,
+    "etv": 29.4,
+    "top3": 0,
+    "top10": 0,
+    "urls": 2
+   },
+   "stimulants": {
+    "keywords": 14,
+    "volume": 48740,
+    "etv": 114.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 3
+   },
+   "benzos": {
+    "keywords": 4,
+    "volume": 1660,
+    "etv": 28.2,
+    "top3": 0,
+    "top10": 3,
+    "urls": 2
+   },
+   "cannabis": {
+    "keywords": 1,
+    "volume": 1300,
+    "etv": 3.1,
+    "top3": 0,
+    "top10": 0,
+    "urls": 1
+   },
+   "detox": {
+    "keywords": 23,
+    "volume": 65430,
+    "etv": 169.1,
+    "top3": 2,
+    "top10": 3,
+    "urls": 10
+   },
+   "residential": {
+    "keywords": 3,
+    "volume": 2710,
+    "etv": 64.0,
+    "top3": 0,
+    "top10": 2,
+    "urls": 3
+   },
+   "outpatient": {
+    "keywords": 5,
+    "volume": 1320,
+    "etv": 37.1,
+    "top3": 3,
+    "top10": 4,
+    "urls": 2
+   },
+   "mental": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "twelve": {
+    "keywords": 2,
+    "volume": 4300,
+    "etv": 9.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 2
+   },
+   "insurance": {
+    "keywords": 13,
+    "volume": 16560,
+    "etv": 356.0,
+    "top3": 3,
+    "top10": 9,
+    "urls": 5
+   },
+   "family": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "youth": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "pros": {
+    "keywords": 2,
+    "volume": 1210,
+    "etv": 29.5,
+    "top3": 0,
+    "top10": 2,
+    "urls": 1
+   },
+   "local": {
+    "keywords": 48,
+    "volume": 60150,
+    "etv": 951.1,
+    "top3": 14,
+    "top10": 26,
+    "urls": 21
+   },
+   "brand": {
+    "keywords": 22,
+    "volume": 6810,
+    "etv": 781.5,
+    "top3": 18,
+    "top10": 21,
+    "urls": 7
+   },
+   "other": {
+    "keywords": 41,
+    "volume": 80740,
+    "etv": 248.7,
+    "top3": 1,
+    "top10": 6,
+    "urls": 23
+   }
+  },
+  "recoveryunplugged.com": {
+   "alcohol": {
+    "keywords": 25,
+    "volume": 115470,
+    "etv": 3256.8,
+    "top3": 9,
+    "top10": 20,
+    "urls": 11
+   },
+   "opioids": {
+    "keywords": 10,
+    "volume": 78610,
+    "etv": 324.3,
+    "top3": 1,
+    "top10": 2,
+    "urls": 7
+   },
+   "stimulants": {
+    "keywords": 7,
+    "volume": 74100,
+    "etv": 400.9,
+    "top3": 0,
+    "top10": 2,
+    "urls": 3
+   },
+   "benzos": {
+    "keywords": 14,
+    "volume": 75720,
+    "etv": 503.4,
+    "top3": 1,
+    "top10": 4,
+    "urls": 4
+   },
+   "cannabis": {
+    "keywords": 6,
+    "volume": 37100,
+    "etv": 940.8,
+    "top3": 0,
+    "top10": 5,
+    "urls": 2
+   },
+   "detox": {
+    "keywords": 15,
+    "volume": 146260,
+    "etv": 385.6,
+    "top3": 1,
+    "top10": 1,
+    "urls": 7
+   },
+   "residential": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "outpatient": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "mental": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "twelve": {
+    "keywords": 9,
+    "volume": 269400,
+    "etv": 972.4,
+    "top3": 0,
+    "top10": 2,
+    "urls": 3
+   },
+   "insurance": {
+    "keywords": 1,
+    "volume": 5400,
+    "etv": 11.3,
+    "top3": 0,
+    "top10": 0,
+    "urls": 1
+   },
+   "family": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "youth": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "pros": {
+    "keywords": 0,
+    "volume": 0,
+    "etv": 0.0,
+    "top3": 0,
+    "top10": 0,
+    "urls": 0
+   },
+   "local": {
+    "keywords": 11,
+    "volume": 135960,
+    "etv": 1033.0,
+    "top3": 3,
+    "top10": 5,
+    "urls": 3
+   },
+   "brand": {
+    "keywords": 12,
+    "volume": 10010,
+    "etv": 3043.0,
+    "top3": 12,
+    "top10": 12,
+    "urls": 7
+   },
+   "other": {
+    "keywords": 81,
+    "volume": 639440,
+    "etv": 10674.6,
+    "top3": 17,
+    "top10": 46,
+    "urls": 31
+   }
+  }
+ },
+ "score": {
+  "cumberlandheights.org": {
+   "alcohol": 5,
+   "opioids": 0,
+   "stimulants": 0,
+   "benzos": 100,
+   "cannabis": 0,
+   "detox": 5,
+   "residential": 0,
+   "outpatient": 0,
+   "mental": 22,
+   "twelve": 100,
+   "insurance": 0,
+   "family": 0,
+   "youth": 0,
+   "pros": 0,
+   "local": 53,
+   "brand": 29,
+   "other": 9
+  },
+  "recoveryranch.com": {
+   "alcohol": 25,
+   "opioids": 0,
+   "stimulants": 50,
+   "benzos": 0,
+   "cannabis": 0,
+   "detox": 19,
+   "residential": 0,
+   "outpatient": 0,
+   "mental": 100,
+   "twelve": 29,
+   "insurance": 0,
+   "family": 17,
+   "youth": 0,
+   "pros": 0,
+   "local": 53,
+   "brand": 5,
+   "other": 67
+  },
+  "southeastaddictiontn.com": {
+   "alcohol": 10,
+   "opioids": 100,
+   "stimulants": 100,
+   "benzos": 43,
+   "cannabis": 0,
+   "detox": 19,
+   "residential": 0,
+   "outpatient": 0,
+   "mental": 0,
+   "twelve": 0,
+   "insurance": 0,
+   "family": 0,
+   "youth": 0,
+   "pros": 0,
+   "local": 13,
+   "brand": 0,
+   "other": 67
+  },
+  "nashvilleaddictionrecovery.com": {
+   "alcohol": 5,
+   "opioids": 0,
+   "stimulants": 0,
+   "benzos": 0,
+   "cannabis": 0,
+   "detox": 29,
+   "residential": 0,
+   "outpatient": 0,
+   "mental": 0,
+   "twelve": 0,
+   "insurance": 0,
+   "family": 0,
+   "youth": 0,
+   "pros": 0,
+   "local": 47,
+   "brand": 5,
+   "other": 0
+  },
+  "liveagaindetox.com": {
+   "alcohol": 40,
+   "opioids": 54,
+   "stimulants": 0,
+   "benzos": 14,
+   "cannabis": 0,
+   "detox": 100,
+   "residential": 0,
+   "outpatient": 0,
+   "mental": 6,
+   "twelve": 0,
+   "insurance": 11,
+   "family": 100,
+   "youth": 0,
+   "pros": 0,
+   "local": 100,
+   "brand": 5,
+   "other": 11
+  },
+  "apex.rehab": {
+   "alcohol": 10,
+   "opioids": 0,
+   "stimulants": 0,
+   "benzos": 43,
+   "cannabis": 0,
+   "detox": 14,
+   "residential": 100,
+   "outpatient": 100,
+   "mental": 0,
+   "twelve": 0,
+   "insurance": 100,
+   "family": 0,
+   "youth": 0,
+   "pros": 100,
+   "local": 87,
+   "brand": 100,
+   "other": 13
+  },
+  "recoveryunplugged.com": {
+   "alcohol": 100,
+   "opioids": 15,
+   "stimulants": 100,
+   "benzos": 57,
+   "cannabis": 100,
+   "detox": 5,
+   "residential": 0,
+   "outpatient": 0,
+   "mental": 0,
+   "twelve": 10,
+   "insurance": 0,
+   "family": 0,
+   "youth": 0,
+   "pros": 0,
+   "local": 17,
+   "brand": 57,
+   "other": 100
+  }
+ },
+ "best_competitor": {
+  "alcohol": "recoveryunplugged.com",
+  "opioids": "southeastaddictiontn.com",
+  "stimulants": "recoveryunplugged.com",
+  "benzos": "recoveryunplugged.com",
+  "cannabis": "recoveryunplugged.com",
+  "detox": "liveagaindetox.com",
+  "residential": "apex.rehab",
+  "outpatient": "apex.rehab",
+  "mental": "recoveryranch.com",
+  "twelve": "recoveryranch.com",
+  "insurance": "apex.rehab",
+  "family": "liveagaindetox.com",
+  "youth": "recoveryranch.com",
+  "pros": "apex.rehab",
+  "local": "liveagaindetox.com",
+  "brand": "apex.rehab",
+  "other": "recoveryunplugged.com"
+ },
+ "strongest": [
+  "twelve",
+  "benzos",
+  "local"
+ ],
+ "weakest": [
+  "detox",
+  "alcohol",
+  "mental"
+ ],
+ "gaps": [
+  {
+   "keyword": "detox nashville",
+   "volume": 720,
+   "topic": "local",
+   "best_competitor": "liveagaindetox.com",
+   "rank": 2,
+   "url": "https://www.liveagaindetox.com/",
+   "competitors": [
+    "apex.rehab",
+    "liveagaindetox.com",
+    "nashvilleaddictionrecovery.com",
+    "recoveryranch.com"
+   ]
+  },
+  {
+   "keyword": "detox nashville tn",
+   "volume": 720,
+   "topic": "local",
+   "best_competitor": "liveagaindetox.com",
+   "rank": 1,
+   "url": "https://www.liveagaindetox.com/",
+   "competitors": [
+    "liveagaindetox.com",
+    "nashvilleaddictionrecovery.com",
+    "recoveryranch.com"
+   ]
+  },
+  {
+   "keyword": "nashville detox",
+   "volume": 720,
+   "topic": "local",
+   "best_competitor": "nashvilleaddictionrecovery.com",
+   "rank": 2,
+   "url": "https://www.nashvilleaddictionrecovery.com/",
+   "competitors": [
+    "apex.rehab",
+    "liveagaindetox.com",
+    "nashvilleaddictionrecovery.com",
+    "recoveryranch.com"
+   ]
+  },
+  {
+   "keyword": "tennessee detox center",
+   "volume": 480,
+   "topic": "local",
+   "best_competitor": "recoveryranch.com",
+   "rank": 3,
+   "url": "https://www.recoveryranch.com/",
+   "competitors": [
+    "liveagaindetox.com",
+    "recoveryranch.com"
+   ]
+  },
+  {
+   "keyword": "treatment center nashville",
+   "volume": 110,
+   "topic": "local",
+   "best_competitor": "nashvilleaddictionrecovery.com",
+   "rank": 7,
+   "url": "https://www.nashvilleaddictionrecovery.com/",
+   "competitors": [
+    "liveagaindetox.com",
+    "nashvilleaddictionrecovery.com"
+   ]
+  }
+ ],
+ "intent_mix": {
+  "cumberlandheights.org": {
+   "etv": 40015.7,
+   "organic_traffic": 47667,
+   "organic_keywords": 5107,
+   "informational": 75.5,
+   "dfs_informational": 88.5,
+   "brand": 11.5,
+   "dfs_navigational": 9.6,
+   "commercial/local": 13.0,
+   "dfs_commercial": 1.8
+  },
+  "recoveryranch.com": {
+   "etv": 23164.7,
+   "organic_traffic": 32038,
+   "organic_keywords": 5061,
+   "informational": 81.3,
+   "dfs_informational": 94.7,
+   "commercial/local": 18.2,
+   "dfs_navigational": 4.0,
+   "dfs_transactional": 1.1,
+   "brand": 0.4,
+   "dfs_commercial": 0.2
+  },
+  "southeastaddictiontn.com": {
+   "etv": 3583.8,
+   "organic_traffic": 4731,
+   "organic_keywords": 1630,
+   "informational": 92.2,
+   "dfs_informational": 97.5,
+   "commercial/local": 7.8,
+   "dfs_navigational": 0.4,
+   "dfs_transactional": 2.0,
+   "dfs_commercial": 0.1
+  },
+  "nashvilleaddictionrecovery.com": {
+   "etv": 1457.2,
+   "organic_traffic": 1458,
+   "organic_keywords": 119,
+   "commercial/local": 97.8,
+   "dfs_informational": 94.3,
+   "dfs_navigational": 2.7,
+   "dfs_commercial": 3.0,
+   "brand": 1.2,
+   "informational": 1.0,
+   "dfs_transactional": 0.0
+  },
+  "liveagaindetox.com": {
+   "etv": 1233.5,
+   "organic_traffic": 1294,
+   "organic_keywords": 459,
+   "commercial/local": 86.5,
+   "dfs_informational": 63.6,
+   "dfs_navigational": 21.2,
+   "dfs_commercial": 12.7,
+   "informational": 13.3,
+   "dfs_transactional": 2.6,
+   "brand": 0.2
+  },
+  "apex.rehab": {
+   "etv": 2304.6,
+   "organic_traffic": 3497,
+   "organic_keywords": 3255,
+   "commercial/local": 53.8,
+   "dfs_informational": 60.9,
+   "brand": 33.9,
+   "dfs_navigational": 33.6,
+   "informational": 12.3,
+   "dfs_commercial": 5.4,
+   "dfs_transactional": 0.1
+  },
+  "recoveryunplugged.com": {
+   "etv": 20201.5,
+   "organic_traffic": 29279,
+   "organic_keywords": 5937,
+   "brand": 15.1,
+   "dfs_informational": 92.1,
+   "informational": 78.7,
+   "dfs_navigational": 2.3,
+   "commercial/local": 6.3,
+   "dfs_commercial": 3.8,
+   "dfs_transactional": 1.8
+  }
+ },
+ "keywords_sampled": {
+  "cumberlandheights.org": 139,
+  "recoveryranch.com": 158,
+  "southeastaddictiontn.com": 148,
+  "nashvilleaddictionrecovery.com": 105,
+  "liveagaindetox.com": 140,
+  "apex.rehab": 157,
+  "recoveryunplugged.com": 172
+ },
+ "overviews": {
+  "recoveryranch.com": {
+   "domain": "recoveryranch.com",
+   "organicTraffic": 32038,
+   "organicKeywords": 5061,
+   "backlinks": null,
+   "referringDomains": null,
+   "hasData": true,
+   "fetchedAt": "2026-10-22T00:57:36.131Z",
+   "meta": {
+    "organizationId": "delegated-local-admin",
+    "projectId": "a3d9d079-1489-4593-90f3-6cf31d0eb441",
+    "url": "https://agi-tools.tailec481c.ts.net/p/a3d9d079-1489-4593-90f3-6cf31d0eb441/domain?domain=recoveryranch.com"
+   }
+  },
+  "southeastaddictiontn.com": {
+   "domain": "southeastaddictiontn.com",
+   "organicTraffic": 4731,
+   "organicKeywords": 1630,
+   "backlinks": null,
+   "referringDomains": null,
+   "hasData": true,
+   "fetchedAt": "2026-10-22T00:57:36.706Z",
+   "meta": {
+    "organizationId": "delegated-local-admin",
+    "projectId": "a3d9d079-1489-4593-90f3-6cf31d0eb441",
+    "url": "https://agi-tools.tailec481c.ts.net/p/a3d9d079-1489-4593-90f3-6cf31d0eb441/domain?domain=southeastaddictiontn.com"
+   }
+  },
+  "nashvilleaddictionrecovery.com": {
+   "domain": "nashvilleaddictionrecovery.com",
+   "organicTraffic": 1458,
+   "organicKeywords": 119,
+   "backlinks": null,
+   "referringDomains": null,
+   "hasData": true,
+   "fetchedAt": "2026-10-22T00:57:38.231Z",
+   "meta": {
+    "organizationId": "delegated-local-admin",
+    "projectId": "a3d9d079-1489-4593-90f3-6cf31d0eb441",
+    "url": "https://agi-tools.tailec481c.ts.net/p/a3d9d079-1489-4593-90f3-6cf31d0eb441/domain?domain=nashvilleaddictionrecovery.com"
+   }
+  },
+  "liveagaindetox.com": {
+   "domain": "liveagaindetox.com",
+   "organicTraffic": 1294,
+   "organicKeywords": 459,
+   "backlinks": null,
+   "referringDomains": null,
+   "hasData": true,
+   "fetchedAt": "2026-10-22T00:57:38.958Z",
+   "meta": {
+    "organizationId": "delegated-local-admin",
+    "projectId": "a3d9d079-1489-4593-90f3-6cf31d0eb441",
+    "url": "https://agi-tools.tailec481c.ts.net/p/a3d9d079-1489-4593-90f3-6cf31d0eb441/domain?domain=liveagaindetox.com"
+   }
+  },
+  "apex.rehab": {
+   "domain": "apex.rehab",
+   "organicTraffic": 3497,
+   "organicKeywords": 3255,
+   "backlinks": null,
+   "referringDomains": null,
+   "hasData": true,
+   "fetchedAt": "2026-10-22T00:57:39.824Z",
+   "meta": {
+    "organizationId": "delegated-local-admin",
+    "projectId": "a3d9d079-1489-4593-90f3-6cf31d0eb441",
+    "url": "https://agi-tools.tailec481c.ts.net/p/a3d9d079-1489-4593-90f3-6cf31d0eb441/domain?domain=apex.rehab"
+   }
+  },
+  "recoveryunplugged.com": {
+   "domain": "recoveryunplugged.com",
+   "organicTraffic": 29279,
+   "organicKeywords": 5937,
+   "backlinks": null,
+   "referringDomains": null,
+   "hasData": true,
+   "fetchedAt": "2026-10-22T00:57:40.135Z",
+   "meta": {
+    "organizationId": "delegated-local-admin",
+    "projectId": "a3d9d079-1489-4593-90f3-6cf31d0eb441",
+    "url": "https://agi-tools.tailec481c.ts.net/p/a3d9d079-1489-4593-90f3-6cf31d0eb441/domain?domain=recoveryunplugged.com"
+   }
+  }
+ }
+}

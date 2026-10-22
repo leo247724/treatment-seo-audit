@@ -1,0 +1,1198 @@
+{
+ "overview": {
+  "overview": {
+   "target": "apex.rehab",
+   "displayTarget": "apex.rehab",
+   "scope": "domain",
+   "summary": {
+    "rank": 42,
+    "backlinks": 2673,
+    "referringPages": 2128,
+    "referringDomains": 611,
+    "brokenBacklinks": 0,
+    "brokenPages": 0,
+    "backlinksSpamScore": 15,
+    "targetSpamScore": 13,
+    "newBacklinks": null,
+    "lostBacklinks": null,
+    "newReferringDomains": null,
+    "lostReferringDomains": null
+   },
+   "trends": [
+    {
+     "date": "2025-10-31",
+     "backlinks": 828,
+     "referringDomains": 289,
+     "rank": 35
+    },
+    {
+     "date": "2025-11-30",
+     "backlinks": 1174,
+     "referringDomains": 295,
+     "rank": 39
+    },
+    {
+     "date": "2025-12-31",
+     "backlinks": 1562,
+     "referringDomains": 305,
+     "rank": 41
+    },
+    {
+     "date": "2026-01-31",
+     "backlinks": 1567,
+     "referringDomains": 322,
+     "rank": 41
+    },
+    {
+     "date": "2026-02-28",
+     "backlinks": 1564,
+     "referringDomains": 334,
+     "rank": 41
+    },
+    {
+     "date": "2026-03-31",
+     "backlinks": 1590,
+     "referringDomains": 339,
+     "rank": 41
+    },
+    {
+     "date": "2026-04-30",
+     "backlinks": 1811,
+     "referringDomains": 448,
+     "rank": 41
+    },
+    {
+     "date": "2026-05-31",
+     "backlinks": 1850,
+     "referringDomains": 459,
+     "rank": 41
+    },
+    {
+     "date": "2026-06-30",
+     "backlinks": 1754,
+     "referringDomains": 466,
+     "rank": 41
+    },
+    {
+     "date": "2026-07-31",
+     "backlinks": 1818,
+     "referringDomains": 468,
+     "rank": 41
+    },
+    {
+     "date": "2026-08-31",
+     "backlinks": 1905,
+     "referringDomains": 516,
+     "rank": 41
+    },
+    {
+     "date": "2026-09-30",
+     "backlinks": 2038,
+     "referringDomains": 545,
+     "rank": 41
+    }
+   ],
+   "newLostTrends": [
+    {
+     "date": "2025-10-31",
+     "newBacklinks": 55,
+     "lostBacklinks": 17,
+     "newReferringDomains": 22,
+     "lostReferringDomains": 8
+    },
+    {
+     "date": "2025-11-30",
+     "newBacklinks": 330,
+     "lostBacklinks": 25,
+     "newReferringDomains": 10,
+     "lostReferringDomains": 4
+    },
+    {
+     "date": "2025-12-31",
+     "newBacklinks": 376,
+     "lostBacklinks": 180,
+     "newReferringDomains": 21,
+     "lostReferringDomains": 7
+    },
+    {
+     "date": "2026-01-31",
+     "newBacklinks": 206,
+     "lostBacklinks": 181,
+     "newReferringDomains": 22,
+     "lostReferringDomains": 4
+    },
+    {
+     "date": "2026-02-28",
+     "newBacklinks": 57,
+     "lostBacklinks": 34,
+     "newReferringDomains": 26,
+     "lostReferringDomains": 11
+    },
+    {
+     "date": "2026-03-31",
+     "newBacklinks": 64,
+     "lostBacklinks": 27,
+     "newReferringDomains": 19,
+     "lostReferringDomains": 12
+    },
+    {
+     "date": "2026-04-30",
+     "newBacklinks": 460,
+     "lostBacklinks": 195,
+     "newReferringDomains": 46,
+     "lostReferringDomains": 8
+    },
+    {
+     "date": "2026-05-31",
+     "newBacklinks": 99,
+     "lostBacklinks": 52,
+     "newReferringDomains": 26,
+     "lostReferringDomains": 20
+    },
+    {
+     "date": "2026-06-30",
+     "newBacklinks": 40,
+     "lostBacklinks": 134,
+     "newReferringDomains": 12,
+     "lostReferringDomains": 3
+    },
+    {
+     "date": "2026-07-31",
+     "newBacklinks": 115,
+     "lostBacklinks": 55,
+     "newReferringDomains": 21,
+     "lostReferringDomains": 10
+    },
+    {
+     "date": "2026-08-31",
+     "newBacklinks": 117,
+     "lostBacklinks": 36,
+     "newReferringDomains": 58,
+     "lostReferringDomains": 13
+    },
+    {
+     "date": "2026-09-30",
+     "newBacklinks": 99,
+     "lostBacklinks": 39,
+     "newReferringDomains": 35,
+     "lostReferringDomains": 9
+    }
+   ],
+   "fetchedAt": "2026-10-22T00:56:32.502Z"
+  }
+ },
+ "referringDomains": {
+  "rows": [
+   {
+    "domain": "rehab.com",
+    "backlinks": 662,
+    "referringPages": 532,
+    "rank": 37,
+    "spamScore": 0,
+    "firstSeen": "2025-08-20 06:38:20 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "addictiontreatments101.com",
+    "backlinks": 361,
+    "referringPages": 181,
+    "rank": 27,
+    "spamScore": 9,
+    "firstSeen": "2025-09-15 23:48:26 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "addicted2success.com",
+    "backlinks": 165,
+    "referringPages": 165,
+    "rank": 27,
+    "spamScore": 0,
+    "firstSeen": "2026-08-30 16:49:54 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "4mark.net",
+    "backlinks": 74,
+    "referringPages": 17,
+    "rank": 9,
+    "spamScore": 8,
+    "firstSeen": "2026-07-16 15:20:07 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "fsnhospitals.com",
+    "backlinks": 74,
+    "referringPages": 71,
+    "rank": 20,
+    "spamScore": 3,
+    "firstSeen": "2023-01-20 21:39:12 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "nashvillebehavioralhealth.com",
+    "backlinks": 38,
+    "referringPages": 38,
+    "rank": 18,
+    "spamScore": 0,
+    "firstSeen": "2026-10-18 22:17:31 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "alcoholrehabus.org",
+    "backlinks": 30,
+    "referringPages": 30,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-10-19 17:38:52 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "clinicslist.com",
+    "backlinks": 30,
+    "referringPages": 19,
+    "rank": 7,
+    "spamScore": 0,
+    "firstSeen": "2026-10-07 10:04:04 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "nubbl.com",
+    "backlinks": 30,
+    "referringPages": 6,
+    "rank": 6,
+    "spamScore": 0,
+    "firstSeen": "2021-12-03 05:38:25 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "rehabconnectusa.com",
+    "backlinks": 25,
+    "referringPages": 14,
+    "rank": 3,
+    "spamScore": 1,
+    "firstSeen": "2026-06-05 13:41:29 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "tennesseesober.com",
+    "backlinks": 20,
+    "referringPages": 11,
+    "rank": 12,
+    "spamScore": 0,
+    "firstSeen": "2026-07-18 03:10:23 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "recoverybaycenter.com",
+    "backlinks": 17,
+    "referringPages": 7,
+    "rank": 7,
+    "spamScore": 0,
+    "firstSeen": "2025-08-01 12:55:14 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "addictionrehabnashville.com",
+    "backlinks": 16,
+    "referringPages": 8,
+    "rank": 7,
+    "spamScore": 0,
+    "firstSeen": "2026-10-21 05:11:38 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "addictionrehabmemphis.com",
+    "backlinks": 16,
+    "referringPages": 8,
+    "rank": 7,
+    "spamScore": 0,
+    "firstSeen": "2026-10-13 22:57:33 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "legalclarity.org",
+    "backlinks": 14,
+    "referringPages": 6,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-10-11 07:50:44 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "trusted-therapy.com",
+    "backlinks": 12,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-04-15 18:17:32 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "weebly.com",
+    "backlinks": 10,
+    "referringPages": 10,
+    "rank": 14,
+    "spamScore": 0,
+    "firstSeen": "2025-10-27 23:54:00 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "a2place.com",
+    "backlinks": 8,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 35,
+    "firstSeen": "2026-06-17 16:59:07 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "directory3.org",
+    "backlinks": 8,
+    "referringPages": 8,
+    "rank": 0,
+    "spamScore": 27,
+    "firstSeen": "2026-06-03 03:48:04 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "anationofmoms.com",
+    "backlinks": 8,
+    "referringPages": 8,
+    "rank": 8,
+    "spamScore": 0,
+    "firstSeen": "2026-04-20 02:48:44 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "nashvillefitmagazine.com",
+    "backlinks": 8,
+    "referringPages": 8,
+    "rank": 6,
+    "spamScore": 0,
+    "firstSeen": "2026-03-19 08:19:51 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "recovery.com",
+    "backlinks": 8,
+    "referringPages": 4,
+    "rank": 1,
+    "spamScore": 0,
+    "firstSeen": "2025-08-20 04:49:01 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "nckl.gov.kh",
+    "backlinks": 8,
+    "referringPages": 8,
+    "rank": 6,
+    "spamScore": 0,
+    "firstSeen": "2025-07-14 10:19:07 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "dadofdivas.com",
+    "backlinks": 7,
+    "referringPages": 7,
+    "rank": 1,
+    "spamScore": 0,
+    "firstSeen": "2026-10-15 15:05:45 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "drugdetoxandrehab.com",
+    "backlinks": 7,
+    "referringPages": 4,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-04-21 18:39:04 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "healthhelplocator.org",
+    "backlinks": 7,
+    "referringPages": 4,
+    "rank": 0,
+    "spamScore": 8,
+    "firstSeen": "2022-01-04 13:23:00 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "whipperberry.com",
+    "backlinks": 6,
+    "referringPages": 3,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-09-17 20:37:58 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "rehabhive.us",
+    "backlinks": 6,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-08-11 23:30:24 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "rehabangels.org",
+    "backlinks": 6,
+    "referringPages": 3,
+    "rank": 15,
+    "spamScore": 0,
+    "firstSeen": "2025-10-21 12:34:28 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "seattleanxiety.com",
+    "backlinks": 6,
+    "referringPages": 6,
+    "rank": 3,
+    "spamScore": 15,
+    "firstSeen": "2023-10-18 21:46:03 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "mdcaller.com",
+    "backlinks": 6,
+    "referringPages": 2,
+    "rank": 2,
+    "spamScore": 0,
+    "firstSeen": "2023-07-01 01:35:25 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "homeopathy360.com",
+    "backlinks": 5,
+    "referringPages": 5,
+    "rank": 4,
+    "spamScore": 2,
+    "firstSeen": "2026-10-08 11:21:34 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "sobasearch.com",
+    "backlinks": 5,
+    "referringPages": 5,
+    "rank": 7,
+    "spamScore": 0,
+    "firstSeen": "2026-03-04 16:23:33 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "crunchbase.com",
+    "backlinks": 5,
+    "referringPages": 4,
+    "rank": 0,
+    "spamScore": 5,
+    "firstSeen": "2025-03-07 12:45:26 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "electronichealthreporter.com",
+    "backlinks": 5,
+    "referringPages": 5,
+    "rank": 2,
+    "spamScore": 29,
+    "firstSeen": "2019-01-20 06:52:37 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "rehabsearch.org",
+    "backlinks": 4,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-09-26 14:00:22 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "rehabcost.org",
+    "backlinks": 4,
+    "referringPages": 2,
+    "rank": 8,
+    "spamScore": 0,
+    "firstSeen": "2026-09-10 06:24:30 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "addictioncenter.com",
+    "backlinks": 4,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 5,
+    "firstSeen": "2026-08-31 10:16:00 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "ringmybiz.com",
+    "backlinks": 4,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-08-15 17:13:31 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "storeboard.com",
+    "backlinks": 4,
+    "referringPages": 4,
+    "rank": 16,
+    "spamScore": 0,
+    "firstSeen": "2026-07-28 16:27:52 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "bethel-corryton.org",
+    "backlinks": 4,
+    "referringPages": 4,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-06-24 03:23:19 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "addictionhelplineamerica.com",
+    "backlinks": 4,
+    "referringPages": 2,
+    "rank": 8,
+    "spamScore": 0,
+    "firstSeen": "2026-05-01 11:56:41 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "intently.co",
+    "backlinks": 4,
+    "referringPages": 2,
+    "rank": 6,
+    "spamScore": 0,
+    "firstSeen": "2026-03-01 16:47:42 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "reputablebusinesses.com",
+    "backlinks": 4,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-11-29 03:29:23 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "healthyvoyager.com",
+    "backlinks": 4,
+    "referringPages": 4,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2024-06-07 18:33:31 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "detoxtorehab.com",
+    "backlinks": 4,
+    "referringPages": 2,
+    "rank": 12,
+    "spamScore": 0,
+    "firstSeen": "2024-05-31 11:08:09 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "businessesup.com",
+    "backlinks": 4,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2024-02-03 01:42:03 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "livingbetter50.com",
+    "backlinks": 4,
+    "referringPages": 4,
+    "rank": 1,
+    "spamScore": 0,
+    "firstSeen": "2023-11-12 07:26:34 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "hopeforhealingcenter.com",
+    "backlinks": 4,
+    "referringPages": 4,
+    "rank": 1,
+    "spamScore": 0,
+    "firstSeen": "2023-10-04 18:20:56 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "cascadebusnews.com",
+    "backlinks": 4,
+    "referringPages": 4,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2023-04-02 00:59:07 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "fdmedia.com.br",
+    "backlinks": 3,
+    "referringPages": 3,
+    "rank": 0,
+    "spamScore": 30,
+    "firstSeen": "2026-10-21 12:33:30 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "rehabseekers.com",
+    "backlinks": 3,
+    "referringPages": 3,
+    "rank": 4,
+    "spamScore": 0,
+    "firstSeen": "2026-10-19 02:56:06 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "infignos.com",
+    "backlinks": 3,
+    "referringPages": 3,
+    "rank": 0,
+    "spamScore": 31,
+    "firstSeen": "2026-08-20 08:40:13 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "relateddirectory.org",
+    "backlinks": 3,
+    "referringPages": 3,
+    "rank": 0,
+    "spamScore": 30,
+    "firstSeen": "2026-08-15 03:10:11 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "nevermorelane.com",
+    "backlinks": 3,
+    "referringPages": 3,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-07-31 18:05:22 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "mindowl.org",
+    "backlinks": 3,
+    "referringPages": 3,
+    "rank": 8,
+    "spamScore": 0,
+    "firstSeen": "2026-06-26 19:55:59 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "thebraggingmommy.com",
+    "backlinks": 3,
+    "referringPages": 3,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-05-21 22:31:42 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "theresiliencerecoverycenter.com",
+    "backlinks": 3,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-04-22 02:43:29 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "kingdomrecoverycenter.org",
+    "backlinks": 3,
+    "referringPages": 3,
+    "rank": 9,
+    "spamScore": 0,
+    "firstSeen": "2026-04-14 06:21:01 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "getclera.com",
+    "backlinks": 3,
+    "referringPages": 3,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-03-24 14:50:17 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "top10rehabs.com",
+    "backlinks": 3,
+    "referringPages": 3,
+    "rank": 7,
+    "spamScore": 0,
+    "firstSeen": "2025-12-28 09:30:48 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "thephoenixrc.com",
+    "backlinks": 3,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-11-13 11:26:53 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "betteraddictioncare.com",
+    "backlinks": 3,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-10-27 21:41:32 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "releasewire.com",
+    "backlinks": 3,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 12,
+    "firstSeen": "2025-10-20 06:35:53 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "carolinaoutpatientdetox.com",
+    "backlinks": 3,
+    "referringPages": 3,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-10-12 01:27:35 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "simplybalancedbyangela.com",
+    "backlinks": 3,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 25,
+    "firstSeen": "2024-09-02 14:57:15 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "fyple.com",
+    "backlinks": 3,
+    "referringPages": 3,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2022-03-16 03:11:17 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "bteamottawa.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-10-20 10:49:10 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "rehabflow.us",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 2,
+    "spamScore": 0,
+    "firstSeen": "2026-10-12 15:16:09 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "soberfriend.io",
+    "backlinks": 2,
+    "referringPages": 1,
+    "rank": 8,
+    "spamScore": 0,
+    "firstSeen": "2026-10-11 00:32:55 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "trupaths.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 6,
+    "spamScore": 0,
+    "firstSeen": "2026-10-10 14:02:23 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "exampledir.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 37,
+    "firstSeen": "2026-10-08 13:06:54 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "themammafairy.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-10-07 16:14:48 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "acedirectory.org",
+    "backlinks": 2,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 40,
+    "firstSeen": "2026-09-25 10:51:18 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "free-weblink.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 5,
+    "firstSeen": "2026-09-25 01:43:20 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "suboxone.doctor",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-09-08 19:48:37 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "ecodir.net",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 40,
+    "firstSeen": "2026-09-02 17:30:32 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "aweblist.org",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 37,
+    "firstSeen": "2026-08-21 03:03:10 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "recoverydawn.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 12,
+    "spamScore": 0,
+    "firstSeen": "2026-08-20 14:34:16 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "mentalhealthdirectories.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 2,
+    "firstSeen": "2026-08-12 08:42:44 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "sobernation.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-08-10 07:42:59 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "populer.com",
+    "backlinks": 2,
+    "referringPages": 1,
+    "rank": 8,
+    "spamScore": 0,
+    "firstSeen": "2026-08-10 03:23:06 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "clinicalgate.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 4,
+    "spamScore": 20,
+    "firstSeen": "2026-07-26 06:08:49 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "therecover.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 11,
+    "spamScore": 0,
+    "firstSeen": "2026-07-18 15:30:06 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "themindsjournal.com",
+    "backlinks": 2,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-07-18 06:06:00 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "topalcoholrehabs.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-07-09 18:55:43 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "brownedgedirectory.com",
+    "backlinks": 2,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 35,
+    "firstSeen": "2026-06-19 01:25:24 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "culturaldaily.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 5,
+    "firstSeen": "2026-06-18 03:49:23 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "rehabpulse.us",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 4,
+    "spamScore": 0,
+    "firstSeen": "2026-06-09 07:33:20 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "thestuffofsuccess.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 4,
+    "spamScore": 0,
+    "firstSeen": "2026-06-01 01:18:14 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "alcoholism.org",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 6,
+    "spamScore": 0,
+    "firstSeen": "2026-05-14 19:28:33 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "pennilessparenting.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 5,
+    "spamScore": 0,
+    "firstSeen": "2026-05-01 02:38:46 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "luxurylifestyle.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-04-27 12:00:16 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "goodmenproject.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-04-27 11:38:57 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "talentedladiesclub.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-04-27 10:40:02 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "messageceo.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 8,
+    "spamScore": 5,
+    "firstSeen": "2026-04-23 11:57:00 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "substance-abuse-centers.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-04-16 21:22:30 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "elodiebarathe.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 4,
+    "spamScore": 0,
+    "firstSeen": "2026-04-16 06:19:28 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "todays-woman.net",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 5,
+    "firstSeen": "2026-04-10 01:54:26 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "diseasefix.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 1,
+    "spamScore": 0,
+    "firstSeen": "2026-04-09 11:13:15 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   }
+  ],
+  "totalCount": 383,
+  "hasMore": true,
+  "page": 1,
+  "pageSize": 100,
+  "fetchedAt": "2026-10-22T00:56:32.629Z"
+ },
+ "meta": {
+  "organizationId": "delegated-local-admin",
+  "projectId": "a3d9d079-1489-4593-90f3-6cf31d0eb441",
+  "url": "https://agi-tools.tailec481c.ts.net/p/a3d9d079-1489-4593-90f3-6cf31d0eb441/backlinks?target=apex.rehab"
+ }
+}

@@ -87,6 +87,8 @@ Everything lands in `out/<host>/`:
 - `onpage.md` per-page on-page optimization scorecard.
 - `competitor_pages.md` what the SERP winners' pages do differently.
 - `geo_mentions.json` AI answer share of voice against the competitors; the table is copied into `report.md`.
+- `link_opportunities.md` / `.json` link gap: domains linking to competitors but not to this site, classified (news, .edu, .gov, health systems, associations, directories) and ranked, plus the directories AI engines cite and what to do on each.
+- `topical_authority.md` / `.json` topical authority matrix vs competitors (0-100 per topic) and the keyword gap by topic.
 - `openseo/*.json` raw DataForSEO responses. `ai_answers.json`, `ai_queries.txt`, `summary.json`.
 - `crawl.pkl`, `psi.json` caches for `--reuse`.
 
@@ -107,6 +109,10 @@ A JSON list. `type` is `brand` or `non-brand`; `cited` means the site's own doma
   "cited": false, "brand_mentioned": true, "cited_domains": ["rehab.com", "startyourrecovery.org"],
   "note": "named, but sourced from directories"}]
 ```
+
+## Running it 24/7
+
+`schedule/` holds `run_sites.sh` (audits every site in `schedule/sites.txt`, snapshots each run into `out/<host>/history/<date>/` and writes a diff against the previous run), a crontab example, a systemd timer for a Linux VPS and a launchd plist for macOS. See `schedule/README.md`. Each scheduled run spends DataForSEO credits unless `--skip openseo` is passed through `AUDIT_EXTRA_ARGS`.
 
 ## What it does not do
 
@@ -131,7 +137,9 @@ seo_audit/ai_visibility.py  AI bot access, entity, FAQ, live answer checks
 seo_audit/pagespeed.py   PageSpeed Insights
 seo_audit/backlinks.py   backlink and domain-authority audit vs competitors -> backlinks.md
 seo_audit/onpage.py      per-page on-page scorecard -> onpage.md
+seo_audit/link_opportunities.py  competitor link gap + mention opportunities
 seo_audit/competitor_pages.py  what the SERP winners' pages do differently -> competitor_pages.md
+seo_audit/topical_authority.py  topical authority matrix + keyword gap
 seo_audit/geo_mentions.py  AI answer share of voice vs competitors, reads geo_mentions.json
 seo_audit/report.py      scoring, ranking, report.md / findings.json / pages.csv
 ```

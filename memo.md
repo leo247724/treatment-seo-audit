@@ -203,6 +203,137 @@ Freeman Recovery Center is cited from its own site in 7 of 8 answers, including 
 - Search Console: brand impressions monthly; non-brand impressions on residential-care.
 - Call tracking: calls to the directory numbers.
 
+## Topical authority vs competitors
+
+Method: the top 200 ranking keywords (by traffic and by volume) for cumberlandheights.org and six competitors from DataForSEO, clustered into 17 topics by keyword pattern. A topic score of 100 means the domain has the most top-10 keywords in that topic among the seven. Full matrix and keyword gap in `out/cumberlandheights.org/topical_authority.md`.
+
+**Where the site is strong and weak**
+
+- Strongest: 12-step and recovery education (100, 21 top-10 keywords), benzos and barbiturates (100, but all 7 are "barbiturate" definition queries), local intent (53, 16 top-10 keywords, tied with The Ranch).
+- Weakest against the best competitor: detox (score 5; 1 top-10 keyword vs 21 for Live Again Detox), alcohol (5; 1 vs 20 for Recovery Unplugged), mental health and dual diagnosis (22; 4 vs 18 for The Ranch).
+- Who owns what: Recovery Unplugged owns alcohol, stimulants, benzos and cannabis; Southeast Addiction owns opioids; Live Again owns detox, family and local; APEX owns residential, outpatient, insurance and professionals; The Ranch owns mental health and 12-step. No domain has a top-10 keyword for adolescents, which Cumberland Heights treats (ARCH Academy) and could own.
+
+**Intent mix of ranking traffic**
+
+| Domain | Informational | Commercial / local | Brand |
+|---|---|---|---|
+| cumberlandheights.org | 75.5% | 13% | 11.5% |
+| apex.rehab | 46.2% | 53.8% | n/a |
+| liveagaindetox.com | 13.5% | 86.5% | n/a |
+| nashvilleaddictionrecovery.com | 2.2% | 97.8% | n/a |
+
+12-step plus mental-health blog topics carry 63 percent of the site's sampled traffic; the competitors that win calls rank almost only for commercial and local intent.
+
+**Keyword gap (top 20 for two or more competitors, absent from the site's top 200)**
+
+| Keyword | Volume / mo | Topic | Best competitor |
+|---|---|---|---|
+| detox nashville | 720 | detox, local | liveagaindetox.com |
+| detox nashville tn | 720 | detox, local | liveagaindetox.com |
+| nashville detox | 720 | detox, local | liveagaindetox.com |
+| tennessee detox center | 480 | detox | tndetoxcenter.com / liveagaindetox.com |
+| treatment center nashville | 110 | local | southeastaddictiontn.com |
+
+The list is short because each competitor's top 200 barely overlaps the others', and only the site's top 200 of 5,107 keywords were checked; confirm each gap in Search Console before building.
+
+**Fix**
+
+- A detox hub: one page for Nashville detox (the 2,160 searches a month above), with alcohol, opioid and benzo detox sub-pages, each with cost, length, what to bring and insurance.
+- An alcohol-rehab hub and a mental-health/dual-diagnosis hub, the two topics where the gap to the leader is largest.
+- An adolescent treatment hub around ARCH Academy, an open topic no competitor ranks for.
+- Keep the 12-step and recovery-education content, but link every post to the matching hub.
+
+**Check first**
+
+- Search Console: queries grouped by these topics (regex filters for detox, alcohol, mental health, teen/adolescent) with impressions at positions 4-20; those are the pages to build or expand first.
+- Call tracking: calls from the few detox and alcohol pages that exist today, to size what a hub is worth.
+
+## Competitor on-page strategies and entity scores
+
+Method: fetched the six pages that win the Nashville rehab SERPs and the site's four money pages, extracted the same attributes from each, and scored "entity" signals (schema completeness, NAP, sameAs, FAQ, accreditation, local density) out of 100. Full detail in `out/cumberlandheights.org/competitor_pages.md`.
+
+**Entity scores (out of 100)**
+
+| Page | Score |
+|---|---|
+| apex.rehab/tennessee/nashville/ | 65 |
+| recoveryunplugged.com/location/drug-rehab-in-nashville/ | 65 |
+| liveagaindetox.com | 60 |
+| recoveryranch.com | 45 |
+| southeastaddictiontn.com | 40 |
+| thenextdoorrecovery.org | 25 |
+| **cumberlandheights.org (home)** | **60** |
+| cumberlandheights.org/treatment/drug-and-alcohol-detox/ | 30 |
+| cumberlandheights.org/admissions/insurance-and-finances/ | 25 |
+| cumberlandheights.org/treatment/residential-care/ | 20 |
+
+Competitor average 50, Cumberland Heights money-page average 34. The homepage holds its own; the program and insurance pages are where the entity signals disappear.
+
+**What each winner does**
+
+- APEX: a dedicated `/tennessee/nashville/` page, title and H1 "Drug and Alcohol Rehab in Nashville, TN", 7,239 words across 17 H2s, "Nashville" 173 times, 11 insurers named with 12 logos, Joint Commission named, tel + form + verify-insurance, 24/7 stated.
+- Recovery Unplugged: `/location/drug-rehab-in-nashville/`, aggregateRating 5.0 from 610 reviews in schema, local schema type, locations and programs in the nav, 24/7, verify-insurance.
+- Live Again Detox: homepage as the Nashville page, "Nashville" 90 times, 7 insurers named, Joint Commission and LegitScript named, local schema, 24/7.
+- Southeast Addiction: homepage as the Nashville page, 3 testimonial blocks, 9 insurer logos, 24/7, form.
+- The Ranch: 16 insurer logos, 24/7, but thin (851 words) and only two "Nashville" mentions; it ranks on authority (3,837 referring domains).
+
+**Copy first, ordered by how many competitors do it and how cheap it is**
+
+1. State 24/7 on every money page (6 of 6 competitors; 1 of 4 site pages).
+2. Meta descriptions of 70-160 characters with a call to action (5 of 6; 0 of 4).
+3. Insurer logos with alt text on the insurance and program pages (5 of 6; 3 of 4).
+4. Say "Nashville" in body copy, at least 5 times on each money page (5 of 6; 0 of 4).
+5. A "Verify insurance" button on every money page (5 of 6; 3 of 4).
+6. sameAs with 3+ profiles in the schema (4 of 6; 1 of 4), then aggregateRating from Google reviews, which only Recovery Unplugged does.
+
+**Check first**
+
+- Search Console: impressions and CTR for /treatment/ and /admissions/ pages on queries containing "nashville", before and after the copy and schema changes.
+- Call tracking: calls per landing page for those URLs, to see whether the entity and CTA changes move calls, not just rankings.
+
+## Link building and mention opportunities (competitor link gap)
+
+Method: pulled the dofollow referring domains of five Nashville competitors and of cumberlandheights.org from DataForSEO (570 of the site's 575 dofollow domains covered), kept domains that link to a competitor but not to the site, classified them, and down-weighted pay-to-play directories. Full table in `out/cumberlandheights.org/link_opportunities.md`.
+
+**What the gap looks like**
+
+- 567 referring domains link to at least one competitor and not to Cumberland Heights: 325 blog/other, 71 associations, 67 news/media, 54 directories, 27 health systems, 14 education, 9 government. 24 of them link to two or more competitors.
+- Competitors earn these in three repeatable ways: expert quotes in national media (Southeast Addiction's clinical director on scarymommy.com and huffpost.com; goodmenproject.com links three competitors), resource-page listings at universities (preventhazing.arizona.edu, journalism.columbia.edu, blogs.oregonstate.edu, sites.psu.edu) and press-release distribution (The Ranch via globenewswire.com). Live Again Detox has the Nashville Chamber (web.nashvillechamber.com) link; Cumberland Heights does not.
+- Directory and lead-gen listings dominate the site's own profile (addictiontreatments101.com alone is 1,375 links), so the gap is in earned media, education and local institutions, not in more directories.
+
+**Where the AI engines get their facts, and whether the site is listed there**
+
+| Domain | Cited in AI answers (of 18) | Site has a backlink | Action |
+|---|---|---|---|
+| psychologytoday.com | 9 | no | Claim and complete the treatment-center listing: every insurer, level of care, photos |
+| startyourrecovery.org | 7 | yes | Complete the listing, fix NAP, collect reviews |
+| recovery.com | 6 | yes | Same |
+| rehab.com | 5 | no | Claim the listing |
+| bbb.org | 3 | no | Accredit the profile, answer complaints publicly (the billing complaints surface in AI answers) |
+| yelp.com | 3 | no | Claim, fix categories, reply to every review, ask alumni for reviews |
+
+**Fix: first ten outreach targets, in order**
+
+1. Psychology Today listing, complete with insurers and photos (free, cited most).
+2. BBB accreditation and public complaint responses.
+3. Yelp and rehab.com claims with NAP matching the Google Business Profile.
+4. Nashville Area Chamber of Commerce membership listing.
+5. Collegiate-recovery resource pages at Vanderbilt, Belmont, MTSU, Lipscomb and TSU (the .edu pattern competitors already use).
+6. Metro Nashville and Davidson County behavioral-health resource lists (.gov).
+7. Hospital and health-system referral pages (Vanderbilt, Ascension Saint Thomas, TriStar).
+8. Expert-quote pitches to the outlets that quoted competitors (Good Men Project, Scary Mommy, HuffPost) on family, relapse and holiday topics.
+9. A press release for the 60th anniversary in 2026 and for outcomes data, distributed and pitched to Nashville news (newschannel5.com already links once).
+10. Alumni and family-program event pages on partner sites (churches, recovery community organizations).
+
+**Check first**
+
+- Search Console Links report: top linking sites and top linked pages, to confirm which of the 570 domains Google actually credits.
+- Call tracking by referral source: do calls from Psychology Today and directory referrals convert better than organic? That sets the priority between claims and earned media.
+
+## Running this continuously
+
+`schedule/` turns the audit into an unattended job: `run_sites.sh` audits every site in `sites.txt`, keeps a dated snapshot per run, and `diff_runs.py` reports new, resolved and changed findings. A launchd plist (macOS) and a systemd timer or crontab (Linux VPS) run it daily. Each run costs a few hundred DataForSEO credits unless market data is skipped.
+
 ## Limits
 
 No GSC, analytics or call data, so impact is estimated from page intent and market data. Core Web Vitals not measured (PageSpeed quota exhausted; 8 of 20 OpenSEO Lighthouse runs failed). AI answers are a one-day snapshot of 15 queries (5 in the first pass, 10 in the share-of-voice run). The ~48K estimated monthly organic visits are mostly informational blog traffic ("12 step program aa" alone is ~4.8K); the pages that drive calls earn a small share.

@@ -629,7 +629,7 @@
    "local_justifications": [
     {
      "type": "user_review",
-     "text": "\"Excellent drug and alcohol rehab center.\""
+     "text": "\"Staff is excellent and provides an approach to having fun in recovery.\""
     }
    ],
    "is_directory_item": false
@@ -1059,7 +1059,12 @@
    "latitude": 36.1374821,
    "longitude": -86.795869,
    "is_claimed": true,
-   "local_justifications": null,
+   "local_justifications": [
+    {
+     "type": "user_review",
+     "text": "\"They worked with me to find solutions tailored to my personal challenges.\""
+    }
+   ],
    "is_directory_item": false
   },
   {
@@ -2747,12 +2752,7 @@
    "latitude": 36.0959532,
    "longitude": -86.6785436,
    "is_claimed": true,
-   "local_justifications": [
-    {
-     "type": "user_review",
-     "text": "\"They have our trust--thanks, Bradford!\""
-    }
-   ],
+   "local_justifications": null,
    "is_directory_item": false
   },
   {

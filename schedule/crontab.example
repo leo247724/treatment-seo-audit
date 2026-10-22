@@ -1,0 +1,15 @@
+# Crontab examples for schedule/run_sites.sh. Install with: crontab -e
+# Replace /path/to/treatment-seo-audit with the absolute repo path.
+#
+# cron runs with a minimal PATH (often just /usr/bin:/bin). run_sites.sh calls
+# .venv/bin/python by path, so Python itself is found, but add the directories
+# for uv, rsync and timeout/gtimeout (Homebrew: /opt/homebrew/bin) below if
+# they live elsewhere. On a VPS, `which uv python3 timeout` shows the dirs.
+MAILTO=you@example.com
+PATH=/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin
+
+# Daily at 03:15
+15 3 * * * /path/to/treatment-seo-audit/schedule/run_sites.sh >> /path/to/treatment-seo-audit/schedule/logs/cron.log 2>&1
+
+# Or weekly, Sunday 04:00, without DataForSEO spend (pick one of the two lines)
+# 0 4 * * 0 AUDIT_EXTRA_ARGS="--skip openseo" /path/to/treatment-seo-audit/schedule/run_sites.sh >> /path/to/treatment-seo-audit/schedule/logs/cron.log 2>&1

@@ -1,0 +1,15 @@
+# Daily trigger for treatment-seo-audit.service (03:15 server time, plus up to
+# 15 minutes of random delay). Persistent=true runs a missed job at next boot.
+# Install: see the comments in treatment-seo-audit.service, then
+#   sudo systemctl enable --now treatment-seo-audit.timer
+[Unit]
+Description=Daily treatment-seo-audit run
+
+[Timer]
+OnCalendar=*-*-* 03:15:00
+Persistent=true
+RandomizedDelaySec=15m
+Unit=treatment-seo-audit.service
+
+[Install]
+WantedBy=timers.target

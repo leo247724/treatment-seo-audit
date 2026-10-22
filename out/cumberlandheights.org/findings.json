@@ -16,16 +16,16 @@
     "page_count": 5,
     "evidence": [
       "'alcohol rehab Nashville TN': 3-pack = recoveryunplugged.com, southeastaddictiontn.com, nashvilleaddictionrecovery.com -> NOT in pack; organic position 6",
-      "'drug rehab Nashville': 3-pack = southeastaddictiontn.com, nashvilleaddictionrecovery.com, recoveryunplugged.com -> NOT in pack; organic position 5",
-      "'detox Nashville TN': 3-pack = brentwoodspringsdetox.com, liveagaindetox.com, detox-nashville.com -> NOT in pack; organic position 8",
+      "'drug rehab Nashville': 3-pack = southeastaddictiontn.com, nashvilleaddictionrecovery.com, recoveryunplugged.com -> NOT in pack; organic position 4",
+      "'detox Nashville TN': 3-pack = brentwoodspringsdetox.com, liveagaindetox.com, detox-nashville.com, google.com -> NOT in pack; organic position 15",
       "'inpatient rehab Nashville TN': 3-pack = recoveryunplugged.com, southeastaddictiontn.com, epiphanywellnesscenters.org -> NOT in pack; organic position 8",
       "'rehab centers Nashville': 3-pack = southeastaddictiontn.com, cumberlandheights.org, treehouserecoverytn.com -> IN pack; organic position 6",
       "Google Maps 'alcohol rehab' from city centre: Cumberland Heights Outpatient Addiction Treatment (Nashville | Music Row) at #7, rating 4.6 (9 reviews)",
       "  top 3 there: Southeast Addiction Center - Nashville Drug & Alcohol Rehab Center 4.9\u2605 (104); Live Again Detox - Alcohol & Drug Detox Center in Nashville 4.9\u2605 (148); Nashville Treatment Solutions 4.7\u2605 (104)",
-      "Google Maps 'drug rehab' from city centre: Cumberland Heights Outpatient Addiction Treatment (Nashville | Music Row) at #7, rating 4.6 (9 reviews)",
-      "  top 3 there: Nashville Treatment Solutions 4.7\u2605 (104); Live Again Detox - Alcohol & Drug Detox Center in Nashville 4.9\u2605 (148); Southeast Addiction Center - Nashville Drug & Alcohol Rehab Center 4.9\u2605 (104)",
+      "Google Maps 'drug rehab' from city centre: Cumberland Heights Outpatient Addiction Treatment (Nashville | Music Row) at #12, rating 4.6 (9 reviews)",
+      "  top 3 there: Southeast Addiction Center - Nashville Drug & Alcohol Rehab Center 4.9\u2605 (104); Nashville Treatment Solutions 4.7\u2605 (104); The Next Door Recovery 4.1\u2605 (107)",
       "Own GBP listings seen in local packs: Cumberland Heights Treatment Center 4\u2605 (239); Cumberland Heights Treatment Center 4\u2605 (234); Cumberland Heights Treatment Center 4\u2605 (230); Cumberland Heights Treatment Center 4\u2605 (229)",
-      "Rating gap: main listing 4\u2605 vs 4.8\u2605 average for the top-3 Maps results"
+      "Rating gap: main listing 4\u2605 vs 4.7\u2605 average for the top-3 Maps results"
     ],
     "why_it_matters": "The 3-pack sits above the #1 organic result on mobile and has a tap-to-call button, so it takes the largest share of calls for '<city> rehab' queries. Rating and review count are the two visible ranking and conversion levers; a 4.0 next to three 4.9s loses the tap even when it appears.",
     "fix": "A review program (ask at discharge and from alumni, respond to every review, address the 1-star themes); align GBP name, categories, services, hours, photos and phone with the site; link each GBP to its own location page with UTM tags; add Joint Commission and insurance in the GBP description.",
@@ -119,6 +119,31 @@
     "impact": 34.0
   },
   {
+    "id": "link_gap_competitors",
+    "category": "trust",
+    "title": "567 referring domains link to Nashville competitors but not to cumberlandheights.org",
+    "severity": 4,
+    "intent_weight": 4,
+    "pages": [
+      "https://goodmenproject.com/everyday-life-2/the-heavy-stone-finding-your-way-out-of-the-cycle-of-addiction-in-tennessee/",
+      "https://www.huffpost.com/entry/matcha-vs-coffee_l_67800214e4b09fe8a981fb58",
+      "https://www.behance.net/nashvilrecover",
+      "https://wa-mountvernon.civicplus.com/389/Links",
+      "https://www.scarymommy.com/lifestyle/divorcetok-videos-why-happily-married-people-watch-breakup-content"
+    ],
+    "page_count": 567,
+    "evidence": [
+      "Gap domains: 567 (blog/other 325, association 71, news/media 67, directory 54, health system 27, education 14, government 9)",
+      "Linking to 2+ competitors: 24",
+      "Top 5: goodmenproject.com (news/media, rank 65, 3 comps), huffpost.com (news/media, rank 81, 2 comps), behance.net (blog/other, rank 90, 1 comps), wa-mountvernon.civicplus.com (government, rank 86, 1 comps), scarymommy.com (news/media, rank 64, 2 comps)"
+    ],
+    "why_it_matters": "Organic #1 for 'alcohol rehab Nashville' and the local pack both weigh prominence; these editorial, health-system and civic domains already vouch for competitors, so each one closed narrows the authority gap where it counts locally.",
+    "fix": "Work the first 10 targets in order: goodmenproject.com (news/media, rank 65): Pitch an outcomes or alumni-recovery story; huffpost.com (news/media, rank 81): Pitch an outcomes or alumni-recovery story; behance.net (blog/other, rank 90): Offer an expert quote or guest resource on family/relapse topics; wa-mountvernon.civicplus.com (government, rank 86): Ask to be added to the county/city behavioral-health resource list; scarymommy.com (news/media, rank 64): Pitch an outcomes or alumni-recovery story; steemit.com (blog/other, rank 85): Offer an expert quote or guest resource on family/relapse topics; globenewswire.com (news/media, rank 84): Pitch an outcomes or alumni-recovery story; buzzfeed.com (news/media, rank 82): Pitch an outcomes or alumni-recovery story; bustle.com (news/media, rank 80): Pitch an outcomes or alumni-recovery story; preventhazing.arizona.edu (education, rank 79): Offer a student-health / collegiate-recovery resource for their counseling resource page. Full list in link_opportunities.md.",
+    "check_first": "Search Console > Links > 'Top linking sites' (export): confirm each target below is truly absent before outreach, since DataForSEO only samples the top ~200 dofollow domains per competitor.",
+    "confidence": "medium",
+    "impact": 32.0
+  },
+  {
     "id": "onpage_titles_no_local_service",
     "category": "content",
     "title": "30 of 30 high-intent page titles miss the service + Nashville terms people search",
@@ -169,32 +194,6 @@
     "impact": 26.0
   },
   {
-    "id": "no_medical_review",
-    "category": "trust",
-    "title": "Program and blog pages lack medical reviewer / author bylines",
-    "severity": 3,
-    "intent_weight": 4,
-    "pages": [
-      "https://www.cumberlandheights.org/giving/endowment-2/",
-      "https://www.cumberlandheights.org/treatment/extended-care/",
-      "https://www.cumberlandheights.org/treatment/professionals-program/",
-      "https://www.cumberlandheights.org/treatment/spiritual-care/",
-      "https://www.cumberlandheights.org/treatment/drug-and-alcohol-detox/",
-      "https://www.cumberlandheights.org/treatment/",
-      "https://www.cumberlandheights.org/treatment/family-care/",
-      "https://www.cumberlandheights.org/third-annual-camp-recovery-retreat/"
-    ],
-    "page_count": 30,
-    "evidence": [
-      "2 of 32 program/content pages show 'medically reviewed' or a credentialed byline"
-    ],
-    "why_it_matters": "Health content without visible expertise ranks worse after Google's helpful-content/E-E-A-T updates and is less likely to be cited by AI engines.",
-    "fix": "Add 'Medically reviewed by <Name, credentials>' with a linked bio to every program and blog page.",
-    "check_first": "GSC: did blog/program clicks drop around core updates? Which pages lost positions 1-5?",
-    "confidence": "medium",
-    "impact": 24.0
-  },
-  {
     "id": "no_answer_blocks",
     "category": "ai_visibility",
     "title": "Program pages have no FAQ / direct-answer sections",
@@ -213,7 +212,7 @@
     "page_count": 29,
     "evidence": [
       "1 of 30 program pages have 3+ question headings or FAQPage schema",
-      "2 pages site-wide carry FAQPage schema"
+      "3 pages site-wide carry FAQPage schema"
     ],
     "why_it_matters": "AI Overviews, ChatGPT and Perplexity lift 40-80 word passages that answer a question directly (cost, length of stay, insurance, detox). Without them the site is paraphrased from directories instead of cited.",
     "fix": "Add a 4-6 question FAQ to every program/location page (what it costs, insurance, how long, what to bring, visiting, detox) with FAQPage JSON-LD.",
@@ -282,6 +281,24 @@
     "impact": 24.0
   },
   {
+    "id": "ai_cited_listing_gaps",
+    "category": "trust",
+    "title": "10 of the domains AI engines cite most give cumberlandheights.org no backlink",
+    "severity": 3,
+    "intent_weight": 4,
+    "pages": [],
+    "page_count": 10,
+    "evidence": [
+      "18 AI answers analysed (geo_mentions.json + ai_answers_manual.json)",
+      "Most cited without a site link: psychologytoday.com (9), rehab.com (5), bbb.org (3), rehabseekers.com (3), yelp.com (3)"
+    ],
+    "why_it_matters": "AI answers and the local pack lean on these listings for NAP, insurers and reviews; incomplete or unclaimed profiles mean the brand is described from third-party data and the site itself is not cited.",
+    "fix": "psychologytoday.com: Claim/complete the treatment-center listing; add every insurer and level of care, photos; rehab.com: Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews; bbb.org: Claim/accredit the profile, fix NAP, answer complaints publicly; rehabseekers.com: Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews; yelp.com: Claim the page, fix NAP and categories, reply to every review, ask alumni for reviews; alcohol.org: Claim or complete the listing; add insurers, levels of care, photos; fix NAP; collect reviews.",
+    "check_first": "Search Console > Links report (Top linking sites) plus each listing's admin panel.",
+    "confidence": "medium",
+    "impact": 24.0
+  },
+  {
     "id": "competitor_content_gap",
     "category": "content",
     "title": "Nashville SERP winners target the city and structure content more explicitly than our money pages",
@@ -332,6 +349,39 @@
     "impact": 24.0
   },
   {
+    "id": "competitor_entity_gap",
+    "category": "content",
+    "title": "Our money pages score 34/100 on entity signals vs 50/100 for Nashville SERP competitors",
+    "severity": 3,
+    "intent_weight": 5,
+    "pages": [
+      "https://www.cumberlandheights.org/",
+      "https://www.cumberlandheights.org/treatment/residential-care/",
+      "https://www.cumberlandheights.org/treatment/drug-and-alcohol-detox/",
+      "https://www.cumberlandheights.org/admissions/insurance-and-finances/"
+    ],
+    "page_count": 4,
+    "evidence": [
+      "Competitor average entity score 50/100 vs 34/100 on our money pages.",
+      "apex.rehab/tennessee/nashville: 65/100",
+      "recoveryunplugged.com/location/drug-rehab-in-nashville: 65/100",
+      "liveagaindetox.com: 60/100",
+      "cumberlandheights.org: 60/100",
+      "recoveryranch.com: 45/100",
+      "southeastaddictiontn.com: 40/100",
+      "cumberlandheights.org/treatment/drug-and-alcohol-detox: 30/100",
+      "thenextdoorrecovery.org: 25/100",
+      "cumberlandheights.org/admissions/insurance-and-finances: 25/100",
+      "cumberlandheights.org/treatment/residential-care: 20/100",
+      "Signals competitors have more often: LocalBusiness/MedicalClinic/MedicalBusiness/Hospital JSON-LD type (2/6 competitors vs 1/4 ours); schema telephone (3/6 competitors vs 1/4 ours); schema address / PostalAddress (3/6 competitors vs 1/4 ours); schema sameAs with 3+ links (4/6 competitors vs 1/4 ours); aggregateRating or Review schema (1/6 competitors vs 0/4 ours); Person or author schema (3/6 competitors vs 0/4 ours)."
+    ],
+    "why_it_matters": "Google and AI answer engines resolve 'rehab in Nashville' to entities: a page that states who the provider is, where it is, how to reach it and what others say about it (schema + visible NAP + reviews + accreditation) is easier to trust, cite and show in local results.",
+    "fix": "Ship the 'copy first' list in competitor_pages.md: complete the Organization/MedicalClinic JSON-LD (telephone, PostalAddress, geo, openingHours, sameAs), add FAQPage and Review markup where the content exists, and print NAP + accreditation in visible text on every money page.",
+    "check_first": "GSC: queries like 'rehab nashville' / 'detox nashville' for these URLs; impressions at position 8-20 mean relevant but out-competed.",
+    "confidence": "medium",
+    "impact": 24.0
+  },
+  {
     "id": "thin_high_intent",
     "category": "content",
     "title": "Thin program/location/admissions pages (under 300 words)",
@@ -342,10 +392,14 @@
       "https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night-2/",
       "https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night-3/",
       "https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night/",
-      "https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night-4/"
+      "https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night-4/",
+      "https://www.cumberlandheights.org/resources/news-article/behavioral-healthcare-chattanooga-facility-opens/",
+      "https://www.cumberlandheights.org/resources/news-article/ch-opens-gallatin-facility/"
     ],
-    "page_count": 5,
+    "page_count": 7,
     "evidence": [
+      "https://www.cumberlandheights.org/resources/news-article/ch-opens-gallatin-facility/: 152 words",
+      "https://www.cumberlandheights.org/resources/news-article/behavioral-healthcare-chattanooga-facility-opens/: 173 words",
       "https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night-2/: 244 words",
       "https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night-3/: 244 words",
       "https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night/: 244 words",
@@ -356,7 +410,33 @@
     "fix": "Expand each to cover program description, levels of care, insurance, admission steps, staff, FAQ.",
     "check_first": "GSC: impressions vs clicks per page; which program queries do these pages appear for at position 8-20?",
     "confidence": "medium",
-    "impact": 20.4
+    "impact": 22.1
+  },
+  {
+    "id": "titles_missing_dup",
+    "category": "content",
+    "title": "Missing or duplicate title tags",
+    "severity": 3,
+    "intent_weight": 4,
+    "pages": [
+      "https://www.cumberlandheights.org/locations/river-road/",
+      "https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night-2/",
+      "https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night-3/",
+      "https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night/",
+      "https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night-4/",
+      "https://www.cumberlandheights.org/resources/location/river-road/"
+    ],
+    "page_count": 6,
+    "evidence": [
+      "0 missing",
+      "'On the Wagon: Sober Open Mic Night - Cumberland Heights' used on 4 pages",
+      "'River Road - Cumberland Heights' used on 2 pages"
+    ],
+    "why_it_matters": "The title is the ad headline in search; duplicates make program pages compete with each other.",
+    "fix": "Unique titles: '<Program> in <City>, <ST> | <Brand>'.",
+    "check_first": "GSC Performance: pages with high impressions and CTR under 2%.",
+    "confidence": "medium",
+    "impact": 21.3
   },
   {
     "id": "onpage_meta_no_cta",
@@ -387,29 +467,6 @@
     "check_first": "GSC Performance > Pages, sorted by impressions: compare CTR by page for these URLs against site average and position; pages ranking 4-15 with below-average CTR are the first rewrites.",
     "confidence": "medium",
     "impact": 20.0
-  },
-  {
-    "id": "titles_missing_dup",
-    "category": "content",
-    "title": "Missing or duplicate title tags",
-    "severity": 3,
-    "intent_weight": 4,
-    "pages": [
-      "https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night-2/",
-      "https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night-3/",
-      "https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night/",
-      "https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night-4/"
-    ],
-    "page_count": 4,
-    "evidence": [
-      "0 missing",
-      "'On the Wagon: Sober Open Mic Night - Cumberland Heights' used on 4 pages"
-    ],
-    "why_it_matters": "The title is the ad headline in search; duplicates make program pages compete with each other.",
-    "fix": "Unique titles: '<Program> in <City>, <ST> | <Brand>'.",
-    "check_first": "GSC Performance: pages with high impressions and CTR under 2%.",
-    "confidence": "medium",
-    "impact": 19.2
   },
   {
     "id": "os_aio_blog_only",
@@ -449,17 +506,18 @@
       "https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night-3/",
       "https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night/",
       "https://www.cumberlandheights.org/on-the-wagon-sober-open-mic-night-4/",
-      "https://www.cumberlandheights.org/young-mens-summit/"
+      "https://www.cumberlandheights.org/young-mens-summit/",
+      "https://www.cumberlandheights.org/concert-for-cumberland-heights/"
     ],
-    "page_count": 7,
+    "page_count": 18,
     "evidence": [
-      "7 pages with no H1, 0 with more than one"
+      "17 pages with no H1, 1 with more than one"
     ],
     "why_it_matters": "Weak topical signal for program/location pages.",
     "fix": "One H1 per page naming the service and place.",
     "check_first": "None needed; template fix.",
     "confidence": "medium",
-    "impact": 14.8
+    "impact": 16.0
   },
   {
     "id": "nap_variants",
@@ -468,17 +526,84 @@
     "severity": 2,
     "intent_weight": 4,
     "pages": [],
-    "page_count": 6,
+    "page_count": 10,
     "evidence": [
-      "'8283 River Rd Pike Nashville, TN 37209' (51 pages) | '8283 River Road Pike Nashville, TN 37209' (1 pages)",
+      "'8283 River Rd Pike Nashville, TN 37209' (112 pages) | '8283 River Road Pike Nashville, TN 37209' (4 pages) | '8283 River Road Pike, Nashville, TN 37209' (1 pages)",
       "'6650 East Brainerd Rd Suite 102 Chattanooga, TN 37421' (1 pages) | '6650 East Brainerd Road, Suite 102 Chattanooga, TN 37421' (1 pages)",
-      "'219 B Dunbar Cave Rd Clarksville, TN 37043' (1 pages) | '219 B Dunbar Cave Road Clarksville, TN 37043' (1 pages)"
+      "'219 B Dunbar Cave Rd Clarksville, TN 37043' (1 pages) | '219 B Dunbar Cave Road Clarksville, TN 37043' (1 pages)",
+      "'3441 Lebanon Pike Suite 108 Hermitage TN 37076' (1 pages) | '3441 Lebanon Pike, Suite 108 Hermitage, TN 37076' (1 pages)"
     ],
     "why_it_matters": "NAP inconsistency between site, GBP and citations erodes local pack trust.",
     "fix": "Pick one canonical format per facility (match GBP exactly) and use it in footer, location pages and schema.",
     "check_first": "Compare against GBP listing and top citations (Psychology Today, SAMHSA locator).",
     "confidence": "low",
-    "impact": 14.2
+    "impact": 16.0
+  },
+  {
+    "id": "bl_authority_gap",
+    "category": "trust",
+    "title": "4 of 5 local SERP competitors have more referring domains despite a lower DataForSEO rank",
+    "severity": 2,
+    "intent_weight": 4,
+    "pages": [],
+    "page_count": 5,
+    "evidence": [
+      "cumberlandheights.org: rank 44, 944 referring domains, 4,810 backlinks",
+      "apex.rehab: rank 42, 611 referring domains, 2,673 backlinks",
+      "southeastaddictiontn.com: rank 36, 2,570 referring domains, 3,353 backlinks",
+      "nashvilleaddictionrecovery.com: rank 34, 2,471 referring domains, 5,721 backlinks",
+      "liveagaindetox.com: rank 34, 2,429 referring domains, 3,346 backlinks",
+      "gracerc.com: rank 25, 2,302 referring domains, 2,521 backlinks"
+    ],
+    "why_it_matters": "Once titles and program pages are fixed, link authority decides who holds the top organic slots for '<city> rehab' and 'detox near me', the queries that produce admissions calls.",
+    "fix": "Close the gap with links competitors cannot buy: hospital/health-system referral partners, university and court/EAP programs, local news on outcomes, alumni and family-program events, and Tennessee state/county resource listings.",
+    "check_first": "Search Console > Links report: 'Top linking sites' and 'Top linked pages' (export both); compare the linking-site count with the DataForSEO numbers here and note which pages the links actually point at.",
+    "confidence": "medium",
+    "impact": 13.6
+  },
+  {
+    "id": "topical_authority_matrix",
+    "category": "content",
+    "title": "Topical authority trails competitors on Detox, Alcohol, Mental health & dual diagnosis",
+    "severity": 3,
+    "intent_weight": 4,
+    "pages": [],
+    "page_count": 0,
+    "evidence": [
+      "Weak: Detox - cumberlandheights.org 5/100 (1 top-10 kws) vs liveagaindetox.com 100 (21)",
+      "Weak: Alcohol - cumberlandheights.org 5/100 (1 top-10 kws) vs recoveryunplugged.com 100 (20)",
+      "Weak: Mental health & dual diagnosis - cumberlandheights.org 22/100 (4 top-10 kws) vs recoveryranch.com 100 (18)",
+      "Strong: 12-step & recovery education - cumberlandheights.org 100/100 (21 top-10 kws, ~21,861 visits/mo)",
+      "Strong: Benzos / barbiturates / sedatives - cumberlandheights.org 100/100 (7 top-10 kws, ~2,608 visits/mo)",
+      "Strong: Local intent - cumberlandheights.org 53/100 (16 top-10 kws, ~7,360 visits/mo)",
+      "Intent mix of cumberlandheights.org's sampled traffic: 75.5% informational, 13.0% commercial/local, 11.5% brand"
+    ],
+    "why_it_matters": "Google ranks city and program pages ('Nashville detox', 'inpatient rehab Nashville', IOP pages) partly on the depth of the topic cluster behind them. Competitors with denser clusters in Detox, Alcohol, Mental health & dual diagnosis win the commercial queries that become admissions, while recovery-education traffic rarely converts.",
+    "fix": "Build topic hubs (one pillar program/city page plus 4-8 supporting articles, interlinked) for: Local intent -> target 'detox nashville', 'detox nashville tn', 'nashville detox', 'tennessee detox center', 'treatment center nashville'. Link each hub from the matching program page and the city page; reuse the strong 12-step/education pages as internal-link sources.",
+    "check_first": "GSC > Performance > Search results, Queries filtered by regex per cluster (e.g. 'detox|withdrawal', 'nashville|tennessee|near me', 'insurance|cost|aetna|cigna', 'outpatient|iop|php'): confirm impressions and average position for the gap keywords first; a page already sitting at 11-40 needs consolidation, not a new URL.",
+    "confidence": "medium",
+    "impact": 12.0
+  },
+  {
+    "id": "keyword_gap_competitors",
+    "category": "content",
+    "title": "5 keywords (2,750 searches/mo) rank top 20 for 2+ competitors but not for cumberlandheights.org",
+    "severity": 3,
+    "intent_weight": 4,
+    "pages": [],
+    "page_count": 0,
+    "evidence": [
+      "detox nashville (720/mo, Local intent) - liveagaindetox.com #2 https://www.liveagaindetox.com/",
+      "detox nashville tn (720/mo, Local intent) - liveagaindetox.com #1 https://www.liveagaindetox.com/",
+      "nashville detox (720/mo, Local intent) - nashvilleaddictionrecovery.com #2 https://www.nashvilleaddictionrecovery.com/",
+      "tennessee detox center (480/mo, Local intent) - recoveryranch.com #3 https://www.recoveryranch.com/",
+      "treatment center nashville (110/mo, Local intent) - nashvilleaddictionrecovery.com #7 https://www.nashvilleaddictionrecovery.com/"
+    ],
+    "why_it_matters": "Google ranks city and program pages ('Nashville detox', 'inpatient rehab Nashville', IOP pages) partly on the depth of the topic cluster behind them. Competitors with denser clusters in Detox, Alcohol, Mental health & dual diagnosis win the commercial queries that become admissions, while recovery-education traffic rarely converts.",
+    "fix": "Build topic hubs (one pillar program/city page plus 4-8 supporting articles, interlinked) for: Local intent -> target 'detox nashville', 'detox nashville tn', 'nashville detox', 'tennessee detox center', 'treatment center nashville'. Link each hub from the matching program page and the city page; reuse the strong 12-step/education pages as internal-link sources.",
+    "check_first": "GSC > Performance > Search results, Queries filtered by regex per cluster (e.g. 'detox|withdrawal', 'nashville|tennessee|near me', 'insurance|cost|aetna|cigna', 'outpatient|iop|php'): confirm impressions and average position for the gap keywords first; a page already sitting at 11-40 needs consolidation, not a new URL.",
+    "confidence": "medium",
+    "impact": 12.0
   },
   {
     "id": "bl_quality_mix",
@@ -520,36 +645,18 @@
     "impact": 12.0
   },
   {
-    "id": "bl_authority_gap",
-    "category": "trust",
-    "title": "3 of 3 local SERP competitors have more referring domains despite a lower DataForSEO rank",
-    "severity": 2,
-    "intent_weight": 4,
-    "pages": [],
-    "page_count": 3,
-    "evidence": [
-      "cumberlandheights.org: rank 44, 944 referring domains, 4,810 backlinks",
-      "southeastaddictiontn.com: rank 36, 2,570 referring domains, 3,353 backlinks",
-      "nashvilleaddictionrecovery.com: rank 34, 2,471 referring domains, 5,721 backlinks",
-      "liveagaindetox.com: rank 34, 2,429 referring domains, 3,346 backlinks"
-    ],
-    "why_it_matters": "Once titles and program pages are fixed, link authority decides who holds the top organic slots for '<city> rehab' and 'detox near me', the queries that produce admissions calls.",
-    "fix": "Close the gap with links competitors cannot buy: hospital/health-system referral partners, university and court/EAP programs, local news on outcomes, alumni and family-program events, and Tennessee state/county resource listings.",
-    "check_first": "Search Console > Links report: 'Top linking sites' and 'Top linked pages' (export both); compare the linking-site count with the DataForSEO numbers here and note which pages the links actually point at.",
-    "confidence": "medium",
-    "impact": 11.8
-  },
-  {
     "id": "phone_variants",
     "category": "local",
-    "title": "6 different phone numbers in tel: links",
+    "title": "16 different phone numbers in tel: links",
     "severity": 2,
     "intent_weight": 3,
     "pages": [],
-    "page_count": 6,
+    "page_count": 16,
     "evidence": [
-      "800-646-9998: on 65 pages (e.g. https://www.cumberlandheights.org/contact-us/)",
-      "615-314-3856: on 52 pages (e.g. https://www.cumberlandheights.org/contact-us/)",
+      "800-646-9998: on 125 pages (e.g. https://www.cumberlandheights.org/resources/blog/how-long-does-paws-last/)",
+      "615-314-3856: on 113 pages (e.g. https://www.cumberlandheights.org/resources/blog/how-long-does-paws-last/)",
+      "865-213-9003: on 2 pages (e.g. https://www.cumberlandheights.org/resources/location/knoxville-farragut/)",
+      "615-432-3215: on 2 pages (e.g. https://www.cumberlandheights.org/website-privacy-policy/)",
       "620-416-2213: on 1 pages (e.g. https://www.cumberlandheights.org/admissions/faqs/)",
       "615-257-9608: on 1 pages (e.g. https://www.cumberlandheights.org/resources/location/nashville-music-row/)",
       "931-288-5549: on 1 pages (e.g. https://www.cumberlandheights.org/resources/location/clarksville/)",
@@ -559,7 +666,7 @@
     "fix": "One primary admissions number in schema and footer; use dynamic number insertion (CallRail/CTM) for tracking rather than hard-coded variants.",
     "check_first": "Call tracking: are these pool numbers? If any number is not in the tracking tool, find who owns it.",
     "confidence": "low",
-    "impact": 10.7
+    "impact": 12.0
   },
   {
     "id": "os_backlinks",
@@ -631,26 +738,26 @@
     "intent_weight": 5,
     "pages": [
       "https://www.cumberlandheights.org/resources/blog/introduction-to-aa-meetings-what-to-expect-on-your-first-visit/",
-      "https://www.cumberlandheights.org/resources/blog/what-to-expect-during-detox-a-step-by-step-guide/",
       "https://www.cumberlandheights.org/resources/blog/the-many-benefits-you-can-find-through-sober-living-homes-what-to-expect/",
       "https://www.cumberlandheights.org/resources/news-article/people-can-change-justin-furstenfelds-unique-approach-book-tour/",
-      "https://www.cumberlandheights.org/resources/podcast/pathways-to-healing-the-admissions-journey-with-robin-todd/",
-      "https://www.cumberlandheights.org/resources/blog/drug-treatment-centers-in-nashville-what-to-look-for-in-an-addiction-treatment-facility/",
-      "https://www.cumberlandheights.org/resources/blog/dating-in-recovery-essentials-for-every-relationship/",
-      "https://www.cumberlandheights.org/resources/blog/combating-heroin-addiction-interventions-and-strategies-for-healing-and-recovery/"
+      "https://www.cumberlandheights.org/resources/news-article/behavioral-healthcare-chattanooga-facility-opens/",
+      "https://www.cumberlandheights.org/resources/news-article/cumberland-heights-day-declared-in-honor-of-new-intensive-outpatient-treatment-facility-iop-in-chattanooga/",
+      "https://www.cumberlandheights.org/resources/news-article/cumberland-heights-open-music-row-location-celebrates-50-years/",
+      "https://www.cumberlandheights.org/resources/blog/anxious-for-no-reason-symptoms-of-generalized-anxiety-disorder/",
+      "https://www.cumberlandheights.org/resources/blog/self-forgiveness-in-recovery/"
     ],
-    "page_count": 8,
+    "page_count": 25,
     "evidence": [
-      "8 over 65 chars, 0 under 25 chars",
+      "25 over 65 chars, 0 under 25 chars",
       "84 chars: Introduction to AA Meetings: What to Expect on Your First Visit - Cumberland Hei",
-      "70 chars: What to Expect During Detox: A Step-by-Step Guide - Cumberland Heights",
-      "94 chars: The Many Benefits You Can Find Through Sober Living Homes: What to Expect - Cumb"
+      "94 chars: The Many Benefits You Can Find Through Sober Living Homes: What to Expect - Cumb",
+      "93 chars: People can change: Justin Furstenfeld\u2019s unique approach to his book tour - Cumbe"
     ],
     "why_it_matters": "Truncated titles hide the location or program name in results.",
     "fix": "Keep the program + city in the first 55 characters.",
     "check_first": "GSC CTR by page vs. position.",
     "confidence": "medium",
-    "impact": 9.5
+    "impact": 10.0
   },
   {
     "id": "broken_links",
@@ -659,25 +766,25 @@
     "severity": 2,
     "intent_weight": 2,
     "pages": [
-      "https://www.cumberlandheights.org/resources/blog/google-curtails-addiction-related-advertising/",
-      "https://www.cumberlandheights.org/resources/blog/adventure-therapy-and-youth-in-addiction-recovery-pathways-to-healing/",
-      "https://www.cumberlandheights.org/resources/blog/addiction-and-inner-emptiness-recovery-on-higher-ground/",
-      "https://www.cumberlandheights.org/resources/blog/a-look-inside-how-adolescent-boys-tend-to-view-addictive-behaviors/",
-      "https://www.cumberlandheights.org/resources/blog/5-truths-about-crystal-meth-addiction-that-every-teen-needs-to-know/",
-      "https://www.cumberlandheights.org/resources/blog/4-types-of-cognitive-processes-that-have-an-impact-on-teens-addictive-behaviors/",
-      "https://www.cumberlandheights.org/resources/blog/what-happens-in-family-education-groups/",
-      "https://www.cumberlandheights.org/resources/blog/after-treatment-creating-the-ultimate-sober-living-environment/"
+      "https://www.cumberlandheights.org/resources/blog/cumberland-heights-among-the-few-centers-approved-for-google-adwords/",
+      "https://www.cumberlandheights.org/resources/blog/these-3-types-of-gifts-would-be-amazing-for-those-in-recovery-this-holiday-season/",
+      "https://www.cumberlandheights.org/resources/blog/women-in-recovery-these-connections-could-increase-your-risk-for-relapse/",
+      "https://www.cumberlandheights.org/resources/blog/why-your-teen-should-never-try-to-detox-at-home/",
+      "https://www.cumberlandheights.org/resources/blog/why-structure-is-important-in-recovery/",
+      "https://www.cumberlandheights.org/resources/blog/why-activities-are-critical-for-adolescents-in-addiction-recovery/",
+      "https://www.cumberlandheights.org/resources/blog/what-motivates-young-people-to-abuse-prescription-drugs/",
+      "https://www.cumberlandheights.org/resources/blog/what-are-the-benefits-of-exercise-for-treatment-of-youth-substance-use-disorders/"
     ],
-    "page_count": 42,
+    "page_count": 11,
     "evidence": [
-      "https://www.cumberlandheights.org/resources/blog/google-curtails-addiction-related-advertising/ -> HTTP 500 (linked from 0 pages, e.g. sitemap)",
-      "https://www.cumberlandheights.org/resources/blog/adventure-therapy-and-youth-in-addiction-recovery-pathways-to-healing/ -> HTTP 500 (linked from 0 pages, e.g. sitemap)",
-      "https://www.cumberlandheights.org/resources/blog/addiction-and-inner-emptiness-recovery-on-higher-ground/ -> HTTP 500 (linked from 0 pages, e.g. sitemap)",
-      "https://www.cumberlandheights.org/resources/blog/a-look-inside-how-adolescent-boys-tend-to-view-addictive-behaviors/ -> HTTP 500 (linked from 0 pages, e.g. sitemap)",
-      "https://www.cumberlandheights.org/resources/blog/5-truths-about-crystal-meth-addiction-that-every-teen-needs-to-know/ -> HTTP 500 (linked from 0 pages, e.g. sitemap)",
-      "https://www.cumberlandheights.org/resources/blog/4-types-of-cognitive-processes-that-have-an-impact-on-teens-addictive-behaviors/ -> HTTP 500 (linked from 0 pages, e.g. sitemap)",
-      "https://www.cumberlandheights.org/resources/blog/what-happens-in-family-education-groups/ -> HTTP 500 (linked from 0 pages, e.g. sitemap)",
-      "https://www.cumberlandheights.org/resources/blog/after-treatment-creating-the-ultimate-sober-living-environment/ -> HTTP 500 (linked from 0 pages, e.g. sitemap)"
+      "https://www.cumberlandheights.org/resources/blog/cumberland-heights-among-the-few-centers-approved-for-google-adwords/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)",
+      "https://www.cumberlandheights.org/resources/blog/these-3-types-of-gifts-would-be-amazing-for-those-in-recovery-this-holiday-season/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)",
+      "https://www.cumberlandheights.org/resources/blog/women-in-recovery-these-connections-could-increase-your-risk-for-relapse/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)",
+      "https://www.cumberlandheights.org/resources/blog/why-your-teen-should-never-try-to-detox-at-home/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)",
+      "https://www.cumberlandheights.org/resources/blog/why-structure-is-important-in-recovery/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)",
+      "https://www.cumberlandheights.org/resources/blog/why-activities-are-critical-for-adolescents-in-addiction-recovery/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)",
+      "https://www.cumberlandheights.org/resources/blog/what-motivates-young-people-to-abuse-prescription-drugs/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)",
+      "https://www.cumberlandheights.org/resources/blog/what-are-the-benefits-of-exercise-for-treatment-of-youth-substance-use-disorders/ -> HTTP 503 (linked from 0 pages, e.g. sitemap)"
     ],
     "why_it_matters": "A prospect clicking a dead 'Admissions' or program link leaves; link equity is lost.",
     "fix": "Redirect or fix the targets, then update the source links.",
@@ -711,47 +818,30 @@
     "severity": 3,
     "intent_weight": 1,
     "pages": [
-      "https://www.cumberlandheights.org/resources/blog/google-curtails-addiction-related-advertising/",
-      "https://www.cumberlandheights.org/resources/blog/adventure-therapy-and-youth-in-addiction-recovery-pathways-to-healing/",
-      "https://www.cumberlandheights.org/resources/blog/addiction-and-inner-emptiness-recovery-on-higher-ground/",
-      "https://www.cumberlandheights.org/resources/blog/a-look-inside-how-adolescent-boys-tend-to-view-addictive-behaviors/",
-      "https://www.cumberlandheights.org/resources/blog/5-truths-about-crystal-meth-addiction-that-every-teen-needs-to-know/",
-      "https://www.cumberlandheights.org/resources/blog/4-types-of-cognitive-processes-that-have-an-impact-on-teens-addictive-behaviors/",
-      "https://www.cumberlandheights.org/resources/blog/what-happens-in-family-education-groups/",
-      "https://www.cumberlandheights.org/resources/blog/after-treatment-creating-the-ultimate-sober-living-environment/"
+      "https://www.cumberlandheights.org/resources/blog/cumberland-heights-among-the-few-centers-approved-for-google-adwords/",
+      "https://www.cumberlandheights.org/resources/blog/these-3-types-of-gifts-would-be-amazing-for-those-in-recovery-this-holiday-season/",
+      "https://www.cumberlandheights.org/resources/blog/women-in-recovery-these-connections-could-increase-your-risk-for-relapse/",
+      "https://www.cumberlandheights.org/resources/blog/why-your-teen-should-never-try-to-detox-at-home/",
+      "https://www.cumberlandheights.org/resources/blog/why-structure-is-important-in-recovery/",
+      "https://www.cumberlandheights.org/resources/blog/why-activities-are-critical-for-adolescents-in-addiction-recovery/",
+      "https://www.cumberlandheights.org/resources/blog/what-motivates-young-people-to-abuse-prescription-drugs/",
+      "https://www.cumberlandheights.org/resources/blog/what-are-the-benefits-of-exercise-for-treatment-of-youth-substance-use-disorders/"
     ],
-    "page_count": 42,
+    "page_count": 11,
     "evidence": [
-      "https://www.cumberlandheights.org/resources/blog/google-curtails-addiction-related-advertising/ -> HTTP 500",
-      "https://www.cumberlandheights.org/resources/blog/adventure-therapy-and-youth-in-addiction-recovery-pathways-to-healing/ -> HTTP 500",
-      "https://www.cumberlandheights.org/resources/blog/addiction-and-inner-emptiness-recovery-on-higher-ground/ -> HTTP 500",
-      "https://www.cumberlandheights.org/resources/blog/a-look-inside-how-adolescent-boys-tend-to-view-addictive-behaviors/ -> HTTP 500",
-      "https://www.cumberlandheights.org/resources/blog/5-truths-about-crystal-meth-addiction-that-every-teen-needs-to-know/ -> HTTP 500",
-      "https://www.cumberlandheights.org/resources/blog/4-types-of-cognitive-processes-that-have-an-impact-on-teens-addictive-behaviors/ -> HTTP 500",
-      "https://www.cumberlandheights.org/resources/blog/what-happens-in-family-education-groups/ -> HTTP 500",
-      "https://www.cumberlandheights.org/resources/blog/after-treatment-creating-the-ultimate-sober-living-environment/ -> HTTP 500"
+      "https://www.cumberlandheights.org/resources/blog/cumberland-heights-among-the-few-centers-approved-for-google-adwords/ -> HTTP 503",
+      "https://www.cumberlandheights.org/resources/blog/these-3-types-of-gifts-would-be-amazing-for-those-in-recovery-this-holiday-season/ -> HTTP 503",
+      "https://www.cumberlandheights.org/resources/blog/women-in-recovery-these-connections-could-increase-your-risk-for-relapse/ -> HTTP 503",
+      "https://www.cumberlandheights.org/resources/blog/why-your-teen-should-never-try-to-detox-at-home/ -> HTTP 503",
+      "https://www.cumberlandheights.org/resources/blog/why-structure-is-important-in-recovery/ -> HTTP 503",
+      "https://www.cumberlandheights.org/resources/blog/why-activities-are-critical-for-adolescents-in-addiction-recovery/ -> HTTP 503",
+      "https://www.cumberlandheights.org/resources/blog/what-motivates-young-people-to-abuse-prescription-drugs/ -> HTTP 503",
+      "https://www.cumberlandheights.org/resources/blog/what-are-the-benefits-of-exercise-for-treatment-of-youth-substance-use-disorders/ -> HTTP 503"
     ],
     "why_it_matters": "Google trusts the sitemap less and wastes crawl budget on dead URLs.",
     "fix": "Regenerate the sitemap from live, indexable URLs only.",
     "check_first": "GSC > Pages > 'Not found (404)' and 'Redirect error' filtered to sitemap URLs.",
     "confidence": "medium",
-    "impact": 6.0
-  },
-  {
-    "id": "no_staff_credentials",
-    "category": "trust",
-    "title": "No staff page with clinical credentials found",
-    "severity": 2,
-    "intent_weight": 3,
-    "pages": [],
-    "page_count": 0,
-    "evidence": [
-      "0 staff/team pages crawled; none list MD/LCSW/LADAC-style credentials in text"
-    ],
-    "why_it_matters": "Named clinicians with credentials are what families, Google raters and AI engines use to judge legitimacy.",
-    "fix": "Clinical team page with photo, name, credentials, role; Person schema.",
-    "check_first": "None.",
-    "confidence": "low",
     "impact": 6.0
   }
 ]

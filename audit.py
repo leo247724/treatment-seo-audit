@@ -54,7 +54,7 @@ from seo_audit.report import rank, write_outputs
 
 # Deeper analyses. Each module exposes run(site, market, out_dir, client) -> list[Finding],
 # writes its own markdown file into out_dir and handles its own caching for --reuse.
-DEEP_MODULES = ("backlinks", "onpage", "competitor_pages", "geo_mentions")
+DEEP_MODULES = ("backlinks", "link_opportunities", "onpage", "competitor_pages", "topical_authority", "geo_mentions")
 SKIPPABLE = DEEP_MODULES + ("openseo", "psi")
 
 

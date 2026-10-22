@@ -1,0 +1,5 @@
+# Sites audited by schedule/run_sites.sh, one per line:
+#   url|brand|city
+# Lines starting with # and blank lines are ignored. Brand and city may be
+# left empty (audit.py then guesses them), but keep both pipes.
+https://www.cumberlandheights.org|Cumberland Heights|Nashville, TN

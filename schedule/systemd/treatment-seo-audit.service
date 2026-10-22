@@ -1,0 +1,24 @@
+# Runs schedule/run_sites.sh once. Triggered by treatment-seo-audit.timer.
+#
+# Install (Linux VPS, as root; adjust User= and the /path/to paths first):
+#   sudo cp schedule/systemd/treatment-seo-audit.service schedule/systemd/treatment-seo-audit.timer /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now treatment-seo-audit.timer
+#   systemctl list-timers treatment-seo-audit.timer      # next run
+#   sudo systemctl start treatment-seo-audit.service     # run once now
+#   journalctl -u treatment-seo-audit.service            # output
+[Unit]
+Description=treatment-seo-audit scheduled site audits
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=audit
+WorkingDirectory=/path/to/treatment-seo-audit
+Environment=PATH=/usr/local/bin:/usr/bin:/bin
+# Environment=AUDIT_EXTRA_ARGS=--skip openseo
+ExecStart=/path/to/treatment-seo-audit/schedule/run_sites.sh
+# A hard ceiling above the per-site timeout; raise it if you add many sites.
+TimeoutStartSec=6h
+Nice=10
