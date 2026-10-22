@@ -30,8 +30,8 @@
   "top_findings": [
     "os_local_pack",
     "os_commercial_on_home",
+    "ai_share_of_voice",
     "ai_answers_absent",
-    "no_medical_review",
-    "no_answer_blocks"
+    "onpage_titles_no_local_service"
   ]
 }

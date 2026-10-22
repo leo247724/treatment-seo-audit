@@ -1,0 +1,1168 @@
+{
+ "overview": {
+  "overview": {
+   "target": "thenextdoorrecovery.org",
+   "displayTarget": "thenextdoorrecovery.org",
+   "scope": "domain",
+   "summary": {
+    "rank": 25,
+    "backlinks": 211,
+    "referringPages": 190,
+    "referringDomains": 150,
+    "brokenBacklinks": 0,
+    "brokenPages": 0,
+    "backlinksSpamScore": 21,
+    "targetSpamScore": 1,
+    "newBacklinks": null,
+    "lostBacklinks": null,
+    "newReferringDomains": null,
+    "lostReferringDomains": null
+   },
+   "trends": [
+    {
+     "date": "2025-10-31",
+     "backlinks": 144,
+     "referringDomains": 76,
+     "rank": 30
+    },
+    {
+     "date": "2025-11-30",
+     "backlinks": 141,
+     "referringDomains": 75,
+     "rank": 30
+    },
+    {
+     "date": "2025-12-31",
+     "backlinks": 147,
+     "referringDomains": 83,
+     "rank": 30
+    },
+    {
+     "date": "2026-01-31",
+     "backlinks": 143,
+     "referringDomains": 89,
+     "rank": 23
+    },
+    {
+     "date": "2026-02-28",
+     "backlinks": 142,
+     "referringDomains": 91,
+     "rank": 22
+    },
+    {
+     "date": "2026-03-31",
+     "backlinks": 136,
+     "referringDomains": 90,
+     "rank": 21
+    },
+    {
+     "date": "2026-04-30",
+     "backlinks": 140,
+     "referringDomains": 97,
+     "rank": 22
+    },
+    {
+     "date": "2026-05-31",
+     "backlinks": 143,
+     "referringDomains": 101,
+     "rank": 21
+    },
+    {
+     "date": "2026-06-30",
+     "backlinks": 132,
+     "referringDomains": 95,
+     "rank": 21
+    },
+    {
+     "date": "2026-07-31",
+     "backlinks": 125,
+     "referringDomains": 95,
+     "rank": 21
+    },
+    {
+     "date": "2026-08-31",
+     "backlinks": 158,
+     "referringDomains": 116,
+     "rank": 23
+    },
+    {
+     "date": "2026-09-30",
+     "backlinks": 162,
+     "referringDomains": 118,
+     "rank": 23
+    }
+   ],
+   "newLostTrends": [
+    {
+     "date": "2025-10-31",
+     "newBacklinks": 3,
+     "lostBacklinks": 6,
+     "newReferringDomains": 3,
+     "lostReferringDomains": 2
+    },
+    {
+     "date": "2025-11-30",
+     "newBacklinks": 5,
+     "lostBacklinks": 7,
+     "newReferringDomains": 2,
+     "lostReferringDomains": 2
+    },
+    {
+     "date": "2025-12-31",
+     "newBacklinks": 16,
+     "lostBacklinks": 8,
+     "newReferringDomains": 11,
+     "lostReferringDomains": 2
+    },
+    {
+     "date": "2026-01-31",
+     "newBacklinks": 14,
+     "lostBacklinks": 16,
+     "newReferringDomains": 10,
+     "lostReferringDomains": 1
+    },
+    {
+     "date": "2026-02-28",
+     "newBacklinks": 9,
+     "lostBacklinks": 8,
+     "newReferringDomains": 5,
+     "lostReferringDomains": 2
+    },
+    {
+     "date": "2026-03-31",
+     "newBacklinks": 4,
+     "lostBacklinks": 7,
+     "newReferringDomains": 2,
+     "lostReferringDomains": 2
+    },
+    {
+     "date": "2026-04-30",
+     "newBacklinks": 11,
+     "lostBacklinks": 6,
+     "newReferringDomains": 8,
+     "lostReferringDomains": 2
+    },
+    {
+     "date": "2026-05-31",
+     "newBacklinks": 12,
+     "lostBacklinks": 10,
+     "newReferringDomains": 10,
+     "lostReferringDomains": 5
+    },
+    {
+     "date": "2026-06-30",
+     "newBacklinks": 0,
+     "lostBacklinks": 7,
+     "newReferringDomains": 0,
+     "lostReferringDomains": 5
+    },
+    {
+     "date": "2026-07-31",
+     "newBacklinks": 4,
+     "lostBacklinks": 6,
+     "newReferringDomains": 2,
+     "lostReferringDomains": 2
+    },
+    {
+     "date": "2026-08-31",
+     "newBacklinks": 37,
+     "lostBacklinks": 8,
+     "newReferringDomains": 24,
+     "lostReferringDomains": 3
+    },
+    {
+     "date": "2026-09-30",
+     "newBacklinks": 12,
+     "lostBacklinks": 8,
+     "newReferringDomains": 7,
+     "lostReferringDomains": 5
+    }
+   ],
+   "fetchedAt": "2026-10-22T00:46:18.832Z"
+  }
+ },
+ "referringDomains": {
+  "rows": [
+   {
+    "domain": "recovery.com",
+    "backlinks": 10,
+    "referringPages": 5,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-06-15 12:16:51 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "nashvillechamber.com",
+    "backlinks": 9,
+    "referringPages": 9,
+    "rank": 0,
+    "spamScore": 38,
+    "firstSeen": "2024-04-12 06:53:51 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "antiquesandgardenshow.com",
+    "backlinks": 5,
+    "referringPages": 3,
+    "rank": 1,
+    "spamScore": 0,
+    "firstSeen": "2025-09-14 23:00:07 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "visitmusiccity.com",
+    "backlinks": 5,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-06-20 16:35:37 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "thenextdoor.org",
+    "backlinks": 4,
+    "referringPages": 4,
+    "rank": 15,
+    "spamScore": 0,
+    "firstSeen": "2026-10-18 04:31:31 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "leadiq.com",
+    "backlinks": 4,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 12,
+    "firstSeen": "2025-05-05 05:01:55 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "dreameventsandcatering.com",
+    "backlinks": 4,
+    "referringPages": 3,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2024-10-04 05:57:35 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "syrweb-prod-app-deliv.azurewebsites.net",
+    "backlinks": 3,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 25,
+    "firstSeen": "2026-10-07 16:39:38 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "runsignup.com",
+    "backlinks": 3,
+    "referringPages": 2,
+    "rank": 8,
+    "spamScore": 0,
+    "firstSeen": "2026-08-06 19:16:27 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "nashvillepraisesymphony.com",
+    "backlinks": 3,
+    "referringPages": 3,
+    "rank": 3,
+    "spamScore": 0,
+    "firstSeen": "2026-07-17 10:00:45 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "startyourrecovery.org",
+    "backlinks": 3,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 25,
+    "firstSeen": "2026-01-14 19:03:05 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "rehabcosts.org",
+    "backlinks": 3,
+    "referringPages": 3,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2022-07-25 03:55:03 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "rehabcost.org",
+    "backlinks": 2,
+    "referringPages": 1,
+    "rank": 4,
+    "spamScore": 0,
+    "firstSeen": "2026-09-19 22:15:52 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "neuron.com",
+    "backlinks": 2,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 10,
+    "firstSeen": "2026-05-13 23:06:48 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "williamsonsource.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-04-27 16:52:47 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "christpres.org",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-02-08 23:07:20 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "newschannel5.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-12-09 03:49:43 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "nkba.org",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-10-22 23:45:30 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "idealist.org",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 2,
+    "firstSeen": "2025-10-06 05:14:44 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "raisingresiliencetn.org",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-09-07 02:52:02 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "tnstate.edu",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-08-28 09:12:15 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "lamplighterdesigns.com",
+    "backlinks": 2,
+    "referringPages": 1,
+    "rank": 3,
+    "spamScore": 0,
+    "firstSeen": "2025-06-04 00:26:17 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "disruptivetherapycollective.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-01-30 10:45:46 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "causecircle.org",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 8,
+    "spamScore": 0,
+    "firstSeen": "2024-11-16 02:46:14 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "sophisticatedlivingnashville.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 27,
+    "firstSeen": "2024-09-25 22:32:09 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "jesuscalling.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2024-09-23 07:16:37 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "rehabs.org",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2024-08-24 01:31:00 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "womensoberhousing.com",
+    "backlinks": 2,
+    "referringPages": 2,
+    "rank": 1,
+    "spamScore": 7,
+    "firstSeen": "2022-03-27 05:24:00 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "scoutify.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-10-21 07:49:06 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "counseling.org",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-10-19 19:23:43 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "oacra.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-10-16 05:31:31 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "redeemhernow.org",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 25,
+    "firstSeen": "2026-10-12 00:15:00 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "rehab.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-10-08 07:44:50 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "taushadickinson.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-09-20 13:07:33 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "tambibrownswiney.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 4,
+    "spamScore": 15,
+    "firstSeen": "2026-09-18 13:51:26 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "soberhousedirectory.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 5,
+    "firstSeen": "2026-08-23 20:20:41 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "cage.report",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-08-14 16:29:36 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "pubrio.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-08-12 06:47:57 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "cannoncountysource.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-08-09 16:04:51 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "getclera.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-08-08 12:34:16 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "givalgo.ai",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 8,
+    "spamScore": 0,
+    "firstSeen": "2026-08-06 22:58:41 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "bit.ly",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 3,
+    "spamScore": 0,
+    "firstSeen": "2026-08-06 19:30:04 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "taadas.org",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-08-06 06:02:08 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "cheathamcountysource.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-08-03 03:51:31 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "dicksoncountysource.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-08-03 01:56:13 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "wilsoncountysource.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-08-02 22:16:54 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "five.co.in",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 30,
+    "firstSeen": "2026-08-01 19:41:36 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "kylanslight.org",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 10,
+    "firstSeen": "2026-07-09 07:08:13 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "rutherfordsource.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-06-14 13:38:39 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "dearmahjong.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-06-13 21:33:38 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "addictiontreatments101.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-06-13 11:37:08 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "robertsoncountysource.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-06-09 08:59:15 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "givecloud.co",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 10,
+    "firstSeen": "2026-06-09 06:05:28 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "appsruntheworld.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 5,
+    "firstSeen": "2026-05-17 01:53:24 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "acquire.co.in",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 20,
+    "firstSeen": "2026-05-15 07:30:22 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "yourwilliamson.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 15,
+    "firstSeen": "2026-05-14 21:15:49 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "bondwaresite.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 5,
+    "firstSeen": "2026-03-06 17:33:52 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "prospeo.io",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-02-25 08:03:46 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "findhealthclinics.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-01-09 00:00:04 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "drugfreedickson.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-01-08 16:21:45 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "alisonleighlewis.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2026-01-05 13:13:12 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "goapgtech.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 4,
+    "spamScore": 0,
+    "firstSeen": "2025-12-24 15:34:32 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "superpages.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-12-10 06:03:33 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "easyleadz.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-12-08 09:02:31 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "architecturaldigest.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-11-17 18:52:28 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "estudioarquitectos.cl",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-11-13 02:56:06 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "sobersolutionsnashville.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-11-07 07:48:25 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "c3helpsyou.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 1,
+    "spamScore": 15,
+    "firstSeen": "2025-10-29 00:34:03 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "addictionhelplineamerica.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-10-23 20:31:52 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "c212.net",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-10-10 20:42:47 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "womensaddictionhotline.org",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-09-08 12:01:45 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "musiccitywestchurch.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-08-08 00:10:21 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "findrecoverynow.org",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 1,
+    "spamScore": 0,
+    "firstSeen": "2025-07-31 09:09:43 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "thistlefarms.org",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-06-18 13:40:16 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "clodura.ai",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-04-28 17:31:39 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "sigmundsoftware.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2025-04-18 00:05:31 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "jeanniehenderson.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 15,
+    "firstSeen": "2025-01-21 20:53:16 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "patrickandlydia.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 5,
+    "firstSeen": "2025-01-17 18:20:21 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "buffalosports.today",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 15,
+    "firstSeen": "2025-01-09 03:19:05 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "buffalobills.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 15,
+    "firstSeen": "2024-12-25 02:19:23 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "buffalorumblings.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2024-12-03 14:33:26 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "yvettelynn.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 5,
+    "firstSeen": "2024-11-16 14:27:12 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "thevillagechapel.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2024-10-13 13:42:02 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "patheos.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2024-10-04 14:07:24 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "twosistersmaidtoclean.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2024-08-15 13:34:47 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "christian-heritage-news.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 20,
+    "firstSeen": "2024-07-12 21:33:05 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "for-others.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 15,
+    "firstSeen": "2024-01-23 17:20:55 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "global-website.pages.dev",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 35,
+    "firstSeen": "2023-11-14 09:25:07 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "kidsvilleonline.org",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 25,
+    "firstSeen": "2023-11-12 06:28:35 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "onebillionrising.org",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 15,
+    "firstSeen": "2023-11-04 08:56:10 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "alisonmariecooke.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 40,
+    "firstSeen": "2023-10-20 07:05:26 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "puca.pages.dev",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 25,
+    "firstSeen": "2023-10-14 20:01:42 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "eastnastyforlife.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 20,
+    "firstSeen": "2023-10-13 13:16:48 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "technofizi.net",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2023-07-09 06:58:34 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "gospelmusic.org",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 0,
+    "firstSeen": "2023-05-02 12:32:10 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "lowincometemporaryhousing.com",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 5,
+    "firstSeen": "2022-07-28 22:02:22 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   },
+   {
+    "domain": "geeklog.net",
+    "backlinks": 1,
+    "referringPages": 1,
+    "rank": 0,
+    "spamScore": 15,
+    "firstSeen": "2021-07-29 19:18:00 +00:00",
+    "brokenBacklinks": 0,
+    "brokenPages": 0
+   }
+  ],
+  "totalCount": 97,
+  "hasMore": false,
+  "page": 1,
+  "pageSize": 100,
+  "fetchedAt": "2026-10-22T00:46:18.958Z"
+ },
+ "meta": {
+  "organizationId": "delegated-local-admin",
+  "projectId": "a3d9d079-1489-4593-90f3-6cf31d0eb441",
+  "url": "https://agi-tools.tailec481c.ts.net/p/a3d9d079-1489-4593-90f3-6cf31d0eb441/backlinks?target=thenextdoorrecovery.org"
+ }
+}

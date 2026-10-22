@@ -37,6 +37,34 @@ def passes(site, findings, access):
     return out
 
 
+DEEPER_ANALYSES = [
+    ("backlinks.md", "Backlink and domain-authority audit against the competitors that win the local searches."),
+    ("onpage.md", "Per-page on-page optimization scorecard for the high-intent pages."),
+    ("competitor_pages.md", "What the pages ranking at the top of the SERPs do that this site's pages do not."),
+    ("geo_mentions.md", "Share of voice in AI answers against the competitors."),
+]
+
+
+def deeper_analyses(out_dir):
+    """Markdown lines linking the deeper-analysis files present in out_dir, plus the AI share-of-voice table."""
+    L = []
+    for name, desc in DEEPER_ANALYSES:
+        if os.path.exists(os.path.join(out_dir, name)):
+            L.append(f"- [{name}]({name}) {desc}")
+    geo_json = os.path.join(out_dir, "geo_mentions.json")
+    if os.path.exists(geo_json):
+        try:
+            from .geo_mentions import share_of_voice_table
+            with open(geo_json) as fh:
+                table = share_of_voice_table(json.load(fh))
+            if table:
+                L.append("\n### AI answer share of voice\n")
+                L.append(table)
+        except Exception as e:  # missing module or malformed file must not break the report
+            L.append(f"\nShare-of-voice table not available ({e.__class__.__name__}: {e}).")
+    return L
+
+
 def write_outputs(site, findings, psi_results, ai_results, access, out_dir, brand=""):
     os.makedirs(out_dir, exist_ok=True)
     pages = list(site["pages"].values())
@@ -92,6 +120,10 @@ def write_outputs(site, findings, psi_results, ai_results, access, out_dir, bran
         L.append(f"\nWhy: {f.why_it_matters}\n\nFix: {f.fix}\n\nCheck first: {f.check_first}\n")
     L.append("## What passed\n")
     L.extend(f"- {p}" for p in passes(site, findings, access))
+    deeper = deeper_analyses(out_dir)
+    if deeper:
+        L.append("\n## Deeper analyses\n")
+        L.extend(deeper)
     L.append("\n## AI crawler access (robots.txt)\n")
     L.append("| Bot | Allowed | Feeds |")
     L.append("|---|---|---|")

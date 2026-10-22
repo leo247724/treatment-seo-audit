@@ -1,0 +1,1182 @@
+{
+  "run_date": "2026-10-21",
+  "engine": "perplexity",
+  "method": {
+    "tool": "perplexity_ask (Perplexity Agent API, fast preset)",
+    "search_context_size": "medium",
+    "mention_rule": "case-insensitive substring match of any brand alias in the answer body (citation list excluded)",
+    "cited_rule": "brand domain (or subdomain) among citation URL hosts, www. stripped",
+    "position_rule": "1-based order of first mention among tracked brands mentioned in that answer",
+    "directory_domains_rule": "every cited host that is not a tracked-brand domain"
+  },
+  "brands": [
+    {
+      "name": "Cumberland Heights",
+      "domains": [
+        "cumberlandheights.org"
+      ],
+      "aliases_matched": [
+        "Cumberland Heights"
+      ],
+      "is_client": true
+    },
+    {
+      "name": "Recovery Unplugged",
+      "domains": [
+        "recoveryunplugged.com"
+      ],
+      "aliases_matched": [
+        "Recovery Unplugged"
+      ],
+      "is_client": false
+    },
+    {
+      "name": "Southeast Addiction Center",
+      "domains": [
+        "southeastaddictiontn.com"
+      ],
+      "aliases_matched": [
+        "Southeast Addiction Center"
+      ],
+      "is_client": false
+    },
+    {
+      "name": "Live Again Detox",
+      "domains": [
+        "liveagaindetox.com"
+      ],
+      "aliases_matched": [
+        "Live Again Detox"
+      ],
+      "is_client": false
+    },
+    {
+      "name": "The Ranch Tennessee / Recovery Ranch",
+      "domains": [
+        "recoveryranch.com"
+      ],
+      "aliases_matched": [
+        "The Ranch Tennessee",
+        "Recovery Ranch"
+      ],
+      "is_client": false
+    },
+    {
+      "name": "The Next Door Recovery",
+      "domains": [
+        "thenextdoorrecovery.org"
+      ],
+      "aliases_matched": [
+        "The Next Door Recovery",
+        "The Next Door"
+      ],
+      "is_client": false
+    },
+    {
+      "name": "APEX Recovery",
+      "domains": [
+        "apex.rehab"
+      ],
+      "aliases_matched": [
+        "APEX Recovery"
+      ],
+      "is_client": false
+    },
+    {
+      "name": "Brentwood Springs Detox",
+      "domains": [
+        "brentwoodspringsdetox.com"
+      ],
+      "aliases_matched": [
+        "Brentwood Springs Detox",
+        "Brentwood Springs"
+      ],
+      "is_client": false
+    },
+    {
+      "name": "Freeman Recovery Center",
+      "domains": [
+        "freemanrecoverycenter.com"
+      ],
+      "aliases_matched": [
+        "Freeman Recovery Center",
+        "Freeman Recovery"
+      ],
+      "is_client": false
+    },
+    {
+      "name": "Tulip Hill",
+      "domains": [
+        "tuliphillrecovery.com",
+        "tuliphillhealthcare.com"
+      ],
+      "aliases_matched": [
+        "Tulip Hill"
+      ],
+      "is_client": false
+    }
+  ],
+  "queries": [
+    {
+      "id": 1,
+      "engine": "perplexity",
+      "query": "best alcohol rehab in Nashville TN",
+      "type": "non-brand",
+      "answer": "There isn’t one “best” alcohol rehab for everyone. **Cumberland Heights** is a strong Nashville-based option to compare for residential and outpatient care; **The Next Door Recovery** is designed for women, including pregnant and postpartum clients; and **Live Again Detox** offers medically supervised detox in Nashville.[4][7][9]\n\nIf you may need **detox or round-the-clock residential care**, ask about medical staffing, withdrawal management, and whether the program can treat any mental-health conditions alongside alcohol use. Freeman Recovery Center offers detox and residential treatment in Burns, with outpatient programs in Dickson, west of Nashville.[1][2]\n\nBefore choosing, call two or three programs and confirm current openings, total cost and insurance coverage, licensing/accreditation, and the level of care recommended after an assessment. For help finding local treatment options, call **SAMHSA’s National Helpline at 1-800-662-HELP (4357)**.\n\n**If someone is hard to wake, having a seizure, or experiencing severe withdrawal symptoms, call 911.**",
+      "citations": [
+        "https://www.freemanrecoverycenter.com/",
+        "https://www.freemanrecoverycenter.com/tennessee/nashville/",
+        "https://www.freemanrecoverycenter.com/what-we-treat/alcohol-addiction/residential-treatment/",
+        "https://alcohol.org/alcohol-rehabs/tennessee/nashville/",
+        "https://recovery.com/nashville/",
+        "https://www.psychologytoday.com/us/treatment-rehab/tn/nashville?category=alcohol-rehab",
+        "https://recovered.org/rehabs/nashville-tn",
+        "https://www.psychologytoday.com/us/treatment-rehab/tn/nashville?category=dual-diagnosis",
+        "https://www.psychologytoday.com/us/treatment-rehab/tennessee?category=residential-inpatient",
+        "https://www.freemanrecoverycenter.com/programs/professionals/healthcare-workers/"
+      ],
+      "brand_mentions": [
+        {
+          "brand": "Cumberland Heights",
+          "mentioned_in_answer": true,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": 1
+        },
+        {
+          "brand": "Recovery Unplugged",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Southeast Addiction Center",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Live Again Detox",
+          "mentioned_in_answer": true,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": 3
+        },
+        {
+          "brand": "The Ranch Tennessee / Recovery Ranch",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "The Next Door Recovery",
+          "mentioned_in_answer": true,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": 2
+        },
+        {
+          "brand": "APEX Recovery",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Brentwood Springs Detox",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Freeman Recovery Center",
+          "mentioned_in_answer": true,
+          "cited": true,
+          "cited_url_count": 4,
+          "position_of_first_mention": 4
+        },
+        {
+          "brand": "Tulip Hill",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        }
+      ],
+      "tracked_brands_mentioned_in_order": [
+        "Cumberland Heights",
+        "The Next Door Recovery",
+        "Live Again Detox",
+        "Freeman Recovery Center"
+      ],
+      "directory_domains_cited": [
+        "alcohol.org",
+        "psychologytoday.com",
+        "recovered.org",
+        "recovery.com"
+      ],
+      "directory_domain_url_counts": {
+        "alcohol.org": 1,
+        "recovery.com": 1,
+        "psychologytoday.com": 3,
+        "recovered.org": 1
+      }
+    },
+    {
+      "id": 2,
+      "engine": "perplexity",
+      "query": "best drug rehab near Nashville Tennessee",
+      "type": "non-brand",
+      "answer": "There isn’t one “best” rehab for everyone. **Start by matching the level of care to the situation**—medical detox or residential treatment for potentially dangerous withdrawal or when round-the-clock support is needed; outpatient care when it’s clinically appropriate and the person can safely live at home. Near Nashville, these are options to compare:\n\n- **APEX Recovery** — Brentwood outpatient services, including PHP and IOP; its Columbia location offers residential care and detox.[1][8]\n- **Freeman Recovery Center** — Burns detox and residential care, with PHP, IOP, and outpatient services in Dickson.[2]\n- **Nashville-based options** — The Next Door and Mending Hearts serve women; Solutions Retreat offers residential treatment for men, according to a treatment-center directory.[10]\n- **Tulip Hill Recovery** — outpatient treatment in Murfreesboro, serving people traveling from Nashville.[6]\n\nBefore choosing, call and ask about clinical assessment, licensing/accreditation, medication treatment for opioid use disorder, co-occurring mental-health care, insurance and total out-of-pocket cost, and whether the program’s level of care fits the person. Directory rankings can reflect popularity or advertising, so treat them as starting points rather than proof of quality.[4]\n\nFor confidential help finding a program, call or text **988** for crisis support, or contact **SAMHSA’s National Helpline at 1-800-662-HELP (4357)**. If there may be an overdose or immediate danger, call **911**.",
+      "citations": [
+        "https://apex.rehab/tennessee/nashville/",
+        "https://www.freemanrecoverycenter.com/tennessee/nashville/",
+        "https://www.freemanrecoverycenter.com/programs/professionals/healthcare-workers/",
+        "https://recovery.com/nashville/",
+        "https://www.freemanrecoverycenter.com/what-we-treat/drug-addiction/opioid/fentanyl/",
+        "https://tuliphillrecovery.com/nashville-tn-rehab/",
+        "https://www.bbb.org/us/tn/nashville/category/drug-addiction-treatment/accredited",
+        "https://apex.rehab/tennessee/nashville/detox/",
+        "https://www.psychologytoday.com/us/treatment-rehab/tn/nashville?category=drug-rehab",
+        "https://www.addictionresource.net/best-drug-rehab-centers/tennessee/nashville/"
+      ],
+      "brand_mentions": [
+        {
+          "brand": "Cumberland Heights",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Recovery Unplugged",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Southeast Addiction Center",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Live Again Detox",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "The Ranch Tennessee / Recovery Ranch",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "The Next Door Recovery",
+          "mentioned_in_answer": true,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": 3
+        },
+        {
+          "brand": "APEX Recovery",
+          "mentioned_in_answer": true,
+          "cited": true,
+          "cited_url_count": 2,
+          "position_of_first_mention": 1
+        },
+        {
+          "brand": "Brentwood Springs Detox",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Freeman Recovery Center",
+          "mentioned_in_answer": true,
+          "cited": true,
+          "cited_url_count": 3,
+          "position_of_first_mention": 2
+        },
+        {
+          "brand": "Tulip Hill",
+          "mentioned_in_answer": true,
+          "cited": true,
+          "cited_url_count": 1,
+          "position_of_first_mention": 4
+        }
+      ],
+      "tracked_brands_mentioned_in_order": [
+        "APEX Recovery",
+        "Freeman Recovery Center",
+        "The Next Door Recovery",
+        "Tulip Hill"
+      ],
+      "directory_domains_cited": [
+        "addictionresource.net",
+        "bbb.org",
+        "psychologytoday.com",
+        "recovery.com"
+      ],
+      "directory_domain_url_counts": {
+        "recovery.com": 1,
+        "bbb.org": 1,
+        "psychologytoday.com": 1,
+        "addictionresource.net": 1
+      }
+    },
+    {
+      "id": 3,
+      "engine": "perplexity",
+      "query": "inpatient addiction treatment Nashville",
+      "type": "non-brand",
+      "answer": "If you’re looking for **inpatient addiction treatment in Nashville**, these are options to contact. Confirm availability, location, insurance coverage, and whether medical detox is appropriate when you call.\n\n- **Tennessee Behavioral Health** — Nashville facility offering medically supervised detox and 24/7 residential treatment, with admissions available around the clock. Call **(615) 285-6926**; a location listing gives **3343 Perimeter Hill Dr., Suite 214, Nashville, TN 37211**.[3][9]\n- **TriStar Health** — Inpatient addiction and co-occurring mental-health care, including individual and group therapy and discharge planning. Call **(844) 706-8773** to discuss services and admission.[1]\n- **Vanderbilt Psychiatric Hospital** — Addiction care for people with both substance-use and mental-health concerns; offers inpatient and outpatient services and 24/7 crisis assessment and admissions. Call **(615) 327-7000**; located at **1601 23rd Avenue South, Nashville**.[4]\n- **Freeman Recovery Center** — Detox and residential inpatient care in Burns, about 40 minutes west of Nashville. Call **(615) 645-3677**; facility at **1615 Highway 96, Burns, TN 37029**.[5][6]\n\nIf someone may be in immediate danger, has overdosed, or is experiencing severe withdrawal, call **911** or go to an emergency department. For help finding treatment in the U.S., call or text **988** for crisis support, or call **SAMHSA’s National Helpline at 1-800-662-HELP (4357)**.",
+      "citations": [
+        "https://www.tristarhealth.com/specialties/mental-health-and-wellness/addiction-treatment",
+        "https://www.freemanrecoverycenter.com/programs/professionals/healthcare-workers/",
+        "https://tennesseebehavioralhealth.com/",
+        "https://www.vanderbilthealth.com/program/addictions-program",
+        "https://www.freemanrecoverycenter.com/programs/residential-treatment/",
+        "https://www.freemanrecoverycenter.com/tennessee/nashville/",
+        "https://www.freemanrecoverycenter.com/rehab-cost/affordable/",
+        "https://apex.rehab/tennessee/nashville/",
+        "https://tennesseebehavioralhealth.com/locations/davidson-county/drug-alcohol-rehab-in-nashville/",
+        "https://www.psychologytoday.com/us/treatment-rehab/tennessee?category=residential-inpatient"
+      ],
+      "brand_mentions": [
+        {
+          "brand": "Cumberland Heights",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Recovery Unplugged",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Southeast Addiction Center",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Live Again Detox",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "The Ranch Tennessee / Recovery Ranch",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "The Next Door Recovery",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "APEX Recovery",
+          "mentioned_in_answer": false,
+          "cited": true,
+          "cited_url_count": 1,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Brentwood Springs Detox",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Freeman Recovery Center",
+          "mentioned_in_answer": true,
+          "cited": true,
+          "cited_url_count": 4,
+          "position_of_first_mention": 1
+        },
+        {
+          "brand": "Tulip Hill",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        }
+      ],
+      "tracked_brands_mentioned_in_order": [
+        "Freeman Recovery Center"
+      ],
+      "directory_domains_cited": [
+        "psychologytoday.com",
+        "tennesseebehavioralhealth.com",
+        "tristarhealth.com",
+        "vanderbilthealth.com"
+      ],
+      "directory_domain_url_counts": {
+        "tristarhealth.com": 1,
+        "tennesseebehavioralhealth.com": 2,
+        "vanderbilthealth.com": 1,
+        "psychologytoday.com": 1
+      }
+    },
+    {
+      "id": 4,
+      "engine": "perplexity",
+      "query": "medical detox Nashville TN",
+      "type": "non-brand",
+      "answer": "For **medical detox in Nashville**, Live Again Detox lists a 24/7 medically supervised program at **1618 17th Ave S, Nashville, TN 37212**. Call **629-465-4224** to ask about availability, insurance, and admission requirements.[1][7]\n\nOther nearby options include:\n- **Tennessee Detox Center** in La Vergne, about 15 minutes south of Nashville; call **615-488-5311** to confirm current availability and payment options.[8]\n- **Freeman Recovery Center** offers medically monitored detox at its Burns facility, about 45 miles west of Nashville; call **615-645-3677**.[2]\n\nWithdrawal from alcohol or benzodiazepines can be dangerous. If there are severe symptoms—such as seizures, hallucinations, trouble breathing, or loss of consciousness—call **911** or go to an emergency department. For immediate treatment referrals in the U.S., call or text **988** for crisis support or **SAMHSA’s National Helpline at 1-800-662-4357**.",
+      "citations": [
+        "https://www.liveagaindetox.com/detox-centers-nashville-tn/",
+        "https://www.freemanrecoverycenter.com/programs/detox/",
+        "https://tuliphillhealthcare.com/tennessee/nashville/",
+        "https://apex.rehab/tennessee/nashville/detox/",
+        "https://www.freemanrecoverycenter.com/what-we-treat/drug-addiction/detox/",
+        "https://www.freemanrecoverycenter.com/programs/professionals/healthcare-workers/",
+        "https://www.liveagaindetox.com/",
+        "https://www.detox.com/listings/tennessee-detox-center/",
+        "https://www.psychologytoday.com/us/treatment-rehab/live-again-detox-alcohol-drug-detox-center-nashville-tn/1359500",
+        "https://www.psychologytoday.com/us/treatment-rehab/37901"
+      ],
+      "brand_mentions": [
+        {
+          "brand": "Cumberland Heights",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Recovery Unplugged",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Southeast Addiction Center",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Live Again Detox",
+          "mentioned_in_answer": true,
+          "cited": true,
+          "cited_url_count": 2,
+          "position_of_first_mention": 1
+        },
+        {
+          "brand": "The Ranch Tennessee / Recovery Ranch",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "The Next Door Recovery",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "APEX Recovery",
+          "mentioned_in_answer": false,
+          "cited": true,
+          "cited_url_count": 1,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Brentwood Springs Detox",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Freeman Recovery Center",
+          "mentioned_in_answer": true,
+          "cited": true,
+          "cited_url_count": 3,
+          "position_of_first_mention": 2
+        },
+        {
+          "brand": "Tulip Hill",
+          "mentioned_in_answer": false,
+          "cited": true,
+          "cited_url_count": 1,
+          "position_of_first_mention": null
+        }
+      ],
+      "tracked_brands_mentioned_in_order": [
+        "Live Again Detox",
+        "Freeman Recovery Center"
+      ],
+      "directory_domains_cited": [
+        "detox.com",
+        "psychologytoday.com"
+      ],
+      "directory_domain_url_counts": {
+        "detox.com": 1,
+        "psychologytoday.com": 2
+      }
+    },
+    {
+      "id": 5,
+      "engine": "perplexity",
+      "query": "rehab in Nashville that takes Blue Cross Blue Shield",
+      "type": "non-brand",
+      "answer": "Several Nashville-area rehabs list Blue Cross Blue Shield as accepted, but coverage and network status vary by plan. Consider calling these providers to verify your benefits and ask about the level of care you need:\n\n- **Cumberland Heights** — Nashville; offers detox, residential and outpatient treatment. **615-356-2700**.[4]\n- **Nashville Addiction Clinic** — outpatient and telehealth; lists BCBS among accepted plans. **615-927-7802**.[2]\n- **Hermitage Comprehensive Treatment Center** — Nashville; lists BCBS and offers addiction treatment services. **855-864-1517**.[4][9]\n- **BHG Nashville Treatment Center** — Nashville; outpatient treatment, including medication-based care; lists BCBS. **833-200-3930**.[4]\n- **Aura Recovery Center** — lists BCBS among commercial plans it works with; confirm location and level of care directly.[1]\n\nWhen you call, have your insurance card ready and ask whether the specific facility and treatment program are **in-network**, whether prior authorization is required, and what your deductible or copay will be. If you mean **BlueCare/TennCare** rather than a commercial BCBS plan, say so—the participating options may differ.[2][3]",
+      "citations": [
+        "https://recovery.com/nashville/bluecross-blueshield/",
+        "https://rehabseekers.com/insurance/medicaid/tenncare/bluecare-tennessee-bcbst/",
+        "https://rehabseekers.com/locations/us/tennessee/nashville/bluecare-tennessee-nashville/",
+        "https://startyourrecovery.org/treatment/rehab-centers/tennessee/nashville",
+        "https://rehabseekers.com/insurance/medicaid/tenncare/",
+        "https://www.freemanrecoverycenter.com/insurance/bcbs/tennessee/residential/",
+        "https://www.freemanrecoverycenter.com/insurance/bcbs/tennessee/benzodiazepine/",
+        "https://rehabs.com/local/nashville-tn/",
+        "https://startyourrecovery.org/treatment/rehab-centers/tennessee/thompsons-station",
+        "https://www.psychologytoday.com/us/treatment-rehab/tn/nashville?category=medicare"
+      ],
+      "brand_mentions": [
+        {
+          "brand": "Cumberland Heights",
+          "mentioned_in_answer": true,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": 1
+        },
+        {
+          "brand": "Recovery Unplugged",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Southeast Addiction Center",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Live Again Detox",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "The Ranch Tennessee / Recovery Ranch",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "The Next Door Recovery",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "APEX Recovery",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Brentwood Springs Detox",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Freeman Recovery Center",
+          "mentioned_in_answer": false,
+          "cited": true,
+          "cited_url_count": 2,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Tulip Hill",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        }
+      ],
+      "tracked_brands_mentioned_in_order": [
+        "Cumberland Heights"
+      ],
+      "directory_domains_cited": [
+        "psychologytoday.com",
+        "recovery.com",
+        "rehabs.com",
+        "rehabseekers.com",
+        "startyourrecovery.org"
+      ],
+      "directory_domain_url_counts": {
+        "recovery.com": 1,
+        "rehabseekers.com": 3,
+        "startyourrecovery.org": 2,
+        "rehabs.com": 1,
+        "psychologytoday.com": 1
+      }
+    },
+    {
+      "id": 6,
+      "engine": "perplexity",
+      "query": "outpatient addiction treatment IOP Nashville",
+      "type": "non-brand",
+      "answer": "Nashville has several addiction-treatment IOP options. An intensive outpatient program typically provides therapy several days a week while you live at home; schedules, services, insurance, and locations vary.\n\n- **Cornerstone of Recovery / Bradford Health** — Nashville office at 1410 Donelson Pike, Suite A7; IOP, individual and group therapy, medication-assisted treatment, and morning/evening or telehealth options. Phone: **615-291-2956**. The provider says it accepts many insurance plans, including TennCare; confirm coverage directly.[8]\n- **Southeast Addiction Center Tennessee** — Nashville-area IOP with 9–12 hours of weekly therapy, daytime and evening sessions, and medication-assisted treatment when appropriate. Phone: **615-326-6449**.[1]\n- **Live Again Detox** — IOP at 1618 17th Ave S, Nashville, with morning/evening options. Admissions: **629-465-4224**.[9]\n- **APEX Recovery** — IOP locations in nearby Brentwood and Columbia, rather than Nashville proper.[4]\n- **Freeman Recovery Center** — IOP in Dickson, about 40 miles west of Nashville; evening scheduling and dual-diagnosis care are available. Phone: **615-645-3677**.[10]\n\nWhen calling, ask about the next intake, program days and hours, insurance coverage and out-of-pocket cost, medication options, and whether the program treats co-occurring mental-health conditions. If withdrawal may be medically risky—especially from alcohol or benzodiazepines—ask for a clinical assessment before stopping.",
+      "citations": [
+        "https://southeastaddictiontn.com/programs/",
+        "https://www.freemanrecoverycenter.com/programs/outpatient/",
+        "https://www.freemanrecoverycenter.com/programs/professionals/",
+        "https://apex.rehab/tennessee/nashville/intensive-outpatient/",
+        "https://integrativelifecenter.com/addiction-programs/intensive-outpatient/",
+        "https://www.freemanrecoverycenter.com/what-we-treat/drug-addiction/iop-outpatient-treatment/",
+        "https://www.freemanrecoverycenter.com/rehab-cost/affordable/",
+        "https://bradfordhealth.com/nashville-tn-iop-rehab-location/",
+        "https://www.liveagaindetox.com/iop-in-nashville/",
+        "https://www.freemanrecoverycenter.com/what-we-treat/dual-diagnosis/iop-outpatient-treatment/"
+      ],
+      "brand_mentions": [
+        {
+          "brand": "Cumberland Heights",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Recovery Unplugged",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Southeast Addiction Center",
+          "mentioned_in_answer": true,
+          "cited": true,
+          "cited_url_count": 1,
+          "position_of_first_mention": 1
+        },
+        {
+          "brand": "Live Again Detox",
+          "mentioned_in_answer": true,
+          "cited": true,
+          "cited_url_count": 1,
+          "position_of_first_mention": 2
+        },
+        {
+          "brand": "The Ranch Tennessee / Recovery Ranch",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "The Next Door Recovery",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "APEX Recovery",
+          "mentioned_in_answer": true,
+          "cited": true,
+          "cited_url_count": 1,
+          "position_of_first_mention": 3
+        },
+        {
+          "brand": "Brentwood Springs Detox",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Freeman Recovery Center",
+          "mentioned_in_answer": true,
+          "cited": true,
+          "cited_url_count": 5,
+          "position_of_first_mention": 4
+        },
+        {
+          "brand": "Tulip Hill",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        }
+      ],
+      "tracked_brands_mentioned_in_order": [
+        "Southeast Addiction Center",
+        "Live Again Detox",
+        "APEX Recovery",
+        "Freeman Recovery Center"
+      ],
+      "directory_domains_cited": [
+        "bradfordhealth.com",
+        "integrativelifecenter.com"
+      ],
+      "directory_domain_url_counts": {
+        "integrativelifecenter.com": 1,
+        "bradfordhealth.com": 1
+      }
+    },
+    {
+      "id": 7,
+      "engine": "perplexity",
+      "query": "residential addiction treatment near Nashville, Tennessee",
+      "type": "non-brand",
+      "answer": "Here are residential addiction-treatment options serving the Nashville area:\n\n- **Freeman Recovery Center — Burns:** Offers 24/7 detox and residential treatment at 1615 Highway 96, Burns, about 40 minutes west of Nashville. Call **(615) 645-3677** to ask about availability, insurance, and admission.[1]\n- **Renaissance Recovery — Nashville:** Lists residential addiction and mental-health treatment at 2200 8th Ave S, Nashville. Call **(615) 590-3402** to confirm current services and whether the location provides live-in care.[7]\n- **APEX Recovery — Columbia:** Offers inpatient residential treatment and detox at 2710 Trotwood Ave, Columbia, roughly 45 miles south of Nashville. Its Brentwood location is outpatient, so confirm which level of care fits your needs.[9]\n\nWhen you call, ask about a clinical assessment, medically supervised detox if needed, total cost and insurance coverage, and what happens after residential care. For help finding a program or checking options, call SAMHSA’s National Helpline at **1-800-662-HELP (4357)**. If there’s an immediate overdose or medical emergency, call **911**.",
+      "citations": [
+        "https://www.freemanrecoverycenter.com/programs/residential-treatment/",
+        "https://www.freemanrecoverycenter.com/tennessee/nashville/",
+        "https://www.freemanrecoverycenter.com/programs/short-term/30-day-rehab/",
+        "https://www.freemanrecoverycenter.com/what-we-treat/drug-addiction/residential-treatment/",
+        "https://tuliphillrecovery.com/services/residential-treatment-in-nashville-tn/",
+        "https://www.freemanrecoverycenter.com/programs/professionals/healthcare-workers/",
+        "https://www.renaissancerecovery.com/drug/rehab/tennessee/davidson-county/nashville/",
+        "https://www.renaissancerecovery.com/drug/rehab/tennessee/davidson-county/nashville/rehabs-that-accept-insurance/",
+        "https://apex.rehab/tennessee/nashville/",
+        "https://www.freemanrecoverycenter.com/rehab-cost/affordable/"
+      ],
+      "brand_mentions": [
+        {
+          "brand": "Cumberland Heights",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Recovery Unplugged",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Southeast Addiction Center",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Live Again Detox",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "The Ranch Tennessee / Recovery Ranch",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "The Next Door Recovery",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "APEX Recovery",
+          "mentioned_in_answer": true,
+          "cited": true,
+          "cited_url_count": 1,
+          "position_of_first_mention": 2
+        },
+        {
+          "brand": "Brentwood Springs Detox",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Freeman Recovery Center",
+          "mentioned_in_answer": true,
+          "cited": true,
+          "cited_url_count": 6,
+          "position_of_first_mention": 1
+        },
+        {
+          "brand": "Tulip Hill",
+          "mentioned_in_answer": false,
+          "cited": true,
+          "cited_url_count": 1,
+          "position_of_first_mention": null
+        }
+      ],
+      "tracked_brands_mentioned_in_order": [
+        "Freeman Recovery Center",
+        "APEX Recovery"
+      ],
+      "directory_domains_cited": [
+        "renaissancerecovery.com"
+      ],
+      "directory_domain_url_counts": {
+        "renaissancerecovery.com": 2
+      }
+    },
+    {
+      "id": 8,
+      "engine": "perplexity",
+      "query": "nonprofit addiction treatment center Tennessee",
+      "type": "non-brand",
+      "answer": "A strong nonprofit option is **Hope of East Tennessee in Oak Ridge**. It offers residential treatment for men and women, intensive outpatient care, and transitional living; grant funding helps it accept TennCare plans and offer sliding-scale self-pay.[1]\n\nOther Tennessee nonprofit options include:\n- **CADAS**, serving the Chattanooga area, with adult and adolescent residential and outpatient programs.[9]\n- **Memphis Recovery Centers**, with residential treatment for adults and teens, plus dual-diagnosis care.[7]\n- **Grace House of Memphis**, a women-only residential and outpatient program with financial assistance options.[7]\n- **CAAP Inc.**, in Memphis, offering residential and outpatient services and accepting some state-funded plans.[7]\n\nFor a free, confidential referral to a provider near you, call or text the **Tennessee REDLINE at 800-889-9789**.[4][8] Tell me your city or county and whether you need detox, residential, or outpatient care, and I can narrow down the options.",
+      "citations": [
+        "https://www.addictioncenter.com/rehabs/center/hope-of-east-tennessee-inc-2/",
+        "https://www.cedarrecovery.com/",
+        "https://www.wdef.com/chattanooga-program-helps-fight-addiction/",
+        "https://www.tn.gov/behavioral-health/substance-abuse-services/treatment/recovery-support-services.html",
+        "https://drugrehabus.org/rehabs/treatment/non-profit/united-states/tennessee/",
+        "https://www.psychologytoday.com/us/treatment-rehab/38555",
+        "https://www.choosehelp.com/tennessee",
+        "https://www.tn.gov/behavioral-health/substance-abuse-services/treatment/treatmentprovidercontact.html",
+        "https://www.psychologytoday.com/us/treatment-rehab/tennessee?page=4",
+        "https://www.psychologytoday.com/us/treatment-rehab/37364"
+      ],
+      "brand_mentions": [
+        {
+          "brand": "Cumberland Heights",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Recovery Unplugged",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Southeast Addiction Center",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Live Again Detox",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "The Ranch Tennessee / Recovery Ranch",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "The Next Door Recovery",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "APEX Recovery",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Brentwood Springs Detox",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Freeman Recovery Center",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Tulip Hill",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        }
+      ],
+      "tracked_brands_mentioned_in_order": [],
+      "directory_domains_cited": [
+        "addictioncenter.com",
+        "cedarrecovery.com",
+        "choosehelp.com",
+        "drugrehabus.org",
+        "psychologytoday.com",
+        "tn.gov",
+        "wdef.com"
+      ],
+      "directory_domain_url_counts": {
+        "addictioncenter.com": 1,
+        "cedarrecovery.com": 1,
+        "wdef.com": 1,
+        "tn.gov": 2,
+        "drugrehabus.org": 1,
+        "psychologytoday.com": 3,
+        "choosehelp.com": 1
+      }
+    },
+    {
+      "id": 9,
+      "engine": "perplexity",
+      "query": "Cumberland Heights vs other Nashville rehabs",
+      "type": "brand",
+      "answer": "**Cumberland Heights is a strong fit if you want residential detox and treatment, family involvement, and a structured 12-Step program in a quieter campus setting.** It is not automatically the best choice: the right alternative depends on whether you need outpatient flexibility, a specialized population program, medication treatment, or lower-cost community care.\n\n| Center | How it compares |\n|---|---|\n| **Cumberland Heights** | Nonprofit with a 177-acre campus near Nashville; offers detox, residential care, outpatient services, extended care, family programming, and evidence-based therapies alongside 12-Step support. The residential campus is best suited to people who need a highly structured environment.[1][2] |\n| **Integrative Life Center** | A possible alternative when trauma-informed and co-occurring mental-health care is a priority; its outpatient options may suit people who need to remain at home or keep up with work and family responsibilities.[3] |\n| **Mending Hearts** | A women-focused option with long-term residential care and recovery housing, making it more specialized than Cumberland Heights’ adult programs.[3] |\n| **Samaritan Recovery Community** | A nonprofit alternative offering detox, residential treatment, and intensive outpatient care; worth comparing if community-based services are a priority.[3] |\n| **Outpatient programs** | Cumberland Heights’ Music Row program offers adult outpatient treatment, including IOP. Other Nashville outpatient centers may be a better fit if you do not need residential care and need more schedule flexibility.[7] |\n\n**What to compare before choosing:**  \n- **Level of care:** Ask whether the person needs medically supervised detox, residential treatment, partial hospitalization, IOP, or standard outpatient care.  \n- **Medication:** If opioid use is involved, ask each program specifically about medications for addiction treatment and whether they can continue existing prescriptions.  \n- **Clinical fit:** Confirm experience with co-occurring mental-health conditions, trauma, age or gender-specific needs, and family involvement.  \n- **Cost and coverage:** Get a written estimate for the recommended level of care and verify benefits directly with both the insurer and facility; directory cost estimates are not guarantees.[3][4]  \n- **Aftercare:** Ask what step-down care, relapse-prevention support, and follow-up are included after residential treatment.\n\nFor an urgent overdose or immediate safety risk, call emergency services. Otherwise, request an assessment from two or three programs and compare the **recommended level of care**, not just amenities or online ratings.",
+      "citations": [
+        "https://www.cumberlandheights.org/locations/river-road/",
+        "https://www.cumberlandheights.org/",
+        "https://startyourrecovery.org/treatment/rehab-centers/tennessee/nashville",
+        "https://startyourrecovery.org/facility/cumberland-heights-alcohol-and-drug-treatment-nashville",
+        "https://www.cumberlandheights.org/category/tennessee/feed/",
+        "https://www.rehab.com/tennessee/nashville",
+        "https://recovery.com/outpatient/cumberland-heights-music-row/",
+        "https://www.cumberlandheights.org/locations/",
+        "https://recovery.com/cumberland-heights-tennessee/",
+        "https://www.cumberlandheights.org/treatment/"
+      ],
+      "brand_mentions": [
+        {
+          "brand": "Cumberland Heights",
+          "mentioned_in_answer": true,
+          "cited": true,
+          "cited_url_count": 5,
+          "position_of_first_mention": 1
+        },
+        {
+          "brand": "Recovery Unplugged",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Southeast Addiction Center",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Live Again Detox",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "The Ranch Tennessee / Recovery Ranch",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "The Next Door Recovery",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "APEX Recovery",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Brentwood Springs Detox",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Freeman Recovery Center",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Tulip Hill",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        }
+      ],
+      "tracked_brands_mentioned_in_order": [
+        "Cumberland Heights"
+      ],
+      "directory_domains_cited": [
+        "recovery.com",
+        "rehab.com",
+        "startyourrecovery.org"
+      ],
+      "directory_domain_url_counts": {
+        "startyourrecovery.org": 2,
+        "rehab.com": 1,
+        "recovery.com": 2
+      }
+    },
+    {
+      "id": 10,
+      "engine": "perplexity",
+      "query": "is Cumberland Heights a good rehab",
+      "type": "brand",
+      "answer": "Cumberland Heights appears to be a **legitimate, established rehab with a strong overall reputation**, but whether it’s a good fit depends on the person’s clinical needs, preferred treatment approach, and insurance. It offers detox, residential and outpatient care, and reports using therapies such as CBT, DBT, motivational interviewing, and family therapy alongside 12-Step support.[1][5][8]\n\nReviews are generally positive about staff, clinical care, and the campus, but feedback is mixed: some reviewers describe harmful or inadequate experiences, including concerns about mental-health care and fit for LGBTQ+ patients.[2][6][9] Online ratings are useful signals, not proof of treatment quality or a guarantee of outcomes.\n\nBefore deciding, ask the admissions team:\n- Who provides care for co-occurring mental-health conditions, and how often will the person meet with a licensed clinician?\n- What support is available for the person’s specific needs, including trauma, mobility, or LGBTQ+ inclusion?\n- What will insurance cover, what costs could remain, and what are the financial terms?\n- What aftercare and follow-up support are included?\n\nFor urgent withdrawal or immediate danger, seek emergency medical help.",
+      "citations": [
+        "https://www.cumberlandheights.org/locations/river-road/",
+        "https://startyourrecovery.org/facility/cumberland-heights-alcohol-and-drug-treatment-nashville",
+        "https://www.rehab.com/cumberland-heights-chattanooga",
+        "https://www.cumberlandheights.org/",
+        "https://www.cumberlandheights.org/treatment/",
+        "https://rehabs.com/listings/cumberland-heights-nashville-3586891619/",
+        "https://www.rehab.com/tennessee/nashville",
+        "https://www.cumberlandheights.org/treatment/residential-care/",
+        "https://www.yelp.com/biz/cumberland-heights-treatment-center-river-road-nashville",
+        "https://startyourrecovery.org/treatment/rehab-centers/tennessee/nashville"
+      ],
+      "brand_mentions": [
+        {
+          "brand": "Cumberland Heights",
+          "mentioned_in_answer": true,
+          "cited": true,
+          "cited_url_count": 4,
+          "position_of_first_mention": 1
+        },
+        {
+          "brand": "Recovery Unplugged",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Southeast Addiction Center",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Live Again Detox",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "The Ranch Tennessee / Recovery Ranch",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "The Next Door Recovery",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "APEX Recovery",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Brentwood Springs Detox",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Freeman Recovery Center",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        },
+        {
+          "brand": "Tulip Hill",
+          "mentioned_in_answer": false,
+          "cited": false,
+          "cited_url_count": 0,
+          "position_of_first_mention": null
+        }
+      ],
+      "tracked_brands_mentioned_in_order": [
+        "Cumberland Heights"
+      ],
+      "directory_domains_cited": [
+        "rehab.com",
+        "rehabs.com",
+        "startyourrecovery.org",
+        "yelp.com"
+      ],
+      "directory_domain_url_counts": {
+        "startyourrecovery.org": 2,
+        "rehab.com": 2,
+        "rehabs.com": 1,
+        "yelp.com": 1
+      }
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Treatment-center SEO audit. Usage: python audit.py https://example.org [--max-pages 150] [--brand "Name"]"""
 import argparse
+import importlib
 import json
 import logging
 import os
@@ -51,6 +52,34 @@ from seo_audit.ai_visibility import check_ai_visibility
 from seo_audit.pagespeed import run_all as run_psi, check_pagespeed
 from seo_audit.report import rank, write_outputs
 
+# Deeper analyses. Each module exposes run(site, market, out_dir, client) -> list[Finding],
+# writes its own markdown file into out_dir and handles its own caching for --reuse.
+DEEP_MODULES = ("backlinks", "onpage", "competitor_pages", "geo_mentions")
+SKIPPABLE = DEEP_MODULES + ("openseo", "psi")
+
+
+def run_deep_modules(site, market, out_dir, client, skip):
+    """Import and run each deeper-analysis module. A missing or failing module is logged and skipped."""
+    findings = []
+    for name in DEEP_MODULES:
+        if name in skip:
+            logging.info("skipping %s (--skip)", name)
+            continue
+        try:
+            mod = importlib.import_module(f"seo_audit.{name}")
+        except ImportError as e:
+            logging.warning("module %s not available (%s)", name, e)
+            continue
+        except Exception as e:  # a half-written module must not stop the audit
+            logging.exception("module %s failed to import: %s", name, e)
+            continue
+        try:
+            logging.info("running %s", name)
+            findings.extend(mod.run(site, market, out_dir, client) or [])
+        except Exception as e:
+            logging.exception("module %s failed: %s", name, e)
+    return findings
+
 
 def main():
     ap = argparse.ArgumentParser(description="Audit a treatment-center website for the SEO problems that cost calls and admissions.")
@@ -68,7 +97,16 @@ def main():
     ap.add_argument("--openseo-url", default=os.environ.get("OPENSEO_MCP_URL", ""), help="OpenSEO MCP endpoint (or env OPENSEO_MCP_URL)")
     ap.add_argument("--openseo-project", default=os.environ.get("OPENSEO_PROJECT_ID", ""), help="OpenSEO project id (or env OPENSEO_PROJECT_ID)")
     ap.add_argument("--no-openseo", action="store_true", help="Skip the OpenSEO market-data pulls")
+    ap.add_argument("--skip", default="", help="Comma list of pieces to skip: " + ",".join(SKIPPABLE))
     args = ap.parse_args()
+    skip = {s.strip() for s in args.skip.split(",") if s.strip()}
+    unknown = skip - set(SKIPPABLE)
+    if unknown:
+        ap.error(f"--skip: unknown name(s) {', '.join(sorted(unknown))}; choose from {','.join(SKIPPABLE)}")
+    if "openseo" in skip:
+        args.no_openseo = True
+    if "psi" in skip:
+        args.no_psi = True
     load_dotenv()
     if args.doctor:
         return doctor()
@@ -113,6 +151,7 @@ def main():
     ai_findings, access, ai_results = check_ai_visibility(site, brand=brand, ai_results=ai_results, out_dir=out_dir)
     findings.extend(ai_findings)
 
+    market, client = None, None  # stay None when the market-data block is skipped
     have_endpoint = bool(args.openseo_url and args.openseo_project)
     have_cache = args.reuse and os.path.isdir(os.path.join(out_dir, "openseo"))
     if (have_endpoint or have_cache) and not args.no_openseo:
@@ -130,6 +169,8 @@ def main():
         write_market_summary(market, out_dir)
     elif not args.no_openseo:
         logging.warning("OpenSEO not configured: skipping market-data checks (set OPENSEO_MCP_URL and OPENSEO_PROJECT_ID in .env, or use --reuse on a cached run)")
+
+    findings.extend(run_deep_modules(site, market or None, out_dir, client, skip))
 
     psi_results = []
     if not args.no_psi:

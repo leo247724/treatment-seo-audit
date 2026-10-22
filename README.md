@@ -37,8 +37,13 @@ To run the market-data half yourself you need an OpenSEO instance you can reach.
 2. Runs on-site checks grouped by what costs calls: conversion (click-to-call, insurance and admissions pages, payer names, 24/7 message, forms), local (location pages, NAP, phone variants, schema), trust (Joint Commission / CARF / LegitScript, reviewer bylines, staff credentials), technical (sitemap, broken links, redirects, noindex, canonicals, titles, thin pages, viewport, mixed content), AI visibility (robots rules for the AI citation bots, llms.txt, entity clarity of the homepage, FAQ blocks).
 3. Pulls market data from OpenSEO (DataForSEO behind it): domain traffic estimate, top ranked keywords, keywords where Google AI Overviews cite the domain, local-pack rankings, live SERPs for the city's rehab queries, Google Maps results from the city centre, competitor visibility, backlink totals and trend. Turns them into findings: where the traffic really lands, whether commercial keywords rank via the homepage, 3-pack membership and rating gap, AI Overview citation mix, backlink decay.
 4. Checks AI answers. Three ways: hand-run queries recorded in a JSON file (what I did, see `out/cumberlandheights.org/ai_answers_manual.json`), the Perplexity API if a key is set, or nothing (the report then says the check was not done).
-5. Optionally runs Google PageSpeed Insights on four high-intent pages.
-6. Scores and ranks everything, writes the report.
+5. Runs four deeper analyses. Each writes its own file and adds its findings to the ranked list; a module that is missing or fails is logged and skipped.
+   - Backlinks: compares the site's backlink profile and domain authority with the competitors that win its local searches.
+   - On-page: scores each high-intent page on its on-page optimization and writes a per-page scorecard.
+   - Competitor pages: looks at the pages that win the SERPs and lists what they do that the site's pages do not.
+   - GEO mentions: measures how often AI answers name the site versus its competitors (share of voice), from `geo_mentions.json`.
+6. Optionally runs Google PageSpeed Insights on four high-intent pages.
+7. Scores and ranks everything, writes the report.
 
 ## Keys and credentials
 
@@ -60,6 +65,7 @@ Nothing else needs a key. The crawler identifies itself as `TreatmentSEOAudit/0.
 - `--brand "Name"` brand for the AI queries; default is the first part of the homepage title
 - `--ai-results file.json` hand-checked AI answers to ingest (format below)
 - `--no-psi` skip PageSpeed, `--no-openseo` skip market data
+- `--skip a,b` skip pieces by name: `backlinks`, `onpage`, `competitor_pages`, `geo_mentions`, `openseo`, `psi`. `--skip openseo,psi` is the same as `--no-openseo --no-psi`.
 - `--reuse` re-score from the cached crawl, PSI and OpenSEO data of the previous run. Seconds instead of minutes, spends no credits, needs no keys. Use this for demos and for reproducing the committed report.
 - `--doctor` print which keys are set, whether OpenSEO answers, and which cached runs exist
 
@@ -73,10 +79,14 @@ A full run takes 3-8 minutes depending on how fast the site responds. The run be
 
 Everything lands in `out/<host>/`:
 
-- `report.md` ranked findings. Top 5 in full, the rest in a table and a details section, then what passed, the AI-bot access table, PageSpeed numbers if any, the AI answer checks, and the limits of the run.
+- `report.md` ranked findings. Top 5 in full, the rest in a table and a details section, then what passed, links to the deeper analyses, the AI-bot access table, PageSpeed numbers if any, the AI answer checks, and the limits of the run.
 - `findings.json` the same findings as data.
 - `pages.csv` one row per crawled URL with everything the crawler extracted.
 - `market.md` OpenSEO snapshot: traffic estimate, which domains win the local SERPs, and the layout of each live SERP.
+- `backlinks.md` backlink and domain-authority comparison with the competitors.
+- `onpage.md` per-page on-page optimization scorecard.
+- `competitor_pages.md` what the SERP winners' pages do differently.
+- `geo_mentions.json` AI answer share of voice against the competitors; the table is copied into `report.md`.
 - `openseo/*.json` raw DataForSEO responses. `ai_answers.json`, `ai_queries.txt`, `summary.json`.
 - `crawl.pkl`, `psi.json` caches for `--reuse`.
 
@@ -119,5 +129,9 @@ seo_audit/checks.py      on-site checks
 seo_audit/openseo.py     OpenSEO MCP client, market-data checks
 seo_audit/ai_visibility.py  AI bot access, entity, FAQ, live answer checks
 seo_audit/pagespeed.py   PageSpeed Insights
+seo_audit/backlinks.py   backlink and domain-authority audit vs competitors -> backlinks.md
+seo_audit/onpage.py      per-page on-page scorecard -> onpage.md
+seo_audit/competitor_pages.py  what the SERP winners' pages do differently -> competitor_pages.md
+seo_audit/geo_mentions.py  AI answer share of voice vs competitors, reads geo_mentions.json
 seo_audit/report.py      scoring, ranking, report.md / findings.json / pages.csv
 ```
