@@ -1,0 +1,34 @@
+18:55:42 INFO robots.txt + sitemaps for cumberlandheights.org
+18:56:03 INFO sitemap urls: 3234, crawling up to 150 pages
+18:56:24 INFO crawled 18 pages, 3216 queued
+18:56:42 INFO crawled 36 pages, 3198 queued
+18:56:48 INFO crawled 54 pages, 3180 queued
+18:56:58 INFO crawled 72 pages, 3162 queued
+18:57:17 INFO crawled 90 pages, 3144 queued
+18:57:34 INFO crawled 108 pages, 3126 queued
+18:58:31 INFO crawled 126 pages, 3108 queued
+18:58:34 INFO crawled 144 pages, 3090 queued
+18:58:43 INFO crawled 150 pages, 3084 queued
+18:58:43 INFO brand assumed: 'Cumberland Heights' (override with --brand)
+18:58:43 INFO PageSpeed (mobile): https://www.cumberlandheights.org/resources/blog/sunday-sermon-liberation-is-costly
+18:58:43 WARNING PSI failed for https://www.cumberlandheights.org/resources/blog/sunday-sermon-liberation-is-costly: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https%3A%2F%2Fwww.cumberlandheights.org%2Fresources%2Fblog%2Fsunday-sermon-liberation-is-costly&strategy=mobile&category=PERFORMANCE
+18:58:43 INFO PageSpeed (mobile): https://www.cumberlandheights.org/
+18:58:43 WARNING PSI failed for https://www.cumberlandheights.org/: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https%3A%2F%2Fwww.cumberlandheights.org%2F&strategy=mobile&category=PERFORMANCE
+18:58:43 INFO PageSpeed (mobile): https://www.cumberlandheights.org/resources/blog/introducing-arch-academys-ridgeview-campus
+18:58:43 WARNING PSI failed for https://www.cumberlandheights.org/resources/blog/introducing-arch-academys-ridgeview-campus: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https%3A%2F%2Fwww.cumberlandheights.org%2Fresources%2Fblog%2Fintroducing-arch-academys-ridgeview-campus&strategy=mobile&category=PERFORMANCE
+18:58:43 INFO PageSpeed (mobile): https://www.cumberlandheights.org/giving/endowment-2
+18:58:44 WARNING PSI failed for https://www.cumberlandheights.org/giving/endowment-2: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https%3A%2F%2Fwww.cumberlandheights.org%2Fgiving%2Fendowment-2&strategy=mobile&category=PERFORMANCE
+18:58:44 INFO done in 181s -> out/cumberlandheights.org/report.md
+
+Top findings for cumberlandheights.org:
+ 1. [ 40.0] sev 4 intent 5 pages 23   Internal links to broken (4xx/5xx) pages
+ 2. [ 30.0] sev 3 intent 5 pages 23   Sitemap lists URLs that do not return 200
+ 3. [ 26.7] sev 3 intent 5 pages 6    AI answer presence not verified (no API key / no manual results)
+ 4. [ 25.5] sev 3 intent 5 pages 5    Thin program/location/admissions pages (under 300 words)
+ 5. [ 24.0] sev 3 intent 4 pages 16   Program and blog pages lack medical reviewer / author bylines
+ 6. [ 24.0] sev 3 intent 4 pages 15   Program pages have no FAQ / direct-answer sections
+ 7. [ 20.0] sev 2 intent 5 pages 22   Redirect chains and internal links to redirecting URLs
+ 8. [ 19.5] sev 3 intent 5 pages 2    Missing or duplicate title tags
+
+Full report: out/cumberlandheights.org/report.md
+exit 0

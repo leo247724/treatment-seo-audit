@@ -1,0 +1,35 @@
+# Cumberland Heights (cumberlandheights.org): the 5 SEO problems most likely costing calls and admissions
+
+Nashville nonprofit since 1966: 177-acre River Road campus plus 15+ outpatient sites. Audited 21 Oct 2026 with the workflow in this repo (crawler + checks) and market data from OpenSEO/DataForSEO, Google Maps, live SERPs and Perplexity. Ranked by likely effect on calls, not traffic. All figures are estimates from public data.
+
+## 1. Missing from the Google 3-pack for core Nashville rehab searches; main listing rates 4.0★ beside competitors at 4.7-4.9★
+**Evidence.** Not in the 3-pack for "alcohol rehab nashville tn", "drug rehab nashville" or "detox nashville tn" (pack: Recovery Unplugged, Southeast Addiction, Tree House, Live Again, Brentwood Springs); in it only for "inpatient rehab nashville tn" (#3) and "rehab nashville tn" (#2). Google Maps from downtown, mobile: the River Road campus is absent from the top 20 for "alcohol rehab" and "drug rehab"; only the Music Row outpatient listing shows (#6-7, 4.6★, 9 reviews). River Road GBP: 4.0★ from 234 reviews vs 4.9★ (104-410 reviews) for every pack competitor. Perplexity's "Cumberland Heights reviews" answer leads with Yelp 3.0★ and billing complaints.
+**Why.** On mobile the 3-pack sits above the #1 organic result (which the site already holds) and carries the tap-to-call button. Rating is the visible tiebreaker.
+**Fix.** Review program (ask at discharge and from alumni, answer every review, fix the 1-star themes); align GBP categories, services, photos and phone with the site; UTM-tagged links to each location page; Joint Commission and insurers in the GBP description.
+**Check first.** GBP Insights per listing: calls, directions, website clicks by query. Call tracking: GBP number (866-395-6390) vs site header number (800-646-9998). GSC: brand-query trend as reviews land.
+
+## 2. Every commercial "nashville rehab" keyword ranks through a homepage titled "Home - Cumberland Heights"
+**Evidence.** DataForSEO: "rehabs nashville tn" (2,400/mo, CPC $91) #1, "nashville rehab centers" (1,300/mo, CPC $95) #1, "drug treatment nashville tn" #1, "detox nashville tn" #4, "iop nashville tn" #18, all via the homepage. The crawler confirms the title tag; /treatment/drug-and-alcohol-detox and /treatment/residential-care rank for no city + program query. Competitors rank dedicated pages (apex.rehab/tennessee/nashville/, recoveryunplugged.com/location/drug-rehab-in-nashville/).
+**Why.** CPCs near $90 say what each click is worth. "Home" caps click-through on the market's most valuable queries, and one generic page must convert detox, residential, IOP and insurance intent at once.
+**Fix.** Title/H1 "Cumberland Heights | Alcohol & Drug Rehab in Nashville, TN (since 1966)", description with 24/7, insurers, Joint Commission. One page per city + level of care and per location, with NAP, MedicalClinic schema, payers and FAQ, linked from the homepage hero.
+**Check first.** GSC Performance, homepage, queries containing "nashville": CTR vs position (positions 1-3 should clear 5-8%; the gap is the title). Which /treatment/ URLs get impressions for "nashville detox" or "nashville iop" today.
+
+## 3. AI answers describe the facility from directories, not its own site, and skip it for residential treatment
+**Evidence.** Perplexity, 21 Oct: 0 of 3 non-brand Nashville queries cite cumberlandheights.org. "Best alcohol rehab in Nashville" and the insurance query name the facility but source startyourrecovery.org, rehab.com and rehabnet.com. "Residential addiction treatment near Nashville" omits it while Freeman, APEX and Tulip Hill are cited from their own residential pages. The brand + insurance query does cite the site, and also the noindexed ads microsite cumberlandheights.com with a different phone number. Google AI Overviews cite the domain for 417 keywords; the top 50 are all blog posts ("12 steps", "barbiturates"), zero program or admissions pages. On site: 0 of 15 program pages have an FAQ or direct-answer block and the homepage has no Organization schema. robots.txt correctly allows every AI citation bot.
+**Why.** More "best rehab near me" research starts in ChatGPT, Perplexity and AI Overviews. When the sources are directories and Yelp, the directory gets the call and the story includes the billing complaints.
+**Fix.** Answer blocks with FAQPage schema on residential, detox, insurance and admissions pages (cost, length of stay, coverage, what to bring); MedicalOrganization schema with sameAs; an outcomes/alumni page the engines can cite for "reviews"; consistent NAP across the directories they already cite; a "Nashville rehab options" guide that names the facility.
+**Check first.** GSC brand-query trend (AI exposure shows up as brand searches). Call tracking: add "ChatGPT/AI" to "how did you hear about us". Server logs: OAI-SearchBot, PerplexityBot and ChatGPT-User hits.
+
+## 4. Thin trust signals on the pages where health decisions happen
+**Evidence.** 1 of 16 program/blog pages shows a medical reviewer or credentialed byline; Joint Commission appears on inner pages but not the homepage; no LegitScript mention; no Organization schema. Backlinks fell from 3,621 to 3,042 in 12 months (944 referring domains, spam score 41, largest referrer a directory with 1,375 links).
+**Why.** Google's health-page quality signals, AI engines and families all weigh visible expertise and accreditation. It also decides whether the blog traffic that dominates today keeps ranking.
+**Fix.** "Medically reviewed by <name, credentials>" with bios on every program and blog page; Joint Commission and LegitScript seals in the footer; clinical team page with Person schema; links from hospital systems, universities, county resources and local news.
+**Check first.** GSC click trend for /resources/blog/ vs /treatment/ around the last two core updates; GSC Links report.
+
+## 5. Index hygiene: dead sitemap URLs, thin archives, phone and address variants
+**Evidence.** Sitemap lists 3,234 URLs; 23 of the first 150 fetched were 404 image attachments. Tag and member-category archives (49-133 words) are indexable. Three tel: numbers on the site plus different numbers on GBP, Facebook, NAATP and the ads microsite; "River Rd Pike" vs "River Road Pike".
+**Why.** Low direct cost: wasted crawl budget, diluted quality signals, weaker NAP matching for #1.
+**Fix.** Sitemap from indexable pages only; noindex tag/member-category archives; one canonical NAP with call tracking by dynamic number insertion.
+**Check first.** GSC Pages: "Not found" and "Crawled, currently not indexed" counts; Sitemaps report.
+
+**Limits.** No GSC, analytics or call data, so impact is estimated from page intent and market data. Core Web Vitals not measured (PageSpeed quota exhausted; OpenSEO Lighthouse pending). AI answers are a one-day snapshot of 5 queries. The ~48K estimated monthly organic visits are mostly informational blog traffic ("12 step program aa" alone is ~4.8K); the pages that drive calls earn a small share.
