@@ -19,7 +19,7 @@ Cumberland Heights is a Nashville nonprofit (since 1966) with a 177-acre River R
 **Evidence**
 - Not in the 3-pack for "alcohol rehab nashville tn", "drug rehab nashville" or "detox nashville tn"; in it only for "inpatient rehab nashville tn" (#3) and "rehab nashville tn" (#2).
 - Google Maps from downtown, mobile: River Road is absent from the top 20 for "alcohol rehab" and "drug rehab"; only the Music Row outpatient listing appears (#6-7, 4.6★, 9 reviews).
-- River Road GBP: 4.0★ from 234 reviews vs 4.9★ (104-410 reviews) for every pack competitor.
+- River Road GBP: 4.0★ from 234 reviews vs 4.7-4.9★ (104-410 reviews) for every pack competitor.
 - Perplexity's "Cumberland Heights reviews" answer leads with Yelp 3.0★ and billing complaints.
 
 **Why it costs calls**
@@ -120,15 +120,17 @@ Cumberland Heights is a Nashville nonprofit (since 1966) with a 177-acre River R
 - DataForSEO domain rank 44; 4,810 backlinks from 944 referring domains.
 - 12-month trend: backlinks 3,621 (Oct 2025) to 3,042 (Sep 2026), -16%; referring domains 924 to 894.
 - Spam score 41 for the domain (13 for its backlinks).
-- Top referrers are directories: addictiontreatments101.com (1,375 links), rehabconnectusa.com, alcoholrehabus.org, recovery.com, tennesseesober.com. Few hospital, university or news links.
+- Top referrers are directories: addictiontreatments101.com (1,375 links), rehabconnectusa.com, alcoholrehabus.org, recovery.com. Few hospital, university or news links.
 Competitor comparison (DataForSEO rank and referring domains):
 
-| # | Domain | DataForSEO rank | Referring domains | Backlinks | Broken | Target spam | SERP visibility |
-|---|---|---|---|---|---|---|---|
-| 1 | **cumberlandheights.org** | 44 | 944 | 4,810 | 13 | 41 | 2.65 |
-| 2 | southeastaddictiontn.com | 36 | 2,570 | 3,353 | 8 | 0 | 3.05 |
-| 3 | nashvilleaddictionrecovery.com | 34 | 2,471 | 5,721 | 1 | 0 | 2.45 |
-| 4 | liveagaindetox.com | 34 | 2,429 | 3,346 | 2,922 | 0 | 1.95 |
+| Domain | DataForSEO rank | Referring domains |
+|---|---|---|
+| cumberlandheights.org | 44 | 944 |
+| recoveryranch.com | 40 | 3,837 |
+| southeastaddictiontn.com | 36 | 2,570 |
+| nashvilleaddictionrecovery.com | 34 | 2,471 |
+| liveagaindetox.com | 34 | 2,429 |
+| thenextdoorrecovery.org | 25 | 150 |
 
 Cumberland Heights has the highest rank of the six, but four of the five competitors have 2.6 to 4 times as many referring domains. Monthly new/lost figures (+334 new, -309 lost) disagree with the 12-month drop, so the decline needs confirming in Search Console.
 
@@ -203,4 +205,4 @@ Freeman Recovery Center is cited from its own site in 7 of 8 answers, including 
 
 ## Limits
 
-No GSC, analytics or call data, so impact is estimated from page intent and market data. Core Web Vitals not measured (PageSpeed quota exhausted; 8 of 20 OpenSEO Lighthouse runs failed). AI answers are a one-day snapshot of 5 queries. The ~48K estimated monthly organic visits are mostly informational blog traffic ("12 step program aa" alone is ~4.8K); the pages that drive calls earn a small share.
+No GSC, analytics or call data, so impact is estimated from page intent and market data. Core Web Vitals not measured (PageSpeed quota exhausted; 8 of 20 OpenSEO Lighthouse runs failed). AI answers are a one-day snapshot of 15 queries (5 in the first pass, 10 in the share-of-voice run). The ~48K estimated monthly organic visits are mostly informational blog traffic ("12 step program aa" alone is ~4.8K); the pages that drive calls earn a small share.
